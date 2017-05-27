@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1495866917 "ch1.tex" "ch1.pdf" "ch1" 1495866917
+["pdflatex"] 1495867342 "ch1.tex" "ch1.pdf" "ch1" 1495867342
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -26,11 +26,11 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495749261 2350277 f74d61113e7cfb2fb8a7fb038066a484 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1495749298 4051024 671f7da9d458ca5202881ff482869f37 ""
   "/usr/local/texlive/2016/texmf.cnf" 1495749256 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "ch1.aux" 1495866917 168 6832b146617f723380cffd299c95084f ""
-  "ch1.tex" 1495866916 503 a4e9ddfe8f4d0be0418d1f2a257861e6 ""
-  "ch1.toc" 1495866917 124 804dc7de1b67e521300dbaa05d38c5b2 ""
+  "ch1.aux" 1495867342 168 6832b146617f723380cffd299c95084f ""
+  "ch1.tex" 1495867341 503 a4e9ddfe8f4d0be0418d1f2a257861e6 ""
+  "ch1.toc" 1495867342 124 804dc7de1b67e521300dbaa05d38c5b2 ""
   (generated)
-  "ch1.aux"
   "ch1.toc"
-  "ch1.pdf"
   "ch1.log"
+  "ch1.aux"
+  "ch1.pdf"
