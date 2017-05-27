@@ -1,0 +1,3 @@
+# LaTeX tutorial includes...
+a variety of codes for practicing LaTeX from different sources, namely:
+1. The not-so-short introduction to LaTeX 2e
