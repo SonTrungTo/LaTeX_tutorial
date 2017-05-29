@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  29 MAY 2017 00:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  29 MAY 2017 08:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -118,10 +118,10 @@ Chapter 1.
 
 ] (./Math_typesetting.aux) ) 
 Here is how much of TeX's memory you used:
- 901 strings out of 493013
- 10451 string characters out of 6133328
- 64857 words of memory out of 5000000
- 4495 multiletter control sequences out of 15000+600000
+ 902 strings out of 493013
+ 10459 string characters out of 6133328
+ 65857 words of memory out of 5000000
+ 4496 multiletter control sequences out of 15000+600000
  10009 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  27i,6n,20p,227b,179s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -133,7 +133,7 @@ c/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 msfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb>
-Output written on Math_typesetting.pdf (3 pages, 74858 bytes).
+Output written on Math_typesetting.pdf (3 pages, 77307 bytes).
 PDF statistics:
  42 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
