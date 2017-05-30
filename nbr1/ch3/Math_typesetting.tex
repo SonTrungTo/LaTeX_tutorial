@@ -1,5 +1,5 @@
 \documentclass[a4paper,11pt]{report}
-\usepackage{verbatim,amsmath}
+\usepackage{verbatim,amsmath,amssymb}
 \author{Son To}
 \title{Sample math symbols}
 \begin{document}
@@ -46,8 +46,36 @@ And this is the display style:
   = \frac{\pi^2}{6}
 \end{equation}
 
-% Add \smash to deep math expressions to space evenly
-A $d_{e_{e_p}}$ mathematical expression
+% Add \smash to deep-math expressions to space evenly
+A $d_{e_{e_p}}$ mathematical expression followed
+by a $h_{i_{g_h}}$ expression. As opposed to a smashed
+\smash{$d_{e_{e_p}}$} expression followed by a
+\smash{$h_{i_{g_h}}$} expression.
 
 $\forall x \in \mathbf{R}: \qquad x^2 \geq 0$
+
+$x^{2} \geq 0 \qquad \text{for all } x \in \mathbf{R}$
+
+$x^{2} \geq 0 \qquad \text{for all } x \in \mathbb{R}$
+
+\begin{tabular}{|p{8.7cm}|}
+\hline
+  $p^3_{ij} \qquad m_\text{Knuth} \qquad \sum_{k=1}^n k
+  \\[5pt]
+  a^x + y \neq a^{x + y} \qquad e^{x^{2}} \neq e^x^2$ \\
+\hline
+\end{tabular}
+
+$\sqrt{2} \Leftrightarrow x^{1/2} \quad \sqrt[3]{2}
+\quad \sqrt{x^2 + \sqrt{y}}
+\quad \surd{x^2 + y^2}$
+
+$\Psi = v_1 \cdot v_2 \cdot \ldots \qquad
+n! = 1 \cdot 2 \cdots (n-1) \cdot n$
+
+$0.\overline{3} = \underline{\underline{1/3}}$
+
+$\underbrace{\overbrace{a+b+c}^6 \cdot \overbrace{d+e+f}^9}
+_\text{Advanced Calculus} = 54$
+
 \end{document}
