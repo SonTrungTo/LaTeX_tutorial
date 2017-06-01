@@ -2,6 +2,9 @@
 \usepackage{verbatim,amsmath,amssymb}
 \author{Son To}
 \title{Sample math symbols}
+\date{May 28, 2017}
+\DeclareMathOperator{\co}{James Comey}
+\DeclareMathOperator{\nut}{nut job}
 \begin{document}
 \maketitle
 \tableofcontents
@@ -85,5 +88,25 @@ _\text{Advanced Calculus} = 54$ \\
 $f(x) = x^2 \quad f'(x) = 2x \quad f''(x) = 2 \\[5pt]
 \hat{XY} \quad \widehat{XY} \quad \bar{x}_0
 \quad \bar{x_0}$
+
+$\vec{a} \qquad \vec{AB} \qquad
+\overrightarrow{AB}$
+
+\begin{equation*}
+  lim_{x \rightarrow 0} \frac{\sin x}{x} = 1
+\end{equation*}
+
+% See the preamble for \DeclareMathOperator
+\begin{equation*}
+  \co = \nut_{x=D.Trump}
+\end{equation*}
+
+$a \bmod b \\
+ x \equiv a \pmod b$
+
+In in-line equations, the fraction $\tfrac{1}{2}$(text style)
+is shrunk to fit the line. The reverse of which is
+$\dfrac{1}{2}$(display style). A built-in fraction is
+$\frac{1}{2}$
 
 \end{document}
