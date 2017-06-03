@@ -1,4 +1,5 @@
 \documentclass[a4paper,11pt]{report}
+\pagestyle{headings}
 \usepackage{verbatim,amsmath,amssymb}
 \author{Son To}
 \title{Sample math symbols}
@@ -108,5 +109,55 @@ In in-line equations, the fraction $\tfrac{1}{2}$(text style)
 is shrunk to fit the line. The reverse of which is
 $\dfrac{1}{2}$(display style). A built-in fraction is
 $\frac{1}{2}$
+
+% \partial
+\begin{equation*}
+  \sqrt{\frac{x^2}{k+1}} \qquad
+  x^\frac{2}{k+1} \qquad
+  \frac{\partial^2f}{\partial x^2}
+\end{equation*}
+
+% \binom from amsmath
+Pascal's rule is
+\begin{equation*}
+  \binom{n}{k} = \binom{n-1}{k}
+  + \binom{n-1}{k-1}
+\end{equation*}
+
+
+% \stackrel{#1}{#2}, #1 on #2
+\begin{equation*}
+  f_n(x) \stackrel{d}{\succ} f_m(x)
+\end{equation*}
+
+% \int, \sum, \prod
+\begin{equation*}
+  \int_0^{\frac{\pi}{2}} x^2 \, \mathrm{d}x \qquad
+  \sum_{i=1}^n i \qquad
+  \prod_\epsilon
+\end{equation*}
+
+% \substack from amsmath
+\begin{equation*}
+  \sum^n_{\substack{0<i<n \\
+                  j\subseteq i}}
+  P(i,j) = Q(i,j)
+\end{equation*}
+
+% other delimiters
+\begin{equation*}
+  {a,b,c} \neq \{a,b,c\}
+\end{equation*}
+
+% \left, \right with delimiters. \left. = nothing on the left, similar to \right.
+\begin{equation*}
+  1 + \left(\frac{1}{1-x^2}\right)^3 \qquad
+  \left. \ddagger \frac{~}{~} \right)
+\end{equation*}
+
+% manually, \big < \Big < \bigg < \Bigg
+$\Big((x+1)(x-1)\Big)^3$ \\
+$\big(\Big(\bigg(\Bigg( \quad
+ \big\}$
 
 \end{document}
