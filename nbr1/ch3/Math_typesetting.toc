@@ -3,3 +3,6 @@
 \contentsline {section}{\numberline {2.1}IEEEeqnarray Environment}{6}
 \contentsline {chapter}{\numberline {3}Arrays and Matrices}{7}
 \contentsline {chapter}{\numberline {4}Spacing in Math Mode}{8}
+\contentsline {section}{\numberline {4.1}Phantom}{8}
+\contentsline {section}{\numberline {4.2}Fiddling with Math Fonts}{9}
+\contentsline {subsection}{\numberline {4.2.1}Bold Symbols}{9}

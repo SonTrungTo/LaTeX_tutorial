@@ -290,7 +290,34 @@ Let's test:
 \end{equation*}
 With multiple integrals,
 \begin{IEEEeqnarray*}{c}
-  
+  \int\int f(x)g(y) \ud x \ud y \\
+  \int\!\!\!\int f(x)g(y) \ud x \ud y \\
+  \iint f(x)g(y) \ud x \ud y
 \end{IEEEeqnarray*}
+\section{Phantom}
+Using \textbackslash phantom can help reserve character
+that does not show up in the final output.\\
+Example:
+\begin{equation*}
+  {}^{14}_{6}\text{C} \qquad
+  \text{versus} \qquad
+  {}^{14}_{\phantom{1}6}\text{C}
+\end{equation*}
 
+\section{Fiddling with Math Fonts}
+$\Re \qquad \mathcal{R} \qquad \mathfrak{R} \qquad
+\mathbb{R} \qquad$ \\
+$\displaystyle{123} \qquad \textstyle{123} \qquad
+\scriptstyle{123} \qquad \scriptscriptstyle{123}$
+\begin{equation*} % Default is \textstyle
+  P = \frac{\displaystyle{\sum_{i=1}^n(x_{i}-x)(y_{i}-y)}}{
+\displaystyle{\left[ \sum_{i=1}^n(x_{i}-x)^2
+\sum_{i=1}^n(y_{i}-y)^2 \right]^{1/2}}
+  }
+\end{equation*}
+\subsection{Bold Symbols}
+\textbackslash mathbf\{\} only works for upright letters!\\
+\textbackslash boldmath\{\} only works outside of math mode!\\
+\textbackslash boldsymbol\{\} is more versatile!\\
+Examples:
 \end{document}
