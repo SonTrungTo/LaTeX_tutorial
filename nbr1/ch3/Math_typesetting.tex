@@ -1,6 +1,6 @@
 \documentclass[a4paper,11pt]{report}
 \pagestyle{headings}
-\usepackage{verbatim,amsmath,amssymb}
+\usepackage[retainorgcmds]{verbatim,amsmath,amssymb,IEEEtrantools}
 \author{Son To}
 \title{Sample math symbols}
 \date{May 28, 2017}
@@ -158,6 +158,77 @@ Pascal's rule is
 % manually, \big < \Big < \bigg < \Bigg
 $\Big((x+1)(x-1)\Big)^3$ \\
 $\big(\Big(\bigg(\Bigg( \quad
- \big\}$
+ \big\}\Big\}\bigg\}\Bigg\} \quad
+ \big\|\Big\|\bigg\|\Bigg\| \quad
+ \big\Updownarrow \Big\Updownarrow \bigg\Updownarrow
+ \Bigg\Updownarrow$
 
+% multline from amsmath, can be added with an *, and \\
+\begin{multline}
+  a+b+c+d+e+f+g+h+i+z+x+v+n+m+1+2+3+4\\
+  =j+k+l+m+n
+\end{multline}
+
+\chapter{Multiple equations}
+align env
+\begin{align}
+  a = b + c \\
+ = d + e
+\end{align}
+\begin{align}
+  a & = b + c \\
+  & = d+e
+\end{align}
+Interpretation: \& is more standard in the use of system
+of equations. \\
+Its downfall:
+\begin{align}
+  a & = b + c \\
+  & = d+e+f+g+h+j+j+u+j+k+s+c\nonumber\\
+  & +c+r+e+g+t+y+z \\
+  & = p+q+r+s
+\end{align}
+A better solution:
+\begin{eqnarray}
+  a & = & b+c\\
+  & = & d+e+g+r+h+j+j+k\nonumber\\
+  & & + \: l+b+m+v+v+c+f+h\\
+  & = & p+q+r+s
+\end{eqnarray}
+There are two troubles:\\
+Trouble I:
+\begin{eqnarray}
+  a & = & a=a
+\end{eqnarray}
+Trouble II:(the spacing between $j^2$ is big!)
+\begin{eqnarray}
+  a & = & b+c\\
+  & = & z+x+v+n+o+m+n+b+t+r+e+t+i^2+j^2+l
+  \label{eq:trouble2}
+\end{eqnarray}
+In addtionally, we are provided with \textbackslash
+lefteqn when the LHS is too long:
+\begin{eqnarray}
+  \lefteqn{a+b+c+r+e+d+f+g+d+e+t+f+g+h+d} \nonumber\\
+  & = & a+b+c+m+j+k \\
+  & = & n+o+p+q+r+s
+\end{eqnarray}
+However, this still sucks as
+the RHS is too short and the array is not properly centered:
+\begin{eqnarray}
+  \lefteqn{a+b+c+e+f+g+h+j+k+l}\\
+  & = & r+s
+  \label{eq:lefteqn}
+\end{eqnarray}
+Our new remedy will be \ldots
+\section{IEEEeqnarray Environment}
+\begin{IEEEeqnarray}{rCl}
+  a & = & b+c \\
+  & = & d+e+f+b+t+g+h \nonumber\\
+  & & + \: j+k+l \\
+  & = & p+q+r+s
+\end{IEEEeqnarray}
+Addtional spaces can be added with . and /and  ?
+in an increasing order. We now show how IEEEeqnarray
+solves (\ref{eq:trouble2}) and (\ref{eq:lefteqn}).
 \end{document}

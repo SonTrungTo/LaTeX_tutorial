@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1496469193 "Math_typesetting.tex" "Math_typesetting.pdf" "Math_typesetting" 1496469193
+["pdflatex"] 1496486116 "Math_typesetting.tex" "Math_typesetting.pdf" "Math_typesetting" 1496486116
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -40,6 +40,7 @@
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
+  "/usr/local/texlive/2016/texmf-dist/tex/latex/IEEEtran/IEEEtrantools.sty" 1440712899 130521 4ccf2a4cea0566f0fadc2812421ad1bb ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1359763108 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty" 1359763108 13829 94730e64147574077f8ecfea9bb69af4 ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd" 1359763108 961 6518c6525a34feb5e8250ffa91731cff ""
@@ -49,6 +50,7 @@
   "/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty" 1485129665 84329 81aa65c5042562f79cb421feff9b8bdc ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty" 1480098820 4115 318a66090112f3aa3f415aeb6fe8540f ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty" 1480098820 2431 fe3078ec12fc30287f568596f8e0b948 ""
+  "/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd" 1480098821 2256 80ce1168fb4ce6a85583a9cf8972c013 ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/base/report.cls" 1480098821 22880 e7be6f7dd8c05d5108bf3a7d8cabe59a ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/base/size11.clo" 1480098821 8308 f91506bb4df6d8527331f7bbeaf0e63c ""
   "/usr/local/texlive/2016/texmf-dist/tex/latex/tools/verbatim.sty" 1480098841 7264 cf839ee7f0c2bfc711b0b88970764569 ""
@@ -56,11 +58,11 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495749261 2350277 f74d61113e7cfb2fb8a7fb038066a484 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1495749298 4051024 671f7da9d458ca5202881ff482869f37 ""
   "/usr/local/texlive/2016/texmf.cnf" 1495749256 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "Math_typesetting.aux" 1496469155 190 b61151a17ae3b4cdab9cb185286bc7a1 ""
-  "Math_typesetting.tex" 1496469192 3964 3b005a614d32216953f2da61223c0bb6 ""
-  "Math_typesetting.toc" 1496469155 60 362f912bb23d03a796b91a1c5065ae22 ""
+  "Math_typesetting.aux" 1496485975 501 3d71d3f9965d087f5ce7d649cad65e76 ""
+  "Math_typesetting.tex" 1496486114 5760 bf0116a953335e30287d6fc0099c8587 ""
+  "Math_typesetting.toc" 1496485975 192 1d3ebd21e813fa68f021d4bc6ec6e4a0 ""
   (generated)
-  "Math_typesetting.pdf"
   "Math_typesetting.aux"
+  "Math_typesetting.pdf"
   "Math_typesetting.toc"
   "Math_typesetting.log"
