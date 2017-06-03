@@ -1,3 +1,5 @@
 \contentsline {chapter}{\numberline {1}Single equations}{2}
 \contentsline {chapter}{\numberline {2}Multiple equations}{5}
 \contentsline {section}{\numberline {2.1}IEEEeqnarray Environment}{6}
+\contentsline {chapter}{\numberline {3}Arrays and Matrices}{7}
+\contentsline {chapter}{\numberline {4}Spacing in Math Mode}{8}

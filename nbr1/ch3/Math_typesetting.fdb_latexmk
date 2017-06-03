@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1496486116 "Math_typesetting.tex" "Math_typesetting.pdf" "Math_typesetting" 1496486116
+["pdflatex"] 1496505650 "Math_typesetting.tex" "Math_typesetting.pdf" "Math_typesetting" 1496505650
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -58,11 +58,11 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495749261 2350277 f74d61113e7cfb2fb8a7fb038066a484 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1495749298 4051024 671f7da9d458ca5202881ff482869f37 ""
   "/usr/local/texlive/2016/texmf.cnf" 1495749256 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "Math_typesetting.aux" 1496485975 501 3d71d3f9965d087f5ce7d649cad65e76 ""
-  "Math_typesetting.tex" 1496486114 5760 bf0116a953335e30287d6fc0099c8587 ""
-  "Math_typesetting.toc" 1496485975 192 1d3ebd21e813fa68f021d4bc6ec6e4a0 ""
+  "Math_typesetting.aux" 1496505634 816 0caa17fe1f3d7efc0b970a00d9e3a0ec ""
+  "Math_typesetting.tex" 1496505648 7345 aedef3f50b15449f1cd66ba93d4fef98 ""
+  "Math_typesetting.toc" 1496505634 319 dc18bb8ae7ba18e9e52f5865e3d0bf5e ""
   (generated)
-  "Math_typesetting.aux"
+  "Math_typesetting.log"
   "Math_typesetting.pdf"
   "Math_typesetting.toc"
-  "Math_typesetting.log"
+  "Math_typesetting.aux"

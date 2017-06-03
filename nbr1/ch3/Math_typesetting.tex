@@ -6,6 +6,7 @@
 \date{May 28, 2017}
 \DeclareMathOperator{\co}{James Comey}
 \DeclareMathOperator{\nut}{nut job}
+\newcommand{\ud}{\, \mathrm{d}}
 \begin{document}
 \maketitle
 \tableofcontents
@@ -216,7 +217,7 @@ lefteqn when the LHS is too long:
 However, this still sucks as
 the RHS is too short and the array is not properly centered:
 \begin{eqnarray}
-  \lefteqn{a+b+c+e+f+g+h+j+k+l}\\
+  \lefteqn{a+b+c+e+f+g+h+j+k+l}\nonumber \\
   & = & r+s
   \label{eq:lefteqn}
 \end{eqnarray}
@@ -230,5 +231,66 @@ Our new remedy will be \ldots
 \end{IEEEeqnarray}
 Addtional spaces can be added with . and /and  ?
 in an increasing order. We now show how IEEEeqnarray
-solves (\ref{eq:trouble2}) and (\ref{eq:lefteqn}).
+solves (\ref{eq:trouble2}) and (\ref{eq:lefteqn}). \\
+For \ref{eq:trouble2}, we add \textbackslash
+IEEEeqnarraynumspace:
+\begin{IEEEeqnarray}{rCl}
+  a & = & b+c\\
+  & = & z+x+v+n+o+m+n+b+t+r+e+t+i^2+j^2+l \IEEEeqnarraynumspace
+\end{IEEEeqnarray}
+For \ref{eq:lefteqn}, we replace the faulty \textbackslash
+lefteqn with \textbackslash IEEEeqnarraymulticol,
+\begin{IEEEeqnarray}{rCl}
+  \IEEEeqnarraymulticol{3}{l}{
+  a+b+c+e+f+g+h+j+k+l}\nonumber\\ \quad % Add depth
+  & = & r+s
+\end{IEEEeqnarray}
+
+Finally, we can add number, or subnumber to IEEEeqnarray*
+environment,
+\begin{IEEEeqnarray*}{rCl}
+  a & = & b + c \IEEEyesnumber \\
+    & = & d + e \IEEEyessubnumber \\
+    & = & f + g \IEEEyessubnumber
+\end{IEEEeqnarray*}
+
+\chapter{Arrays and Matrices}
+A typical array environment:
+\begin{equation*}
+  \mathbf{X} = \left(
+  \begin{array}{ccc}
+    x_1 & x_2 & \ldots \\
+    x_3 & x_4 & \ldots \\
+    \vdots & \vdots & \ddots
+  \end{array}
+  \right)
+\end{equation*}
+It can also be used to write piecewise functions,
+\begin{equation*}
+  |x| = \left\{
+   \begin{array}{rl}
+     -x & \text{if } x < 0 \\
+      0 & \text{if } x = 0 \\
+      x & \text{if } x > 0
+   \end{array}
+  \right.
+\end{equation*}
+
+\chapter{Spacing in Math Mode}
+\begin{IEEEeqnarray*}{c}
+  \int_1^2 \ln x \mathrm{d}x \\
+  \int_1^2 \ln x \, \mathrm{d}x
+\end{IEEEeqnarray*}
+We can write a new command to use with \textbackslash
+newcommand\{command\}\{program\} and put it in the
+preamble.\\
+Let's test:
+\begin{equation*}
+  \int_a^b f(x) \ud x
+\end{equation*}
+With multiple integrals,
+\begin{IEEEeqnarray*}{c}
+  
+\end{IEEEeqnarray*}
+
 \end{document}
