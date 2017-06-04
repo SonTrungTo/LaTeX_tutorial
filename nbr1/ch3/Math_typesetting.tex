@@ -1,12 +1,16 @@
 \documentclass[a4paper,11pt]{report}
 \pagestyle{headings}
-\usepackage[retainorgcmds]{verbatim,amsmath,amssymb,IEEEtrantools}
+\usepackage{verbatim,amsmath,amssymb,amsthm}
+\usepackage[retainorgcmds]{IEEEtrantools}
 \author{Son To}
 \title{Sample math symbols}
 \date{May 28, 2017}
 \DeclareMathOperator{\co}{James Comey}
 \DeclareMathOperator{\nut}{nut job}
 \newcommand{\ud}{\, \mathrm{d}}
+\theoremstyle{definition} \newtheorem{law}{Law}[chapter]
+\theoremstyle{plain} \newtheorem{jury}[law]{Jury}
+\theoremstyle{remark} \newtheorem*{marg}{Margaret}
 \begin{document}
 \maketitle
 \tableofcontents
@@ -318,6 +322,94 @@ $\displaystyle{123} \qquad \textstyle{123} \qquad
 \subsection{Bold Symbols}
 \textbackslash mathbf\{\} only works for upright letters!\\
 \textbackslash boldmath\{\} only works outside of math mode!\\
-\textbackslash boldsymbol\{\} is more versatile!\\
-Examples:
+\textbackslash boldsymbol\{\} is more versati!\\
+Examples: \\
+$\mu, M \qquad
+\mathbf{\mu},\mathbf{M}$ \qquad
+\boldmath{$\mu,M$} \qquad
+$\boldsymbol{\mu},\boldsymbol{M} \qquad
+\boldsymbol{\mu,M}$
+
+\chapter{Theorems,Lemmas,\ldots}
+\begin{law} \label{law:box}
+  Don't hide in the witness box
+\end{law}
+\begin{jury}[The bullshit lemma]
+ It could be you! So beware
+ and see~\ref{law:box}.
+\end{jury}
+\begin{marg}
+  No, No, No.
+\end{marg}
+We now write some ``proof'' formats.
+\begin{proof}
+Trivial, use
+\begin{equation*}
+  E = mc^2.
+\end{equation*}
+\end{proof}
+
+Now using \textbackslash qedhere,
+\begin{proof}
+  Trivial, use
+  \begin{equation*}
+    E = mc^2. \qedhere
+  \end{equation*}
+\end{proof}
+
+Unfortunately, this does not work for IEEEeqnarray due to
+the 2 invisible columns placed on both sides of the array.
+\begin{proof}
+This is a proof that ends with an equation array.
+  \begin{IEEEeqnarray*}{rCl}
+    a & = & b + c \\
+      & = & d + e. \qedhere
+  \end{IEEEeqnarray*}
+\end{proof}
+The remedy for this will be to define the stretchable
+spaces explicitly,
+\begin{proof}
+This is a proof that ends with an equation array.
+ \begin{IEEEeqnarray*}{+rCl+x*}
+   a & = & b + c \\
+     & = & d + e. & \qedhere
+ \end{IEEEeqnarray*}
+\end{proof}
+
+The simmilar problem occurs with placing the QED mark in
+the numbered equations. Compare
+\begin{proof}
+This is a proof that ends with a numbered equation:
+\begin{equation}
+  a = b + c
+\end{equation}
+\end{proof}
+to
+\begin{proof}
+  This is a proof that ends with a numbered equation:
+  \begin{equation}
+    a = b + c \qedhere
+  \end{equation}
+\end{proof}
+We aim to have the latter form of the proof. Hence, for the case
+of IEEEeqnarray, let's fix the following problem
+\begin{proof}
+  This is a proof that ends with numbered equations:
+  \begin{IEEEeqnarray}{rCl}
+    a & = & b + c \\
+      & = & e + f
+  \end{IEEEeqnarray}
+\end{proof}
+by the following solution
+\begin{proof}
+  This is a proof that ends with numbered equations:
+  \begin{IEEEeqnarray}{+rCl+x*}
+    a & = & b + c \\
+      & = & d + e \\
+      & & & \qedhere \nonumber
+  \end{IEEEeqnarray}
+\end{proof}
+
+Hence, this completes our documentation of the
+Sample Math Symbols
 \end{document}

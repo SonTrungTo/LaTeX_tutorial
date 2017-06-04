@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  3 JUN 2017 23:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  4 JUN 2017 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -30,33 +30,9 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks15
 \verbatim@in@stream=\read1
 )
-
-! LaTeX Error: Unknown option `retainorgcmds' for package `verbatim'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 \author
-           {Son To}
-The option `retainorgcmds' was not declared in package `verbatim', perhaps you
-misspelled its name. Try typing  <return>  to proceed.
-
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip43
-
-
-! LaTeX Error: Unknown option `retainorgcmds' for package `amsmath'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 \ProcessOptions\par
-                        
-The option `retainorgcmds' was not declared in package `amsmath', perhaps you
-misspelled its name. Try typing  <return>  to proceed.
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -115,18 +91,6 @@ LaTeX Info: Redefining \] on input line 2818.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-
-! LaTeX Error: Unknown option `retainorgcmds' for package `amssymb'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.33 \ProcessOptions\relax
-                          
-The option `retainorgcmds' was not declared in package `amssymb', perhaps you
-misspelled its name. Try typing  <return>  to proceed.
-
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -134,6 +98,18 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks26
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/IEEEtran/IEEEtrantools.sty
 Package: IEEEtrantools 2015/08/26 V1.5 by Michael Shell
 
@@ -145,7 +121,7 @@ Package: IEEEtrantools 2015/08/26 V1.5 by Michael Shell
 \@IEEEtrantmpcountA=\count100
 \@IEEEtrantmpcountB=\count101
 \@IEEEtrantmpcountC=\count102
-\@IEEEtrantmptoksA=\toks21
+\@IEEEtrantmptoksA=\toks27
 \IEEEnormaljot=\dimen115
 \IEEEquantizedlength=\dimen116
 \IEEEquantizedlengthdiff=\dimen117
@@ -158,33 +134,35 @@ Package: IEEEtrantools 2015/08/26 V1.5 by Michael Shell
 \IEEElabelindent=\dimen124
 \IEEEiednormlabelsep=\dimen125
 \IEEEiedmathlabelsep=\dimen126
-\IEEEiedtopsep=\skip46
+\IEEEiedtopsep=\skip49
 \c@IEEEsubequation=\count103
 \@IEEEeqnnumcols=\count104
 \@IEEEeqncolcnt=\count105
 \@IEEEsubeqnnumrollback=\count106
 \IEEEPARstartletwidth=\dimen127
-) (./Math_typesetting.aux)
+)
+\c@law=\count107
+ (./Math_typesetting.aux)
 \openout1 = `Math_typesetting.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Try loading font information for U+msa on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Try loading font information for U+msa on input line 15.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+LaTeX Font Info:    Try loading font information for U+msb on input line 15.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -202,7 +180,7 @@ Chapter 1.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.69   \\[5pt]
+l.73   \\[5pt]
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -210,13 +188,13 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.70   a^
+l.74   a^
          x + y \neq a^{x + y} \qquad e^{x^{2}} \neq e^x^2$ \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Double superscript.
-l.70 ... \neq a^{x + y} \qquad e^{x^{2}} \neq e^x^
+l.74 ... \neq a^{x + y} \qquad e^{x^{2}} \neq e^x^
                                                   2$ \\
 I treat `x^1^2' essentially like `x^1{}^2'.
 
@@ -224,13 +202,13 @@ I treat `x^1^2' essentially like `x^1{}^2'.
 
 ] [3] [4]
 Chapter 2.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 210.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 214.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 210.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 214.
  [5
 
 ] [6]
@@ -240,48 +218,58 @@ Chapter 3.
 ]
 Chapter 4.
 
-Overfull \hbox (13.36502pt too wide) in paragraph at lines 283--288
+Overfull \hbox (13.36502pt too wide) in paragraph at lines 287--292
 \OT1/cmr/m/n/10.95 We can write a new com-mand to use with \OMS/cmsy/m/n/10.95 
 n\OT1/cmr/m/n/10.95 newcommand\OMS/cmsy/m/n/10.95 f\OT1/cmr/m/n/10.95 command\O
 MS/cmsy/m/n/10.95 gf\OT1/cmr/m/n/10.95 program\OMS/cmsy/m/n/10.95 g
  []
 
-LaTeX Font Info:    Try loading font information for U+euf on input line 308.
+LaTeX Font Info:    Try loading font information for U+euf on input line 312.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [8
 
 ] [9]
-(./Math_typesetting.aux) ) 
+Chapter 5.
+
+Package amsthm Warning: The \qedhere command may not work correctly here on inp
+ut line 366.
+
+[10
+
+] [11] (./Math_typesetting.aux) ) 
 Here is how much of TeX's memory you used:
- 1657 strings out of 493013
- 22989 string characters out of 6133328
- 84826 words of memory out of 5000000
- 5219 multiletter control sequences out of 15000+600000
- 14246 words of font info for 53 fonts, out of 8000000 for 9000
+ 1753 strings out of 493013
+ 24084 string characters out of 6133328
+ 85821 words of memory out of 5000000
+ 5304 multiletter control sequences out of 15000+600000
+ 16433 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,24n,26p,227b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb>
-Output written on Math_typesetting.pdf (10 pages, 184893 bytes).
+ 27i,24n,26p,253b,203s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmib10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msl10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/euler/euf
+m10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols
+/msbm10.pfb>
+Output written on Math_typesetting.pdf (12 pages, 220915 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
