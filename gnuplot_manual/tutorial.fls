@@ -37,6 +37,8 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT eg2.tex
 INPUT eg2.tex
+INPUT eg3.tex
+INPUT eg3.tex
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
 INPUT tutorial.aux
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
