@@ -6,12 +6,26 @@
 \begin{document}
 \maketitle
 \tableofcontents
+\newpage
 \section{Using gnuplot for LaTeX: A tutorial}
-The following is a basic plot, using with `set key'/`unset key'
+Figure~\ref{fig:eg1} is a basic plot, using with `set key'/`unset key'
 command to add/remove legends.
-  \begin{center}
-    \begin{figure}
+  \begin{figure}
+    \begin{center}
       \input{eg1}
-    \end{figure}
+      \caption{A basic gnuplot}
+      \label{fig:eg1}
+    \end{center}
+  \end{figure}
+
+Figure~\ref{fig:eg2} embellishes the plot.
+\begin{figure}
+  \begin{center}
+    \input{eg2}
+    \caption{An embellished gnuplot}
+    \label{fig:eg2}
   \end{center}
+\end{figure}
+
+Figure\ldots has multiples curves on the same plot.
 \end{document}

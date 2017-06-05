@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1496615224 "tutorial.tex" "tutorial.pdf" "tutorial" 1496615224
+["pdflatex"] 1496696724 "tutorial.tex" "tutorial.pdf" "tutorial" 1496696725
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -30,12 +30,13 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495749261 2350277 f74d61113e7cfb2fb8a7fb038066a484 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1495749298 4051024 671f7da9d458ca5202881ff482869f37 ""
   "/usr/local/texlive/2016/texmf.cnf" 1495749256 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "eg1.tex" 1496614146 16644 3bccffb1939dd3eb73b6f524b3ec9b1b ""
-  "tutorial.aux" 1496615224 105 c6519600e0d6251f25627c79f921dcc3 ""
-  "tutorial.tex" 1496615222 407 bc6151936a369d3968382dea52f2cb44 ""
-  "tutorial.toc" 1496615224 79 35eef95d34a3531a3a8ed34373a2093d ""
+  "eg1.tex" 1496696274 16644 3bccffb1939dd3eb73b6f524b3ec9b1b ""
+  "eg2.tex" 1496696274 14381 b3b9c105066675c559d419b3694ae063 ""
+  "tutorial.aux" 1496696725 350 db6e836892186b73fad16abf223830e2 ""
+  "tutorial.tex" 1496696724 707 c343caeb0c464ded48af49025f4a9f9a ""
+  "tutorial.toc" 1496696725 79 1f6a3ffab6a0efd57de3ff80cf9ced95 ""
   (generated)
-  "tutorial.pdf"
   "tutorial.aux"
+  "tutorial.pdf"
   "tutorial.toc"
   "tutorial.log"
