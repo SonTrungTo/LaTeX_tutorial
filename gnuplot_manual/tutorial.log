@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  6 JUN 2017 02:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  6 JUN 2017 23:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -71,32 +71,180 @@ Overfull \hbox (1.35864pt too wide) in paragraph at lines 262--25
  []
 
 (./eg3.tex)
-Overfull \hbox (1.35864pt too wide) in paragraph at lines 452--34
+Overfull \hbox (1.35864pt too wide) in paragraph at lines 354--34
  [] 
  []
 
-[2] [3] [4] (./tutorial.aux) ) 
+(./eg4.tex)
+Overfull \hbox (1.35864pt too wide) in paragraph at lines 256--44
+ [] 
+ []
+
+(./eg5.tex) (./test.tex
+
+! LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...){\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+                                                  
+Load the latexsym or the amsfonts package to define this symbol
+
+! Undefined control sequence.
+<recently read> \blacksquare 
+                             
+l.54 \put(1470,913){\makebox(0,0){$\blacksquare$}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \blacktriangle 
+                               
+l.70 ...1470,749){\makebox(0,0){$\blacktriangle$}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \triangledown 
+                              
+l.75 ...(1470,708){\makebox(0,0){$\triangledown$}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \blacktriangledown 
+                                   
+l.78 ...,667){\makebox(0,0){$\blacktriangledown$}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \lozenge 
+                         
+l.84 \put(1470,626){\makebox(0,0){$\lozenge$}}
+                                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \blacklozenge 
+                              
+l.87 ...(1470,585){\makebox(0,0){$\blacklozenge$}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...{\raisebox{-.8pt}{\makebox(0,0){$\Box$}}}
+                                                  
+Load the latexsym or the amsfonts package to define this symbol
+
+! Undefined control sequence.
+<recently read> \blacksquare 
+                             
+l.117 ...(1470,298){\makebox(0,0){$\blacksquare$}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \blacktriangle 
+                               
+l.134 ...470,134){\makebox(0,0){$\blacktriangle$}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \triangledown 
+                              
+l.136 ...(1470,93){\makebox(0,0){$\triangledown$}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \blacktriangledown 
+                                   
+l.141 ...,52){\makebox(0,0){$\blacktriangledown$}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+Overfull \hbox (1.35864pt too wide) in paragraph at lines 230--64
+ [] 
+ []
+
+[2] [3] [4] [5] [6] (./tutorial.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 253 strings out of 493013
- 2704 string characters out of 6133328
- 241646 words of memory out of 5000000
- 3859 multiletter control sequences out of 15000+600000
- 8857 words of font info for 31 fonts, out of 8000000 for 9000
+ 273 strings out of 493013
+ 2887 string characters out of 6133328
+ 331646 words of memory out of 5000000
+ 3869 multiletter control sequences out of 15000+600000
+ 9203 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,11n,19p,135b,264s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsl10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb>
-Output written on tutorial.pdf (4 pages, 127710 bytes).
+ 23i,11n,19p,166b,264s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
+Output written on tutorial.pdf (6 pages, 166135 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
