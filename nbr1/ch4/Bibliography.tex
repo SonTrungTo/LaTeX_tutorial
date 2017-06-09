@@ -1,5 +1,6 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage{verbatim}
+\usepackage{graphicx} % Need this for section 3.
 \author{Son To}
 \date{June 9th, 2016}
 \title{Specialities}
@@ -32,5 +33,16 @@ Random citation \cite{DUMMY:1} is embedded in the text.
 \newpage
 \bibliography{example}
 \bibliographystyle{ieeetr}
+
+\section{Including Encapsulated PostScript(.eps)}
+driver=dvips, the most popular `dvi to POSTSCRIPT'
+converter program, but this is sucked in PDF!
+
+\begin{figure}[!htbp]
+  \centering
+  \fbox{\includegraphics[scale=0.5]{picture2}}
+  \caption{This is my picture}
+  \label{}
+\end{figure}
 
 \end{document}
