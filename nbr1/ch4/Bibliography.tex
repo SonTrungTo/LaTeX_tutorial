@@ -1,10 +1,12 @@
 \documentclass[a4paper,11pt]{article}
+\usepackage{verbatim}
 \author{Son To}
 \date{June 9th, 2016}
 \title{Specialities}
 \begin{document}
   \maketitle
   \tableofcontents
+  \newpage
   \section{Bibliograhy}
 Partl~\cite{pa} has
 proposed that \ldots
@@ -13,4 +15,22 @@ proposed that \ldots
     \emph{German \TeX},
     TUGboat Volume~9, Issue~1 (1988)
   \end{thebibliography}
+
+\section{A lesson in Bib\emph{TeX}}
+The next tutorial is taken from the
+following link: https://www.latex-tutorial.com/tutorials/beginners/latex-bibtex/
+See Appendix.tex for the tutorial in Bib\emph{LaTeX}
+
+The steps are:
+\flushleft
+\begin{enumerate}
+  \item Create \verb+.bib+ file
+  \item Following the sequence: La\TeX,Bib\TeX,La\TeX,La\TeX
+\end{enumerate}
+The result will be:
+Random citation \cite{DUMMY:1} is embedded in the text.
+\newpage
+\bibliography{example}
+\bibliographystyle{ieeetr}
+
 \end{document}

@@ -1,0 +1,19 @@
+\documentclass[a4paper,11pt]{article}
+%--This begins the difference
+\usepackage[backend=bibtex,style=verbose-trad2]{biblatex}
+\bibliography{example}
+%--This ends the difference
+\author{Son To}
+\date{June 10th, 2016}
+\title{Bib\LaTeX}
+\begin{document}
+\maketitle
+
+%--Note the difference
+Random citation \autocite[1]{DUMMY:1} %Here
+embedded in the text.
+\newpage
+
+\printbibliography % And here
+
+\end{document}

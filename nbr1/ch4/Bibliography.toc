@@ -1,1 +1,2 @@
-\contentsline {section}{\numberline {1}Bibliograhy}{1}
+\contentsline {section}{\numberline {1}Bibliograhy}{2}
+\contentsline {section}{\numberline {2}A lesson in Bib\emph {TeX}}{2}
