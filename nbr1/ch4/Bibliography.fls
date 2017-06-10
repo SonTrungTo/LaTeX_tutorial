@@ -28,6 +28,11 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/makeidx.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/makeidx.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/showidx.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/showidx.sty
+OUTPUT Bibliography.idx
 INPUT Bibliography.aux
 INPUT Bibliography.aux
 OUTPUT Bibliography.aux
@@ -86,6 +91,9 @@ INPUT ./picture2.eps
 INPUT ./picture2-eps-converted-to.pdf
 INPUT ./picture2-eps-converted-to.pdf
 INPUT ./picture2-eps-converted-to.pdf
+INPUT Bibliography.ind
+INPUT Bibliography.ind
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
 INPUT Bibliography.aux
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -93,5 +101,6 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb

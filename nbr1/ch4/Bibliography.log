@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  10 JUN 2017 02:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  10 JUN 2017 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -61,21 +61,33 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/showidx.sty
+Package: showidx 2014/09/29 v1.0m Standard LaTeX package
+\indexbox=\insert199
+)
+\@indexfile=\write3
+\openout3 = `Bibliography.idx'.
+
+
+Writing index file Bibliography.idx 
 (./Bibliography.aux)
 \openout1 = `Bibliography.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -140,52 +152,84 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 8.
+(Font)              <12> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 8.
+(Font)              <8> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 8.
+(Font)              <6> on input line 11.
 
 (./Bibliography.toc)
-\tf@toc=\write3
-\openout3 = `Bibliography.toc'.
+\tf@toc=\write4
+\openout4 = `Bibliography.toc'.
 
  [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (154.13365pt too wide) in paragraph at lines 21--24
-\OT1/cmr/m/n/10.95 The next tu-to-rial is taken from the fol-low-ing link: http
-s://www.latex-tutorial.com/tutorials/beginners/latex-
- []
-
-[2] (./Bibliography.bbl)
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
+Bibliography.bbl)
 Package epstopdf Info: Source file: <picture2.eps>
-(epstopdf)                    date: 2017-06-10 01:57:50
-(epstopdf)                    size: 1145168 bytes
+(epstopdf)                    date: 2017-06-10 13:59:56
+(epstopdf)                    size: 156129 bytes
 (epstopdf)             Output file: <picture2-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-10 02:02:44
-(epstopdf)                    size: 57387 bytes
+(epstopdf)                    date: 2017-06-10 14:01:02
+(epstopdf)                    size: 57505 bytes
 (epstopdf)             Command: <repstopdf --outfile=picture2-eps-converted-to.
 pdf picture2.eps>
-(epstopdf)             \includegraphics on input line 43.
+(epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
 
 <picture2-eps-converted-to.pdf, id=17, 376.40625pt x 501.875pt>
 File: picture2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use picture2-eps-converted-to.pdf>
-Package pdftex.def Info: picture2-eps-converted-to.pdf used on input line 43.
+Package pdftex.def Info: picture2-eps-converted-to.pdf used on input line 49.
 (pdftex.def)             Requested size: 188.20265pt x 250.93687pt.
- [3 <./picture2-eps-converted-to.pdf>]
+
+Overfull \hbox (32.36128pt too wide) in paragraph at lines 58--58
+[]|\OT1/cmr/m/n/10 Gale@\textbfGale- 
+ []
+
+
+Overfull \hbox (2.25012pt too wide) in paragraph at lines 58--58
+\OT1/cmr/m/n/10 algorithm|  
+ []
+
+
+Overfull \hbox (32.8335pt too wide) in paragraph at lines 60--60
+[]|\OT1/cmr/m/n/10 match@\textsltwo- 
+ []
+
+
+Overfull \hbox (24.19461pt too wide) in paragraph at lines 62--62
+\OT1/cmr/m/n/10 theory|textbf|  
+ []
+
+
+! LaTeX Error: \verb illegal in command argument.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ...ber to run \fbox{\verb+makeindex filename}
+                                                   to initiate
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+(./Bibliography.ind [3 <./picture2-eps-converted-to.pdf>] [4
+
+
+]) [5
+
+]
 (./Bibliography.aux) ) 
 Here is how much of TeX's memory you used:
- 1553 strings out of 493013
- 22507 string characters out of 6133328
- 79413 words of memory out of 5000000
- 5081 multiletter control sequences out of 15000+600000
- 9120 words of font info for 32 fonts, out of 8000000 for 9000
+ 1581 strings out of 493013
+ 22997 string characters out of 6133328
+ 80713 words of memory out of 5000000
+ 5098 multiletter control sequences out of 15000+600000
+ 9473 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,7n,25p,239b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,7n,25p,269b,223s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
@@ -193,12 +237,13 @@ onts/cm/cmbxti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmtt10.pfb>
-Output written on Bibliography.pdf (3 pages, 153277 bytes).
+cm/cmsl10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmtt10.pfb>
+Output written on Bibliography.pdf (5 pages, 170851 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
