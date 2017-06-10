@@ -1,8 +1,33 @@
 \documentclass[a4paper,11pt]{article}
-\usepackage{verbatim}
+\usepackage{verbatim,tocloft}
+\renewcommand\cftsecfont{\normalfont}
+\renewcommand\cftsecpagefont{\normalfont}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+\renewcommand\cftsecdotsep{\cftdot}
+\renewcommand\cftsubsecdotsep{\cftdot}
+\usepackage{fourier-orns}
 \usepackage{graphicx} % Need this for section 3.
 \usepackage{makeidx,showidx} % For section 4.
 % showidx package is useful for verifying the index.
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{%
+\markboth{\thesection.\ #1}{}
+}
+\fancyhf{}
+\fancyhf[HL]{\textsl{\leftmark}}
+\fancyhf[HR]{\textsl{\rightmark}}
+\fancyhf[FL]{\textbf{SON TO}}
+\fancyhf[FR]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hrulefill
+\raisebox{-2.1pt}[10pt][10pt]{\quad\decofourleft\decotwo%
+\decofourright\quad}\hrulefill}
+%\addtolength{\headheight}{\baselineskip}
+%\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+%\renewcommand{\subsectionmark}[1]{\markright{#1}}
+%\rhead{\leftmark\\\rightmark}
 \makeindex
 \author{Son To}
 \date{June 9th, 2016}
@@ -61,11 +86,15 @@ matching theory\index{match@\textsl{two-sided matching theory}},
 one of the subfields of
 game theory\index{game theory|textbf}.
 \bigbreak
-Remember to run \fbox{\verb+makeindex filename} to initiate
-the creation of \verb+.ind+ file, which contains the
+Remember to run
+\begin{verbatim}
+  makeindex filename
+\end{verbatim}
+to initiate the creation of \verb+.ind+ file, which contains the
 sorted index and is processed by the input latex document.
 \printindex
 
 \section{Fancy Headers}
-We have fancyhdr package
+The default headers and footers in \LaTeX~are defined
+by \verb+\pagestyle{}+ and \verb+\pagenumbering{}+
 \end{document}
