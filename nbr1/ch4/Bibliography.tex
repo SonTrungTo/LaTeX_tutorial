@@ -1,6 +1,8 @@
+\RequirePackage{ifpdf} % are we producing PDF ?
 \documentclass[a4paper,11pt]{article}
 \usepackage{verbatim,tocloft}
 %--Add some fonts(probably unneccessary)
+\usepackage[latin1]{inputenc}
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
@@ -38,9 +40,16 @@
 {son.trung.to@gmail.com}$>$}
 \date{June 9th, 2016}
 \title{Specialities}
-\usepackage[pdftex,hyperindex=false,colorlinks=false,%
-unicode]{hyperref}
+\usepackage[pdftex,hyperindex=false,colorlinks,%
+unicode,plainpages=false,bookmarks]{hyperref}
 % Or set links black, using \hypersetup{}
+%--Conditional statement begins
+\ifpdf
+  \hypersetup{linkcolor=blue}
+\else
+  \hypersetup{linkcolor=black}
+\fi
+%--Here it ends
 \begin{document}
   \maketitle
   \tableofcontents

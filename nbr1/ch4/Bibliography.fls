@@ -4,6 +4,8 @@ INPUT /usr/local/texlive/2016/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT Bibliography.tex
 OUTPUT Bibliography.log
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/size11.clo
@@ -14,6 +16,10 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/verbatim.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tools/verbatim.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tocloft/tocloft.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/tocloft/tocloft.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/latin1.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/latin1.def
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/lm/lmodern.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
@@ -91,6 +97,10 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
