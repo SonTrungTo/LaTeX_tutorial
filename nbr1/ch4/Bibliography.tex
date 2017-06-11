@@ -1,5 +1,10 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage{verbatim,tocloft}
+%--Add some fonts(probably unneccessary)
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+%--End
 \renewcommand\cftsecfont{\normalfont}
 \renewcommand\cftsecpagefont{\normalfont}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
@@ -29,9 +34,13 @@
 %\renewcommand{\subsectionmark}[1]{\markright{#1}}
 %\rhead{\leftmark\\\rightmark}
 \makeindex
-\author{Son To}
+\author{Son To $<$\href{mailto:son.trung.to@gmail.com}%
+{son.trung.to@gmail.com}$>$}
 \date{June 9th, 2016}
 \title{Specialities}
+\usepackage[pdftex,hyperindex=false,colorlinks=false,%
+unicode]{hyperref}
+% Or set links black, using \hypersetup{}
 \begin{document}
   \maketitle
   \tableofcontents
@@ -49,7 +58,8 @@ proposed that \ldots
 The next tutorial is taken from the
 following link:
 \bigbreak
-https://www.latex-tutorial.com/tutorials/beginners/latex-bibtex/
+\href{https://www.latex-tutorial.com/tutorials/beginners/latex-bibtex/}%
+{BibTeX}
 \flushleft
 See Appendix.tex for the tutorial in Bib\emph{LaTeX}
 
@@ -97,4 +107,7 @@ sorted index and is processed by the input latex document.
 \section{Fancy Headers}
 The default headers and footers in \LaTeX~are defined
 by \verb+\pagestyle{}+ and \verb+\pagenumbering{}+
+
+\section{\texorpdfstring{$E=mc^2$}{E=mc**2}}
+
 \end{document}
