@@ -1,17 +1,17 @@
 # Fdb version 3
-["bibtex Bibliography"] 1497204791 "Bibliography.aux" "Bibliography.bbl" "Bibliography" 1497204849
+["bibtex Bibliography"] 1497207654 "Bibliography.aux" "Bibliography.bbl" "Bibliography" 1497208078
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "Bibliography.aux" 1497204848 1552 60fe735c5f9a3a9685a9c9d722af5a6d ""
+  "Bibliography.aux" 1497208077 1552 56ec18054e119f5ac77910525381066f ""
   "example.bib" 1497040044 109 46c9c0372bfd001176906934dfe88f94 ""
   (generated)
   "Bibliography.blg"
   "Bibliography.bbl"
-["makeindex Bibliography.idx"] 1497145488 "Bibliography.idx" "Bibliography.ind" "Bibliography" 1497204849
-  "Bibliography.idx" 1497204848 145 7d4a203364e4e6aa662c93b61ff4652e ""
+["makeindex Bibliography.idx"] 1497207654 "Bibliography.idx" "Bibliography.ind" "Bibliography" 1497208078
+  "Bibliography.idx" 1497208077 145 a1de9c50444d7f9bc26a6c8ecf80f0f9 ""
   (generated)
   "Bibliography.ilg"
   "Bibliography.ind"
-["pdflatex"] 1497204848 "Bibliography.tex" "Bibliography.pdf" "Bibliography" 1497204849
+["pdflatex"] 1497208076 "Bibliography.tex" "Bibliography.pdf" "Bibliography" 1497208078
   "/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1202520719 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1202520719 2327 9d6df24f9c4f7368395224341a95523a ""
@@ -116,17 +116,17 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495749261 2350277 f74d61113e7cfb2fb8a7fb038066a484 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1495749298 4051024 671f7da9d458ca5202881ff482869f37 ""
   "/usr/local/texlive/2016/texmf.cnf" 1495749256 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "Bibliography.aux" 1497204848 1552 60fe735c5f9a3a9685a9c9d722af5a6d ""
-  "Bibliography.bbl" 1497204792 140 2ed70b1346d76a1c7a0e71457340aa39 "bibtex Bibliography"
-  "Bibliography.ind" 1497145498 171 eccd2b75b96a439fbf34c6929deb58fb "makeindex Bibliography.idx"
-  "Bibliography.out" 1497204848 762 167ca040a182f5905e3d52721b5e22b3 ""
-  "Bibliography.tex" 1497204846 3495 94281990f29d50ef92db0a43e820825c ""
-  "Bibliography.toc" 1497204848 500 4d4a8e805cd1b463e3b956cd0333efdd ""
+  "Bibliography.aux" 1497208077 1552 56ec18054e119f5ac77910525381066f ""
+  "Bibliography.bbl" 1497207655 140 2ed70b1346d76a1c7a0e71457340aa39 "bibtex Bibliography"
+  "Bibliography.ind" 1497207654 171 f657e4f0a9e130e58061b38da3ae422c "makeindex Bibliography.idx"
+  "Bibliography.out" 1497208077 762 167ca040a182f5905e3d52721b5e22b3 ""
+  "Bibliography.tex" 1497208071 3543 a65f4eca88953437f36590e99615ad93 ""
+  "Bibliography.toc" 1497208077 500 31ed44cab7e06fe83be587271849c050 ""
   "picture2.eps" 1497092396 156129 95be3ec4ebc62439592044291fd28a61 ""
   (generated)
   "Bibliography.idx"
-  "Bibliography.out"
-  "Bibliography.aux"
-  "Bibliography.pdf"
   "Bibliography.log"
+  "Bibliography.out"
+  "Bibliography.pdf"
+  "Bibliography.aux"
   "Bibliography.toc"
