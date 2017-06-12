@@ -1,0 +1,28 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{pgfplots,tocloft}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepgfplotslibrary{external}
+\tikzexternalize
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+\renewcommand{\cftsecdotsep}{\cftdot}
+\renewcommand{\cftsubsecdotsep}{\cftdot}
+\author{Son To}
+\date{June 13th, 2017}
+\title{PGFPlot-A simple tutorial}
+\begin{document}
+  \maketitle
+  \tableofcontents
+  \clearpage
+  \section{The Basic}
+  Pgfplots is a powerful package specialized to create
+  powerful scientific graphs.
+  \begin{tikzpicture}
+    \begin{axis}
+      \addplot[color=blue]{exp(x)};
+    \end{axis}
+  \end{tikzpicture}
+  % Here ends the first plot.
+  
+\end{document}
