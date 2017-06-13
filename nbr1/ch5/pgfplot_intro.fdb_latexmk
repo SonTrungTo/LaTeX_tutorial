@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1497385908 "pgfplot_intro.tex" "pgfplot_intro.pdf" "pgfplot_intro" 1497385908
+["pdflatex"] 1497388247 "pgfplot_intro.tex" "pgfplot_intro.pdf" "pgfplot_intro" 1497388258
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -177,15 +177,15 @@
   "/usr/local/texlive/2016/texmf.cnf" 1495749256 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "pgfplot_intro-figure0.md5" 1497305371 62 8c4cb6f37d19f86a57705b18bca9185e ""
   "pgfplot_intro-figure1.md5" 1497382437 62 ae4ebd9e2b0b0237026b8f012d5e8c75 ""
-  "pgfplot_intro-figure2.md5" 1497384634 62 8987294e8bbab46ea24a1dc7f09f4591 ""
-  "pgfplot_intro.aux" 1497385904 825 95d40cdaa623c02b9a78396f880f1774 ""
-  "pgfplot_intro.out" 1497385904 172 6746cee20b1354f95eb0231ad94d0abb ""
-  "pgfplot_intro.tex" 1497385908 1745 f00c86fc2fa6c0dae2aa6ca36da77bec ""
-  "pgfplot_intro.toc" 1497385904 127 fbcbfaaf5893dd990f93900f0c8746b5 ""
+  "pgfplot_intro-figure2.md5" 1497388142 62 11ddc879be42102fdd7ac900a25b9ab0 ""
+  "pgfplot_intro.aux" 1497388250 825 95d40cdaa623c02b9a78396f880f1774 ""
+  "pgfplot_intro.out" 1497388250 172 6746cee20b1354f95eb0231ad94d0abb ""
+  "pgfplot_intro.tex" 1497388246 2032 532a6e3064dcc4c65dd2b8a00d1f2617 ""
+  "pgfplot_intro.toc" 1497388250 127 fbcbfaaf5893dd990f93900f0c8746b5 ""
   (generated)
-  "pgfplot_intro.pdf"
-  "pgfplot_intro.out"
-  "pgfplot_intro.log"
-  "pgfplot_intro.aux"
-  "pgfplot_intro.toc"
   "pgfplot_intro.auxlock"
+  "pgfplot_intro.out"
+  "pgfplot_intro.aux"
+  "pgfplot_intro.pdf"
+  "pgfplot_intro.toc"
+  "pgfplot_intro.log"

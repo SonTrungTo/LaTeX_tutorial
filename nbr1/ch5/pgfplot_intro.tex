@@ -13,8 +13,7 @@
 \renewcommand{\cftsubsecdotsep}{\cftdot}
 \renewcommand\cftsecaftersnum{.}
 \renewcommand\thesection{\Roman{section}}
-%\renewcommand\thesection{\thesection.\quad}
-\author{Son Ton}
+\author{Son To}
 \date{June 13th, 2017}
 \title{PGFPlot-A simple tutorial\footnote{This
 tutorial is taken from
@@ -52,14 +51,30 @@ bookmarks,unicode]{hyperref}
 We now get to some more details on 2D plot.
 \clearpage
 \section{2D Plot}
-What the heck...Let's do some damages!
+What the heck...Let's do some damage!
+
 \begin{tikzpicture}
   \begin{axis}[
     axis lines= center,
     xlabel= $x$,
-    ylabel= $f(x)$,
+    ylabel= {$f(x)$},
+    legend style={at={(axis cs:10,5)},anchor=north east},
     ]
-    \addplot[]
+    %We now add a red parabola
+    \addplot[
+    domain=-10:10,
+    samples=100,
+    color=red,
+    ]
+    {x^2-2*x-1};
+    \addlegendentry{$x^2-2x-1$}
+    %Now we add another parabola to the same axis
+    \addplot[
+    domain=-10:10,
+    samples=100,
+    color=blue
+    ]
   \end{axis}
 \end{tikzpicture}
+Come on man!!!!
 \end{document}
