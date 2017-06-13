@@ -1,28 +1,65 @@
+\RequirePackage{ifpdf}
 \documentclass[a4paper,11pt]{article}
 \usepackage{pgfplots,tocloft}
-\pgfplotsset{width=10cm,compat=1.9}
+\pgfplotsset{width=7cm,compat=1.9}
+%--This is to improve loading time
 \usepgfplotslibrary{external}
 \tikzexternalize
+%--This is the end!
 \renewcommand{\cftsecfont}{\normalfont}
 \renewcommand{\cftsecpagefont}{\normalfont}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
 \renewcommand{\cftsecdotsep}{\cftdot}
 \renewcommand{\cftsubsecdotsep}{\cftdot}
-\author{Son To}
+\renewcommand\cftsecaftersnum{.}
+\renewcommand\thesection{\Roman{section}}
+%\renewcommand\thesection{\thesection.\quad}
+\author{Son Ton}
 \date{June 13th, 2017}
-\title{PGFPlot-A simple tutorial}
+\title{PGFPlot-A simple tutorial\footnote{This
+tutorial is taken from
+\href{https://www.sharelatex.com/learn/Pgfplots_package#/The_document_preamble}{this link}
+with some modifications for personal pleasure!}}
+\usepackage[pdftex,hyperindex=false,colorlinks,%
+bookmarks,unicode]{hyperref}
+\ifpdf
+  \hypersetup{linkcolor=blue}
+\else
+  \hypersetup{linkcolor=black}
+\fi
 \begin{document}
   \maketitle
   \tableofcontents
   \clearpage
   \section{The Basic}
-  Pgfplots is a powerful package specialized to create
-  powerful scientific graphs.
+  Pgfplots is a powerful package specialized in creating
+  powerful scientific \nolinebreak graphs.
   \begin{tikzpicture}
     \begin{axis}
       \addplot[color=blue]{exp(x)};
     \end{axis}
   \end{tikzpicture}
   % Here ends the first plot.
-  
+  \hskip 5pt
+  % Here starts the 3d plot.
+  \begin{tikzpicture}
+    \begin{axis}
+      \addplot3[
+      surf,
+      ]{exp(-x^2-y^2)*x};
+    \end{axis}
+  \end{tikzpicture}
+We now get to some more details on 2D plot.
+\clearpage
+\section{2D Plot}
+What the heck...Let's do some damages!
+\begin{tikzpicture}
+  \begin{axis}[
+    axis lines= center,
+    xlabel= $x$,
+    ylabel= $f(x)$,
+    ]
+    \addplot[]
+  \end{axis}
+\end{tikzpicture}
 \end{document}
