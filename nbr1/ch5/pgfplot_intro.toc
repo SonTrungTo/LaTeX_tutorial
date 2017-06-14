@@ -1,3 +1,6 @@
 \contentsline {section}{\numberline {I}The Basic}{2}{section.1}
 \contentsline {section}{\numberline {II}2D Plot}{3}{section.2}
-\contentsline {section}{\numberline {III}Plotting from data}{4}{section.3}
+\contentsline {subsection}{\numberline {II.1}Plotting from data}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {II.2}Scatter plots}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {II.3}Bar graphs}{4}{subsection.2.3}
+\contentsline {section}{\numberline {III}3D Plots}{5}{section.3}

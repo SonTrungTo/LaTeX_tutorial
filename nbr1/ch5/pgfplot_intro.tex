@@ -1,6 +1,6 @@
 \RequirePackage{ifpdf}
 \documentclass[a4paper,11pt]{article}
-\usepackage{pgfplots,tocloft}
+\usepackage{pgfplots,tocloft,textcomp,verbatim}
 \pgfplotsset{width=7cm,compat=1.9}
 %--This is to improve loading time
 \usepgfplotslibrary{external}
@@ -81,6 +81,85 @@ What the heck...Let's do some damage!
 
 Come on man!!!! Let's make some plots from data.
 \clearpage
-\section{Plotting from data}
+\subsection{Plotting from data}
+I love to test \textcelsius
 
+\begin{tikzpicture}
+  \begin{axis}[
+    title={Temperature dependence of CuSO$_4$\cdot5H$_2$O},
+    xlabel={Temperature [\textcelsius]},
+    ylabel={Solubility [g per 100g water]},
+    xmin=0, xmax=100,
+    ymin=0, ymax=120,
+    xtick={0,20,...,100},
+    ytick={0,20,...,120},
+    legend pos=north west,
+    ymajorgrids=true,
+    grid style=dashed,
+    ]
+
+    \addplot[
+      color=blue,
+      mark=square,
+    ]
+    coordinates {
+    (0,23.1)(10,27.5)(20,32)(30,37.8)(40,44.6)(60,61.8)%
+    (80,83.8)(100,114)
+    };
+    \addlegendentry{CuSO$_4$\cdot5H$_2$0}
+  \end{axis}
+\end{tikzpicture}
+
+When the data is in a file, put
+\verb+\addplot table {file_with_the_data.dat}+
+instead of using \verb+\addplot coordinates {}+.
+
+\subsection{Scatter plots}
+Scatter plot is used to represent information by using
+some kind of marks, which are common, for example,
+when computing statistical regression.
+
+\begin{tikzpicture}
+  \begin{axis}[
+    enlargelimits=false,
+    ]
+
+    \addplot+[
+    only marks,
+    scatter,
+    mark=halfcircle*,
+    mark size=2.9pt,
+    ]
+    table[meta=ma]{data.dat};
+  \end{axis}
+\end{tikzpicture}
+
+\subsection{Bar graphs}
+Bar graphs are used to display gathered data.
+
+\begin{tikzpicture}
+  \begin{axis}[
+    x tick label style={
+      /pgf/number format/1000 sep=},
+    ylabel=Population,
+    xlabel=Year,
+    enlargelimits=0.05,
+    legend style={at={(0.5,-0.3)},
+    anchor=north, legend columns=2},
+    ybar interval=0.7,
+    ]
+
+    \addplot
+      coordinates {(2012,408184)(2011,408348)
+      (2010,414870)(2009,412576)};
+    \addplot
+      coordinates {(2012,388950)(2011,393007)
+      (2010,398449)(2009,395972)};
+    \legend{Men,Women}
+  \end{axis}
+\end{tikzpicture}
+
+\section{3D Plots}
+The name says it all\ldots This is sexier in Mathematica,
+I think!
 \end{document}
