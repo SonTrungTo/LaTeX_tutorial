@@ -4,3 +4,4 @@
 \contentsline {subsection}{\numberline {II.2}Scatter plots}{4}{subsection.2.2}
 \contentsline {subsection}{\numberline {II.3}Bar graphs}{4}{subsection.2.3}
 \contentsline {section}{\numberline {III}3D Plots}{5}{section.3}
+\contentsline {subsection}{\numberline {III.1}Contour plot}{5}{subsection.3.1}

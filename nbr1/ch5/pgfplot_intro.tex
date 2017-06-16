@@ -1,3 +1,4 @@
+%& --shell-escape
 \RequirePackage{ifpdf}
 \documentclass[a4paper,11pt]{article}
 \usepackage{pgfplots,tocloft,textcomp,verbatim}
@@ -30,7 +31,7 @@ bookmarks,unicode]{hyperref}
   \maketitle
   \tableofcontents
   \clearpage
-  \section{The Basic}
+  \section{The Basic} \label{sec:1}
   Pgfplots is a powerful package specialized in creating
   powerful scientific \nolinebreak graphs.
   \begin{tikzpicture}
@@ -160,6 +161,40 @@ Bar graphs are used to display gathered data.
 \end{tikzpicture}
 
 \section{3D Plots}
-The name says it all\ldots This is sexier in Mathematica,
-I think!
+For the basic plot, we refer to section~\ref{sec:1}. We now
+use mesh feature for the plot.
+
+\begin{tikzpicture}
+  \begin{axis}[
+      title=Example using the mesh parameter,
+      colormap/cool,
+      hide axis,
+    ]
+
+    \addplot3[
+    mesh,
+    samples=50,
+    domain=-8:8,
+    ]
+    {sin(deg(sqrt(x^2+y^2)))/sqrt(x^2+y^2)};
+    \addlegendentry{$\frac{\sin(r)}{r}$}
+  \end{axis}
+\end{tikzpicture}
+
+\subsection{Contour plot}
+  The data needs to be calculated by external programs(%
+  gnutplot, mathematica, etc\ldots)
+
+  \begin{tikzpicture}
+    \begin{axis}[
+      title={Contour plot, view from top},
+      view={0}{90},
+      ]
+
+      \addplot3[
+        contour gnuplot={levels={0.8, 0.4, 0.2, -0.2}}
+      ]
+      {sin(deg(sqrt(x^2+y^2)))/sqrt(x^2+y^2)};
+    \end{axis}
+  \end{tikzpicture}
 \end{document}
