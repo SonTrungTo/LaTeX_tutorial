@@ -197,4 +197,45 @@ use mesh feature for the plot.
       {sin(deg(sqrt(x^2+y^2)))/sqrt(x^2+y^2)};
     \end{axis}
   \end{tikzpicture}
+
+\subsection{Plotting a surface from data}
+The source code for this graph should be self-explanatory.
+
+\begin{tikzpicture}
+  \begin{axis}
+    \addplot3[
+      surf,
+    ]
+    coordinates {
+    (0,0,0) (0,1,0) (0,2,0)
+
+    (1,0,0) (1,1,0.6) (1,2,0.7)
+
+    (2,0,0) (2,1,0.7) (2,2,1.8)
+    };
+  \end{axis}
+\end{tikzpicture}
+
+\subsection{Ploting parametric curve}
+A sample of the parametric plot is here, but
+I do not know what a parametric means at this moment!
+Therefore, this is blindly copied from the tutorial
+source.
+
+\begin{tikzpicture}
+  \begin{axis}[
+      view={60}{30},
+    ]
+    \addplot3[
+      domain=0:5*pi,
+      samples=60,
+      samples y=0,% Preventing pgfplots from joining 2 extreme points
+    ]
+    ({sin(deg(x))},
+     {cos(deg(x))},
+     {x}%
+    );
+  \end{axis}
+\end{tikzpicture}
+
 \end{document}

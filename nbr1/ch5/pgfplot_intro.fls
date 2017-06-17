@@ -305,6 +305,12 @@ OUTPUT pgfplot_intro.auxlock
 OUTPUT pgfplot_intro_contourtmp0.dat
 OUTPUT pgfplot_intro_contourtmp0.script
 INPUT pgfplot_intro_contourtmp0.table
+INPUT pgfplot_intro-figure8.md5
+OUTPUT pgfplot_intro.auxlock
+OUTPUT pgfplot_intro.auxlock
+INPUT pgfplot_intro-figure9.md5
+OUTPUT pgfplot_intro.auxlock
+OUTPUT pgfplot_intro.auxlock
 INPUT pgfplot_intro.aux
 INPUT ./pgfplot_intro.out
 INPUT ./pgfplot_intro.out
