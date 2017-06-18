@@ -1,0 +1,32 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[affil-it]{authblk}
+\usepackage{verbatim}
+\newcommand{\tnss}{%
+  The not so short introduction to \LaTeXe%
+}
+
+\begin{document}
+
+\title{Customizing \LaTeX}
+\author{Son To
+  \thanks{Electronic address: \texttt{son.trung.to@gmail.com}}}
+\date{18th June,2017}
+\affil{Ravintola Kiltakellari}
+
+  \maketitle
+  \tableofcontents
+
+\section{New commands}
+The format for the new commands is:
+\vskip 20pt
+\begin{tabular}{|l|}
+\hline
+  \verb+\newcommand{name}[num]{definition}+ \\
+\hline
+\end{tabular}
+\vskip 20pt
+\flushleft
+An example of this is \tnss, and hey, we have \tnss.\\
+Another example is tada
+
+\end{document}
