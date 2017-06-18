@@ -2,6 +2,12 @@
 \RequirePackage{ifpdf}
 \documentclass[a4paper,11pt]{article}
 \usepackage{pgfplots,tocloft,textcomp,verbatim}
+\usepackage[
+  backend=biber,
+  style=alphabetic,
+  sorting=ynt,
+]{biblatex}
+\addbibresource{reference.bib}
 \pgfplotsset{width=7cm,compat=1.9}
 %--This is to improve loading time
 \usepgfplotslibrary{external}
@@ -30,11 +36,8 @@ bookmarks,unicode]{hyperref}
   \maketitle
   \tableofcontents
   \clearpage
-  \footnote{This
-  tutorial is taken from
-  \href{https://www.sharelatex.com/learn/Pgfplots_package#/The_document_preamble}{this link}
-  with some modifications for personal pleasure!}
   \part{PGFPLOTS}
+  This part is based on \cite{sharelatex}.
   \section{The Basic} \label{sec:1}
   Pgfplots is a powerful package specialized in creating
   powerful scientific \nolinebreak graphs.
@@ -242,13 +245,10 @@ source.
   \end{axis}
 \end{tikzpicture}
 
-\part{Tikz package}\footnote{The tutorial
-is taken from \texttt{A very minimal
-introduction to Tikz} by Jacques Cr\'emer}
+\part{Tikz package}
 Since Tikz and Pgfplots packages are such gigantic packages,
-these intro will have to be enough until a later time.
-Addtional examples will be updated later in part 3 if
-I have free time, but the chances of which is virtually $0$.
+these intro will have to be enough until a later time. This
+part is based on \cite{jacques}.
 
 \begin{tikzpicture}
   \draw (0,0) -- (1,2) -- (2,3) -- (1,0);
@@ -369,6 +369,100 @@ the point of relative position, without the backslash
 An example of alignment of text in \verb+\node+
 
 \begin{tikzpicture}
-  
+  \draw[thick] (0,0) -- (9,0);
+  \draw (0,-.2) -- (0,.2);
+  \draw (3,-.2) -- (3,.2);
+  \draw (6,-.2) -- (6,.2);
+  \draw (9,-.2) -- (9,.2);
+  \node[below,align=left] at (1.5,-.5)
+  {This happens \\ in period 1 \\ and is aligned\\left};
+  \node[below,align=center] at (4.5,-.5)
+  {This happens \\ in period 2 \\ and is centered};
+  \node[below,align=right] at (7.5,-.5)
+  {This happens\\in period 2\\and is \\ right-aligned};
 \end{tikzpicture}
+
+\section{Hotelling}
+\begin{tikzpicture}[xscale=8]
+  \draw[red, very thick] (0,0) -- (.5,0);
+  \draw[green, very thick] (.5,0) -- (1,0);
+  \draw[thick] (0,-.1) node[below]{0} -- (0,.1);
+  \draw[thick] (.5,-.1) node[below]{$a=b=\frac{1}{2}$}
+  -- (.5,.1);
+  \draw[thick] (1,-.1) node[below]{1} -- (1,.1);
+\end{tikzpicture}
+
+\section{Vertical differentiation}
+\begin{center}
+\begin{tikzpicture}[yscale=4]
+  \draw[red, very thick] (0,0) -- (0,.45)
+  node[right]{d\'epend de $p_1$ et $p_2$};
+  \draw[green, very thick] (0,.45) -- (0,1);
+  \draw[-, thick] (-.1,.45/2) -- (.1,.45/2)
+  node[align=right,right]{$q_1$ vendue\\au prix $p_1$};
+  \draw[thick] (-.1,.85) -- (.1,.85) node[right,align=right]
+  {$q_2$ vendue\\au prix $p_2$};
+  \draw (-.1,0) -- (.1,0);
+  \draw (-.1,1) -- (.1,1);
+\end{tikzpicture}
+\end{center}
+
+\section{A curve}
+\begin{center}
+  \begin{tikzpicture}
+    \draw[<->] (6,0) node[below right]{$x$} -- (0,0)
+    -- (0,6) node[left]{$V(x)$};
+    \draw[very thick] (0,0) to [out=90,in=155] (5,4);
+  \end{tikzpicture}
+\end{center}
+
+\section{Tangency}
+\begin{center}
+  \begin{tikzpicture}
+    \draw[help lines] (0,0) grid (5,5);
+    \draw[<->] (5,0) -- (0,0) -- (0,5);
+    \draw (4,0) -- (0,4);
+    \draw[dashed,ultra thick] (1.5,4) to [out=90,in=135]
+    (2,2) to [out=-45,in=215] (4.5,1.8);
+  \end{tikzpicture}
+\end{center}
+
+\section{Consumer surplus}
+\begin{center}
+  \begin{tikzpicture}
+    \path[fill=yellow] (0,0) -- (0,4.5) to
+    [out=-90,in=160] (3,.8) -- (3,0) -- cycle;
+    \draw[<->] (6,0) node[below right]{$Q$} --
+    (0,0) -- (0,6) node[above left]{$P$};
+    \draw[thick] (0,4.5) to [out=-90,in=160]
+    (3,.8) to [out=-20, in=170] (5.5,0);
+    \draw[ultra thick,dashed] (0,.8) node
+    [left]{$P^*=.8$} -- (3,.8)
+    -- (3,0) node[below]{$Q^*=3$};
+    \draw[fill] (3,.8) circle [radius=.1];
+  \end{tikzpicture}
+\end{center}
+
+\section{Plotting lots of curves}
+\begin{center}
+  \begin{tikzpicture}[xscale=13,yscale=3.8,domain=0:0.5]
+    \draw[<->] (0,2) node[left]{EUR} -- (0,0)
+    -- (.7,0) node[below]{$q$};
+    \draw[red] plot (\x,{0.25+\x/2+\x*\x/2}) node[right]
+    {$v_1(x)$};
+    \draw[green] plot (\x,{0.025+\x+\x^2}) node[right]
+    {$v_2(x)$};
+    \draw[thin,dashed] plot (\x,{0.275+1.5*\x+1.5*\x^2});
+    \draw[thick,domain=0:0.33666] plot (\x,{0.05+2*\x%
+    +2*\x*\x});
+    \draw[thick,domain=0.33666:0.5]
+    plot(\x,{0.5+\x+\x^2}) node[right]{$2\min[v_1,v_2]$};
+  \end{tikzpicture}
+\end{center}
+
+\printbibliography[heading=bibintoc,title={Whole bibliography}]
+\printbibliography[heading=subbibintoc,type=manual,%
+title={From manuals}]
+\printbibliography[heading=subbibintoc,type=online,%
+title={From online sources}]
 \end{document}

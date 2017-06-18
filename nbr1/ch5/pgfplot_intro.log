@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  18 JUN 2017 09:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  18 JUN 2017 23:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -409,10 +409,11 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks31
 \verbatim@line=\toks32
 \verbatim@in@stream=\read2
-) (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.external.code.tex (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexternal.code.tex (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
+ (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+ (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -420,14 +421,222 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzexternalshared.code.tex))
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count117
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))) (/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count118
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write4
+\integerpart=\count119
+\decimalpart=\count120
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count121
+\c@listtotal=\count122
+\c@listcount=\count123
+\c@liststart=\count124
+\c@liststop=\count125
+\c@citecount=\count126
+\c@citetotal=\count127
+\c@multicitecount=\count128
+\c@multicitetotal=\count129
+\c@instcount=\count130
+\c@maxnames=\count131
+\c@minnames=\count132
+\c@maxitems=\count133
+\c@minitems=\count134
+\c@citecounter=\count135
+\c@savedcitecounter=\count136
+\c@uniquelist=\count137
+\c@uniquename=\count138
+\c@refsection=\count139
+\c@refsegment=\count140
+\c@maxextratitle=\count141
+\c@maxextratitleyear=\count142
+\c@maxextrayear=\count143
+\c@maxextraalpha=\count144
+\c@abbrvpenalty=\count145
+\c@highnamepenalty=\count146
+\c@lownamepenalty=\count147
+\c@maxparens=\count148
+\c@parenlevel=\count149
+\blx@tempcnta=\count150
+\blx@tempcntb=\count151
+\blx@tempcntc=\count152
+\blx@maxsection=\count153
+\blx@maxsegment@0=\count154
+\blx@notetype=\count155
+\blx@parenlevel@text=\count156
+\blx@parenlevel@foot=\count157
+\blx@sectionciteorder@0=\count158
+\labelnumberwidth=\skip74
+\labelalphawidth=\skip75
+\biblabelsep=\skip76
+\bibitemsep=\skip77
+\bibnamesep=\skip78
+\bibinitsep=\skip79
+\bibparsep=\skip80
+\bibhang=\skip81
+\blx@bcfin=\read3
+\blx@bcfout=\write5
+\c@mincomprange=\count159
+\c@maxcomprange=\count160
+\c@mincompwidth=\count161
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'alphabetic.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count162
+\c@savedafterword=\count163
+\c@annotator=\count164
+\c@savedannotator=\count165
+\c@author=\count166
+\c@savedauthor=\count167
+\c@bookauthor=\count168
+\c@savedbookauthor=\count169
+\c@commentator=\count170
+\c@savedcommentator=\count171
+\c@editor=\count172
+\c@savededitor=\count173
+\c@editora=\count174
+\c@savededitora=\count175
+\c@editorb=\count176
+\c@savededitorb=\count177
+\c@editorc=\count178
+\c@savededitorc=\count179
+\c@foreword=\count180
+\c@savedforeword=\count181
+\c@holder=\count182
+\c@savedholder=\count183
+\c@introduction=\count184
+\c@savedintroduction=\count185
+\c@namea=\count186
+\c@savednamea=\count187
+\c@nameb=\count188
+\c@savednameb=\count189
+\c@namec=\count190
+\c@savednamec=\count191
+\c@translator=\count192
+\c@savedtranslator=\count193
+\c@shortauthor=\count194
+\c@savedshortauthor=\count195
+\c@shorteditor=\count196
+\c@savedshorteditor=\count197
+\c@labelname=\count198
+\c@savedlabelname=\count199
+\c@institution=\count266
+\c@savedinstitution=\count267
+\c@lista=\count268
+\c@savedlista=\count269
+\c@listb=\count270
+\c@savedlistb=\count271
+\c@listc=\count272
+\c@savedlistc=\count273
+\c@listd=\count274
+\c@savedlistd=\count275
+\c@liste=\count276
+\c@savedliste=\count277
+\c@listf=\count278
+\c@savedlistf=\count279
+\c@location=\count280
+\c@savedlocation=\count281
+\c@organization=\count282
+\c@savedorganization=\count283
+\c@origlocation=\count284
+\c@savedoriglocation=\count285
+\c@origpublisher=\count286
+\c@savedorigpublisher=\count287
+\c@publisher=\count288
+\c@savedpublisher=\count289
+\c@language=\count290
+\c@savedlanguage=\count291
+\c@pageref=\count292
+\c@savedpageref=\count293
+\shorthandwidth=\skip82
+\shortjournalwidth=\skip83
+\shortserieswidth=\skip84
+\shorttitlewidth=\skip85
+\shortauthorwidth=\skip86
+\shorteditorwidth=\skip87
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count294
+\c@textcitetotal=\count295
+\c@textcitemaxnames=\count296
+\c@biburlnumpenalty=\count297
+\c@biburlucpenalty=\count298
+\c@biburllcpenalty=\count299
+\c@smartand=\count300
+)
+Package biblatex Info: Trying to load bibliography style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.bbx' found.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
+File: alphabetic.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count301
+\c@bbx:relatedtotal=\count302
+))
+Package biblatex Info: Trying to load citation style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.cbx' found.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
+File: alphabetic.cbx 2016/12/05 v3.7 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)) (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.external.code.tex (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/libraries/tikzlibraryexternal.code.tex (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzexternalshared.code.tex))
 Package pgfplots external lib: loading complementary code for your PGF version...
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2015/08/29  (rcs-revision 1.22)
 \pgfexternal@startupbox=\box38
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_tikzlibraryexternal.code.tex (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/atveryend.sty
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_tikzexternalshared.code.tex)))
 \openout3 = `pgfplot_intro.auxlock'.
 
@@ -445,12 +654,8 @@ Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
@@ -470,16 +675,14 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen165
-\Hy@linkcounter=\count117
-\Hy@pagecounter=\count118
+\Hy@linkcounter=\count303
+\Hy@pagecounter=\count304
  (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count119
+\Hy@SavedSpaceFactor=\count305
  (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -487,8 +690,7 @@ Package hyperref Info: Option `hyperindex' set `false' on input line 4374.
 Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
 Package hyperref Info: Option `bookmarks' set `true' on input line 4374.
 Package hyperref Info: Option `unicode' set `true' on input line 4374.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Hyper figures OFF on input line 4498.
@@ -498,14 +700,10 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count120
- (/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
+\c@Hy@tempcnt=\count306
 LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen166
-\Fld@menulength=\count121
+\Fld@menulength=\count307
 \Field@Width=\dimen167
 \Fld@charsize=\dimen168
 Package hyperref Info: Hyper figures OFF on input line 6358.
@@ -517,59 +715,67 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count122
-\c@Item=\count123
-\c@Hfootnote=\count124
+\Hy@abspage=\count308
+\c@Item=\count309
+\c@Hfootnote=\count310
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count125
-\c@bookmark@seq@number=\count126
+\Fld@listcount=\count311
+\c@bookmark@seq@number=\count312
  (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 )
-\Hy@SectionHShift=\skip74
-) (./pgfplot_intro.aux)
+\Hy@SectionHShift=\skip88
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
+)
+\@quotelevel=\count313
+\@quotereset=\count314
+ (./pgfplot_intro.aux)
 \openout1 = `pgfplot_intro.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 35.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
  (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count127
+\scratchcounter=\count315
 \scratchdimen=\dimen169
 \scratchbox=\box39
-\nofMPsegments=\count128
-\nofMParguments=\count129
+\nofMPsegments=\count316
+\nofMParguments=\count317
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count130
+\MPscratchCnt=\count318
 \MPscratchDim=\dimen170
-\MPnumerator=\count131
-\makeMPintoPDFobject=\count132
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
 \everyMPtoPDFconversion=\toks34
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -585,71 +791,51 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.14} (current compat level: 1.9).
 
+Package biblatex Info: No input encoding detected.
+(biblatex)             Assuming 'ascii'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'ascii'.
+\openout5 = `pgfplot_intro.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'pgfplot_intro.bbl' found.
+(./pgfplot_intro.bbl)
+Package biblatex Info: Reference section=0 on input line 35.
+Package biblatex Info: Reference segment=0 on input line 35.
 \AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring ON on input line 29.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package hyperref Info: Link coloring ON on input line 35.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count133
+\c@section@level=\count321
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
  (./pgfplot_intro.out) (./pgfplot_intro.out)
-\@outlinefile=\write4
-\openout4 = `pgfplot_intro.out'.
+\@outlinefile=\write6
+\openout6 = `pgfplot_intro.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 31.
+(Font)              <12> on input line 37.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 31.
+(Font)              <8> on input line 37.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 31.
+(Font)              <6> on input line 37.
  (./pgfplot_intro.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 2.
+(Font)              <10.95> on input line 5.
 )
-\tf@toc=\write5
-\openout5 = `pgfplot_intro.toc'.
+\tf@toc=\write7
+\openout7 = `pgfplot_intro.toc'.
 
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 36.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 36.
-
-./pgfplot_intro.tex:36: Illegal parameter number in definition of \Hy@tempa.
-<to be read again> 
-                   /
-l.36 ...some modifications for personal pleasure!}
-                                                  
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./pgfplot_intro.tex:36: Illegal parameter number in definition of \Hy@tempa.
-<to be read again> 
-                   /
-l.36 ...some modifications for personal pleasure!}
-                                                  
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-./pgfplot_intro.tex:36: Illegal parameter number in definition of \Hy@tempa.
-<to be read again> 
-                   /
-l.36 ...some modifications for personal pleasure!}
-                                                  
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
 \openout3 = `pgfplot_intro.auxlock'.
+
 
 ===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure0" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' ========
 runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure0" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}")...disabled (restricted).
@@ -657,13 +843,13 @@ runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro
 \openout3 = `pgfplot_intro.auxlock'.
 
 
-./pgfplot_intro.tex:45: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure0" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure0' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure0.log'. If you continue now, I'll try to typeset the picture.
+./pgfplot_intro.tex:48: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure0" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure0' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure0.log'. If you continue now, I'll try to typeset the picture.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45   \end{tikzpicture}
+l.48   \end{tikzpicture}
                         
 This error message was generated by an \errmessage
 command, so I can't give any explicit help.
@@ -678,23 +864,23 @@ runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro
 \openout3 = `pgfplot_intro.auxlock'.
 
 
-./pgfplot_intro.tex:55: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure1" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure1' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure1.log'. If you continue now, I'll try to typeset the picture.
+./pgfplot_intro.tex:58: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure1" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure1' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure1.log'. If you continue now, I'll try to typeset the picture.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.55   \end{tikzpicture}
+l.58   \end{tikzpicture}
                         
 (That was another \errmessage.)
 
 
-Overfull \hbox (9.53244pt too wide) in paragraph at lines 39--57
+Overfull \hbox (9.53244pt too wide) in paragraph at lines 42--60
 \OT1/cmr/m/n/10.95 Pgfplots is a pow-er-ful pack-age spe-cial-ized in cre-at-ing pow-er-ful sci-en-tific graphs.
  []
 
 
-Overfull \hbox (28.85606pt too wide) in paragraph at lines 39--57
+Overfull \hbox (28.85606pt too wide) in paragraph at lines 42--60
 []  []
  []
 
@@ -710,13 +896,13 @@ runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro
 \openout3 = `pgfplot_intro.auxlock'.
 
 
-./pgfplot_intro.tex:85: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure2" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure2' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure2.log'. If you continue now, I'll try to typeset the picture.
+./pgfplot_intro.tex:88: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure2" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure2' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure2.log'. If you continue now, I'll try to typeset the picture.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.85 \end{tikzpicture}
+l.88 \end{tikzpicture}
                       
 (That was another \errmessage.)
 
@@ -732,50 +918,50 @@ runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro
 \openout3 = `pgfplot_intro.auxlock'.
 
 
-./pgfplot_intro.tex:116: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure3" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure3' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure3.log'. If you continue now, I'll try to typeset the picture.
+./pgfplot_intro.tex:119: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure3" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure3' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure3.log'. If you continue now, I'll try to typeset the picture.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 \end{tikzpicture}
+l.119 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
-./pgfplot_intro.tex:116: Missing $ inserted.
+./pgfplot_intro.tex:119: Missing $ inserted.
 <inserted text> 
                 $
-l.116 \end{tikzpicture}
+l.119 \end{tikzpicture}
                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./pgfplot_intro.tex:116: Missing $ inserted.
+./pgfplot_intro.tex:119: Missing $ inserted.
 <inserted text> 
                 $
-l.116 \end{tikzpicture}
+l.119 \end{tikzpicture}
                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./pgfplot_intro.tex:116: Missing $ inserted.
+./pgfplot_intro.tex:119: Missing $ inserted.
 <inserted text> 
                 $
-l.116 \end{tikzpicture}
+l.119 \end{tikzpicture}
                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./pgfplot_intro.tex:116: Missing $ inserted.
+./pgfplot_intro.tex:119: Missing $ inserted.
 <inserted text> 
                 $
-l.116 \end{tikzpicture}
+l.119 \end{tikzpicture}
                        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (21.11568pt too wide) in paragraph at lines 118--121
+Overfull \hbox (21.11568pt too wide) in paragraph at lines 121--124
 []\OT1/cmr/m/n/10.95 When the data is in a file, put []\OT1/cmtt/m/n/10.95 \addplot table {file_with_the_data.dat}
  []
 
@@ -787,13 +973,13 @@ runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro
 \openout3 = `pgfplot_intro.auxlock'.
 
 
-./pgfplot_intro.tex:140: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure4" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure4' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure4.log'. If you continue now, I'll try to typeset the picture.
+./pgfplot_intro.tex:143: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure4" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure4' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure4.log'. If you continue now, I'll try to typeset the picture.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 \end{tikzpicture}
+l.143 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
@@ -806,13 +992,13 @@ runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro
 \openout3 = `pgfplot_intro.auxlock'.
 
 
-./pgfplot_intro.tex:165: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure5" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure5' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure5.log'. If you continue now, I'll try to typeset the picture.
+./pgfplot_intro.tex:168: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure5" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure5' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure5.log'. If you continue now, I'll try to typeset the picture.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.165 \end{tikzpicture}
+l.168 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
@@ -828,13 +1014,13 @@ runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro
 \openout3 = `pgfplot_intro.auxlock'.
 
 
-./pgfplot_intro.tex:186: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure6" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure6' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure6.log'. If you continue now, I'll try to typeset the picture.
+./pgfplot_intro.tex:189: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure6" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure6' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure6.log'. If you continue now, I'll try to typeset the picture.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.186 \end{tikzpicture}
+l.189 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
@@ -846,13 +1032,13 @@ runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro
 \openout3 = `pgfplot_intro.auxlock'.
 
 
-./pgfplot_intro.tex:203: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure7" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure7' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure7.log'. If you continue now, I'll try to typeset the picture.
+./pgfplot_intro.tex:206: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure7" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure7' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure7.log'. If you continue now, I'll try to typeset the picture.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.203   \end{tikzpicture}
+l.206   \end{tikzpicture}
                          
 (That was another \errmessage.)
 
@@ -863,6 +1049,8 @@ l.203   \end{tikzpicture}
 runsystem(gnuplot "pgfplot_intro_contourtmp0.script")...disabled (restricted).
 
 PGFPlots: reading {pgfplot_intro_contourtmp0.table}
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
 [5]
 \openout3 = `pgfplot_intro.auxlock'.
 
@@ -873,13 +1061,13 @@ runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro
 \openout3 = `pgfplot_intro.auxlock'.
 
 
-./pgfplot_intro.tex:221: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure8" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure8' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure8.log'. If you continue now, I'll try to typeset the picture.
+./pgfplot_intro.tex:224: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure8" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure8' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure8.log'. If you continue now, I'll try to typeset the picture.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.221 \end{tikzpicture}
+l.224 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
@@ -891,13 +1079,13 @@ runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro
 \openout3 = `pgfplot_intro.auxlock'.
 
 
-./pgfplot_intro.tex:243: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure9" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure9' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure9.log'. If you continue now, I'll try to typeset the picture.
+./pgfplot_intro.tex:246: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure9" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure9' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure9.log'. If you continue now, I'll try to typeset the picture.
 
 See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.243 \end{tikzpicture}
+l.246 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
@@ -1111,9 +1299,7 @@ l.333 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
-[7]
 \openout3 = `pgfplot_intro.auxlock'.
-
 
 ===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure21" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' ========
 runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure21" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}")...disabled (restricted).
@@ -1131,7 +1317,9 @@ l.340 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
+[7]
 \openout3 = `pgfplot_intro.auxlock'.
+
 
 ===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure22" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' ========
 runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure22" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}")...disabled (restricted).
@@ -1167,30 +1355,177 @@ l.363 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
+\openout3 = `pgfplot_intro.auxlock'.
+
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure24" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure24" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}")...disabled (restricted).
+
+\openout3 = `pgfplot_intro.auxlock'.
+
+
+./pgfplot_intro.tex:383: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure24" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure24' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure24.log'. If you continue now, I'll try to typeset the picture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 \end{tikzpicture}
+                       
+(That was another \errmessage.)
+
+pdfTeX warning (ext4): destination with the same identifier (name{section.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.385 \section{Hotelling}
+                         
+\openout3 = `pgfplot_intro.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure25" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure25" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}")...disabled (restricted).
+
+\openout3 = `pgfplot_intro.auxlock'.
+
+
+./pgfplot_intro.tex:393: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure25" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure25' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure25.log'. If you continue now, I'll try to typeset the picture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.393 \end{tikzpicture}
+                       
+(That was another \errmessage.)
+
+pdfTeX warning (ext4): destination with the same identifier (name{section.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.395 \section{Vertical differentiation}
+                                        
+\openout3 = `pgfplot_intro.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure26" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure26" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}")...disabled (restricted).
+
+\openout3 = `pgfplot_intro.auxlock'.
+
+
+./pgfplot_intro.tex:407: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure26" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure26' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure26.log'. If you continue now, I'll try to typeset the picture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.407 \end{tikzpicture}
+                       
+(That was another \errmessage.)
+
+pdfTeX warning (ext4): destination with the same identifier (name{section.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.410 \section{A curve}
+                       
+\openout3 = `pgfplot_intro.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure27" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure27" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}")...disabled (restricted).
+
+\openout3 = `pgfplot_intro.auxlock'.
+
+
+./pgfplot_intro.tex:416: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure27" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure27' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure27.log'. If you continue now, I'll try to typeset the picture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.416   \end{tikzpicture}
+                         
+(That was another \errmessage.)
+
 [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 367.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 367.
- (./pgfplot_intro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 367.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 367.
+\openout3 = `pgfplot_intro.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure28" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure28" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}")...disabled (restricted).
+
+\openout3 = `pgfplot_intro.auxlock'.
+
+
+./pgfplot_intro.tex:427: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure28" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure28' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure28.log'. If you continue now, I'll try to typeset the picture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.427   \end{tikzpicture}
+                         
+(That was another \errmessage.)
+
+\openout3 = `pgfplot_intro.auxlock'.
+
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure29" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure29" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}")...disabled (restricted).
+
+\openout3 = `pgfplot_intro.auxlock'.
+
+
+./pgfplot_intro.tex:443: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure29" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure29' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure29.log'. If you continue now, I'll try to typeset the picture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.443   \end{tikzpicture}
+                         
+(That was another \errmessage.)
+
+[9]
+\openout3 = `pgfplot_intro.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure30" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure30" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}")...disabled (restricted).
+
+\openout3 = `pgfplot_intro.auxlock'.
+
+
+./pgfplot_intro.tex:460: Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interaction=batchmode -jobname "pgfplot_intro-figure30" "\def\tikzexternalrealjob{pgfplot_intro}\input{pgfplot_intro}"' did NOT result in a usable output file 'pgfplot_intro-figure30' (expected one of .pdf:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdflatex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' or something like that. Or maybe the command simply failed? Error messages can be found in 'pgfplot_intro-figure30.log'. If you continue now, I'll try to typeset the picture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.460   \end{tikzpicture}
+                         
+(That was another \errmessage.)
+
+[10] [11] (./pgfplot_intro.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 468.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 468.
 Package rerunfilecheck Info: File `pgfplot_intro.out' has not changed.
-(rerunfilecheck)             Checksum: 63D62110011E94916104BCC6FF598B81;1387.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 367.
+(rerunfilecheck)             Checksum: 1C328065D54783EFB0A7EDA987EED7C9;2558.
+Package logreq Info: Writing requests to 'pgfplot_intro.run.xml'.
+\openout1 = `pgfplot_intro.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 30066 strings out of 493013
- 707430 string characters out of 6133328
- 2234706 words of memory out of 5000000
- 33136 multiletter control sequences out of 15000+600000
- 10398 words of font info for 37 fonts, out of 8000000 for 9000
+ 36590 strings out of 493013
+ 827821 string characters out of 6133328
+ 2523754 words of memory out of 5000000
+ 39583 multiletter control sequences out of 15000+600000
+ 9966 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,18n,129p,743b,4672s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10
-.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on pgfplot_intro.pdf (8 pages, 261520 bytes).
+ 72i,18n,129p,832b,4672s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on pgfplot_intro.pdf (11 pages, 266020 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 

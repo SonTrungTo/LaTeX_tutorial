@@ -1,0 +1,67 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{ynt/global/}
+    \entry{jacques}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=5da742c775317ecf3c850af5310c7b9f}{%
+           family={{Jacques Cr\'{e}mer}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5da742c775317ecf3c850af5310c7b9f}
+      \strng{fullhash}{5da742c775317ecf3c850af5310c7b9f}
+      \strng{authornamehash}{5da742c775317ecf3c850af5310c7b9f}
+      \strng{authorfullhash}{5da742c775317ecf3c850af5310c7b9f}
+      \field{labelalpha}{Jac11}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A very minimal introduction to TikZ}
+      \field{year}{2011}
+      \keyw{tikz}
+    \endentry
+    \entry{sharelatex}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cfc26abc64a6dfa76c3c16163dd66571}{%
+           family={community},
+           familyi={c\bibinitperiod},
+           given={ShareLaTeX},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{cfc26abc64a6dfa76c3c16163dd66571}
+      \strng{fullhash}{cfc26abc64a6dfa76c3c16163dd66571}
+      \strng{authornamehash}{cfc26abc64a6dfa76c3c16163dd66571}
+      \strng{authorfullhash}{cfc26abc64a6dfa76c3c16163dd66571}
+      \field{labelalpha}{com}
+      \field{sortinit}{9}
+      \field{sortinithash}{2999ebab86052e6d71b434385f8b4ed2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pgfplots package}
+      \verb{url}
+      \verb https://www.sharelatex.com/learn/Pgfplots_package#/Reference_guide
+      \endverb
+      \keyw{pgfplots}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
