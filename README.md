@@ -1,4 +1,4 @@
-# Projects in LaTeX, written in TeX
+# Projects in LaTeX, which is a set of marocs in TeX
 This repository contains all of my projects and writings
 in several fields, including, but not limited to, LaTeX
 type writings,...

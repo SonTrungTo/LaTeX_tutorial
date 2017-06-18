@@ -7,6 +7,8 @@
 \usepgfplotslibrary{external}
 \tikzexternalize
 %--This is the end!
+\@addtoreset{section}{part}
+\renewcommand{\thepart}{\arabic{part}}
 \renewcommand{\cftsecfont}{\normalfont}
 \renewcommand{\cftsecpagefont}{\normalfont}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
@@ -16,10 +18,7 @@
 \renewcommand\thesection{\Roman{section}}
 \author{Son To}
 \date{June 13th, 2017}
-\title{PGFPlot-A simple tutorial\footnote{This
-tutorial is taken from
-\href{https://www.sharelatex.com/learn/Pgfplots_package#/The_document_preamble}{this link}
-with some modifications for personal pleasure!}}
+\title{PGFPlot-Tikz package:A simple tutorial}
 \usepackage[pdftex,hyperindex=false,colorlinks,%
 bookmarks,unicode]{hyperref}
 \ifpdf
@@ -31,6 +30,11 @@ bookmarks,unicode]{hyperref}
   \maketitle
   \tableofcontents
   \clearpage
+  \footnote{This
+  tutorial is taken from
+  \href{https://www.sharelatex.com/learn/Pgfplots_package#/The_document_preamble}{this link}
+  with some modifications for personal pleasure!}
+  \part{PGFPLOTS}
   \section{The Basic} \label{sec:1}
   Pgfplots is a powerful package specialized in creating
   powerful scientific \nolinebreak graphs.
@@ -238,4 +242,133 @@ source.
   \end{axis}
 \end{tikzpicture}
 
+\part{Tikz package}\footnote{The tutorial
+is taken from \texttt{A very minimal
+introduction to Tikz} by Jacques Cr\'emer}
+Since Tikz and Pgfplots packages are such gigantic packages,
+these intro will have to be enough until a later time.
+Addtional examples will be updated later in part 3 if
+I have free time, but the chances of which is virtually $0$.
+
+\begin{tikzpicture}
+  \draw (0,0) -- (1,2) -- (2,3) -- (1,0);
+  \draw (0,3) -- (1.5,0.5);
+  \draw[help lines] (0,0) grid (2,3);
+\end{tikzpicture}
+  \hskip 5pt
+\begin{tikzpicture}
+  \draw[->] (0,0) -- (2,0);
+  \draw[<-] (0,-0.5) -- (2,-0.5);
+  \draw[|->] (0,-1) -- (2,-1);
+\end{tikzpicture}
+  \hskip 5pt
+\begin{tikzpicture}
+  \draw[<->] (0,2) -- (0,0) -- (3,0);
+\end{tikzpicture}
+  \hskip 5pt
+\begin{tikzpicture}
+  \draw[<->] (0,2) -- (0,0) -- (4,0);
+   \draw[thick] (0,1.5) -- (3,0);
+  \draw[ultra thick] (0,0) -- (2,2);
+  \draw[help lines] (1,0) -- (1,1) -- (0,1);
+\end{tikzpicture}
+
+Drawing is an art\ldots We can also use custom width
+for draw with \verb+line width=...+The default width
+unit is point(pt).
+
+\begin{tikzpicture}
+  \draw[line width=12] (0,0) -- (2,0);
+  \draw[line width=0.2cm] (4,.75) -- (5,.25);
+\end{tikzpicture}
+
+Let's draw some circle.
+
+\begin{tikzpicture}
+  \draw[blue] (0,0) rectangle (1.5,1);
+  \draw[red,ultra thick] (3,0.5) circle [radius=0.5];
+  \draw[gray] (6,0) arc [radius=1,start angle=45,
+  end angle=180];
+\end{tikzpicture}
+\hskip 5pt
+\begin{tikzpicture}
+  \draw [<->, rounded corners, thick, purple]
+  (0,2) -- (0,0) -- (3,0);
+\end{tikzpicture}
+
+Let's draw a curve!
+
+\begin{tikzpicture}
+\draw[help lines] (0,0) grid (2,2);
+\draw[very thick] (0,0) to [out=90,in=195] (2,1.5);
+\end{tikzpicture}
+
+Let's plot some functions!
+
+\begin{tikzpicture}[xscale=13,yscale=3.8]
+  \draw[<->] (0,0.8)--(0,0)--(0.5,0);
+  \draw[green,ultra thick,domain=0:0.5]
+  plot(\x,{0.025+\x+\x*\x});
+\end{tikzpicture}
+\hskip 5pt
+\begin{tikzpicture}[yscale=1.5]
+  \draw[help lines,<->] (0,0) -- (6.5,0);
+  \draw[help lines,->] (0,-1.1) -- (0,1.1);
+  \draw[green,domain=0:2*pi] plot (\x,
+  {(sin(\x r)*ln(\x + 1))/2});
+  \draw[red,domain=0:pi] plot (\x, {sin(\x r)});
+  \draw[blue,domain=pi:2*pi] plot (\x,
+  {cos(\x r)*exp(\x/exp(2*pi))});
+\end{tikzpicture}
+
+Let's fill up some simple areas.
+
+\begin{tikzpicture}
+  \draw[fill=red,ultra thick] (0,0) rectangle (1,1);
+  \draw[fill=red,ultra thick, red] (2,0) rectangle (3,1);
+  \draw[blue, fill=blue] (4,0) -- (5,1) -- (4.75,0.15) --cycle;
+  \draw[fill] (7,0.5) circle [radius=0.1];
+  \draw[fill=orange] (9,0) rectangle (11,1);
+  \draw[fill=white] (9.5,0.25) rectangle (10,1.5);
+\end{tikzpicture}
+
+outline or not? with \verb+\path+
+
+\begin{tikzpicture}
+  \path[fill=gray] (0,0) rectangle (1.5,1);
+  \draw[fill=gray] (2,0) rectangle (3.5,1);
+\end{tikzpicture}
+
+Let's fill up some arbitrary areas:
+
+\begin{tikzpicture}
+  \draw[ultra thick] (0,0) to [out=87,in=150] (1,1)
+  -- (0.85,0.15) -- cycle;
+  \draw[ultra thick,fill=purple] (2,0) to [out=87,in=150]
+  (3,1) -- (2.85,0.15) -- cycle;
+  \path[fill=purple] (4,0) to [out=87,in=150] (5,1)
+  -- (4.85,.15) --cycle;
+\end{tikzpicture}
+
+Let's put some labels in the picture.
+
+\begin{tikzpicture}
+  \draw[thick, <->] (0,2) -- (0,0) -- (2,0);
+  \node at (1,1) {yes};
+  \draw[thick, <->] (4,2) -- (4,0) -- (6,0);
+  \node[below right] at (6,0) {$x$};
+  \node[left] at (4,2) {$y$};
+  \draw[fill] (4.4,.6) circle [radius=.5pt];
+  \node[above right] at (4.4,.6) {$A$};
+\end{tikzpicture}
+
+Mixing the \verb+\node+ by putting it right after
+the point of relative position, without the backslash
+\verb+\+.
+
+An example of alignment of text in \verb+\node+
+
+\begin{tikzpicture}
+  
+\end{tikzpicture}
 \end{document}
