@@ -1,6 +1,6 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage[affil-it]{authblk}
-\usepackage{verbatim,demo}
+\usepackage{verbatim,demo,layout}
 
 \begin{document}
 
@@ -12,6 +12,7 @@
 
   \maketitle
   \tableofcontents
+  \clearpage
 
 \section{New commands,Environments and Packages}
 \subsection{New commands}
@@ -61,6 +62,7 @@ Same\\here.
 When creating a new environment, extra spaces can easily creep
 in. Fix this problem with \verb+\ignorespaces+
 and \verb+\ignorespacesafterend+
+
 \begin{correct}
   I lied.\\ I have an healthy baby boy.
 \end{correct}
@@ -75,10 +77,135 @@ on .sty files containing new modifications.
   \item Groups are important for limit the effect of font size(%
   and of most \LaTeX commands)
   \item Font size changes line spacing only if the paragraph
-  ends within the group. See\\
-  {\Large My name is Darth Vader. \par not Palpatine}\\
+  ends within the group. See \newpage
+  {\Large My name is Darth Vader.\par} not Palpatine\\
   and\\
   {\Large My name is Darth Vader.}\par not Palpatine
 \end{itemize}
 
+\subsection{\LaTeX, the basic idea}
+The basic idea of \LaTeX is to separate the logical from
+visual markup presentation.
+\begin{quote}
+  Do not \oops{enter} this room, it's occupied
+  by \oops{machines} of unknown origin and purpose.
+\end{quote}
+\verb+\emph{}+ is context aware while changing fonts is absolute.
+\begin{quote}
+  \textit{You can also \emph{emphasize} text
+  if it is set in italics,}
+  \textsf{in a \emph{sans-serif} font,}
+  \texttt{or in \emph{typewriter} style.}
+\end{quote}
+
+\section{Spacing}
+\subsection{Line Spacing}
+\vskip 20pt
+\verb+\linespread{factor}+
+\vskip 20pt
+\flushleft
+to change line inter-line spacing in a document. Use
+\verb+\linespread{1.3}+ for ``one and a half'' line spacing.
+Use \verb+\linespread{1.6}+ for ``double'' line spacing.
+
+Use the command
+\vskip 20pt
+\verb+\setlength{\baselineskip}{1.5\baselineskip}+
+\vskip 20pt
+\flushleft
+if you really want to space lines for good reason.
+
+{\setlength{\baselineskip}%
+{1.5\baselineskip}
+This paragraph is typeset with the baseline skip set to
+1.5 of what it was before. Note the par command at the end
+of the paragraph. \par}
+This paragraph has a clear purpose: it shows that after
+the curly brace has been closed, everything is back to
+normal.
+
+\subsection{Paragraph Formatting}
+Use
+\vskip 20pt
+\verb+\setlength{\parindent}{0pt}+
+\verb+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}+
+\vskip 20pt
+\flushleft
+to influence paragraph formatting in \LaTeX. Addtionally,
+we can put
+\vskip 20pt
+\verb+\indent+ and \verb+\noindent+
+\vskip 20pt
+\flushleft
+at the beginning of the paragraph.
+
+\subsection{Horizontal space}
+\verb+\hspace{length}+ and \verb+\stretch{n}+
+If a space should be kept no matter what, use
+\verb+\hspace*+
+\subsection{Vertical space}
+\verb+\vspace{length}+\\
+\verb+\vspace{\stretch{1}}+ with \verb+\pagebreak+ typesets
+the last line of the page.\\
+Also, if two lines in the same paragraph, use
+\verb+\\{length}+. Moreover, \verb+\bigskip+ and
+\verb+\smallskip+ come in handy vertically.
+
+\section{Page Layout}
+Pay attention to these two commands, especially the second one.
+And look at the layout in the next page.
+
+\smallskip
+\verb+\setlength{parameter}{length}+\\
+\verb+\addtolength{parameter}{length}+
+\layout
+
+\section{More Fun With Lengths}
+A modification of format based on the size of
+other page elements is more useful.
+
+\smallskip
+\verb+\settoheight{variable}{text}+\\
+\verb+\settowidth{variable}{text}+\\
+\verb+\settodepth{variable}{text}+
+\smallskip
+\flushleft
+Now, an example with \verb+\nicespace{}+\ldots
+\begin{displaymath}
+  a^2+b^2=c^2
+\end{displaymath}
+
+\begin{nicespace}{Where}$a$,
+  $b$ -- are adjoin to the right angle
+  of a right-angled triangle.
+
+  $c$ -- is the hypotenuse of the triangle and
+  feels lonely.
+
+  $d$ -- finally does not show up here at all.
+  Isn't that puzzling?
+\end{nicespace}
+
+\section{Boxes}
+\oops{Paragraph}:
+Pack a paragraph into a box with either
+\verb+\parbox[pos]{width}{text}+ or\\
+\verb+\begin{minipage}[pos]{width}text\end{minipage}+\\
+with [pos]=c,t,b
+
+\oops{Horizontally aligned box}: \verb+\mbox+ to prevent
+separation of a series of boxes. Also,
+\verb+\makebox[width][pos]{text}+ in which
+\begin{itemize}
+  \item $[pos]=c,l,r,s$
+  \item $[width]$ can be \verb+\width+, \verb+\height+,
+  \verb+\depth+, \verb+\totalheight+ w.r.t \emph{text}
+  width.
+  \item \verb+\framebox+ works exactly the same with
+  the addition of having a drawn box around.
+\end{itemize}
+Example:
+\par
+\makebox[\textwidth]{%
+c e n t r a l}\par
 \end{document}

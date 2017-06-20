@@ -1,5 +1,6 @@
 \ProvidesPackage{demo}
 %Demo package from The not so short Introduction to LaTeX2e
+\newcommand{\oops}[1]{\textbf{#1}}
 \newcommand{\tnss}{%
   The not so short introduction to \LaTeXe%
 }
@@ -15,3 +16,6 @@
 \newenvironment{simple}{\noindent}{\par\noindent}
 \newenvironment{correct}{\noindent\ignorespaces}
 {\par\noindent\ignorespacesafterend}
+\newenvironment{nicespace}[1]{%
+\settowidth{\parindent}{#1:\ }
+\makebox[0pt][r]{#1:\ }}{}
