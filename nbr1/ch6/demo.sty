@@ -1,0 +1,17 @@
+\ProvidesPackage{demo}
+%Demo package from The not so short Introduction to LaTeX2e
+\newcommand{\tnss}{%
+  The not so short introduction to \LaTeXe%
+}
+\newcommand{\txsit}[2]{%
+  This is the \emph{#1}
+  #2 Introduction to \LaTeXe
+}
+\newenvironment{king}
+{\rule{1ex}{1ex}%
+\hspace{\stretch{1}}}
+{\hspace{\stretch{1}}%
+\rule{1ex}{1ex}}
+\newenvironment{simple}{\noindent}{\par\noindent}
+\newenvironment{correct}{\noindent\ignorespaces}
+{\par\noindent\ignorespacesafterend}

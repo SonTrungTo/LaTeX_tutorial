@@ -1,9 +1,6 @@
 \documentclass[a4paper,11pt]{article}
 \usepackage[affil-it]{authblk}
-\usepackage{verbatim}
-\newcommand{\tnss}{%
-  The not so short introduction to \LaTeXe%
-}
+\usepackage{verbatim,demo}
 
 \begin{document}
 
@@ -16,7 +13,8 @@
   \maketitle
   \tableofcontents
 
-\section{New commands}
+\section{New commands,Environments and Packages}
+\subsection{New commands}
 The format for the new commands is:
 \vskip 20pt
 \begin{tabular}{|l|}
@@ -27,6 +25,60 @@ The format for the new commands is:
 \vskip 20pt
 \flushleft
 An example of this is \tnss, and hey, we have \tnss.\\
-Another example is tada
+Another example is:
+\begin{itemize}
+  \item \txsit{not so}{short}
+  \item \txsit{very}{long}
+\end{itemize}
+\LaTeX~will allow overwriting available commands only if
+we use \verb+\renewcommand+, with the same syntax as
+\verb+\newcommand+. Also, the \verb+\providecommand+ works
+the same as \verb+\newcommand+, but \LaTeX will silently
+ignore it if the command exists!
+
+\subsection{New environments}
+\vskip 20pt
+\begin{tabular}{|l|}
+  \hline
+    \verb+newenvironment{name}[num]{before}{after}+ \\
+  \hline
+\end{tabular}
+\vskip 20pt
+\flushleft
+Let's try an example.\\
+\begin{king}
+  I am Edward Longsharks\ldots
+\end{king}
+\\
+Similar to new commands, we have \verb+\renewenvironment+
+
+\subsection{Extra space}
+\begin{simple}
+  I lied.\\ I have an healthy baby boy.
+\end{simple}
+Same\\here.
+
+When creating a new environment, extra spaces can easily creep
+in. Fix this problem with \verb+\ignorespaces+
+and \verb+\ignorespacesafterend+
+\begin{correct}
+  I lied.\\ I have an healthy baby boy.
+\end{correct}
+Same\\here.
+\subsection{Own package}
+Use \verb+\ProvidesPackage{package name}+
+on .sty files containing new modifications.
+
+\section{Fonts and Sizes}
+\subsection{Changing Font commands}
+\begin{itemize}
+  \item Groups are important for limit the effect of font size(%
+  and of most \LaTeX commands)
+  \item Font size changes line spacing only if the paragraph
+  ends within the group. See\\
+  {\Large My name is Darth Vader. \par not Palpatine}\\
+  and\\
+  {\Large My name is Darth Vader.}\par not Palpatine
+\end{itemize}
 
 \end{document}
