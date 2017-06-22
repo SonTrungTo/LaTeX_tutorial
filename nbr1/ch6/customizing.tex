@@ -208,4 +208,42 @@ Example:
 \par
 \makebox[\textwidth]{%
 c e n t r a l}\par
+\makebox[\textwidth][s]{%
+c e n t r a l}\par
+\framebox[1.1\width]{%
+Guess I'm framed now!}\par
+\framebox[0.8\width][r]{Bummer,
+I am too wide}\par
+\framebox[1cm][l]{%
+never say never, so am I}
+Can you read this?
+
+\smallskip
+\oops{Vertically aligned box}:
+\begin{verbatim}
+\raisebox{lift}[extend-above-baseline][extend-below-baseline]{text}
+\end{verbatim}
+
+Example:\\
+\raisebox{0pt}[0pt][0pt]{%
+\textbf{Aaaa\raisebox{-0.3ex}{a}%
+\raisebox{-0.7ex}{aa}%
+\raisebox{-1.2ex}{r}%
+\raisebox{-2.2ex}{g}%
+\raisebox{-4.5ex}{h}}}
+she shouted, but not even the next one in line noticed
+that something terrible had happened to her.
+\section{Rules}
+
+\verb+\rule[lift]{width}{height}+\\
+is used to,usually, draw a box.
+
+Examples:
+\rule{3mm}{.1pt}%
+\rule[-1mm]{5mm}{1cm}%
+\rule{3mm}{.1pt}%
+\rule[1mm]{1cm}{5mm}%
+\rule{3mm}{.1pt}
+\flushright
+Sayonara.
 \end{document}

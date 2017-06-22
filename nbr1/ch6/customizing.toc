@@ -14,3 +14,4 @@
 \contentsline {section}{\numberline {4}Page Layout}{5}
 \contentsline {section}{\numberline {5}More Fun With Lengths}{7}
 \contentsline {section}{\numberline {6}Boxes}{7}
+\contentsline {section}{\numberline {7}Rules}{8}
