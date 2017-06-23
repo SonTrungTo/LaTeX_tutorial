@@ -1,14 +1,36 @@
-\documentclass[a4paper,11pt,oneside]{book}
+\documentclass[a4paper,11pt,twoside]{book}
 \usepackage[affil-it]{authblk}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\newcommand{\note}[1]{\textbf{#1}}
+%--Possibly use this inside IEEEeqnarray environment
+\newcommand{\norm}[1]{\noalign{\noindent #1}}
+%---
+\theoremstyle{plain} \newtheorem{id}{Lemma}
+
 \begin{document}
 
 \title{A Note of Calculus-Michael Spivak}
 \author{Son To
-  \thanks{Contact me: \texttt{son.trung.to@gmail.com}}}
+  \thanks{Contact me at: \texttt{son.trung.to@gmail.com}}}
 \date{23rd June, 2017}
 \affil{Ravintola Kiltakellari}
 
 \maketitle
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside
+\ifodd\c@page\else
+  \hbox{}
+  \vspace*{\fill}
+  \begin{center}
+    This page is intentionally left blank.
+  \end{center}
+  \vspace*{\fill}
+  \thispagestyle{empty}
+  \newpage
+  \if@twocolumn\hbox{}\newpage\fi\fi\fi
+}
+\makeatother
 
 \frontmatter
     \chapter*{Preface}
@@ -17,9 +39,44 @@
       citing what I think the most interesting
       and important subjects
       mentioned in the book.
+    \addcontentsline{toc}{chapter}{Preface}
     \tableofcontents
 \mainmatter
   \part{Prologue}
     \chapter{Basic properties of number}
+    \begin{itemize}
+      \item[(P1)] If $a$, $b$, and $c$ are any numbers, then
+      \begin{equation*}
+        a+(b+c)=(a+b)+c
+      \end{equation*}
+    \end{itemize}
+    See \note{problem 24} for the generalization of
+    $a_1+a_2+a_3+\dots+a_n$ for (P1).
 
+    The number 0 has important properties.
+    \begin{itemize}
+      \item[(P2)] If $a$ is any number, then
+      \begin{equation*}
+        a+0=0+a=a
+      \end{equation*}
+      \item[(P3)] For every number $a$, there is
+      also a number $-a$ such that
+      \begin{equation*}
+        a+(-a)=(-a)+a=0
+      \end{equation*}
+    \end{itemize}
+    We now prove lemma~\ref{id}.
+    \begin{id}\label{id}
+      If $a+x=a$, then $x=0$
+    \end{id}
+    \begin{proof}
+      \begin{IEEEeqnarray*}{x+rClr+x*}
+        \text{If} & a+x & = & a \\
+        \text{then} & (-a)+(a+x) & = & (-a)+a=0 & (by~(P3))\\
+        \text{hence} & ((-a)+a)+x & = & 0 & (by~(P1))\\
+        \text{hence} & 0+x & = & 0 & (by~(P3)~again)\\
+        \text{therefore,} & x & = & 0 & (by~(P2)) \\
+        &&&&& \qedhere
+      \end{IEEEeqnarray*}
+    \end{proof}
 \end{document}
