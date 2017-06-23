@@ -1,12 +1,15 @@
 \documentclass[a4paper,11pt,twoside]{book}
 \usepackage[affil-it]{authblk}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb,amsthm,fancyhdr,enumitem,%
+hyperref}
 \usepackage[retainorgcmds]{IEEEtrantools}
-\newcommand{\note}[1]{\textbf{#1}}
+\newcommand{\note}[1]{\emph{#1}}
 %--Possibly use this inside IEEEeqnarray environment
 \newcommand{\norm}[1]{\noalign{\noindent #1}}
 %---
 \theoremstyle{plain} \newtheorem{id}{Lemma}
+\newcommand{\idautorefname}{Lemma}
+\pagestyle{fancy}
 
 \begin{document}
 
@@ -30,6 +33,7 @@
   \newpage
   \if@twocolumn\hbox{}\newpage\fi\fi\fi
 }
+\newcommand{\mylabel}[2]{#2\def\@currentlabel{#2}\label{#1}}
 \makeatother
 
 \frontmatter
@@ -41,6 +45,7 @@
       mentioned in the book.
     \addcontentsline{toc}{chapter}{Preface}
     \tableofcontents
+    \thispagestyle{empty}
 \mainmatter
   \part{Prologue}
     \chapter{Basic properties of number}
@@ -65,8 +70,8 @@
         a+(-a)=(-a)+a=0
       \end{equation*}
     \end{itemize}
-    We now prove lemma~\ref{id}.
-    \begin{id}\label{id}
+    We now prove \autoref{lemm:1}.
+    \begin{id}\label{lemm:1}
       If $a+x=a$, then $x=0$
     \end{id}
     \begin{proof}
@@ -79,4 +84,75 @@
         &&&&& \qedhere
       \end{IEEEeqnarray*}
     \end{proof}
+  Also, remember that the order of addition does not
+  matter.
+  \begin{itemize}
+    \item[(P4)] If $a$ and $b$ are any numbers, then
+    \begin{equation*}
+      a+b=b+a
+    \end{equation*}
+  \end{itemize}
+  However, with only (P1)-(P4), we are powerless to
+  figure out what conditions needed to have
+  $a-b=b-a$. Therefore, we need to set new properties, and,
+  oddly, they involve multiplication.
+  \begin{itemize}[label=\textnormal{(\arabic*)}]
+    \item[\mylabel{itm:P5}{(P5)}]
+    If $a$, $b$ and $c$ are any numbers, then
+    \begin{equation*}
+      a\cdot(b\cdot c)=(a\cdot b)\cdot c
+    \end{equation*}
+    \item[\mylabel{itm:P6}{(P6)}]
+    If $a$ is any number, then
+    \begin{equation*}
+      a\cdot 1=1\cdot a=a
+    \end{equation*}
+    Moreover, $1\neq0$ (This cannot be proved by other
+    properties listed!)
+    \item[\mylabel{itm:P7}{(P7)}]
+    For every number $a\neq0$, there is a number
+    $a^{-1}$ such that
+    \begin{equation*}
+      a\cdot a^{-1}=a^{-1}\cdot a=1 (\Leftarrow 0\cdot
+      b=0~\forall b)
+    \end{equation*}
+    \note{This is why $1/0$ is meaningless!}
+    \item[\mylabel{itm:P8}{(P8)}]
+    If $a$ and $b$ are any numbers, then
+    \begin{equation*}
+      a\cdot b=b\cdot a
+    \end{equation*}
+  \end{itemize}
+  From \ref{itm:P5}, \ref{itm:P6} and \ref{itm:P7},
+  we have two lemmas:
+    \begin{id} \label{lemm:2}
+      If $a\cdot b=a\cdot c$ then $a=0~\lor~b=c$
+    \end{id}
+    \begin{proof}
+      If $a=0$ then the lemma is trivial. Suppose now
+      $a\neq0$,
+      \begin{IEEEeqnarray*}{*x+rCl+x*}
+        \text{Multiply $a^{-1}$ to both sides,} & (a^{-1})
+        \cdot (a\cdot b) & = & (a^{-1})\cdot (a\cdot c)\\
+        \text{By \ref{itm:P5},} &
+        (a^{-1}\cdot a)\cdot b & = &
+        (a^{-1}\cdot a)\cdot c\\
+        \text{By \ref{itm:P7},} &
+        1\cdot b & = &
+        1\cdot c\\
+        \text{By \ref{itm:P6},} &
+        b & = &
+        c\\
+        &&&& \qedhere
+      \end{IEEEeqnarray*}
+    \end{proof}
+  \begin{id} \label{lemm:3}
+    If $a\cdot b=0$ then $a=0~\lor~b=0$
+  \end{id}
+  \begin{proof}
+    If $a=0$, there is nothing to prove. Suppose now
+    $a\neq0$, follow the proof of \autoref{lemm:2} by
+    consecutively applying \ref{itm:P5}, \ref{itm:P7} and
+    \ref{itm:P6} in that order to finish the proof.
+  \end{proof}
 \end{document}
