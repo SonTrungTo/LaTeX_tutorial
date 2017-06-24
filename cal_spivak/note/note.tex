@@ -8,7 +8,13 @@ hyperref}
 \newcommand{\norm}[1]{\noalign{\noindent #1}}
 %---
 \theoremstyle{plain} \newtheorem{id}{Lemma}
+\theoremstyle{remark} \newtheorem*{ab}{Remark}
 \newcommand{\idautorefname}{Lemma}
+\newcommand{\abautorefname}{Remark}
+\newenvironment{solution}%
+{\renewcommand{\qedsymbol}{$\blacksquare$}%
+\begin{proof}[Solution]}%
+{\end{proof}}
 \pagestyle{fancy}
 
 \begin{document}
@@ -50,7 +56,8 @@ hyperref}
   \part{Prologue}
     \chapter{Basic properties of number}
     \begin{itemize}
-      \item[(P1)] If $a$, $b$, and $c$ are any numbers, then
+      \item[\mylabel{itm:P1}{(P1)}]
+      If $a$, $b$, and $c$ are any numbers, then
       \begin{equation*}
         a+(b+c)=(a+b)+c
       \end{equation*}
@@ -60,11 +67,13 @@ hyperref}
 
     The number 0 has important properties.
     \begin{itemize}
-      \item[(P2)] If $a$ is any number, then
+      \item[\mylabel{itm:P2}{(P2)}]
+      If $a$ is any number, then
       \begin{equation*}
         a+0=0+a=a
       \end{equation*}
-      \item[(P3)] For every number $a$, there is
+      \item[\mylabel{itm:P3}{(P3)}]
+      For every number $a$, there is
       also a number $-a$ such that
       \begin{equation*}
         a+(-a)=(-a)+a=0
@@ -87,7 +96,8 @@ hyperref}
   Also, remember that the order of addition does not
   matter.
   \begin{itemize}
-    \item[(P4)] If $a$ and $b$ are any numbers, then
+    \item[\mylabel{itm:P4}{(P4)}]
+    If $a$ and $b$ are any numbers, then
     \begin{equation*}
       a+b=b+a
     \end{equation*}
@@ -168,4 +178,53 @@ hyperref}
     By \ref{itm:P8}, it is also true that
     $(b+c)\cdot a=b\cdot a+c\cdot a$
   \end{itemize}
-\end{document}
+  We will see in the next remark and lemmas that properties
+  are not built in a straight line. Rather, it is a result
+  of necessities, of fixes and starts that somehow fits
+  the pieces of a puzzle perfectly.
+  \begin{ab} \label{ab:1}
+    When $a-b=b-a$?
+  \end{ab}
+  \begin{solution}
+    \begin{IEEEeqnarray*}{*x+rClCl+x*}
+      \text{Add b at both sides,} &
+      (a-b)+b & = & (b-a)+b & = &b+(b-a) &~\text{by \ref{itm:P4}} \\
+      \text{By \ref{itm:P1},} &
+      a+(-b+b) & = & (b+b)+(-a) \\
+      \text{By \ref{itm:P3},} &
+      a+0 & = & b+b-a \\
+      \text{By \ref{itm:P2},} &
+      a & = & b+b-a \\
+      \text{Add both sides to a,} &
+      a+a & = & (b+b-a)+a \\
+      \text{By \ref{itm:P1},} &
+      a+a & = & b+(b+(-a+a))& =& b+b & \text{by \ref{itm:P2}
+      and \ref{itm:P3}}\\
+      \text{By \ref{itm:P9},} &
+      a\cdot(1+1) & = & b\cdot(1+1)\\
+      \text{By \autoref{lemm:2},} &
+      a & = & b\\
+      &&&&&& \qedhere
+    \end{IEEEeqnarray*}
+  \end{solution}
+  \begin{id}
+    $a\cdot 0=0$. Really man?
+  \end{id}
+  \begin{proof}
+    \begin{IEEEeqnarray*}{*x+rCl+x*}
+      \text{We have} & a\cdot 0+a\cdot 0 & = &
+      a\cdot(0+0) & by \ref{itm:P9} \\
+      \text{By \ref{itm:P2},} & & = &
+      a\cdot 0\\
+      \text{Add $-a\cdot0$,} & a\cdot 0 & = &
+      0\\
+      &&&& \qedhere
+    \end{IEEEeqnarray*}
+  \end{proof}
+  \begin{id}
+    The product of two negative number is positive
+  \end{id}
+  \begin{proof}
+    
+  \end{proof}
+  \end{document}
