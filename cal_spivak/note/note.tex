@@ -208,7 +208,7 @@ hyperref}
     \end{IEEEeqnarray*}
   \end{solution}
   \begin{id}
-    $a\cdot 0=0$. Really man?
+    $a\cdot 0=0$
   \end{id}
   \begin{proof}
     \begin{IEEEeqnarray*}{*x+rCl+x*}
@@ -221,10 +221,66 @@ hyperref}
       &&&& \qedhere
     \end{IEEEeqnarray*}
   \end{proof}
-  \begin{id}
-    The product of two negative number is positive
+  \begin{id} \label{lemm:5}
+    The product of two negative numbers is positive
   \end{id}
   \begin{proof}
-    
+    We first prove that $(-a)\cdot b=-(a\cdot b)$,
+    \begin{IEEEeqnarray*}{*x+rCl+x*}
+      \text{We have by \ref{itm:P9},} & (-a)\cdot b+(a\cdot b)
+      & = & (-a+a)\cdot b \\
+      & & = & 0 \\
+      \text{Adding $-(a\cdot b)$ to both sides,} &
+      (-a)\cdot b & = & -(a\cdot b) \\
+    \end{IEEEeqnarray*}
+    Now, let's prove the main statement.
+    \begin{IEEEeqnarray*}{*x+rCl+x*}
+      \text{From above,} & (-a)\cdot (-b)+[-(a\cdot b)] & = &
+      (-a)\cdot(-b)+[(-a)\cdot b] \\
+      & & = & (-a)\cdot(-b+b) \\
+      & & = & 0 \\
+      \text{Adding $(a\cdot b)$ to both sides,} &
+      (-a)\cdot(-b) & = & (a\cdot b)\\
+      & & & & \qedhere
+    \end{IEEEeqnarray*}
   \end{proof}
+  We say that \autoref{lemm:5} is a direct consequence of
+  \ref{itm:P1}-\ref{itm:P9}.
+
+  Also, \ref{itm:P9} has important consequences: Justifying
+  the algebraic manipulations(e.g, $x^2-3x+2=(x-1)(x-2)$) and
+  the way one multiplies arabic numerals,
+  \begin{equation*}
+    \begin{array}{r}
+                              13 \\
+    \underline{\mbox{}\times  24} \\
+                              52 \\
+    \underline{\mbox{}       26\phantom{0}} \\
+                              312
+    \end{array}
+  \end{equation*}
+
+  Denote the set of all positive numbers by $P$.
+  \begin{itemize}[label=\textnormal{(\arabic*)}]
+    \item[\mylabel{itm:P10}{(P10)}](Trichotomy law)
+    For every number $a$, one and only one of the following
+    holds:
+    \begin{enumerate}[label=(\roman*)]
+      \item $a=0$
+      \item $a\in P$
+      \item $-a\in P$
+    \end{enumerate}
+    \item[\mylabel{itm:P11}{(P11)}](Closure under addition)
+    If $a\in P \land b\in P$ then $a+b\in P$
+    \item[\mylabel{itm:P12}{(P12)}](Closure under multiplication)
+    If $a\in P \land b\in P$ then $a\cdot b \in P$
+  \end{itemize}
+  These properties should be complemented by the following
+  definitions:
+  \begin{equation*}
+    \begin{array}{rcl}
+      a>b & \text{if} & a-b \in P \\
+      a<b & \text{if} & b>a \\
+    \end{array}
+  \end{equation*}
   \end{document}
