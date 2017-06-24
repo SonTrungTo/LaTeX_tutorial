@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  24 JUN 2017 02:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  24 JUN 2017 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,7 +361,7 @@ Chapter 1.
 [3
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -370,19 +370,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
  (./note.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
 Package rerunfilecheck Info: File `note.out' has not changed.
 (rerunfilecheck)             Checksum: D5196FF6B414106DE0CBFA6C6B87F4ED;153.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
  ) 
 Here is how much of TeX's memory you used:
- 6152 strings out of 493013
- 90819 string characters out of 6133328
- 181135 words of memory out of 5000000
- 9639 multiletter control sequences out of 15000+600000
+ 6153 strings out of 493013
+ 90827 string characters out of 6133328
+ 182182 words of memory out of 5000000
+ 9640 multiletter control sequences out of 15000+600000
  14872 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,10n,43p,241b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -401,10 +401,10 @@ ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on note.pdf (10 pages, 161524 bytes).
+Output written on note.pdf (10 pages, 162430 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
+ 145 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
  16 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
