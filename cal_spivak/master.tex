@@ -1,0 +1,135 @@
+\documentclass[a4paper,11pt,twoside]{book}
+\usepackage[affil-it]{authblk}
+\usepackage{amsmath,amssymb,amsthm,fancyhdr,enumitem,%
+hyperref,microtype}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\newcommand{\note}[1]{\emph{#1}}
+\theoremstyle{plain} \newtheorem{id}{Lemma}
+                     \newtheorem{thm}{Theorem}
+\theoremstyle{definition} \newtheorem{ex}{Exercise}[chapter]
+\theoremstyle{remark}\newtheorem*{ab}{Remark}
+\newcommand{\idautorefname}{Lemma}
+\newcommand{\abautorefname}{Remark}
+\newcommand{\thmautorefname}{Theorem}
+\newenvironment{solution}%
+{\renewcommand{\qedsymbol}{$\blacksquares$}%
+\begin{proof}[Solution]}%
+{\end{proof}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LO,RE]{\textsl{\leftmark}}
+\fancyhead[RO,LE]{\thepage}
+\fancyfoot[L]{Son To}
+
+\begin{document}
+
+  \title{Solutions to Michael Spivak's Calculus}
+  \author{Son To\\
+  $<$\href{mailto:son.trung.to@gmail.com}%
+  {son.trung.to@gmail.com}$>$}
+  \affil{Ravintola Kiltakellari
+  \thanks{This document would have never
+  been made without the hiring of my employer!
+  Thank you!}}
+  \date{25th June, 2017}
+
+  \maketitle
+  \makeatletter
+  \def\cleardoublepage{\clearpage\if@twoside
+  \ifodd\c@page\else
+    \hbox{}
+    \vspace*{\fill}
+    \begin{center}
+      This page is intentionally left blank.
+    \end{center}
+    \vspace*{\fill}
+    \thispagestyle{empty}
+    \newpage
+    \if@twocolumn\hbox{}\newpage\fi\fi\fi
+}
+\newcommand{\mylabel}[2]{#2\def\@currentlabel{#2}\label{#1}}
+\def\@endpart{\vfill\newpage
+              \if@twoside
+                \if@openright
+                  \null
+                  \thispagestyle{empty}%
+%-------------------------------
+\vspace*{\fill}%
+\begin{quote}%
+  \partnote
+\end{quote}%
+\vspace*{\fill}%
+%-------------------------------
+                  \newpage
+                \fi
+              \fi
+              \if@tempswa
+                \twocolumn
+              \fi
+}
+\newcommand{\partnote}{}
+\makeatother
+
+\frontmatter
+  \chapter{Preface}
+    What is the point of writing a solution manual when
+    one, written by the author, has already existed?
+
+    \medskip
+    The choice has two personal reasons.
+
+    \medskip
+    Reason \#1:
+    I was first enrolled in Aalto University School of Business
+    back in 2012 as a freshman. Subsequently, I ascertained that
+    the teaching of Aalto is really good for business
+    students, but I am neither a businessman
+    nor an any other type of student: I am a geek
+    who loves his freedom of academic pursuits; therefore,
+    writing the solution manual is simply the way I satisfy
+    myself with one of the legendary books in mathematics.
+
+    Reason \#2:
+    I have a long history with the book. Since Calculus
+    plays a really important role in Statistics, which
+    eventually plays an important role in Economics(%
+    and almost every other fields of science), I searched
+    intensively for a thorough book that \note{really}
+    teaches Calculus without ommitting the details
+    back when I was a freshman in 2012, and it turned out that
+    Spivak was my choice. However, due to the already
+    intensive teaching of my program, I barely had any time
+    to read the book properly. Moreover, due to my status
+    of not being a native Finnish citizen, I really had
+    so many problems both in term of finance and of legality
+    to be in Finland because of my staunch determination of not
+    wanting to go back to my home country, Vietnam%
+    . This further prevents me from reading
+    the book in an edifying way. And now after having
+    acquainted myself with the basic of \LaTeXe, I really
+    want to do as many projects in mathematics as I can,
+    and Spivak's Calculus is obviously my first choice.
+
+    \medskip
+    Moreover, I really do believe that originality is
+    not something that comes from following a particular
+    way of doing things but rather a strange, personal journey
+    made, written and discovered on your own regardless of
+    how silly
+    and redundant it might be!
+    \flushright
+    Vantaa, Finland \\
+    25th June,2017.
+  \tableofcontents
+  \thispagestyle{empty}
+\mainmatter
+  \renewcommand{\partnote}{
+    I held every man a debtor\\
+    to his profession\ldots
+    \flushright
+    Francis Bacon.
+  }
+  \part{Prologue}
+    \chapter{Basic properties of number}
+    \input{ch1/ch1}
+\end{document}
