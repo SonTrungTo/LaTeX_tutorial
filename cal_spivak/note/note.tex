@@ -1,16 +1,18 @@
 \documentclass[a4paper,11pt,twoside]{book}
 \usepackage[affil-it]{authblk}
 \usepackage{amsmath,amssymb,amsthm,fancyhdr,enumitem,%
-hyperref}
+hyperref,microtype}
 \usepackage[retainorgcmds]{IEEEtrantools}
 \newcommand{\note}[1]{\emph{#1}}
 %--Possibly use this inside IEEEeqnarray environment
 \newcommand{\norm}[1]{\noalign{\noindent #1}}
 %---
 \theoremstyle{plain} \newtheorem{id}{Lemma}
+                     \newtheorem{thm}{Theorem}
 \theoremstyle{remark} \newtheorem*{ab}{Remark}
 \newcommand{\idautorefname}{Lemma}
 \newcommand{\abautorefname}{Remark}
+\newcommand{\thmautorefname}{Theorem}
 \newenvironment{solution}%
 {\renewcommand{\qedsymbol}{$\blacksquare$}%
 \begin{proof}[Solution]}%
@@ -207,6 +209,8 @@ hyperref}
       &&&&&& \qedhere
     \end{IEEEeqnarray*}
   \end{solution}
+  Note that the proof above based on the presumption that
+  we know $1+1\neq 0$. How do we prove it?
   \begin{id}
     $a\cdot 0=0$
   \end{id}
@@ -281,6 +285,91 @@ hyperref}
     \begin{array}{rcl}
       a>b & \text{if} & a-b \in P \\
       a<b & \text{if} & b>a \\
+      a\geq b & \text{if} & a=b \text{ or } a>b\\
+      a\leq b & \text{if} & a=b \text{ or } a<b
     \end{array}
   \end{equation*}
+  The following lemmas are easy to prove\ldots
+  \begin{id}
+    If $a<b$ then $a+c<b+c$
+  \end{id}
+  \begin{proof}
+    If $a<b$, then $b-a\in P$, which is surely $(b+c)-(a+c)
+    \in P$
+  \end{proof}
+  \begin{id}
+    If $a<b \land b<c$ then $a<c$
+  \end{id}
+  \begin{proof}
+    Then $b-a \in P$ and $c-b \in P$. By \ref{itm:P11},
+    $(b-a)+(c-b)=c-a\in P$
+  \end{proof}
+  \begin{id}
+    If $a<0 \land b<0$ then $a\cdot b>0$
+  \end{id}
+  \begin{proof}
+    Then $-a>0 \land -b>0$. By \ref{itm:P12}, $(-a)\cdot
+    (-b)=a\cdot b>0$, by \autoref{lemm:5}.
+  \end{proof}
+  \begin{id}
+    If $a\neq 0$, then $a^2\neq 0$
+  \end{id}
+  \begin{proof}
+    Because if $a>0 \land b>0$ and $a<0 \land b<0$ then
+    $a\cdot b>0$, let $b=a$
+  \end{proof}
+  This implies that $1>0$ (since $1^2=1$).
+
+  We now prove a basic theorem relating to the absolute value.
+  \begin{thm} \label{thm:1}
+    $\forall a \land b$,
+    \begin{equation*}
+      |a+b|\leq|a|+|b|
+    \end{equation*}
+  \end{thm}
+  \begin{proof}
+    We apply the straightforward proof. A more elegant proof
+    appears in the exercises.
+    We will consider 4 cases:
+    %\begin{equation*}
+      \begin{align*}
+        a \geq 0 \qquad \text{and} \qquad b \geq 0 \tag{1}
+        \label{t:1}\\
+        a \geq 0 \qquad \text{and} \qquad b \leq 0 \tag{2}
+        \label{t:2}\\
+        a \leq 0 \qquad \text{and} \qquad b \geq 0 \tag{3}
+        \label{t:3}\\
+        a \leq 0 \qquad \text{and} \qquad b \leq 0 \tag{4}
+        \label{t:4}
+      \end{align*}
+    %\end{equation*}
+    For \eqref{t:1}, the statement occurs
+    with equality; that is,
+    \begin{equation*}
+      |a+b|=a+b=|a|+|b|
+    \end{equation*}
+    For \eqref{t:4}, the same is true by observing,
+    \begin{equation*}
+      |a+b|=-(a+b)=(-a)+(-b)=|a|+|b|
+    \end{equation*}
+    For \eqref{t:2}, the job is dumped down to proving
+    that $|a+b|\leq a-b$. This divides the case into two
+    subcases.
+    \par\note{Subcase 1:} $a+b\geq0$\\
+    Then note that $b\leq(-b)$, which is true since
+    $b\leq0$.
+    \par\note{Subcase 2:} $a+b\leq0$\\
+    Then we have $(-a)\leq a$, which is true since
+    $a\geq0$.
+    \par For \eqref{t:3}, the case is proved by interchanging
+    the role of $a$ and $b$.
+  \end{proof}
+  Note from the proof above that equality happens if
+  $a$ and $b$ have the same sign, or one of the two is zero.
+  \begin{ab}
+    It is crucial to understand that \ref{itm:P1}-\ref{itm:P12}
+    are not enough to account for \note{all} properties
+    of numbers. The deficiency is profound and subtle;
+    and,hopefully, will be discovered in the rest of the note.
+  \end{ab}
   \end{document}
