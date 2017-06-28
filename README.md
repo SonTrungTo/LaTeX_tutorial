@@ -6,4 +6,4 @@ type writings, mathematics(Calculus)
 1. The not-so-short introduction to LaTeX 2e, practice codes(label: nbr1)
 2. LaTeX and the Gnuplot Plotting Program, David Kotz(label: gnuplot_manual)
 3. Calculus-Michael Spivak(label:cal_spivak)
-4. Suomen Mestari II, ...
+4. Suomen Mestari II(label: SMII)
