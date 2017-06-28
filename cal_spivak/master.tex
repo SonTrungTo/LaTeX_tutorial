@@ -6,7 +6,7 @@ hyperref,microtype}
 \newcommand{\note}[1]{\emph{#1}}
 \theoremstyle{plain} \newtheorem{id}{Lemma}
                      \newtheorem{thm}{Theorem}
-\theoremstyle{definition} \newtheorem{ex}{Exercise}[chapter]
+\theoremstyle{definition} \newtheorem{ex}{Problem}[chapter]
 \theoremstyle{remark}\newtheorem*{ab}{Remark}
 \newcommand{\idautorefname}{Lemma}
 \newcommand{\abautorefname}{Remark}
@@ -40,7 +40,7 @@ hyperref,microtype}
     \hbox{}
     \vspace*{\fill}
     \begin{center}
-      This page is intentionally left blank.
+      \doublenote
     \end{center}
     \vspace*{\fill}
     \thispagestyle{empty}
@@ -68,8 +68,11 @@ hyperref,microtype}
               \fi
 }
 \newcommand{\partnote}{}
+\newcommand{\doublenote}{}
 \makeatother
 
+\renewcommand{\doublenote}{This page is
+intentionally left blank}
 \frontmatter
   \chapter{Preface}
     What is the point of writing a solution manual when
@@ -120,6 +123,7 @@ hyperref,microtype}
     \flushright
     Vantaa, Finland \\
     25th June,2017.
+  %\cleardoublepage
   \tableofcontents
   \thispagestyle{empty}
 \mainmatter
