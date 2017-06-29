@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt,twoside]{book}
+\documentclass[a4paper,11pt]{memoir}
 \usepackage[affil-it]{authblk}
 \usepackage{amsmath,amssymb,amsthm,fancyhdr,enumitem,%
 hyperref,microtype}
@@ -6,7 +6,7 @@ hyperref,microtype}
 \newcommand{\note}[1]{\emph{#1}}
 \theoremstyle{plain} \newtheorem{id}{Lemma}
                      \newtheorem{thm}{Theorem}
-\theoremstyle{definition} \newtheorem{ex}{Problem}[chapter]
+\theoremstyle{definition} \newtheorem{pr}{Problem}[chapter]
 \theoremstyle{remark}\newtheorem*{ab}{Remark}
 \newcommand{\idautorefname}{Lemma}
 \newcommand{\abautorefname}{Remark}
@@ -123,9 +123,9 @@ intentionally left blank}
     \flushright
     Vantaa, Finland \\
     25th June,2017.
-  %\cleardoublepage
+  \clearpage
   \tableofcontents
-  \thispagestyle{empty}
+
 \mainmatter
   \renewcommand{\partnote}{
     I held every man a debtor\\
