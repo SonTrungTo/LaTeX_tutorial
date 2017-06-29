@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  29 JUN 2017 22:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  30 JUN 2017 01:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -588,16 +588,21 @@ Overfull \hbox (2.22719pt too wide) in paragraph at lines 111--112
 
 [1
 
-] [2]
-This exam contains 53 questions with 0 parts, 0 subparts, and 0 subsubparts.
+]
+Overfull \hbox (5.53105pt too wide) in paragraph at lines 151--152
+[]\OT1/cmr/m/n/10.95 (-20) inferior qua-li-ty [] 
+ []
+
+[2]
+This exam contains 86 questions with 0 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 0 points.
 This exam has a total of 0 bonus points.
 (./Kappale8.aux) ) 
 Here is how much of TeX's memory you used:
- 4011 strings out of 493013
- 58471 string characters out of 6133328
- 179006 words of memory out of 5000000
- 7541 multiletter control sequences out of 15000+600000
+ 4176 strings out of 493013
+ 61178 string characters out of 6133328
+ 187699 words of memory out of 5000000
+ 7706 multiletter control sequences out of 15000+600000
  10036 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,9n,38p,186b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -611,7 +616,7 @@ cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
 b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 >
-Output written on Kappale8.pdf (3 pages, 101626 bytes).
+Output written on Kappale8.pdf (3 pages, 103044 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
