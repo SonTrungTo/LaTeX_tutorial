@@ -9,12 +9,13 @@
     $x^3-y^3=(x-y)(x^2+xy+y^2)$
     \item $x^n-y^n=(x-y)(x^{n-1}+x^{n-2}y+\dots+xy^{n-2}
     +y^{n-1})$
-    \item $x^3+y^3=(x+y)(x^2-xy+y^2)$ (There is a particular
+    \item $x^3+y^3=(x+y)(x^2-xy+y^2)$ (There is a particularly
     easy way to do this using \ref{1:iv}, and it will show
     you how to find a factorization for $x^n+y^n$ whenever
     n is odd.)
   \end{enumerate}
 \end{pr}
+
 \begin{solution}
   \begin{enumerate}[label=(\roman*)]
     \item By (P7)(Existence of multiplicative inverses),
@@ -31,11 +32,67 @@
       & = & x^2 +x\cdot y+[-(x\cdot y)]+[-(y^2)] \\
       & = & x^2-y^2 \\
     \end{IEEEeqnarray*}
-    \item From \ref{(ii)},
+    \item From \ref{(ii)} and since $x^2=y^2$,
     \begin{equation*}
       x^2-y^2=(x-y)(x+y)=0
     \end{equation*}
     This means $(x-y)=0 \lor (x+y)=0$, which is $x=y \lor x=-y$
+    \item Starting with the right-hand side,
+    \begin{IEEEeqnarray*}{rCl}
+      (x-y)(x^2+xy+y^2) & = &
+      x\cdot(x^2+xy+y^2)+(-y)\cdot(x^2+xy+y^2)\\
+      & = &
+      x^3+x^2y+xy^2+[-(x^2y)]+[-(xy^2)]+[-(y)^3] \\
+      & = &
+      x^3-y^3 \\
+    \end{IEEEeqnarray*}
+    \item I propose two solutions for this problem.
+    The first one is the direct right-hand side manipulation,
+    while the latter is done by induction.
+    \renewcommand{\qedsymbol}{\textsl Q.E.D}
+    \begin{proof}[The first solution]
+      \begin{IEEEeqnarray*}{+l+x*}
+        (x-y)(x^{n-1}+x^{n-2}y+\cdots+xy^{n-2}+y^{n-1}) \\=
+        x^n+x^{n-1}y+\cdots+x^2y^{n-2}+xy^{n-1} \\
+        +[-(x^{n-1}y)]+[-(x^{n-2}y^2)]+\cdots+
+        [-(xy^{n-1})]+[-(y^n)] \\
+        =x^n-y^n \\
+        & \qedhere
+      \end{IEEEeqnarray*}
+    \end{proof}
+    \begin{proof}[The second solution]
+      Let n=1, then indeed $x-y=x-y$. Suppose the statement
+      holds true for $n=k$ with $k\in \mathbb{N}$, that is
+      \begin{equation*}
+        x^k-y^k=(x-y)(x^{k-1}+x^{k-2}y+\cdots+xy^{k-2}+y^{k-1})
+      \end{equation*}
+    is true. To finish the proof, we need to prove
+    \begin{equation*}
+      x^{k+1}-y^{k+1}=(x-y)(x^k+x^{k-1}y+\cdots+xy^{k-1}+y^k)
+    \end{equation*}
+    That is, the statement holds for $n=k$. Starting from
+    the left hand side,
+    \begin{IEEEeqnarray*}{*x+C+x*}
+      & x^{k+1}-y^{k+1} \\
+      = & x^{k+1}-x^ky+x^ky-y^{k+1} \\
+      = & x^k(x-y)+y(x^k-y^k) \\
+      = & x^k(x-y)+y(x-y)(x^{k-1}+x^{k-2}y+\cdots+
+      xy^{k-2}+y^{k-1})\\
+      = & (x-y)[x^k+y(x^{k-1}+x^{k-2}y+\cdots+xy^{k-2}+y^{k-1})]
+      \\
+      = & (x-y)(x^k+x^{k-1}y+x^{k-2}y^2+\cdots+xy^{k-1}+
+      y^k) \\
+      & & \qedhere
+    \end{IEEEeqnarray*}
+    \end{proof}
+    \item We will use \ref{1:iv} in our proof,
+    \begin{IEEEeqnarray*}{*x+C+x*}
+      & x^3+y^3 \\
+    = & x^3-y^3+2y^3 \\
+    = & (x-y)(x^2+xy+y^2)+2y[(x^2+xy+y^2)+(-x)(x+y)] \\
+    = & (x+y)(x^2+xy+y^2)+2[-(xy)](x+y) \\
+    = & (x+y)(x^2-xy+y^2) \\
+    \end{IEEEeqnarray*}
   \end{enumerate}
 \end{solution}
 
