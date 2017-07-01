@@ -97,5 +97,25 @@
 \end{solution}
 
 \begin{pr}
-  This is problem 2.
+  What is wrong with the following ``proof''? Let $x=y$. Then
+  \begin{IEEEeqnarray*}{rCl}
+    x^2 & = & xy, \\
+    x^2-y^2 & = & xy -y^2, \\
+    (x+y)(x-y) & = & y(x-y), \\
+    x+y & = & y, \\
+    2y & = & y, \\
+    2 & = & 1.
+  \end{IEEEeqnarray*}
+\end{pr}
+
+\begin{solution}
+  Note that in the transition from line 3 to line 4,
+  the author ``simplifies'' $(x-y)$ by
+  dividing $(x-y)$ on both sides. This is wrong since $x-y=0$,
+  and hence $1/0$ is undefined as implied by (P7)
+  in the textbook.
+\end{solution}
+
+\begin{pr}
+  This is problem 3
 \end{pr}
