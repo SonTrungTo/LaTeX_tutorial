@@ -12,14 +12,16 @@ hyperref,microtype}
 \newcommand{\abautorefname}{Remark}
 \newcommand{\thmautorefname}{Theorem}
 \newenvironment{solution}%
-{\renewcommand{\qedsymbol}{$\blacksquares$}%
+{\renewcommand{\qedsymbol}{$\blacksquare$}%
 \begin{proof}[Solution]}%
 {\end{proof}}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[LO,RE]{\textsl{\leftmark}}
-\fancyhead[RO,LE]{\thepage}
-\fancyfoot[L]{Son To}
+\fancyhead[RO,LE]{Page \thepage}
+\fancyfoot[L]{SON TO}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
 
 \begin{document}
 

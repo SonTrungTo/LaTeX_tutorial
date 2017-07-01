@@ -5,9 +5,39 @@
     $x=1$
     \item $x^2-y^2=(x-y)(x+y)$
     \item If $x^2=y^2$, then $x=y$ or $x=-y$
-    \item $x^3-y^3=(x-y)(x^2+xy+y^2)$
+    \item \label{1:iv}
+    $x^3-y^3=(x-y)(x^2+xy+y^2)$
+    \item $x^n-y^n=(x-y)(x^{n-1}+x^{n-2}y+\dots+xy^{n-2}
+    +y^{n-1})$
+    \item $x^3+y^3=(x+y)(x^2-xy+y^2)$ (There is a particular
+    easy way to do this using \ref{1:iv}, and it will show
+    you how to find a factorization for $x^n+y^n$ whenever
+    n is odd.)
   \end{enumerate}
 \end{pr}
+\begin{solution}
+  \begin{enumerate}[label=(\roman*)]
+    \item By (P7)(Existence of multiplicative inverses),
+    there exists $a^{-1}$ such that,
+    \begin{IEEEeqnarray*}{rCl}
+      (a^{-1}\cdot a)x & = & (a^{-1}\cdot a) \\
+      x & = & 1 \\
+    \end{IEEEeqnarray*}
+    \item \label{(ii)} By (P9) for 2 times,
+    \begin{IEEEeqnarray*}{+rCl+x*}
+      (x-y)(x+y) & \stackrel{1}{=} & x\cdot(x+y)+(-y)\cdot(x+y)\\
+      & \stackrel{2}{=} & x\cdot x+x\cdot y+(-y)\cdot x
+      +(-y)\cdot y \\
+      & = & x^2 +x\cdot y+[-(x\cdot y)]+[-(y^2)] \\
+      & = & x^2-y^2 \\
+    \end{IEEEeqnarray*}
+    \item From \ref{(ii)},
+    \begin{equation*}
+      x^2-y^2=(x-y)(x+y)=0
+    \end{equation*}
+    This means $(x-y)=0 \lor (x+y)=0$, which is $x=y \lor x=-y$
+  \end{enumerate}
+\end{solution}
 
 \begin{pr}
   This is problem 2.
