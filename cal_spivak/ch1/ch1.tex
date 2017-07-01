@@ -117,5 +117,93 @@
 \end{solution}
 
 \begin{pr}
-  This is problem 3
+  Prove the following:
+  \begin{enumerate}[label=(\roman*)]
+    \item $\displaystyle{\frac{a}{b} = \frac{ac}{bc}}$,
+    if $b,c\neq0$.
+    \item
+      $\displaystyle{\frac{a}{b}+\frac{c}{d}=\frac{ad+bc}{bd}}$,
+    if $b,d\neq0$.
+    \item
+    $(ab)^{-1}=a^{-1}b^{-1},\text{ if }a,b\neq0$. (To do this
+    you must remember the defining property of $(ab)^{-1}$.)
+    \item
+    $\dfrac{a}{b}\cdot\dfrac{c}{d}=\dfrac{ac}{db}$, if
+    $b,d\neq0$.
+    \item
+    $\dfrac{a}{b}\Bigg/\dfrac{c}{d}=\dfrac{ad}{bc}$, if
+    $b,c,d\neq0$.
+    \item
+    If $b,d\neq0$, then $\dfrac{a}{b}=\dfrac{c}{d}$ if and
+    only if $ad=bc$. Also determine when $\dfrac{a}{b}=
+    \dfrac{b}{a}$.
+  \end{enumerate}
 \end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label=(\roman*)]
+    \item \label{2:i}
+    Until \ref{2:iii} is proved, the solution is to
+    test the equality between two sides.
+    \begin{IEEEeqnarray*}{rCl}
+      a(b)^{-1} & = & (ac)(bc)^{-1}\\
+      a[(b)^{-1}b] & = & (ac)(bc)^{-1}b \\
+      (a^{-1}a) & = & (a^{-1}a)c(bc)^{-1}b \\
+      1 & = & (bc)(bc)^{-1} = 1\\
+    \end{IEEEeqnarray*}
+    \item\label{p13:ii} Similar to the above,
+    \begin{IEEEeqnarray*}{rCl}
+      a(b)^{-1}+c(d)^{-1} & = & (ad+bc)(bd)^{-1} \\
+      a(b)^{-1}bd+c(d)^{-1}bd & = & (ad+bc)[(bd)^{-1}(bd)]\\
+      ad(b^{-1}b)+bc(d^{-1}d) & = & (ad+bc)\\
+      ad+bc & = & ad+bc
+    \end{IEEEeqnarray*}
+    \item \label{2:iii}
+    Since $a,b\neq0$, there exists $(ab)^{-1},a^{-1},
+    b^{-1}$ such that,
+    \begin{IEEEeqnarray*}{rCl}
+      ab & = & ab \\
+      (ab)^{-1}(ab) & = & (ab)^{-1}(ab)=1 \\
+      (ab)^{-1}a(bb^{-1}) & = & b^{-1} \\
+      (ab)^{-1}(aa^{-1}) & = & b^{-1}a^{-1} \\
+      (ab)^{-1} & = & a^{-1}b^{-1} \\
+    \end{IEEEeqnarray*}
+    \item For $b,d\neq0$,
+    \begin{equation*}
+      \frac{a}{b}\cdot\frac{c}{d}=ab^{-1}cd^{-1}=ac(d^{-1}b^{-1})
+      =ac(db)^{-1}=\frac{ac}{db}
+    \end{equation*}
+    where the next-to-last equality follows from \ref{2:iii}.
+    \item I first establish for any number $a\neq0$,
+    \begin{equation*}
+      (a^{-1})^{-1}=a
+    \end{equation*}
+    Let $t=a^{-1}$, we want to prove $t^{-1}=a$. Observe that
+    \begin{IEEEeqnarray*}{rCl}
+      t & = & a^{-1} \\
+      t\cdot(t)^{-1} & = & a^{-1}\cdot (t)^{-1} \\
+      a\cdot 1 & = & (a\cdot a^{-1})\cdot (t)^{-1} \\
+      a & = & (t)^{-1}
+    \end{IEEEeqnarray*}
+    From the left hand side of the statement,
+    \begin{equation*}
+      \frac{a}{b}\Bigg/\frac{c}{d}=a(b)^{-1}[c(d)^{-1}]^{-1}
+      =a(b)^{-1}(c)^{-1}[(d)^{-1}]^{-1}
+      =(ad)(bc)^{-1}=\frac{ad}{bc}
+    \end{equation*}
+    where the second and third equality follows both
+    from \ref{2:iii}
+    and the proof above.
+    \item Using \ref{p13:ii},
+    \begin{IEEEeqnarray*}{rCl}
+      \frac{a}{b} & = & \frac{c}{d} \\
+      \frac{a}{b}+(-\frac{c}{d}) & = & 0 \\
+      \frac{ad-bc}{bd} & = & 0 \\
+      ad & = & bc \\
+    \end{IEEEeqnarray*}
+    Now, put $c=b \land d=a$. It follows that
+    $\dfrac{a}{b}=\dfrac{b}{a}$ if and only if
+    $a^2=b^2$. It follows $(a-b)(a+b)=0$, or
+    $a=b \lor a=-b$.
+  \end{enumerate}
+\end{solution}
