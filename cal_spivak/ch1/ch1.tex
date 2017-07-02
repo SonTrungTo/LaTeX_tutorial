@@ -207,3 +207,108 @@
     $a=b \lor a=-b$.
   \end{enumerate}
 \end{solution}
+
+\begin{pr}
+  Find all numbers x for which
+  \begin{enumerate}[label=(\roman*)]
+    \item $4-x<3-2x$
+    \item $5-x^2<8$
+    \item $5-x^2<-2$
+    \item $(x-1)(x-3)>0$ (When is a product of two numbers
+    positive?)
+    \item $x^2-2x+2>0$
+    \item $x^2+x+1>2$
+    \item $x^2-x+10>16$
+    \item $x^2+x+1>0$
+    \item $(x-\pi)(x+5)(x-3)>0$
+    \item $(x-\sqrt[3]{2})(x-\sqrt{2})>0$
+    \item $2^x<8$
+    \item $x+3^x<4$
+    \item $\dfrac{1}{x}+\dfrac{1}{1-x}>0$
+    \item $\dfrac{x-1}{x+1}>0$
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label=(\roman*)]
+    \item
+    \begin{IEEEeqnarray*}{rCl}
+      4-x & < & 3-2x \\
+      4+(-x+2x) & < & 3+(-2x+2x) \\
+      (-4+4)+x & < & -4+3 \\
+      x & < & -1 \\
+    \end{IEEEeqnarray*}
+    \item
+    \begin{IEEEeqnarray*}{rCl}
+      5-x^2 & < & 8 \\
+      5-8 & < & x^2 \\
+      -3 & < & x^2
+    \end{IEEEeqnarray*}
+    Since $x^2\geq0\ \forall x\in\mathbb{R}$, the inequality
+    holds $\forall x$.
+    \item
+    \begin{IEEEeqnarray*}{rCl}
+      5-x^2 & < & -2 \\
+      7 & < & x^2 \\
+      0 & < & x^2-7=(x-\sqrt{7})(x+\sqrt{7})
+    \end{IEEEeqnarray*}
+    Hence, either $x>\sqrt{7}~\land\ x>-\sqrt{7}$
+    or $x<\sqrt{7}~\land\ x<-\sqrt{7}$, which is
+    $x>\sqrt{7}~\lor\ x<-\sqrt{7}$.
+    \item
+    \begin{IEEEeqnarray*}{rCl}
+      (x-1)(x-3) & > & 0 \\
+      (x>1~\land\ x>3) & \lor & (x<1~\land\ x<3)\\
+      x>3 & \lor & x<1
+    \end{IEEEeqnarray*}
+    \item
+    \begin{IEEEeqnarray*}{rCl}
+      x^2-2x+2 & > & 0 \\
+      (x^2-2x+1)+1 & > & 0 \\
+      (x-1)^2+1 & > & 0
+    \end{IEEEeqnarray*}
+    Hence the inequality is satisfied $\forall\ x$.
+    \item
+    \begin{IEEEeqnarray*}{rCl}
+      x^2+x+1 & > & 2 \\
+      x^2+x-1 & > & 0 \\
+      x^2+\left(\frac{1+\sqrt{5}}{2}\right)x
+      +\left(\frac{1-\sqrt{5}}{2}\right)x
+      +\left(\frac{(1-\sqrt{5})(1+\sqrt{5})}{4}\right)
+      & > & 0 \\
+      \left(x+\frac{1+\sqrt{5}}{2}\right)
+      \left(x+\frac{1-\sqrt{5}}{2}\right) & > & 0 \\
+      x>\left(\frac{\sqrt{5}-1}{2}\right) \lor
+      x<\left(\frac{-(\sqrt{5}+1)}{2}\right)
+    \end{IEEEeqnarray*}
+    \item
+    \begin{IEEEeqnarray*}{rCl}
+      x^2-x+10 & > & 16 \\
+      x^2-x-6 & > & 0 \\
+      x^2-3x+2x-6 & > & 0 \\
+      x(x-3)+2(x-3) & > & 0 \\
+      (x+2)(x-3) & > & 0 \\
+      x>3 & \lor & x<-2
+    \end{IEEEeqnarray*}
+    \item
+    \begin{IEEEeqnarray*}{rCl}
+      x^2+x+1 & > & 0 \\
+      x^2+x+\frac{1}{4}-\frac{1}{4}+1 & > & 0 \\
+      (x+\frac{1}{2})^2+\frac{3}{4} & > & 0
+    \end{IEEEeqnarray*}
+    which is true for all $x$.
+    \item Divide the problem into two cases: $x>\pi$
+    and $x<\pi$.
+    \par
+    \note{Case 1: }$x>\pi$\\
+    Then $(x+5)(x-3)>0$, which is $x>3~\lor\ x<-5$.
+    \par
+    \note{Case 2: }$x<\pi$\\
+    Then $(x+5)(x-3)<0$, which is $-5<x<3$.
+    \item
+    \begin{IEEEeqnarray*}{rCl}
+      (x-\sqrt[3]{2})(x-\sqrt{2}) & > & 0 \\
+      x>\sqrt{2} & \lor & x<\sqrt[3]{2}
+    \end{IEEEeqnarray*}
+  \end{enumerate}
+\end{solution}
