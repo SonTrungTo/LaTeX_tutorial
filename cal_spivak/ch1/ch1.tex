@@ -225,10 +225,11 @@
     \item $2^x<8$
     \item $x+3^x<4$
     \item $\dfrac{1}{x}+\dfrac{1}{1-x}>0$
+    \nopagebreak[3]
     \item $\dfrac{x-1}{x+1}>0$
   \end{enumerate}
 \end{pr}
-
+\pagebreak
 \begin{solution}
   \begin{enumerate}[label=(\roman*)]
     \item
@@ -349,9 +350,41 @@
     \item If $0<a<1$, then $a^2<a$
     \item \label{1.5:viii}
     If $0\leq a<b$ and $0\leq c<d$, then $ac<bd$
+    \nopagebreak[3]
     \item \label{1.5:ix}
     If $0\leq a<b$, then $a^2<b^2$. (Use \ref{1.5:viii}.)
     \item If $a,b\geq0$ and $a^2<b^2$, then $a<b$.%
     (Use \ref{1.5:ix}, backwards.)
   \end{enumerate}
 \end{pr}
+\pagebreak
+\begin{solution}
+  Let P be the set of all positive numbers.
+  \begin{enumerate}[label=(\roman*)]
+    \item To prove this, we apply (P11): If $a<b~\land\ c<d$,
+    then $(b-a\in P)~\land\ (d-c\in P)$. Then $(b-a)+(d-c)=
+    (b+d)-(a+c)\in P$. Therefore, $a+c<b+d$.
+    \item We provide two solutions: The first one is
+    by Trichotomy Law (P10), and the second one is
+    by adding $[(-a)+(-b)]$ to both sides.
+    \renewcommand{\qedsymbol}{\textsl Q.E.D}
+    \begin{proof}[Proof by Trichotomy Law]
+      If $a<b$, then $b-a\in P$. By Trichotomy Law,
+      $a-b\notin P$ and $a-b\neq 0$. Therefore, $a-b<0$,
+      which is $-b<-a$.
+    \end{proof}
+    \begin{proof}[Proof by adding]
+      \begin{IEEEeqnarray*}{+rCl+x*}
+        a & < & b \\
+        a+[(-a)+(-b)] & < & b+[(-a)+(-b)] \\
+        \left[a+(-a)\right]+(-b) & < & [b+(-b)]+(-a) \\
+        -b & < & -a \\
+        & & & \qedhere
+      \end{IEEEeqnarray*}
+    \end{proof}
+    \item Using (P11), we have $b-a\in P~\land\ c-d\in P$.
+    Then $(b-a)+(c-d)\in P$. Hence, $a-c<b-d$.
+    \item Using (P12), note that $b-a\in P$. Since $c>0$,
+    $c(b-a)\in P$, which means $bc-ac>0$, or $ac<bc$.
+  \end{enumerate}
+\end{solution}

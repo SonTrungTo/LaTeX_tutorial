@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1499032280 "master.tex" "master.pdf" "master" 1499032283
+["pdflatex"] 1499199201 "master.tex" "master.pdf" "master" 1499199203
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -213,14 +213,14 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495749261 2350277 f74d61113e7cfb2fb8a7fb038066a484 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1495749298 4051024 671f7da9d458ca5202881ff482869f37 ""
   "/usr/local/texlive/2016/texmf.cnf" 1495749256 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "ch1/ch1.tex" 1499032277 11209 8b0c8358d0209cb94cfc8efbd2767247 ""
-  "master.aux" 1499032283 1980 2b77aea221581bd8101de0c5e0b4934d ""
-  "master.out" 1499032283 195 e3143105be9baeb1ed97f2889b2e3082 ""
-  "master.tex" 1499030677 4502 140a2360be08ba26ca710f98b4593c00 ""
-  "master.toc" 1499032283 247 d8a6f937d1da67aea198ccb225e18dbd ""
+  "ch1/ch1.tex" 1499199200 12452 9b4bc423551ccbdb9025172d765381c4 ""
+  "master.aux" 1499199202 1980 1440b6c090f299e8c58588088d4780f3 ""
+  "master.out" 1499199202 195 e3143105be9baeb1ed97f2889b2e3082 ""
+  "master.tex" 1499196226 2822 e6cae28f5ea00f01e85692e74e06ceac ""
+  "master.toc" 1499199202 247 d8a6f937d1da67aea198ccb225e18dbd ""
   (generated)
+  "master.log"
   "master.aux"
   "master.out"
-  "master.log"
   "master.pdf"
   "master.toc"
