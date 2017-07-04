@@ -364,7 +364,8 @@
     \item To prove this, we apply (P11): If $a<b~\land\ c<d$,
     then $(b-a\in P)~\land\ (d-c\in P)$. Then $(b-a)+(d-c)=
     (b+d)-(a+c)\in P$. Therefore, $a+c<b+d$.
-    \item We provide two solutions: The first one is
+    \item \label{1.5:ii}
+    We provide two solutions: The first one is
     by Trichotomy Law (P10), and the second one is
     by adding $[(-a)+(-b)]$ to both sides.
     \renewcommand{\qedsymbol}{\textsl Q.E.D}
@@ -384,7 +385,11 @@
     \end{proof}
     \item Using (P11), we have $b-a\in P~\land\ c-d\in P$.
     Then $(b-a)+(c-d)\in P$. Hence, $a-c<b-d$.
-    \item Using (P12), note that $b-a\in P$. Since $c>0$,
+    \item \label{1.5:iv}
+    Using (P12), note that $b-a\in P$. Since $c>0$,
     $c(b-a)\in P$, which means $bc-ac>0$, or $ac<bc$.
+    \item By Trichotomy law(P10), $-c\in P$. Then
+    by \ref{1.5:iv}, $-(ac)<-(bc)$. By \ref{1.5:ii},
+    $ac>bc$.
   \end{enumerate}
 \end{solution}
