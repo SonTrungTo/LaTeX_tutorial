@@ -338,7 +338,7 @@
   \end{enumerate}
 \end{solution}
 
-\begin{pr}
+\begin{pr} \label{1.5}
   Prove the following:
   \begin{enumerate}[label=(\roman*)]
     \item If $a<b$ and $c<d$, then $a+c<b+d$
@@ -405,19 +405,56 @@
   \end{enumerate}
 \end{solution}
 
-\begin{pr}
+\begin{pr} \label{1.6}
   \begin{enumerate}[label=(\alph*)]
-    \item Prove that if $0\leq x<y$, then $x^n<y^n$,
+    \item \label{1.6:a}
+    Prove that if $0\leq x<y$, then $x^n<y^n$,
     $n=1,2,3,\dots$.
-    \item Prove that if $x<y$ and $n$ is odd,
+    \item \label{1.6:b}
+    Prove that if $x<y$ and $n$ is odd,
     then $x^n<y^n$.
-    \item Prove that if $x^n=y^n$ and $n$ is odd,
+    \item \label{1.6:c}
+    Prove that if $x^n=y^n$ and $n$ is odd,
     then $x=y$.
-    \item Prove that if $x^n=y^n$ and $n$ is even,
+    \item \label{1.6:d}
+    Prove that if $x^n=y^n$ and $n$ is even,
     then $x=y$ or $x=-y$.
   \end{enumerate}
 \end{pr}
 \pagebreak
 \begin{solution}
-  Tada.
+  \begin{enumerate}[label=(\alph*)]
+    \item
+    Repeatedly apply problem \ref{1.5}\ref{1.5:viii} for
+    $0\leq x<y$, we have $x^n<y^n$ with $n=1,2,3,\ldots$
+    \item
+    The statement is true for the case $0\leq x<y$. In
+    the case $x<y\leq 0$, by \ref{1.5}\ref{1.5:ii},
+    $(-x)>(-y)\geq 0$. By \ref{1.6:a}, $(-x)^n>(-y)^n$
+    for all odd $n$. Since $n$ is odd, $-(x^n)>-(y^n)$.
+    Hence, by \ref{1.5}\ref{1.5:ii}, $x^n<y^n$. In the
+    case $x\leq 0<y$, since $n$ is odd, $x^n<y^n$.
+    \item
+    Suppose that either $x\neq y$. W.l.o.g, let $x<y$,
+    by \ref{1.6:b}, $x^n<y^n$ for all odd $n$, contradicting
+    $x^n=y^n$ for all odd $n$.
+    \item
+    Suppose that both $x\neq y$ and $x\neq -y$. Then
+    $x^2-y^2\neq 0$. W.l.o.g, suppose $x^2>y^2\geq0$.
+    Applying \ref{1.6:a}, this generalizes to
+    $x^n>y^n$ for all even $n$, contradicting our assumption.
+    Therefore, $x=y$ or $x=-y$.
+    \renewcommand{\qedsymbol}{}
+    \begin{proof}[The direct proof]
+      In the case $x,y \geq 0$; by \ref{1.6:a}, if $x^n=y^n$
+      for all even $n$, then $x=y$. In the case $x,y\leq 0$;
+      if $x^n=y^n$ for all even $n$, then
+      $(-x),(-y)\geq 0$ and $(-x)^n=(-y)^n$, so again $x=y$.
+      In the case of $x$ and $y$ have different signs, then
+      $x$ and $-y$ are either two positive or two negative
+      numbers. In either subcase, if $x^n=y^n$ for all even $n$,
+      then $x^n=(-y)^n$, and it follows $x=-y$ from the
+      previous case. 
+    \end{proof}
+  \end{enumerate}
 \end{solution}

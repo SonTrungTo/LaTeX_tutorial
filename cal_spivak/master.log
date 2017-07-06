@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  6 JUL 2017 02:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  7 JUL 2017 01:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1173,7 +1173,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98   \part{Prologue}
+l.99   \part{Prologue}
                        [1
 
 
@@ -1181,7 +1181,7 @@ l.98   \part{Prologue}
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98   \part{Prologue}
+l.99   \part{Prologue}
                        [2] (./ch1/ch1.tex
 Missing character: There is no Â in font cmr10!
 Missing character: There is no   in font cmr10!
@@ -1196,21 +1196,21 @@ Overfull \hbox (0.58255pt too wide) in alignment at lines 41--48
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
  (./master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: E3143105BE9BAEB1ED97F2889B2E3082;195.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 102.
  ) 
 Here is how much of TeX's memory you used:
- 31521 strings out of 493013
- 715341 string characters out of 6133328
+ 31533 strings out of 493013
+ 715421 string characters out of 6133328
  994321 words of memory out of 5000000
- 34461 multiletter control sequences out of 15000+600000
- 16445 words of font info for 75 fonts, out of 8000000 for 9000
+ 34467 multiletter control sequences out of 15000+600000
+ 16496 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,96p,736b,661s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -1233,10 +1233,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (16 pages, 221652 bytes).
+Output written on master.pdf (16 pages, 225520 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 273 compressed objects within 3 object streams
+ 105 named destinations out of 1000 (max. 500000)
  17453 words of extra memory for PDF output out of 20736 (max. 10000000)
 
