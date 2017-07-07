@@ -449,12 +449,58 @@
       In the case $x,y \geq 0$; by \ref{1.6:a}, if $x^n=y^n$
       for all even $n$, then $x=y$. In the case $x,y\leq 0$;
       if $x^n=y^n$ for all even $n$, then
-      $(-x),(-y)\geq 0$ and $(-x)^n=(-y)^n$, so again $x=y$.
+      $(-x),(-y)\geq 0$ and $(-x)^n=(-y)^n$, so $-x=-y$
+      and hence $x=y$.
       In the case of $x$ and $y$ have different signs, then
       $x$ and $-y$ are either two positive or two negative
       numbers. In either subcase, if $x^n=y^n$ for all even $n$,
       then $x^n=(-y)^n$, and it follows $x=-y$ from the
-      previous case. 
+      previous case.
     \end{proof}
   \end{enumerate}
+\end{solution}
+
+\begin{pr}
+  Prove that if $0<a<b$, then
+  \begin{equation*}
+    a<\sqrt{ab}<\frac{a+b}{2}<b
+  \end{equation*}
+  Notice that the inequality $\sqrt{ab}\leq(a+b)/2$ holds
+  for all $a,b\geq0$. A generalization of this fact
+  occurs in Problem 2.22. % to be \ref{2.22}.
+\end{pr}
+\begin{solution}
+  Let us first establish that $a<\dfrac{a+b}{2}<b$. Note
+  that,
+  \begin{equation*}
+    a+a<a+b<b+b
+  \end{equation*}
+  and therefore, $a<\dfrac{a+b}{2}<b$. To finish the proof,
+  we need to prove ${a<\sqrt{ab}<\dfrac{a+b}{2}}$. To do this,
+  let us prove that if $0<a<b$, then ${0<\sqrt{a}<\sqrt{b}}$.
+  Note that since $b-a>0$,
+  \begin{equation*}
+    b-a=(\sqrt{b}-\sqrt{a})(\sqrt{b}+\sqrt{a})>0
+  \end{equation*}
+  Therefore, $\sqrt{b}>\sqrt{a}>0$. We rewrite the inequality
+  as follows,
+  \begin{equation*}
+    \sqrt{a}\cdot(\sqrt{b}-\sqrt{a})>0
+  \end{equation*}
+  Then
+  \begin{equation}
+    a<\sqrt{ab} \label{1.7:eq1}
+  \end{equation}
+  We next notice that since ${\sqrt{b}-\sqrt{a}>0}$, it follows
+  that \\$(\sqrt{b}-\sqrt{a})\cdot(\sqrt{b}-\sqrt{a})
+  =(\sqrt{b}-\sqrt{a})^2>0$. Expand the left hand side,
+  \begin{equation*}
+    (\sqrt{b}-\sqrt{a})^2=a+b-2\sqrt{ab}>0
+  \end{equation*}
+  which implies,
+  \begin{equation}
+    \sqrt{ab}<\frac{a+b}{2} \label{1.7:eq2}
+  \end{equation}
+  From (\ref{1.7:eq1}) and (\ref{1.7:eq2}), we have
+  $a<\sqrt{ab}<\dfrac{a+b}{2}$.
 \end{solution}
