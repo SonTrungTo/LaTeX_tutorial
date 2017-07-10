@@ -532,5 +532,35 @@
   Show that P10--P12 can then be deduced as theorems.
 \end{pr}
 \begin{solution}
-  We first state our first theorem.
+  Let $P$ be the set of all positive numbers.
+  \begin{itemize}
+    \item To prove P10, let $c=a-b$, from \ref{P'10}, P10
+    follows.
+    \item To prove P11, let $a,b\in P$; it is
+    sufficient to prove that $a+b>0$. From \ref{P'10},
+    we divide the proof into three subscases:\par
+    \note{Case 1: }$a=b$ \\
+    Then $a+b=b+b>0+b>0$, where the first inequality follows
+    from \ref{P'12}. By \ref{P'11}, $a+b>0$.\par
+    \note{Case 2: }$a<b$ \\
+    Then $a+b>a+a>0+a>0$, where the first and second inequality
+    follow from \ref{P'12}. By applying \ref{P'11} twice,
+    $a+b>0$. \par
+    \note{Case 3: }$a>b$ \\
+    Interchanging the role of $a$ and $b$, we have the result.
+    \item To prove P12, let $a,b\in P$; it is
+    sufficient to prove that $a\cdot b>0$. From \ref{P'10},
+    we divide the proof into three subcases:\par
+    \note{Case 1: }$a=b$ \\
+    Then $a\cdot b=b\cdot b>0\cdot b=0$, where the first
+    inequality follows from \ref{P'13} and the equality after
+    which is from (P9).\par
+    \note{Case 2: }$a<b$ \\
+    Then $b\cdot a>a\cdot a>0\cdot a=0$, where the first
+    and second inequality is from \ref{P'13}. By \ref{P'11},
+    $a\cdot b>0$. \par
+    \note{Case 3: }$a>b$ \\
+    Interchanging $a$ and $b$ returns us to case 2, which
+    yields the result.
+  \end{itemize}
 \end{solution}
