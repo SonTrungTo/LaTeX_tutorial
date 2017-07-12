@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  12 JUL 2017 06:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  12 JUL 2017 08:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,7 +1212,7 @@ Overfull \hbox (0.58255pt too wide) in alignment at lines 41--48
 ] [4] [5] [6] [7] [8] [9] [10] [11] [12]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 537.
- [13] [14]) [15] [16]
+ [13] [14] [15]) [16]
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
@@ -1226,9 +1226,9 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
  ) 
 Here is how much of TeX's memory you used:
- 34848 strings out of 493013
- 757601 string characters out of 6133328
- 970286 words of memory out of 5000000
+ 34858 strings out of 493013
+ 757680 string characters out of 6133328
+ 970287 words of memory out of 5000000
  37736 multiletter control sequences out of 15000+600000
  16496 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1253,10 +1253,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (20 pages, 238314 bytes).
+Output written on master.pdf (20 pages, 239144 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 338 compressed objects within 4 object streams
- 142 named destinations out of 1000 (max. 500000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 351 compressed objects within 4 object streams
+ 152 named destinations out of 1000 (max. 500000)
  17453 words of extra memory for PDF output out of 20736 (max. 10000000)
 
