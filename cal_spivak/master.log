@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  12 JUL 2017 08:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  13 JUL 2017 00:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,13 +1212,14 @@ Overfull \hbox (0.58255pt too wide) in alignment at lines 41--48
 ] [4] [5] [6] [7] [8] [9] [10] [11] [12]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 537.
- [13] [14] [15]) [16]
+ [13] [14] [15] [16] [17]) [18]
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
- (./master.aux)
+
+(./master.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
 Package rerunfilecheck Info: File `master.out' has not changed.
@@ -1226,11 +1227,11 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
  ) 
 Here is how much of TeX's memory you used:
- 34858 strings out of 493013
- 757680 string characters out of 6133328
- 970287 words of memory out of 5000000
- 37736 multiletter control sequences out of 15000+600000
- 16496 words of font info for 76 fonts, out of 8000000 for 9000
+ 34895 strings out of 493013
+ 757962 string characters out of 6133328
+ 970466 words of memory out of 5000000
+ 37739 multiletter control sequences out of 15000+600000
+ 16649 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,96p,739b,662s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -1253,10 +1254,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (20 pages, 239144 bytes).
+Output written on master.pdf (22 pages, 246758 bytes).
 PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
- 351 compressed objects within 4 object streams
- 152 named destinations out of 1000 (max. 500000)
+ 442 PDF objects out of 1000 (max. 8388607)
+ 394 compressed objects within 4 object streams
+ 180 named destinations out of 1000 (max. 500000)
  17453 words of extra memory for PDF output out of 20736 (max. 10000000)
 

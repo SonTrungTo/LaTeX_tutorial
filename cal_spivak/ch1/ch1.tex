@@ -689,5 +689,115 @@
       x-3=8 & \lor & x-3=-8 \\
       x=11 & \lor & x=-5
     \end{IEEEeqnarray*}
+    \item Then $-8<x-3<8$. Hence, $-5<x<11$.
+    \item Then $-2<x+4<2$. Hence, $-6<x<-2$.
+    \item If $1\leq x\leq 2$, then the inequality becomes
+    $(x-1)+(2-x)=1$. If $x>2$, then $2x-3>1$, which is
+    $x>2$. If $x<1$, then $-2x+3>1$, which is $x<1$.
+    Therefore, either $x>2$ or $x<1$ satisfies the inequality.
+    \item If $-1\leq x\leq 1$, then $(1-x)+(x+1)=2$. If
+    $x>1$, then $x<1$, which is contradictory. If $x<-1$,
+    then $(1-x)+(-x-1)=-2x<2$ only if $x>-1$, which is
+    contradictory. Hence, there is no $x$ to satisfy the
+    inequality.
+    \item It is implied from above that
+    \begin{equation*}
+      |x-1|+|x+1| \geq 2
+    \end{equation*}
+    Therefore, there is no $x$ satisfying the inequality.
+    \item Either $x=1$ or $x=-1$.
+    \item If $-2\leq x\leq 1$, then we obtain $x^2+x+1>0$.
+    Hence, in either $x<-2$ or $x>1$, we have to solve
+    the equation $x^2+x-5=0$, whose solution is either
+    $x=\dfrac{-1+\sqrt{21}}{2}$ or
+    $x=\dfrac{-1-\sqrt{21}}{2}$.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr}
+  Prove the following:
+  \begin{enumerate}[label=(\roman*)]
+    \item \label{1.12:i}
+    $|xy|=|x|\cdot|y|$
+    \item \label{1.12:ii}
+    $\left|\dfrac{1}{x}\right|=\dfrac{1}{|x|}$,
+    if $x\neq0$. (The
+    best way to do this is to remember what\\ $|x|^{-1}$ is.)
+    \item $\dfrac{|x|}{|y|}=\left|\dfrac{x}{y}\right|$,
+    if $y\neq0$.
+    \item $|x-y|\leq|x|+|y|$ (Give a very short proof.)
+    \item \label{1.12:v}
+    $|x|-|y|\leq|x-y|$ (A very short proof is possible,
+    if you write things in the right way.)
+    \item $|(|x|-|y|)|\leq|x-y|$ (Why does this follow
+    immediately from \ref{1.12:v}?)
+    \item $|x+y+z|\leq|x|+|y|+|z|$. Indicate when equality
+    holds, and prove your statement.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label=(\roman*)]
+    \item We have 4 cases,
+    \begin{align*}
+      x\geq0 \quad y\geq0 \tag{1} \\
+      x\geq0 \quad y\leq0 \tag{2} \\
+      x\leq0 \quad y\geq0 \tag{3} \\
+      x\leq0 \quad y\leq0 \tag{4}
+    \end{align*}
+    In (1), $|x|\cdot|y|=xy=|xy|$ \par
+    In (4), $|x|\cdot|y|=(-x)(-y)=xy=|xy|$ \par
+    In (3), $|x|\cdot|y|=(-x)(y)=-(xy)=|xy|$ \par
+    In (2), interchanging $x$ and $y$ leads to (3).
+    \item Since $x\neq0$, there exists $|x|^{-1}$ such that
+    \begin{equation*}
+      |x||x|^{-1}=1=|x|\left|\frac{1}{x}\right|
+    \end{equation*}
+    where the second equality is by \ref{1.12:i}. Dividing
+    both sides by $|x|$, we have the result.
+    \item Since $y\neq0$, from \ref{1.12:ii}, we immediately
+    have
+    \begin{equation*}
+      \left|\frac{1}{y}\right|=\frac{1}{|y|}
+    \end{equation*}
+    Hence, applying \ref{1.12:ii} once more,
+    \begin{equation*}
+      \left|\frac{x}{y}\right|=|x|\left|\frac{1}{y}\right|
+      =\frac{|x|}{|y|}
+    \end{equation*}
+    \item Note that,
+    \begin{equation*}
+      |x-y|=|x+(-y)|\leq|x|+|-y|=|x|+|y|
+    \end{equation*}
+    where the last equality follows from \ref{1.12:i}.
+    \item Note that,
+    \begin{equation*}
+      |x-y+y|\leq|x-y|+|y|
+    \end{equation*}
+    Therefore, $|x|-|y|\leq|x-y|$.
+    \item Let the first term be $y$ and the second term
+    be $y-x$. Applying \ref{1.12:v}, we have
+    \begin{equation*}
+      |y|-|y-x|\leq|x|
+    \end{equation*}
+    Hence, $-|x-y|\leq|x|-|y|$. Combining with \ref{1.12:v}
+    gives $|(|x|-|y|)|\leq|x-y|$.
+    \item Notice the pattern,
+    \begin{equation*}
+      |x+y+z|\leq|x+y|+|z|\leq|x|+|y|+|z|
+    \end{equation*}
+    the equality holds only if either $x,y,z$ have the same
+    sign or at least two of them must be equal to $0$.
+    It is easy to verify this.\\
+    Suppose not, then both $x,y,z$ have different signs and
+    at most one of them is $0$. If the latter is true,
+    then, w.l.o.g, suppose $z=0$, then $x,y$ have different
+    sign, and we are done. If none of them is $0$, then,
+    w.l.o.g, suppose $z<0$ and pick $z$ such that
+    $x+y<-z$. Then,
+    \begin{equation*}
+      |x+y+z|=-(x+y+z)=-x-y-z<|x|+|y|+|z|
+    \end{equation*}
+    where inequality must follow since $x,y\neq0$.
   \end{enumerate}
 \end{solution}
