@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  11 JUL 2017 01:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  12 JUL 2017 06:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1190,16 +1190,16 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.101   \part{Prologue}
-                        [1
+l.95   \part{Prologue}
+                       [1
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.101   \part{Prologue}
-                        [2] (./ch1/ch1.tex
+l.95   \part{Prologue}
+                       [2] (./ch1/ch1.tex
 Missing character: There is no Â in font cmr10!
 Missing character: There is no   in font cmr10!
 
@@ -1212,24 +1212,24 @@ Overfull \hbox (0.58255pt too wide) in alignment at lines 41--48
 ] [4] [5] [6] [7] [8] [9] [10] [11] [12]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 537.
- [13]) [14]
+ [13] [14]) [15] [16]
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
  (./master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: 06FBB51F22903989069734D335274F40;432.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
  ) 
 Here is how much of TeX's memory you used:
- 34821 strings out of 493013
- 757432 string characters out of 6133328
+ 34848 strings out of 493013
+ 757601 string characters out of 6133328
  970286 words of memory out of 5000000
- 37737 multiletter control sequences out of 15000+600000
+ 37736 multiletter control sequences out of 15000+600000
  16496 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,96p,739b,662s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1253,10 +1253,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (18 pages, 232981 bytes).
+Output written on master.pdf (20 pages, 238314 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 114 named destinations out of 1000 (max. 500000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
+ 142 named destinations out of 1000 (max. 500000)
  17453 words of extra memory for PDF output out of 20736 (max. 10000000)
 

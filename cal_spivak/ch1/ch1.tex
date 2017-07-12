@@ -564,3 +564,107 @@
     yields the result.
   \end{itemize}
 \end{solution}
+
+\begin{pr}
+  Express each of the following with at least one less pair
+  of absolute value signs.
+  \begin{enumerate}[label=(\roman*)]
+    \item $|\sqrt{2}+\sqrt{3}-\sqrt{5}+\sqrt{7}|$
+    \item $|(|a+b|-|a|-|b|)|$
+    \item $|(|a+b|+|c|-|a+b+c|)|$
+    \item $|(|\sqrt{2}+\sqrt{3}|-|\sqrt{5}-\sqrt{7}|)|$
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label=(\roman*)]
+    \item Note $\sqrt{7}-\sqrt{5}>0$, hence
+    \begin{equation*}
+      |\sqrt{2}+\sqrt{3}-\sqrt{5}+\sqrt{7}|=
+      \sqrt{2}+\sqrt{3}-\sqrt{5}+\sqrt{7}
+    \end{equation*}
+    \item Since $|a+b|-|a|-|b|\leq 0$,
+    \begin{equation*}
+      |(|a+b|-|a|-|b|)|=|a|+|b|-|a+b|
+    \end{equation*}
+    \item Since $|a+b+c|\leq|a+b|+|c|$,
+    \begin{equation*}
+      |(|a+b|+|c|-|a+b+c|)|=|a+b|+|c|-|a+b+c|
+    \end{equation*}
+    \item
+    \begin{equation*}
+      |(|\sqrt{2}+\sqrt{3}|-|\sqrt{5}-\sqrt{7}|)|
+      =|\sqrt{2}+\sqrt{3}-\sqrt{7}+\sqrt{5}|
+    \end{equation*}
+  \end{enumerate}
+\end{solution}
+
+\begin{pr}
+  Express each of the following without absolute value
+  signs, treating various cases separately when necessary.
+  \begin{enumerate}[label=(\roman*)]
+    \item $|a+b|-|b|$
+    \item $|(|x|-1)|$
+    \item $|x|-|x^2|$
+    \item $a-|(a-|a|)|$
+  \end{enumerate}
+\end{pr}
+\pagebreak
+\begin{solution}
+  \begin{enumerate}[label=(\roman*)]
+    \item We divide into four cases:
+    \begin{align}
+      a\geq0 \quad \text{and} \quad b\geq0 \tag{Case 1} \\
+      a\leq0 \quad \text{and} \quad b\leq0 \tag{Case 2} \\
+      a\geq0 \quad \text{and} \quad b\leq0 \tag{Case 3} \\
+      a\leq0 \quad \text{and} \quad b\geq0 \tag{Case 4}
+    \end{align}
+    In Case 1 and Case 2, we have $|a+b|-|b|=a$
+    since $|a+b|\leq|a|+|b|$.\par
+    In Case 3,
+    if $a+b\geq0$, then
+    \begin{equation*}
+      |a+b|-|b|=(a+b)-(-b)=a+b+b=2b
+    \end{equation*}
+    If $a+b\leq0$, then
+    \begin{equation*}
+      |a+b|-|b|=(-a-b)-(-b)=-a+(-b)+b=-a
+    \end{equation*}
+    In Case 4, if $a+b\geq0$, then
+    \begin{equation*}
+      |a+b|-|b|=(a+b)-(b)=a
+    \end{equation*}
+    If $a+b\leq0$, then
+    \begin{equation*}
+      |a+b|-|b|=-a+(-b)+(-b)=-a-2b
+    \end{equation*}
+    \item We make the problem into 4 cases.
+    \begin{align}
+      x\geq1 \tag{Case 1} \\
+      0\leq x\leq 1 \tag{Case 2} \\
+      -1\leq x\leq 0 \tag{Case 3} \\
+      x\leq -1 \tag{Case 4}
+    \end{align}
+    In Case 1, $|(|x|-1)|=x-1$. \par
+    In Case 2, $|(|x|-1)|=1-x$. \par
+    In Case 3, $|(|x|-1)|=x+1$. \par
+    In Case 4, $|(|x|-1)|=-(x+1)$.
+    \item Since $x^2\geq0$, $|x|-|x^2|=|x|-x^2$. \par
+    If $x\geq0$, then $|x|-x^2=x(1-x)$. If $x\leq0$,
+    then\\ $|x|-x^2=-x+(-x^2)=-x(1+x)$.
+    \item Note that $|a|\geq a$. Hence,
+    \begin{equation*}
+      a-|(a-|a|)|=a+a-|a|=2a-|a|
+    \end{equation*}
+    We have two cases,
+    \par
+    \note{Case 1: }$a\geq0$
+    \begin{equation*}
+      2a-|a|=2a-a=a
+    \end{equation*}
+    \note{Case 2: }$a\leq0$
+    \begin{equation*}
+      2a-|a|=2a+a=3a
+    \end{equation*}
+  \end{enumerate}
+\end{solution}
