@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  13 JUL 2017 00:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  13 JUL 2017 01:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1227,9 +1227,9 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
  ) 
 Here is how much of TeX's memory you used:
- 34895 strings out of 493013
- 757962 string characters out of 6133328
- 970466 words of memory out of 5000000
+ 34896 strings out of 493013
+ 757969 string characters out of 6133328
+ 970467 words of memory out of 5000000
  37739 multiletter control sequences out of 15000+600000
  16649 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1254,10 +1254,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (22 pages, 246758 bytes).
+Output written on master.pdf (22 pages, 247383 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 394 compressed objects within 4 object streams
- 180 named destinations out of 1000 (max. 500000)
+ 445 PDF objects out of 1000 (max. 8388607)
+ 397 compressed objects within 4 object streams
+ 181 named destinations out of 1000 (max. 500000)
  17453 words of extra memory for PDF output out of 20736 (max. 10000000)
 
