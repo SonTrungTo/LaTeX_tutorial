@@ -10,7 +10,8 @@
     \item \label{1.1:v}
     $x^n-y^n=(x-y)(x^{n-1}+x^{n-2}y+\dots+xy^{n-2}
     +y^{n-1})$
-    \item $x^3+y^3=(x+y)(x^2-xy+y^2)$ (There is a particularly
+    \item \label{1.1:vi}
+    $x^3+y^3=(x+y)(x^2-xy+y^2)$ (There is a particularly
     easy way to do this using \ref{1:iv}, and it will show
     you how to find a factorization for $x^n+y^n$ whenever
     n is odd.)
@@ -914,4 +915,51 @@
   This implies that the second term must be greater than $0$.
   Conversely, $x<y\Rightarrow x^5<y^5$ implies that
   it must be greater than $0$.
+\end{solution}
+
+\begin{pr}[*] \label{1.16}%Problem 1.16
+  \begin{enumerate}[label=(\alph*)]
+    \item \label{1.16:a}
+    Show that
+    \begin{IEEEeqnarray*}{rCl}
+      (x+y)^2 & = & x^2+y^2 \ \text{ only when }
+      x=0 \text{ or } y=0,\\
+      (x+y)^3 & = & x^3+y^3 \ \text{ only when }
+      x=0 \text{ or } y=0 \text{ or } x=-y.
+    \end{IEEEeqnarray*}
+    \item \label{1.16:b}
+    Using the fact that
+    \begin{equation*}
+      x^2 + 2xy + y^2 = (x+y)^2\geq0,
+    \end{equation*}
+    show that $4x^2+6xy+4y^2>0$ unless $x$ and $y$ are
+    both $0$.
+    \item \label{1.16:c}
+    Use part \ref{1.16:b} to find out when
+    $(x+y)^4 = x^4 + y^4$.
+    \item \label{1.16:d}
+    Find out when $(x+y)^5=x^5+y^5$. Hint: From the assumption
+    $(x+y)^5=x^5+y^5$ you should be able to derive the
+    equation $x^3+2x^2y+2xy^2+y^3=0$, if $xy\neq0$. This
+    implies that $(x+y)^3=x^2y+xy^2=xy(x+y)$.
+  \end{enumerate}
+  You should know be able to make a good guess as to when
+  $(x+y)^n=x^n+y^n$; the proof is contained in Problem
+  11.57 % \ref{11.57}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label=(\alph*)]
+    \item For the first part,
+    \begin{equation*}
+      (x+y)^2=x^2+2xy+y^2
+    \end{equation*}
+    Hence, $(x+y)^2=x^2+y^2$ only when $x=0$ or $y=0$.
+    For the second part, from \autoref{1.1}\ref{1.1:vi},
+    \begin{IEEEeqnarray*}{rCl}
+      (x+y)^3-(x+y)(x^2-xy+y^2) & = & 0 \\
+      (x+y)(xy) & = & 0
+    \end{IEEEeqnarray*}
+    which is true only when $x=0$ or $y=0$ or $x=-y$.
+  \end{enumerate}
 \end{solution}

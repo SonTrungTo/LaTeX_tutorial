@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  15 JUL 2017 20:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  16 JUL 2017 01:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1203,7 +1203,7 @@ l.96   \part{Prologue}
 Missing character: There is no Â in font cmr10!
 Missing character: There is no   in font cmr10!
 
-Overfull \hbox (0.58255pt too wide) in alignment at lines 42--49
+Overfull \hbox (0.58255pt too wide) in alignment at lines 43--50
  [] [] [] [][]
  []
 
@@ -1211,20 +1211,23 @@ Overfull \hbox (0.58255pt too wide) in alignment at lines 42--49
 
 ] [4] [5] [6] [7] [8] [9] [10] [11] [12]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 539.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 540.
  [13] [14] [15] [16] [17] [18]
 
-Package hyperref Warning: No autoref name for `pr' on input line 868.
+Package hyperref Warning: No autoref name for `pr' on input line 869.
 
 
-Package hyperref Warning: No autoref name for `pr' on input line 882.
+Package hyperref Warning: No autoref name for `pr' on input line 883.
 
 [19]
 
-Package hyperref Warning: No autoref name for `pr' on input line 909.
+Package hyperref Warning: No autoref name for `pr' on input line 910.
 
 
-Package hyperref Warning: No autoref name for `pr' on input line 913.
+Package hyperref Warning: No autoref name for `pr' on input line 914.
+
+
+Package hyperref Warning: No autoref name for `pr' on input line 958.
 
 ) [20]
 \tf@toc=\write6
@@ -1240,10 +1243,10 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
  ) 
 Here is how much of TeX's memory you used:
- 34919 strings out of 493013
- 758138 string characters out of 6133328
- 970938 words of memory out of 5000000
- 37746 multiletter control sequences out of 15000+600000
+ 34930 strings out of 493013
+ 758224 string characters out of 6133328
+ 971296 words of memory out of 5000000
+ 37752 multiletter control sequences out of 15000+600000
  16802 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,96p,739b,662s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1270,10 +1273,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (24 pages, 257979 bytes).
+Output written on master.pdf (24 pages, 259976 bytes).
 PDF statistics:
- 473 PDF objects out of 1000 (max. 8388607)
- 422 compressed objects within 5 object streams
- 191 named destinations out of 1000 (max. 500000)
+ 482 PDF objects out of 1000 (max. 8388607)
+ 431 compressed objects within 5 object streams
+ 196 named destinations out of 1000 (max. 500000)
  17453 words of extra memory for PDF output out of 20736 (max. 10000000)
 
