@@ -1015,5 +1015,106 @@
     \end{IEEEeqnarray*}
     Hence the minimum value is $\dfrac{23}{8}$ when
     $x=\dfrac{3}{4}$.
+    \item \begin{equation*}
+      x^2 - 3x + \frac{9}{4} - \frac{9}{4}
+      + 2(y^2 + 2y + 1)
+      = \left(x - \frac{3}{2}\right)^2 + 2(y + 1)^2
+      - \frac{9}{4}
+  \end{equation*}
+  The minimum value is $-\dfrac{9}{4}$ when $x=\dfrac{3}{2}$
+  and $y=-1$.
+  \item
+  \begin{IEEEeqnarray*}{rC}
+    & \frac{1}{2}x^2 + 4xy + 8y^2 - 3y^2 - 6y + 7
+    +\frac{1}{2}x^2 - 4x \\
+    = & \frac{1}{2}(x^2 + 8xy + 16y^2) - 3(y^2 + 2y +1)
+    + \frac{1}{2}(x^2 - 8x + 16) + 2 \\
+    = & \frac{1}{2}(x + 4y)^2 - 3(y + 1)^2
+    +\frac{1}{2}(x - 4)^2 + 2
+  \end{IEEEeqnarray*}
+  Therefore, the minimum value is $2$ when $x=4$ and
+  $y=-1$.
   \end{enumerate}
 \end{solution}
+
+
+\begin{pr} \label{1.18}%Problem 1.18
+  \begin{enumerate}[label=(\alph*)]
+    \item Suppose that $b^2 - 4c \geq 0$. Show that
+    the numbers
+    \begin{align*}
+      \frac{-b+\sqrt{b^2-4c}}{2},\quad
+      \frac{-b-\sqrt{b^2-4c}}{2}
+    \end{align*}
+    both satisfy the equation $x^2 + bx + c = 0$.
+    \item \label{1.18:b}
+    Suppose that $b^2 - 4c < 0$. Show that there
+    are no numbers $x$ satisfying $x^2 + bx + c = 0$;
+    in fact, $x^2 + bx + c > 0$ for all $x$. Hint:
+    Complete the square.
+    \item Use this fact to give another proof that
+    if $x$ and $y$ are not both $0$, then
+    $x^2 + xy + y^2 > 0$.
+    \item For which number $\alpha$ is it true that
+    $x^2 + \alpha xy + y^2 > 0$ whenever $x$ and $y$
+    are not both $0$?
+    \item Find the smallest possible value of
+    $x^2 + bx + c$ and of $ax^2 + bx + c$, for
+    $a > 0$.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label=(\alph*)]
+    \item Substitution immediately gives the desired result.
+    \item
+    \begin{equation*}
+      x^2 + bx + c = x^2 + bx + \frac{b^2}{4}
+      - \frac{b^2}{4} + c
+    \end{equation*}
+    which immediately yields
+    $\left(x + \dfrac{b}{2}\right)^2
+    + \dfrac{[-(b^2 - 4c)]}{4} > 0$ for all $x$ since
+    $b^2 - 4c < 0$.
+    \item If $y = 0$, $x^2>0$. Suppose not,
+    using \ref{1.18:b}, we obtain
+    $-3y^2 < 0$. Hence, $x^2 + xy + y^2 > 0$.
+    \item If $y = 0$, the result follows for all
+    $\alpha$. Suppose $y\neq0$,
+    using \ref{1.18:b}, we obtain $\alpha^2y^2
+    - 4y^2 < 0$, which is $y^2(\alpha^2 - 4) < 0$.
+    It follows that $-2 < \alpha < 2$.
+    \item From \ref{1.18:b}, it follows that
+    the minimum value of $x^2 + bx + c$ is
+    $\dfrac{[-(b^2 - 4c)]}{4}$ when $x = -b/2$.
+    Since $a > 0$, with the role of $b$ is now
+    $b/a$ and of $c$ is $c/a$, we easily
+    derive the result.
+    \begin{equation*}
+      x^2 + \frac{b}{a}x + \frac{c}{a} =
+      \left(x + \frac{b}{2a}\right)^2
+      + \frac{[-(b^2 - 4ac)]}{4a^2}
+    \end{equation*}
+    So its minimum value is $\dfrac{[-(b^2 - 4ac)]}{4a^2}$
+    when $x = -\dfrac{b}{2a}$.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{1.19}
+  The fact that $a^2\geq0$ for all numbers $a$, elementary
+  as it may seem, is nevertheless the fundamental idea
+  upon which most important inequalities are ultimately
+  based. The great-granddaddy of all inequalities is the
+  \note{Schwarz inequality}:
+  \begin{equation*}
+    x_1 y_1 + x_2 y_2 \leq \sqrt{x_1^2+x_2^2}
+    \sqrt{y_1^2+y_2^2}.
+  \end{equation*}
+  (A more general form occurs in Problem 2.21)\quad%ref{2.21}
+  The three proofs of the Schwarz inequality outlined
+  below have only one thing in common--their reliance
+  on the fact that $a^2\geq0$ for all $a$.
+  \begin{enumerate}[label=(\alph*)]
+    \item 
+  \end{enumerate}
+\end{pr}
