@@ -961,5 +961,59 @@
       (x+y)(xy) & = & 0
     \end{IEEEeqnarray*}
     which is true only when $x=0$ or $y=0$ or $x=-y$.
+    \item Note that $4x^2+6xy+4y^2=
+    \underbrace{3(x+y)^2}_\text{$\geq0$}
+    +\underbrace{x^2+y^2}_\text{$>0$}>0$ unless
+    $x=0$ and $y=0$.
+    \item Let us expand $(x+y)^4$.
+    \begin{IEEEeqnarray*}{rCl}
+      (x+y)^2(x+y)^2 & = & (x^2+2xy+y^2)(x^2+2xy+y^2) \\
+      & = & x^4 + 4x^3y+ 6x^2y^2+ 4xy^3 + y^4 \\
+      & = & x^4 + y^4 + xy(4x^2 + 6xy + 4y^2)
+    \end{IEEEeqnarray*}
+    Hence, $(x+y)^4=x^4+y^4$ only when $x=0$ or $y=0$,
+    by part \ref{1.16:b}.
+    \item Let us expand $(x+y)^5$.
+    \begin{IEEEeqnarray*}{rCl}
+      (x+y)^4(x+y) & = & x^5 + y^5 + xy(x+y)(4x^2 + 6xy + 4y^2)
+      +xy(x^3 + y^3) \\
+      & = & x^5 + y^5 + 5xy(x+y)(x^2 - xy + y^2)
+    \end{IEEEeqnarray*}
+    If $xy\neq0$ and $x+y\neq0$, let $z=-y$, by \autoref{1.6}%
+    \ref{1.6:b}, $x^3\neq z^3$. Hence, $x^2 - xy + y^2\neq0$.
+    Therefore, $(x+y)^5=x^5+y^5$ only when $x=0$ or $y=0$
+    or $x=-y$.
+    \begin{ab}
+      Hence, for $(x+y)^n = x^n + y^n$, if $n$ is even,
+      then $x=0$ or $y=0$. If $n$ is odd, then $x=0$ or
+      $y=0$ or $x=-y$.
+    \end{ab}
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} %Problem 1.17
+  \begin{enumerate}[label=(\alph*)]
+    \item
+    Find the smallest possible value of $2x^2 - 3x + 4$.
+    Hint: ``Complete the square'', i.e., write
+    $2x^2 - 3x + 4 = 2(x-3/4)^2 + \text{?}$
+    \item
+    Find the smallest possible value of
+    $x^2 - 3x + 2y^2 + 4y + 2$.
+    \item
+    Find the smallest possible value of
+    $x^2 + 4xy + 5y^2 - 4x - 6y + 7$.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution} %Solution 1.17
+  \begin{enumerate}[label=(\alph*)]
+    \item Since $2x^2 - 3x + 4 = 2(x^2 - \dfrac{3}{2}x + 2)$,
+    \begin{IEEEeqnarray*}{rCl}
+      2(x^2 - 2\cdot x\frac{3}{4} + \frac{9}{16} - \frac{9}{16}
+      + 2) & = & 2(x-\frac{3}{4})^2 + \frac{23}{8}
+    \end{IEEEeqnarray*}
+    Hence the minimum value is $\dfrac{23}{8}$ when
+    $x=\dfrac{3}{4}$.
   \end{enumerate}
 \end{solution}
