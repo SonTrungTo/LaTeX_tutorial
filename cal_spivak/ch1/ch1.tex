@@ -1243,3 +1243,153 @@
     $x_2 = \lambda y_2$.
   \end{enumerate}
 \end{solution}
+
+\begin{pr} %Problem 1.20
+  Prove that if
+  \begin{align*}
+    |x - x_0| < \frac{\epsilon}{2} \quad \text{and} \quad
+    |y - y_0| < \frac{\epsilon}{2},
+  \end{align*}
+  then
+  \begin{IEEEeqnarray*}{rCl}
+    |(x + y) - (x_0 + y_0)| & < & \epsilon,\\
+    |(x - y) - (x_0 - y_0)| & < & \epsilon
+  \end{IEEEeqnarray*}
+\end{pr}
+
+\begin{solution} %Solution to problem 1.20
+  This problem mainly uses the results from \autoref{1.12}.
+  For the first inequality, note that
+  $|(x + y) - (x_0 + y_0)| = |(x - x_0) + (y - y_0)|$, and
+  \begin{IEEEeqnarray*}{rCl}
+    |(x - x_0) + (y - y_0)| & \leq &
+    |x - x_0| + |y - y_0| \\
+                            &  <  &
+    \frac{\epsilon}{2} + \frac{\epsilon}{2} \\
+                            &  =  &
+    \epsilon
+  \end{IEEEeqnarray*}
+  For the second inequality, we rewrite
+  $|(x - y) - (x_0 - y_0)| = |(x - x_0) - (y - y_0)|$,
+  then
+  \begin{IEEEeqnarray*}{rCl}
+    |(x - x_0) - (y - y_0)| & \leq &
+    |x - x_0| + |y - y_0| \\
+                            &   <  &
+    \frac{\epsilon}{2} + \frac{\epsilon}{2} \\
+                            &   =  &
+    \epsilon
+  \end{IEEEeqnarray*}
+\end{solution}
+
+\begin{pr}[*] \label{1.21} % Problem 1.21
+  Prove that if
+  \begin{align*}
+    |x - x_0| <
+    \text{min}\left(\frac{\epsilon}{2(|y_0| + 1)},1\right)
+    \quad \text{and} \quad
+    |y - y_0| < \frac{\epsilon}{2(|x_0| + 1)},
+  \end{align*}
+  then $|xy - x_0 y_0| < \epsilon$.
+\end{pr}
+
+\begin{solution} % Solution to 1.21
+  We want to utilize the more diverse cases of inequality
+  expression in term of $x$, therefore
+  we rewrite $|xy - x_0 y_0| =
+  |xy - x y_0 + x y_0 - x_0 y_0|$. Hence,
+  \begin{IEEEeqnarray*}{rCl}
+    |xy - x y_0 + x y_0 - x_0 y_0| & \leq &
+    |x||y - y_0| + |y_0||x - x_0| \\
+                                   &  <   &
+    (|x_0| + 1)\frac{\epsilon}{2(|x_0| + 1)}
+    + |y_0|\frac{\epsilon}{2(|y_0| + 1)} \\
+                                   &  <   &
+    \frac{\epsilon}{2} + \frac{\epsilon}{2} \\
+                                   &  =   &
+    \epsilon
+  \end{IEEEeqnarray*}
+  where the first strict inequality follows from
+  $|x| - |x_0| \leq |x - x_0|$ (\autoref{1.12}), and
+  the second strict inequality comes from the fact
+  $\dfrac{|y_0|}{|y_0| + 1} < 1$.
+\end{solution}
+
+\begin{pr}[*] \label{1.22} % Problem 1.22
+  Prove that if $y_0 \neq 0$ and
+  \begin{equation*}
+    |y - y_0| < \text{min}\left(
+    \frac{|y_0|}{2},
+    \frac{\epsilon|y_0|^2}{2}
+    \right),
+  \end{equation*}
+  then $y \neq 0$ and
+  \begin{equation*}
+    \left|
+    \frac{1}{y} - \frac{1}{y_0}
+    \right|                       < \epsilon.
+  \end{equation*}
+\end{pr}
+
+\begin{solution} % Solution to problem 1.22
+  Note that the assumption implies $|y|
+  > \dfrac{|y_0|}{2} > 0$, which further implies
+  $\dfrac{1}{|y|} < \dfrac{2}{|y_0|}$%
+  ; therefore, it must be
+  that $y \neq 0$. Note $\left|
+  \dfrac{1}{y} - \dfrac{1}{y_0}
+  \right| = \left|
+  \dfrac{y - y_0}{y y_0}
+  \right|$, and from that
+  \begin{IEEEeqnarray*}{rCl}
+    \left|
+    \dfrac{y - y_0}{y y_0}
+    \right|               & = &
+    |y - y_0|\left|\frac{1}{y y_0}\right| \\
+                          & < &
+    \frac{\epsilon|y_0|^2}{2}\frac{2}{|y_0|^2} \\
+                          & = &
+    \epsilon
+  \end{IEEEeqnarray*}
+\end{solution}
+
+\begin{pr}[*] %Problem 1.23
+  Replace the question marks in the following statement
+  by expressions involving $\epsilon, x_0,$ and $y_0$
+  so that the conclusion will be true:
+
+  \medskip
+  If $y_0 \neq 0$ and
+  \begin{align*}
+    |y - y_0| < \text{?} \qquad \text{and} \qquad
+    |x - x_0| < \text{?}
+  \end{align*}
+  then $y \neq 0$ and
+  \begin{equation*}
+    \left|
+    \frac{x}{y} - \frac{x_0}{y_0}
+    \right|
+                                  < \epsilon
+    .
+  \end{equation*}
+  This problem is trivial in the sense that its solution
+  follows from \autoref{1.21} and \autoref{1.22} with
+  almost no work at all (notice that $x/y=x\cdot 1/y)$).
+  The crucial point is not to become confused; decide
+  which of the two problems should be used first,
+  and don't panic if your answer looks unlikely.
+\end{pr}
+
+\begin{solution} % Solution to 1.23
+  An observation at both suggested related problems reveals
+  \begin{IEEEeqnarray*}{rCl}
+    |y - y_0| & < & \text{min}\left(
+    \frac{|y_0|}{2}, \frac{\epsilon|y_0|^2}{4(|x_0|^2+1)}
+    \right) \\
+    |x - x_0| & < & \text{min}\left(
+    \frac{\epsilon|y_0|}{2(|y_0| + 1)}, 1
+    \right)
+  \end{IEEEeqnarray*}
+  Since $y_0 \neq 0$, we easily obtain $y\neq0$ by
+  \autoref{1.22}.
+\end{solution}
