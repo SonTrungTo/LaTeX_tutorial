@@ -1115,6 +1115,128 @@
   below have only one thing in common--their reliance
   on the fact that $a^2\geq0$ for all $a$.
   \begin{enumerate}[label=(\alph*)]
-    \item 
+    \item \label{1.19:a}
+    Prove that if $x_1 = \lambda y_1$ and
+    $x_2 = \lambda y_2$ for some number $\lambda$, then
+    equality holds in Schwarz inequality. Prove the same
+    thing if $y_1 = y_2 = 0$. Now suppose that $y_1$ and
+    $y_2$ are not both $0$, and that there is no number
+    $\lambda$ such that $x_1 = \lambda y_1$ and
+    $x_2 = \lambda y_2$. Then
+    \begin{IEEEeqnarray*}{rCl}
+      0 & < & (\lambda y_1 - x_1)^2 + (\lambda y_2 - x_2)^2 \\
+        & = & \lambda^2(y_1^2 + y_2^2) - 2\lambda
+        (x_1y_1 + x_2y_2) + (x_1^2 + x_2^2).
+    \end{IEEEeqnarray*}
+    Using \autoref{1.18}, complete the proof of the
+    Schwarz inequality.
+    \item \label{1.19:b}
+    Prove the Schwarz inequality by using
+    $2xy \leq x^2 + y^2$ (how is this derived?) with
+    \begin{align*}
+      x=\frac{x_i}{\sqrt{x_1^2+x_2^2}}, \quad
+      y=\frac{y_i}{\sqrt{y_1^2+y_2^2}},
+    \end{align*}
+    first for $i = 1$ and then for $i = 2$.
+    \item \label{1.19:c}
+    Prove the Schwarz inequality by first proving
+    that
+    \begin{equation*}
+      (x_1^2+x_2^2)(y_1^2+y_2^2)
+      =(x_1y_1+x_2y_2)^2 + (x_1y_2 - x_2y_1)^2.
+    \end{equation*}
+    \item \label{1.19:d}
+    Deduce, from each of these three proofs,
+    that equality holds only when $y_1=y_2=0$ or when
+    there is a number $\lambda$ such that $x_1=\lambda y_1$
+    and $x_2=\lambda y_2$.
   \end{enumerate}
 \end{pr}
+
+\begin{solution} %Solution 1.19
+  \begin{enumerate}[label=(\alph*)]
+    \item If $x_1=\lambda y_1$ and $x_2=\lambda y_2$
+    for every $\lambda \geq 0$,
+    \begin{IEEEeqnarray*}{rCl}
+      \lambda(y_1^2 + y_2^2) & = &
+      |\lambda|\sqrt{(y_1^2 + y_2^2)^2} \\
+      & = & \lambda  (y_1^2 + y_2^2)
+    \end{IEEEeqnarray*}
+    Or if $y_1=y_2=0$, then equality holds since both sides
+    are $0$. Otherwise, suppose that $y_1$ and $y_2$ are
+    not both $0$, and there is no number $\lambda$ such
+    that $x_1=\lambda y_1$ and $x_2=\lambda y_2$, then
+    \begin{IEEEeqnarray*}{rCl}
+      0 & < & \lambda^2(y_1^2+y_2^2)
+      - 2 \lambda(x_1y_1 + x_2y_2) + (x_1^2 + x_2^2) \\
+        & = & \lambda^2 - 2 \lambda
+        \frac{x_1y_1 + x_2y_2}{y_1^2 + y_2^2}
+        + \frac{x_1^2 + x_2^2}{y_1^2 + y_2^2}
+    \end{IEEEeqnarray*}
+    This holds only when, by \autoref{1.18}\ref{1.18:b},
+    \begin{equation*}
+      \frac{4(x_1y_1 + x_2y_2)^2}{(y_1^2 + y_2^2)^2}
+      + \frac{[-4(x_1^2 + x_2^2)(y_1^2 + y_2^2)]}%
+      {(y_1^2 + y_2^2)^2} < 0
+    \end{equation*}
+    which only holds when
+    \begin{equation*}
+      x_1y_1 + x_2y_2 < \sqrt{x_1^2 + x_2^2}
+      \sqrt{y_1^2 + y_2^2}
+    \end{equation*}
+    since $a\leq|a|$ for all $a$.
+    \item Note that $(x-y)^2\geq0$. For $i = 1$,
+    \begin{IEEEeqnarray}{rCl}
+      \frac{x_1^2}{x_1^2 + x_2^2}
+     +\frac{y_1^2}{y_1^2 + y_2^2} & \geq &
+     2\cdot\frac{x_1 y_1}{\sqrt{x_1^2 + x_2^2}%
+                          \sqrt{y_1^2 + y_2^2}} \label{1.19.1}
+    \end{IEEEeqnarray}
+    For $i = 2$,
+    \begin{IEEEeqnarray}{rCl}
+      \frac{x_2^2}{x_1^2 + x_2^2}
+     +\frac{y_2^2}{y_1^2 + y_2^2} & \geq &
+     2\cdot\frac{x_2 y_2}{\sqrt{x_1^2 + x_2^2}%
+                          \sqrt{y_1^2 + y_2^2}} \label{1.19.2}
+    \end{IEEEeqnarray}
+    (\ref{1.19.1})$+$(\ref{1.19.2}), we derive
+    \begin{equation*}
+      x_1y_1 + x_2y_2 \leq \sqrt{x_1^2 + x_2^2}%
+      \sqrt{y_1^2 + y_2^2}
+    \end{equation*}
+    \item
+    \begin{IEEEeqnarray*}{lC}
+        & (x_1^2 + x_2^2)(y_1^2 + y_2^2) \\
+      = & (x_1^2 y_1^2 + 2 x_1 y_1 x_2 y_2 + x_2^2 y_2^2)
+      + (x_1^2 y_2^2 - 2 x_1 y_2 x_2 y_1 + x_2^2 y_1^2) \\
+      = & (x_1 y_1 + x_2 y_2)^2
+      + (x_1 y_2 - x_2 y_1)^2
+    \end{IEEEeqnarray*}
+    Note that $(x_1 y_2 - x_2 y_1)^2 \geq 0$. Hence,
+    \begin{equation*}
+      x_1 y_1 + x_2 y_2 \leq \sqrt{x_1^2 + x_2^2}
+                             \sqrt{y_1^2 + y_2^2}
+    \end{equation*}
+    for $a \leq |a|$ for all $a$.
+    \item In \ref{1.19:a}, it is obvious; the proof is
+    based on the separation of two cases, $a^2 = 0$ and
+    $a^2 > 0$. In \ref{1.19:b}, equality occurs only when
+    $x=y$; by construction, $y_1 = y_2 = 0$ or, if not,
+    \begin{IEEEeqnarray*}{rCl}
+      \frac{x_1}{\sqrt{x_1^2 + x_2^2}} & = &
+      \frac{y_1}{\sqrt{y_1^2 + y_2^2}} \\
+      \frac{x_2}{\sqrt{x_1^2 + x_2^2}} & = &
+      \frac{y_2}{\sqrt{y_1^2 + y_2^2}}
+    \end{IEEEeqnarray*}
+    implies that for
+    \begin{equation*}
+      \lambda = \frac{\sqrt{x_1^2 + x_2^2}}
+                     {\sqrt{y_1^2 + y_2^2}}
+    \end{equation*}
+    $x_1 = \lambda y_1$ and
+    $x_2 = \lambda y_2$.
+    \par
+    In \ref{1.19:c}, equality occurs only when
+    $(x_1 y_2 - x_2 y_1)^2 = 0$.
+  \end{enumerate}
+\end{solution}

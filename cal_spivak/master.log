@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  16 JUL 2017 22:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  17 JUL 2017 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1213,7 +1213,7 @@ Overfull \hbox (0.58255pt too wide) in alignment at lines 43--50
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 540.
  [13] [14] [15] [16] [17] [18]
-[19] [20] [21] [22]) [23]
+[19] [20] [21] [22] [23] [24]) [25]
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
@@ -1227,15 +1227,18 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
  ) 
 Here is how much of TeX's memory you used:
- 34958 strings out of 493013
- 758443 string characters out of 6133328
- 971478 words of memory out of 5000000
- 37756 multiletter control sequences out of 15000+600000
- 16802 words of font info for 82 fonts, out of 8000000 for 9000
+ 34980 strings out of 493013
+ 758626 string characters out of 6133328
+ 972894 words of memory out of 5000000
+ 37762 multiletter control sequences out of 15000+600000
+ 16904 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,96p,739b,662s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{pr.1.6} has been referenced but does not exist, r
-eplaced by a fixed one
+pdfTeX warning (dest): name{pr.1.18} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{pr.1.6} has been referenced but does not exist, rep
+laced by a fixed one
 
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
@@ -1257,10 +1260,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (27 pages, 272384 bytes).
+Output written on master.pdf (29 pages, 279389 bytes).
 PDF statistics:
- 529 PDF objects out of 1000 (max. 8388607)
- 475 compressed objects within 5 object streams
- 220 named destinations out of 1000 (max. 500000)
+ 558 PDF objects out of 1000 (max. 8388607)
+ 501 compressed objects within 6 object streams
+ 232 named destinations out of 1000 (max. 500000)
  17453 words of extra memory for PDF output out of 20736 (max. 10000000)
 
