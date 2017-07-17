@@ -1384,12 +1384,160 @@
   An observation at both suggested related problems reveals
   \begin{IEEEeqnarray*}{rCl}
     |y - y_0| & < & \text{min}\left(
-    \frac{|y_0|}{2}, \frac{\epsilon|y_0|^2}{4(|x_0|^2+1)}
+    \frac{|y_0|}{2}, \frac{\epsilon|y_0|^2}{4(|x_0|+1)}
     \right) \\
     |x - x_0| & < & \text{min}\left(
     \frac{\epsilon|y_0|}{2(|y_0| + 1)}, 1
     \right)
   \end{IEEEeqnarray*}
   Since $y_0 \neq 0$, we easily obtain $y\neq0$ by
-  \autoref{1.22}.
+  \autoref{1.22}. For the latter part of the proof,
+  notice that
+  \begin{IEEEeqnarray*}{rCl}
+    \left|
+    \frac{x}{y} - \frac{x_0}{y_0}
+    \right| & = &
+    \left|
+    x(\frac{1}{y} - \frac{1}{y_0})
+    +\frac{1}{y_0}(x - x_0)
+    \right| \\
+            & \leq &
+    |x|\left|
+    \frac{1}{y} - \frac{1}{y_0}
+    \right|
+    + \frac{1}{|y_0|}|x - x_0| \\
+            &  <   &
+    (|x_0| + 1)\frac{\epsilon}{2(|x_0| + 1)}
+    +
+    \frac{1}{|y_0|}\frac{\epsilon|y_0|}{2(|y_0| + 1)} \\
+            &  <  &
+    \frac{\epsilon}{2} + \frac{\epsilon}{2} \\
+            &  =  &
+    \epsilon
+  \end{IEEEeqnarray*}
+\end{solution}
+
+\begin{pr}[*] \label{1.24} % Problem 1.24
+  This problem shows that the actual placement of parentheses
+  in a sum is irrelevant. The proof involve ``mathematical
+  induction''; if you are not familiar with such proofs,
+  but still want to tackle this problem, it can be saved
+  until after Chapter 2, where proofs by induction are
+  explained.
+  \par
+  \quad
+  Let us agree, for definiteness, that
+  $a_1 + \dots + a_n$ will denote
+  \begin{equation*}
+    a_1 + (a_2 + (a_3 + \dots +(a_{n-2}+(a_{n-1} + a_n)))
+    \dots)
+  \end{equation*}
+  Thus $a_1 + a_2 + a_3$ denotes $a_1 + (a_2 + a_3)$,
+  and $a_1 + a_2 + a_3 + a_4$ denotes
+  $a_1 + (a_2 + (a_3 + a_4))$, etc.
+  \begin{enumerate}[label=(\alph*)]
+    \item \label{1.24:a}
+    Prove that
+    \begin{equation*}
+      (a_1 + \dots + a_k) + a_{k+1} =
+      a_1 + \dots + a_{k+1}.
+    \end{equation*}
+    Hint: Use induction on $k$.
+    \item \label{1.24:b}
+    Prove that if $n \geq k$, then
+    \begin{equation*}
+      (a_1 + \dots + a_k) + (a_{k+1} + \dots + a_n) =
+      a_1 + \dots + a_n.
+    \end{equation*}
+    Hint: Use part \ref{1.24:a} to give proof
+    by induction on $k$.
+    \item \label{1.24:c}
+    Let $s(a_1,\dots,a_k)$ be some sum formed from
+    $a_1,\dots,a_k$. Show that
+    \begin{equation*}
+      s(a_1,\dots,a_k) = a_1 + \dots + a_k
+    \end{equation*}
+    Hint: There must be two sums $s'(a_1,\dots,a_l)$
+    and $s''(a_{l+1},\dots,a_k)$ such that
+    \begin{equation*}
+      s(a_1,\dots,a_k) = s'(a_1,\dots,a_l)
+      + s''(a_{l+1},\dots,a_k).
+    \end{equation*}
+  \end{enumerate}
+\end{pr}
+
+\begin{solution} % Solution to 1.24
+  \begin{enumerate}[label=(\alph*)]
+    \item If $k = 1$, there is nothing to prove. Suppose
+    the equation holds for $k = l$, then for
+    $k = l + 1$,
+    \begin{IEEEeqnarray*}{rCl}
+        & (a_1 + \dots + a_{l + 1}) + a_{l + 2} \\
+      = & ((a_1 + \dots + a_l)+ a_{l + 1}) + a_{l + 2} \\
+      = & a_1 + \dots + a_l + (a_{l + 1} + a_{l + 2})
+      & \text{(since $(a+b)+c=a+(b+c)$)} \\
+      = & a_1 + (a_2 + \dots + (a_{l - 1} + (a_l
+      + (a_{l + 1} + a_{l + 2})))\dots) \\
+      = & a_1 + \dots + a_{l + 1} + a_{l + 2}
+    \end{IEEEeqnarray*}
+    The proof is complete.
+    \item If $n = k$, there is nothing to prove. Suppose
+    the equation holds for $n \geq k$, then for
+    $n \geq k + 1$,
+    \begin{IEEEeqnarray*}{rCl}
+       & (a_1 + \dots + a_{k + 1}) + (a_{k + 2} + \dots
+       + a_n) \\
+     = & ((a_1 + \dots + a_k) + a_{k + 1})
+     + (a_{k + 2} + \dots + a_n)
+       & \quad \text{(by \ref{1.24:a})} \\
+     = & (a_1 + \dots + a_k) + (a_{k + 1} + \dots
+     + a_n)   \\
+     = & a_1 + \dots + a_n & \quad \text{(by assumption)}
+    \end{IEEEeqnarray*}
+    The proof is complete.
+    \item By \ref{1.24:b}, there exists a number $l$
+    such that
+    \begin{equation*}
+      s'(a_1,\dots,a_l) + s''(a_{l + 1},\dots,a_n)
+      = a_1 + \dots + a_n
+    \end{equation*}
+    Hence, $s(a_1,\dots,a_n) = a_1 + \dots + a_n$.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} % Problem 1.25
+  Suppose that we interpret ``number'' to mean either
+  $0$ or $1$, and $+$ and $\cdot$ to be the operations
+  defined by the following two tables.
+
+  \par
+  \medskip
+  \begin{tabular}{c|c|c|}
+    \multicolumn{1}{c}{$+$}  & \multicolumn{1}{c}{$0$} &
+    \multicolumn{1}{c}{$1$} \\
+    \cline{2-3}
+    \multicolumn{1}{c|}{$0$}  & $0$ & $1$ \\
+    \cline{2-3}
+    \multicolumn{1}{c|}{$1$}  & $1$ & $0$ \\
+    \cline{2-3}
+  \end{tabular}
+  \hspace{35pt}
+  \begin{tabular}{c|c|c|}
+    \multicolumn{1}{c}{$\cdot$}  & \multicolumn{1}{c}{$0$} &
+    \multicolumn{1}{c}{$1$} \\
+    \cline{2-3}
+    \multicolumn{1}{c|}{$0$}  & $0$ & $0$ \\
+    \cline{2-3}
+    \multicolumn{1}{c|}{$1$}  & $0$ & $1$ \\
+    \cline{2-3}
+  \end{tabular}
+
+  \par
+  \medskip
+  Check that properties P1-P9 all hold, even though
+  $1 + 1 = 0$.
+\end{pr}
+
+\begin{solution}
+  It is easy to check!
 \end{solution}
