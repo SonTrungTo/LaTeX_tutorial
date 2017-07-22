@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  25 JUN 2017 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  22 JUL 2017 20:04
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **note.tex
 (./note.tex
@@ -24,28 +23,33 @@ File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/preprint/authblk.sty
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/preprint/authblk.sty
 Package: authblk 2001/02/27 1.3 (PWD)
 \affilsep=\skip43
 \@affilsep=\skip44
 \c@Maxaffil=\count88
 \c@authors=\count89
 \c@affil=\count90
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen103
-)) (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count91
@@ -85,15 +89,18 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks18
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2016/texmf-dist/tex/latex/amscls/amsthm.sty
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks19
 \thm@bodyfont=\toks20
@@ -104,7 +111,8 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@postskip=\skip49
 \thm@headsep=\skip50
 \dth@everypar=\toks24
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \fancy@headwidth=\skip51
 \f@ncyO@elh=\skip52
@@ -115,7 +123,8 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \f@ncyO@erf=\skip57
 \f@ncyO@olf=\skip58
 \f@ncyO@orf=\skip59
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitkv@toks@=\toks25
 \labelindent=\skip60
@@ -123,11 +132,15 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@toks=\toks26
 \enit@inbox=\box28
 \enitdp@description=\count103
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
- (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
- (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -145,13 +158,15 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
 Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
 Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
@@ -164,25 +179,30 @@ Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks27
-) (/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen113
 \Hy@linkcounter=\count104
 \Hy@pagecounter=\count105
- (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count106
- (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4498.
@@ -193,7 +213,8 @@ Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
 \c@Hy@tempcnt=\count107
- (/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -222,12 +243,15 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
 \Fld@listcount=\count112
 \c@bookmark@seq@number=\count113
- (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
 )
 \Hy@SectionHShift=\skip61
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.sty
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
 \MT@toks=\toks28
 \MT@count=\count114
@@ -235,48 +259,59 @@ LaTeX Info: Redefining \textls on input line 774.
 \MT@outer@kern=\dimen117
 LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
 \MT@listname@count=\count115
- (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2016/05/14 v2.6a Definitions specific to pdftex (RS)
+
 LaTeX Info: Redefining \lsstyle on input line 916.
 LaTeX Info: Redefining \lslig on input line 916.
 \MT@outer@space=\skip62
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.cfg
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
-)) (/usr/local/texlive/2016/texmf-dist/tex/latex/IEEEtran/IEEEtrantools.sty
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box29
+\sift@deathcycles=\count116
+\@vwid@loff=\dimen118
+\@vwid@roff=\dimen119
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/IEEEtran/IEEEtrantools.sty
 Package: IEEEtrantools 2015/08/26 V1.5 by Michael Shell
 
 -- See the "IEEEtrantools_doc.txt" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/tools/
-\@IEEEtrantmpdimenA=\dimen118
-\@IEEEtrantmpdimenB=\dimen119
-\@IEEEtrantmpdimenC=\dimen120
-\@IEEEtrantmpcountA=\count116
-\@IEEEtrantmpcountB=\count117
-\@IEEEtrantmpcountC=\count118
+\@IEEEtrantmpdimenA=\dimen120
+\@IEEEtrantmpdimenB=\dimen121
+\@IEEEtrantmpdimenC=\dimen122
+\@IEEEtrantmpcountA=\count117
+\@IEEEtrantmpcountB=\count118
+\@IEEEtrantmpcountC=\count119
 \@IEEEtrantmptoksA=\toks29
-\IEEEnormaljot=\dimen121
-\IEEEquantizedlength=\dimen122
-\IEEEquantizedlengthdiff=\dimen123
-\IEEEquantizedtextheightdiff=\dimen124
-\IEEEilabelindentA=\dimen125
-\IEEEilabelindentB=\dimen126
-\IEEEilabelindent=\dimen127
-\IEEEelabelindent=\dimen128
-\IEEEdlabelindent=\dimen129
-\IEEElabelindent=\dimen130
-\IEEEiednormlabelsep=\dimen131
-\IEEEiedmathlabelsep=\dimen132
+\IEEEnormaljot=\dimen123
+\IEEEquantizedlength=\dimen124
+\IEEEquantizedlengthdiff=\dimen125
+\IEEEquantizedtextheightdiff=\dimen126
+\IEEEilabelindentA=\dimen127
+\IEEEilabelindentB=\dimen128
+\IEEEilabelindent=\dimen129
+\IEEEelabelindent=\dimen130
+\IEEEdlabelindent=\dimen131
+\IEEElabelindent=\dimen132
+\IEEEiednormlabelsep=\dimen133
+\IEEEiedmathlabelsep=\dimen134
 \IEEEiedtopsep=\skip63
-\c@IEEEsubequation=\count119
-\@IEEEeqnnumcols=\count120
-\@IEEEeqncolcnt=\count121
-\@IEEEsubeqnnumrollback=\count122
-\IEEEPARstartletwidth=\dimen133
+\c@IEEEsubequation=\count120
+\@IEEEeqnnumcols=\count121
+\@IEEEeqncolcnt=\count122
+\@IEEEsubeqnnumrollback=\count123
+\IEEEPARstartletwidth=\dimen135
 )
-\c@id=\count123
-\c@thm=\count124
+\c@id=\count124
+\c@thm=\count125
  (./note.aux)
 \openout1 = `note.aux'.
 
@@ -294,19 +329,22 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
-\AtBeginShipoutBox=\box29
+\AtBeginShipoutBox=\box30
 Package hyperref Info: Link coloring OFF on input line 19.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
- (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count125
+\c@section@level=\count126
 )
 LaTeX Info: Redefining \ref on input line 19.
 LaTeX Info: Redefining \pageref on input line 19.
 LaTeX Info: Redefining \nameref on input line 19.
- (./note.out) (./note.out)
+
+(./note.out) (./note.out)
 \@outlinefile=\write3
 \openout3 = `note.out'.
 
@@ -320,19 +358,25 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 28.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 28.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 Package microtype Info: Loading generic settings for font family
@@ -348,19 +392,22 @@ Package microtype Info: Loading generic settings for font family
 
 ] [2
 
-] (./note.toc)
+]
+(./note.toc)
 \tf@toc=\write4
 \openout4 = `note.toc'.
 
  [3] [4
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.55   \part{Prologue}
                        [1
 
-]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.55   \part{Prologue}
@@ -385,31 +432,57 @@ Overfull \hbox (26.53377pt too wide) in alignment at lines 238--246
  [] [] [] [] [] [][]
  []
 
-[5] [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 372.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 372.
+[5] [6] [7] [8
+
+]
+Chapter 2.
+
+Package varwidth Warning: Failed to reprocess entire contents on input line 411
+.
+
+
+Package varwidth Warning: Failed to reprocess entire contents on input line 411
+.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 429.
+[9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 429.
  (./note.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 372.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 372.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 429.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 429.
 Package rerunfilecheck Info: File `note.out' has not changed.
-(rerunfilecheck)             Checksum: D5196FF6B414106DE0CBFA6C6B87F4ED;153.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 372.
+(rerunfilecheck)             Checksum: A3E68F3BEDE90CA7576E9A60492DCE7F;217.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 429.
  ) 
 Here is how much of TeX's memory you used:
- 7784 strings out of 493013
- 119420 string characters out of 6133328
- 249015 words of memory out of 5000000
- 11197 multiletter control sequences out of 15000+600000
+ 7844 strings out of 493013
+ 120312 string characters out of 6133328
+ 249787 words of memory out of 5000000
+ 11247 multiletter control sequences out of 15000+600000
  16071 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,11n,43p,241b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
-10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on note.pdf (13 pages, 184221 bytes).
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on note.pdf (15 pages, 193599 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 18457 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 230 PDF objects out of 1000 (max. 8388607)
+ 194 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 18465 words of extra memory for PDF output out of 20736 (max. 10000000)
 

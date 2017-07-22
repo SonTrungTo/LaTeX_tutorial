@@ -64,6 +64,8 @@ INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype-pdftex.de
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.cfg
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.cfg
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/varwidth/varwidth.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/IEEEtran/IEEEtrantools.sty
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/IEEEtran/IEEEtrantools.sty
 INPUT note.aux
@@ -156,3 +158,4 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

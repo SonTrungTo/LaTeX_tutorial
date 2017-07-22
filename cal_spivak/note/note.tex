@@ -1,11 +1,11 @@
 \documentclass[a4paper,11pt,twoside]{book}
 \usepackage[affil-it]{authblk}
 \usepackage{amsmath,amssymb,amsthm,fancyhdr,enumitem,%
-hyperref,microtype}
+hyperref,microtype,varwidth}
 \usepackage[retainorgcmds]{IEEEtrantools}
 \newcommand{\note}[1]{\emph{#1}}
 \theoremstyle{plain} \newtheorem{id}{Lemma}
-                     \newtheorem{thm}{Theorem}
+                     \newtheorem{thm}{Theorem}[chapter]
 \theoremstyle{remark} \newtheorem*{ab}{Remark}
 \newcommand{\idautorefname}{Lemma}
 \newcommand{\abautorefname}{Remark}
@@ -369,4 +369,61 @@ hyperref,microtype}
     of numbers. The deficiency is profound and subtle;
     and,hopefully, will be discovered in the rest of the note.
   \end{ab}
+% END OF CHAPTER 1
+
+% CHAPTER 2
+  \chapter{Number of various sorts}
+  $\mathbb{N}$ is the basic set and has many deficiencies.
+  (\ref{itm:P2} and \ref{itm:P3}).
+  \par
+  Mathematical induction principle is the basic property of
+  $\mathbb{N}$; however, even though proof by induction
+  is quite straightforward, \note{the method by which
+  the formula was discovered remains a mystery}.
+  \begin{thm}[Well-ordering principle]
+    If $A$ is a nonnull set of natural numbers,
+    then $A$ has a least member.
+  \end{thm}
+  \begin{proof}
+    Suppose $A$ has no least member. Let $B$ be the
+    collection of $n$ natural numbers $1,\ldots,n$
+    that are not \note{all} in $A$.
+    Clearly, $1$ is in $B$ (if not, $1$ would be the
+    least member in $A$). Moreover, if $1,\ldots,k$
+    are not in $A$, surely $k+1$ is not in $A$ either (%
+    else, $k+1$ would be the least member in $A$).
+    This shows that if $k\in B$, then $k+1 \in B$.
+    Hence, $B$ is the set of all natural numbers, and
+    $A=\emptyset$.
+  \end{proof}
+  $\mathbb{N}$ can be defined either by the well-ordering
+  principle for by mathematical induction since they are
+  equivalent.
+  \par
+  \note{Principle of complete induction}:
+
+  {\centering
+    \begin{varwidth}{\textwidth}
+      \begin{enumerate}[label=(\arabic*)]
+        \item $1$ is in $A$,
+        \item $k+1$ is in $A$ if $1,\ldots,k$ are in $A$,
+      \end{enumerate}
+    \end{varwidth}
+  \par}
+  \smallskip
+  then $A$ is the set of all natural numbers.
+  \\ Complete induction is the consequence of induction.
+  \par
+  Recursive definition.
+  \par
+  Deficiencies of $\mathbb{N}$ can be partially remedied
+  by $\mathbb{Z}$(\ref{itm:P7} fails.), which is remedied
+  by $\mathbb{Q}$, which is smaller than $\mathbb{Z}$.
+  \par
+  Every natural number $n$ is either odd or even.
+  \par
+  if $n$ is odd, $n^2$ is odd; if $n$ is even, $n^2$ is
+  even. Hence,\\
+  if $n^2$ is even, n is even; if $n^2$ is odd, $n$ is odd.
+
   \end{document}
