@@ -1,7 +1,7 @@
 \documentclass[a4paper,11pt]{memoir}
 \usepackage[affil-it]{authblk}
 \usepackage{amsmath,amssymb,amsthm,fancyhdr,enumitem,%
-microtype,pgfplots}
+microtype,pgfplots,tikz}
 \usepackage[pdftex,hyperindex=false,%
 colorlinks,unicode,hidelinks]{hyperref}
 \pgfplotsset{width=7cm,compat=1.9}
@@ -75,6 +75,34 @@ colorlinks,unicode,hidelinks]{hyperref}
 }
 \newcommand{\partnote}{}
 \newcommand{\doublenote}{}
+
+%----This is the TeX for Pascal triangle
+%----using binomialCoefficient
+\newcommand\binomialCoefficient[2]{%
+  %Store values
+  \c@pgf@counta=#1 % n
+  \c@pgf@countb=#2 % k
+  %
+  % Take advantage of the symmetry if k > n - k
+  \c@pgf@countc=\c@pgf@counta%
+  \advance \c@pgf@countc by-\c@pgf@countb%
+  \ifnum\c@pgf@countb>\c@pgf@countc%
+    \c@pgf@countb=\c@pgf@countc%
+  \fi%
+  %
+  % Recursively compute the coefficients
+  \c@pgf@countc=1 % hold the result
+  \c@pgf@countd=0 % counter
+  \pgfmathloop % c -> c*(n-i)/(i+1), i=0,1,...,k-1
+    \ifnum\c@pgf@countd<\c@pgf@countb%
+    \multiply \c@pgf@countc by\c@pgf@counta%
+    \advance  \c@pgf@counta by-1%
+    \advance  \c@pgf@countd by1%
+    \divide   \c@pgf@countc by\c@pgf@countd%
+  \repeatpgfmathloop%
+  \the\c@pgf@countc%
+}
+%-------binomialCoefficient ends here!
 \makeatother
 
 \renewcommand{\doublenote}{%
@@ -95,6 +123,6 @@ colorlinks,unicode,hidelinks]{hyperref}
   This page is intentionally left blank.
   }
   \part{Prologue}
-    \chapter{Basic properties of number}
     \input{ch1/ch1}
+    \input{ch2/ch2}
 \end{document}

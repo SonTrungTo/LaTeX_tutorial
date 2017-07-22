@@ -326,6 +326,8 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ch1/ch1.tex
 INPUT ch1/ch1.tex
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
+INPUT ch2/ch2.tex
+INPUT ch2/ch2.tex
 OUTPUT master.toc
 INPUT master.aux
 INPUT ./master.out
