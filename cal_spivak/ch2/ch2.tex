@@ -1,8 +1,9 @@
 \chapter{Numbers of Various Sorts}
-\begin{pr} % 2.1
+\begin{pr} \label{2.1}% 2.1
   Prove the following formula by induction.
   \begin{enumerate}[label=(\roman*)]
-    \item $1^2+\dots+n^2=\dfrac{n(n+1)(2n+1)}{6}$.
+    \item \label{2.1:i}
+    $1^2+\dots+n^2=\dfrac{n(n+1)(2n+1)}{6}$.
     \item $1^3+\dots+n^3=(1+\dots+n)^2$.
   \end{enumerate}
 \end{pr}
@@ -32,3 +33,91 @@
     This finishes the proof for every $n$.
   \end{enumerate}
 \end{solution}
+
+\begin{pr} % 2.2
+  Find a formula for
+  \begin{enumerate}[label=(\roman*)]
+    \item
+    $\displaystyle\sum_{i=1}^n (2i-1) = 1+3+5+\dots+(2n-1)$.
+    \item $\displaystyle\sum_{i=1}^n (2i-1)^2
+    = 1^2 + 3^2 + 5^2 + \dots + (2n - 1)^2$.
+  \end{enumerate}
+  Hint: What do these expressions have to do with
+  $1 + 2 + 3 + \dots + 2n$ and $1^2 + 2^2 + 3^2 + \dots
+  + (2n)^2$?
+\end{pr}
+
+\begin{solution} % s2.2
+  \begin{enumerate}[label=(\roman*)]
+    \item Remind that $1+\dots+2n=n(2n+1)$ and
+    that $2 + \dots + 2n = 2 \cdot \dfrac{n(n+1)}{2} = n(n+1)$.
+    Hence,
+    \begin{equation*}
+      \sum_{i=1}^n (2i - 1) = n(2n+1) - n(n+1) = n^2
+    \end{equation*}
+    \item Using \autoref{2.1}\ref{2.1:i}, we easily
+    derive that $\displaystyle
+    \sum_{i=1}^{2n} i^2 = \dfrac{n(2n+1)(4n+1)}{3}$
+    and $\displaystyle
+    \sum_{i=1}^n (2i)^2 = \dfrac{2n(n+1)(2n+1)}{3}$.
+    Therefore,
+    \begin{equation*}
+      \sum_{i=1}^n (2i - 1)^2 = \sum_{i=1}^{2n} i^2
+      - \sum_{i=1}^n (2i)^2
+      = \frac{n(4n^2 - 1)}{3}
+    \end{equation*}
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{2.3} % 2.3
+  If $0 \leq k \leq n$, the ``binomial coefficient''
+  $\displaystyle\binom{n}{k}$ is defined by
+  $\displaystyle\binom{n}{k} = \dfrac{n!}{k!(n-k)!}
+  = \dfrac{n(n-1)\cdots(n-k+1)}{k!}$, if $k\neq0,n$ \\
+  $\displaystyle\binom{n}{0} = \binom{n}{n} = 1$.
+  (This becomes a special case of the first formula
+  if we define $0! = 1$.)
+  \begin{enumerate}[label=(\alph*)]
+    \item \label{2.3:a}
+    Prove that
+    \begin{equation*}
+      \binom{n+1}{k} = \binom{n}{k-1} + \binom{n}{k}.
+    \end{equation*}
+    (The proof does not require an induction argument.)
+
+    \medskip
+    This relation gives rise to the following configuration,
+    known as ``Pascal's triangle''---a number not on one of the
+    sides is the sum of two numbers above it; the binomial
+    coefficient $\displaystyle\binom{n}{k}$ is the
+    $(k+1)$st number in the $(n+1)$st row.
+    \par
+    \begin{center}
+      \begin{tikzpicture}
+        \foreach \n in {0,...,5}{
+          \foreach \k in {0,...,\n}{
+            \node at (\k - \n/2, -\n){$\binomialCoefficient{\n}{\k}$};
+          }
+        }
+      \end{tikzpicture}
+    \end{center}
+    \item Notice that all numbers in Pascal's triangle are
+    natural numbers. Use part \ref{2.3:a} to prove by
+    induction that $\displaystyle\binom{n}{k}$ is always
+    a natural number. (Your entire proof by induction will,
+    in a sense, be summed up in a glance by Pascal's
+    triangle.)
+    \item Give another proof that $\displaystyle\binom{n}{k}$
+    is a natural number by showing that
+    $\displaystyle\binom{n}{k}$ is the number of sets of
+    exactly $k$ integers each chosen from $1,\dots,n$.
+    \item Prove the ``binomial theorem'': If $a$ and $b$
+    are any numbers and $n$ is a natural number, then
+    \begin{IEEEeqnarray*}{rCl}
+      (a+b)^n & = & a^n + \binom{n}{1}a^{n-1}b
+      + \binom{n}{2}a^{n-2}b^2+\cdots+\binom{n}{n-1}ab^{n-1}
+      + b^n \\
+              & = & \sum_{j=0}^n \binom{n}{j}a^{n-j}b^j.
+    \end{IEEEeqnarray*}
+  \end{enumerate}
+\end{pr}
