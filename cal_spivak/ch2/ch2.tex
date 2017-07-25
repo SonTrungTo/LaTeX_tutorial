@@ -224,3 +224,56 @@
     dependence of value $n$ (if $n$ is even or odd).
   \end{enumerate}
 \end{solution}
+
+\begin{pr} % 2.4
+  \begin{enumerate}[label=(\alph*)]
+    \item
+    Prove that
+    \begin{equation*}
+      \sum_{k=0}^l \binom{n}{k} \binom{m}{l-k}
+      = \binom{n+m}{l}.
+    \end{equation*}
+    Hint: Apply the binomial theorem to $(1+x)^n(1+x)^m$.
+    \item
+    Prove that
+    \begin{equation*}
+      \sum_{k=0}^n \binom{n}{k}^2 = \binom{2n}{n}.
+    \end{equation*}
+  \end{enumerate}
+\end{pr}
+
+\begin{pr} \label{2.5} % 2.5
+  \begin{enumerate}[label=(\alph*)]
+    \item \label{2.5:a}
+    Prove by induction on $n$ that
+    \begin{equation*}
+      1 + r + r^2 + \cdots + r^n = \frac{1-r^{n+1}}{1-r}
+    \end{equation*}
+    if $r\neq1$ (if $r=1$, evaluating the sum certainly
+    presents no problem).
+    \item \label{2.5:b}
+    Derive this result by setting $S = 1 + r + \cdots + r^n$,
+    multiplying this equation by $r$, and solving the
+    two equations for $S$.
+  \end{enumerate}
+\end{pr}
+
+\begin{pr} \label{2.6} % 2.6
+  The formula for $1^2 + \cdots + n^2$ may be derived as
+  follows. We begin with the formula
+  \begin{equation*}
+    (k+1)^3 - k^3 = 3k^2 + 3k + 1.
+  \end{equation*}
+  Writing this formula for $k=1,\dots,n$ and adding,
+  we obtain
+
+  \bigskip
+  \begin{IEEEeqnarray*}{rCl}
+    2^3 - 1^3 & = & 3 \cdot 1^2 + 3 \cdot 1 + 1 \\
+    3^3 - 2^3 & = & 3 \cdot 2^2 + 3 \cdot 2 + 1 \\
+  \end{IEEEeqnarray*}
+  \centerline{\rule{0.65\textwidth}{0.4pt}}
+
+  \bigskip
+  Tada
+\end{pr}
