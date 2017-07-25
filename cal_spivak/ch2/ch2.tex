@@ -119,5 +119,108 @@
       + b^n \\
               & = & \sum_{j=0}^n \binom{n}{j}a^{n-j}b^j.
     \end{IEEEeqnarray*}
+    \item Prove that
+    \begin{enumerate}[label=(\roman*)]
+      \item \label{2.3:ei}
+      $\displaystyle
+      \sum_{j=0}^n \binom{n}{j}
+      = \binom{n}{0} + \cdots + \binom{n}{n}
+      = 2^n$.
+      \item \label{2.3:eii}
+      $\displaystyle
+      \sum_{j=0}^n (-1)^j \binom{n}{j}
+      = \binom{n}{0} - \binom{n}{1} + \cdots \pm \binom{n}{n}
+      = 0$.
+      \item $\displaystyle
+      \sum_{l\text{ odd}} \binom{n}{l}
+      = \binom{n}{1} + \binom{n}{3} + \cdots
+      = 2^{n - 1}$.
+      \item $\displaystyle
+      \sum_{l\text{ even}} \binom{n}{l}
+      = \binom{n}{0} + \binom{n}{2} + \cdots
+      = 2^{n - 1}$.
+    \end{enumerate}
   \end{enumerate}
 \end{pr}
+
+\begin{solution} % s2.3
+  \begin{enumerate}[label=(\alph*)]
+    \item Starting from the left-hand side,
+    \begin{IEEEeqnarray*}{rCl}
+      \binom{n + 1}{k} & = &
+      \frac{n!(n - k + 1 + k)}{k!(n - k + 1)!} \\
+                       & = &
+      \frac{n!(n - k + 1)}{k!(n - k + 1)!}
+    + \frac{n!k}{k!(n - k + 1)!}\\
+                       & = &
+      \frac{n!}{k!(n - k)!}
+    + \frac{n!}{(k - 1)![n - (k - 1)]!} \\
+                       & = &
+      \binom{n}{k} + \binom{n}{k - 1}
+    \end{IEEEeqnarray*}
+    \item It is sufficient to prove that $\displaystyle
+    \binom{n}{k}$ is a natural number for all
+    $1 \leq k \leq (n - 1)$. If $n = 1$, then
+    \begin{equation*}
+      \binom{2}{1} = \binom{1}{0} + \binom{1}{1} = 2
+    \end{equation*}
+    Suppose that $\displaystyle\binom{n}{k}$ is natural
+    number for any $n$ and $1 \leq k \leq n - 1$.
+    Then for any $1 \leq k \leq n$, $\displaystyle
+    \binom{n + 1}{k}$ is the sum of two natural numbers,
+    and therefore it must be a natural number.
+    \item It is sufficient to prove for the case
+    $0 < k \leq n$.
+    If $n=1$, the claim is trivial. Suppose that
+    $\displaystyle\binom{n}{k}$ is the number of sets
+    of $k$ integers each chosen from $1,\dots,n$; then
+    $\displaystyle\binom{n + 1}{k}$ must include
+    $\displaystyle\binom{n}{k}$ sets of $k$ integers
+    \note{without} the newly added element and a number
+    of sets of $k$ integers \note{with} the newly added
+    element. The latter is exactly $\displaystyle
+    \binom{n}{k - 1}$ and is a natural number by assumption.
+    Thereby, $\displaystyle\binom{n+1}{k}$ must be
+    a natural number.
+    \item We prove by induction on $n$. If $n=1$, there
+    is nothing to prove. Suppose the binomial theorem holds
+    for $n$; then for $n+1$,
+    \begin{IEEEeqnarray*}{rCl}
+      (a+b)^n(a+b) & = &
+      \sum_{j=0}^n \binom{n}{j} a^{n-j}b^j(a + b) \\
+                   & = &
+      \sum_{j=0}^n \binom{n}{j} a^{n+1-j}b^j
+    + \sum_{j=0}^n \binom{n}{j} a^{n-j}b^{j+1}    \\
+                   & = &
+      a^{n + 1} + b^{n + 1}
+    + \sum_{j=1}^n \binom{n}{j} a^{n+1-j}b^j      \\
+                   & + &
+      \sum_{j=1}^n \binom{n}{j-1} a^{n+1-j}b^j    \\
+                   & = &
+      \sum_{j=1}^n \binom{n+1}{j} a^{n+1-j}b^j
+    + a^{n+1} + b^{n+1}                           \\
+                   & = &
+      \sum_{j=0}^{n+1} \binom{n+1}{j} a^{n+1-j}b^j
+    \end{IEEEeqnarray*}
+    which completes the proof.
+    \item This part relies heavily on
+    the binomial theorem from the above.
+    \begin{enumerate}[label=(\roman*)]
+      \item This is directly from the above: Applying
+      the binomial theorem for $a=b=1$ yields the result.
+      \item Let $a=1$ and $b=-1$ yield the result.
+      \item Applying \ref{2.3:ei} $+$ \ref{2.3:eii},
+      we derive that for $l$ even,
+      \begin{equation*}
+        \sum_{l\text{ even}} \binom{n}{l} = 2^{n - 1}
+      \end{equation*}
+      Thereby, $\displaystyle
+      \sum_{l\text{ odd}} \binom{n}{l} = 2^n - 2^{n - 1}
+      = 2^{n - 1}$.
+      \item See the above.
+    \end{enumerate}
+    One thing to note: Both of the previous parts do not
+    have a final term expressed in their sum due to the
+    dependence of value $n$ (if $n$ is even or odd).
+  \end{enumerate}
+\end{solution}
