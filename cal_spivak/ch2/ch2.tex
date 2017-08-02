@@ -282,6 +282,31 @@
   \end{enumerate}
 \end{pr}
 
+\begin{solution} % 2.5 solved
+  \begin{enumerate}[label=(\alph*)]
+    \item If $n=1$, then the formula immediately holds. Suppose
+    now that it holds for $n$, then for $n+1$,
+    \begin{IEEEeqnarray*}{rCl}
+      1 + r + \cdots + r^n + r^{n+1}
+    & = & \frac{1 - r^{n+1}}{1-r} + r^{n+1} \\
+    & = & \frac{1 - r^{n + 2}}{1 - r}
+  \end{IEEEeqnarray*}
+  which completes the proof.
+    \item Let
+    \begin{equation*}
+      S = 1 + r + r^2 + \cdots + r^n
+    \end{equation*}
+    then
+    \begin{equation*}
+      rS = r + r^2 + r^3 + \cdots + r^{n+1}
+    \end{equation*}
+    Solving for $S$, we easily obtain
+    \begin{equation*}
+      S = \frac{1 - r^{n+1}}{1 - r}
+    \end{equation*}
+  \end{enumerate}
+\end{solution}
+
 \begin{pr} \label{2.6} % 2.6
   The formula for $1^2 + \cdots + n^2$ may be derived as
   follows. We begin with the formula
