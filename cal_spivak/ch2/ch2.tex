@@ -225,22 +225,46 @@
   \end{enumerate}
 \end{solution}
 
-\begin{pr} % 2.4
+\begin{pr} \label{2.4} % 2.4
   \begin{enumerate}[label=(\alph*)]
-    \item
+    \item \label{2.4:a}
     Prove that
     \begin{equation*}
       \sum_{k=0}^l \binom{n}{k} \binom{m}{l-k}
       = \binom{n+m}{l}.
     \end{equation*}
     Hint: Apply the binomial theorem to $(1+x)^n(1+x)^m$.
-    \item
+    \item \label{2.4:b}
     Prove that
     \begin{equation*}
       \sum_{k=0}^n \binom{n}{k}^2 = \binom{2n}{n}.
     \end{equation*}
   \end{enumerate}
 \end{pr}
+
+\begin{solution} % 2.4 solved
+  \begin{enumerate}[label=(\alph*)]
+    \item Remind that $(1+x)^n(1+x)^m = (1+x)^{n+m}$. Hence,
+    \begin{equation*}
+      \sum_{k=0}^n \binom{n}{k}x^k \cdot
+      \sum_{j=0}^m \binom{m}{j}x^j
+      = \sum_{l=0}^{n+m} \binom{n+m}{l}x^l
+    \end{equation*}
+    Observing that each term of $x^l$ is
+    \begin{equation*}
+      \sum_{k=0}^l \binom{n}{k}\binom{m}{l-k}
+    \end{equation*}
+    for every $k$ and $j$ such that $j = l - k$.
+    \item From \ref{2.4:a}, let $m = l = n$ and observe
+    that for all $0\leq k\leq n$,
+    \begin{equation*}
+      \binom{n}{k} = \binom{n}{n - k}
+    \end{equation*}
+    since $\dfrac{n!}{k!(n-k)!} = \dfrac{n!}{(n-k)!k!}$.
+    Hence,
+    $\displaystyle\sum_{k=0}^n \binom{n}{k}^2 = \binom{2n}{n}$.
+  \end{enumerate}
+\end{solution}
 
 \begin{pr} \label{2.5} % 2.5
   \begin{enumerate}[label=(\alph*)]
