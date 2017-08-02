@@ -92,7 +92,7 @@
     coefficient $\displaystyle\binom{n}{k}$ is the
     $(k+1)$st number in the $(n+1)$st row.
     \par
-    \begin{center}
+    \begin{center} \label{PascalTriangle}
       \begin{tikzpicture}
         \foreach \n in {0,...,5}{
           \foreach \k in {0,...,\n}{
@@ -320,9 +320,104 @@
   \begin{IEEEeqnarray*}{rCl}
     2^3 - 1^3 & = & 3 \cdot 1^2 + 3 \cdot 1 + 1 \\
     3^3 - 2^3 & = & 3 \cdot 2^2 + 3 \cdot 2 + 1 \\
+    \vdots                                      \\
+    (n + 1)^3 - n^3 & = & 3 \cdot n^2 + 3 \cdot n + 1 \\
+    \hline                                            \\
+    (n + 1)^3 - 1 & = & 3[1^2 + \cdots + n^2]
+    + 3[1 + \cdots + n] + n.
   \end{IEEEeqnarray*}
-  \centerline{\rule{0.65\textwidth}{0.4pt}}
 
   \bigskip
-  Tada
+  Thus we can find
+  $\displaystyle \sum_{k=1}^n k^2$ if we already know
+  $\displaystyle \sum_{k=1}^n k$ (which could have been
+  found in a similar way). Use this method to find
+  \begin{enumerate}[label=(\roman*)]
+    \item $1^3 + \cdots + n^3$.
+    \item $1^4 + \cdots + n^4$.
+    \item $\displaystyle
+    \frac{1}{1\cdot2} + \frac{1}{2\cdot3} + \cdots
+    + \frac{1}{n(n + 1)}$.
+    \item $\displaystyle
+    \frac{3}{1^2\cdot2^2} + \frac{5}{2^2\cdot3^2} + \cdots
+    + \frac{2n + 1}{n^2(n + 1)^2}$.
+  \end{enumerate}
 \end{pr}
+
+\begin{solution} % 2.6 solved
+  \begin{enumerate}[label=(\roman*)]
+    \item We easily derive that
+    \begin{equation*}
+      (k+1)^4 - k^4 = 4k^3 + 6k^2 + 4k + 1
+    \end{equation*}
+    Hence,
+    \begin{IEEEeqnarray*}{rCl}
+      2^4 - 1^4 &=& 4\cdot1^3 + 6\cdot1^2 + 4\cdot1 + 1 \\
+      3^4 - 2^4 &=& 4\cdot2^3 + 6\cdot2^2 + 4\cdot2 + 1 \\
+      \vdots                                            \\
+      (n + 1)^4 - n^4 &=& 4\cdot n^3 + 6 \cdot n^2
+      + 4 \cdot n + 1                                   \\
+      \hline                                            \\
+      (n + 1)^4 - 1 &=& 4[1^3 + 2^3 + \cdots + n^3]     \\
+      & + & 6[1^2 + 2^2 + \cdots + n^2] + 4[1 + 2 + \cdots + n]
+      + n
+    \end{IEEEeqnarray*}
+    It is easily derivable that
+    \begin{equation*}
+      1^3 + \cdots + n^3 = \frac{1}{4}n^2(n + 1)^2
+    \end{equation*}
+    \item The easiest way to calculate
+    $(k + 1)^5 - k^5$ is to use the Pascal triangle from
+    page \pageref{PascalTriangle}: We derive the result
+    \begin{equation*}
+      (k + 1)^5 - k^5 = 5k^4 + 10k^3 + 10k^2 + 5k + 1
+    \end{equation*}
+    A similar step from above shows that
+    \begin{IEEEeqnarray*}{rCl}
+      (n + 1)^5 - 1 & = & 5[1^4 + \cdots + n^4]
+      + 10[1^3 + \cdots + n^3] \\
+                      & + & 10[1^2 + \cdots + n^2]
+      + 5[1 + \cdots + n] + n
+    \end{IEEEeqnarray*}
+    We derive from the available results,
+    \begin{equation*}
+      1^4 + 2^4 + \cdots + n^4 = \frac{1}{30}
+      n(n+1)(2n+1)(3n^2 + 3n - 1)
+    \end{equation*}
+    \item Observe that
+    \begin{equation*}
+      \frac{1}{k} - \frac{1}{k + 1} = \frac{1}{k(k + 1)}
+    \end{equation*}
+    Henceforth,
+    \begin{IEEEeqnarray*}{rCl}
+      1 - \frac{1}{2} &=& \frac{1}{1\cdot2} \\
+      \frac{1}{2} - \frac{1}{3} &=& \frac{1}{2\cdot3} \\
+      \vdots                                          \\
+      \frac{1}{n} - \frac{1}{n + 1}
+      &=& \frac{1}{n\cdot(n+1)}                       \\
+      \hline                                          \\
+      1 - \frac{1}{n + 1} & = &
+      \frac{1}{1\cdot2} + \frac{1}{2\cdot3} + \cdots
+      + \frac{1}{n(n + 1)}                            \\
+      \frac{1}{1\cdot2} + \frac{1}{2\cdot3} + \cdots
+      + \frac{1}{n(n + 1)}& = & \frac{n}{n + 1}
+    \end{IEEEeqnarray*}
+    \item See that
+    \begin{equation*}
+      \frac{1}{k^2} - \frac{1}{(k+1)^2}
+      = \frac{2k + 1}{k^2(k + 1)^2}
+    \end{equation*}
+    Henceforth,
+    \begin{IEEEeqnarray*}{rCl}
+      1 - \frac{1}{2^2} &=& \frac{3}{1^2\cdot2^2} \\
+      \frac{1}{2^2} - \frac{1}{3^2} &=& \frac{5}{2^2\cdot3^2} \\
+      \vdots \\
+      \frac{1}{n^2} - \frac{1}{(n+1)^2} &=&
+      \frac{2n + 1}{n^2(n + 1)^2}                  \\
+      \hline                                       \\
+      \frac{3}{1^2\cdot2^2} + \frac{5}{2^2\cdot3^2}
+      + \cdots + \frac{2n + 1}{n^2(n + 1)^2}
+      & = & \frac{n(n+2)}{(n+1)^2}
+    \end{IEEEeqnarray*}
+  \end{enumerate}
+\end{solution}
