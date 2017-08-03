@@ -556,5 +556,44 @@
 
 \begin{pr} % 2.11
   Prove the principle of complete induction from the ordinary
-  principle of induction. Hint: 
+  principle of induction. Hint: If $A$ contains $1$ and $A$
+  contains $n + 1$ whenever it contains $1,\dots,n$,
+  consider the set $B$ of all $k$ such that $1,\dots,k$
+  are all in $A$.
+\end{pr}
+
+\begin{solution} % 2.11 solved
+  We want to prove the following theorem,
+  \begin{thm}[Principle of complete induction]
+    If $A$ is the set of natural numbers and
+    \begin{enumerate}[label=(\arabic*)]
+      \item $1$ is in $A$
+      \item $n+1$ is in $A$ if $1,\dots,n$ is in $A$
+    \end{enumerate}
+    then $A$ is the set of all natural numbers.
+  \end{thm}
+  Let $B$ be the set of all $k$ such that
+  $1,2,3,\dots,k$ are all in $A$. Obviously, $B \subseteq A$.
+  Conversely, $A \subseteq B$ because if not,
+  then $1,\dots,k$ are not all in $A$ which implies
+  $1 \notin A$.
+  Hence,
+  $A = B\neq\emptyset$
+  since $1\in A$. We see that $B$ satisfies:
+  \begin{enumerate}[label=(\arabic*)]
+    \item $1$ is in $B$
+    \item $k+1$ is in $B$ whenever $k$ is in $B$. Otherwise,
+    $(k+1) \notin A$, which implies $1,\dots,k$
+    are not in $A$,
+    which implies $k \notin B$.
+  \end{enumerate}
+  By principle of mathematical induction, $B$ is the set of
+  all natural numbers, which means $A$ is the same.
+\end{solution}
+
+\begin{pr} % 2.12
+  \begin{enumerate}[label=(\alph*)]
+    \item If $a$ is rational and $b$ is irrational, is
+    $a + b$ necessarily irrational?
+  \end{enumerate}
 \end{pr}
