@@ -501,3 +501,60 @@
   \end{equation*}
   for some number $A$, $B$.
 \end{solution}
+
+\begin{pr} % 2.8
+  Prove that every natural number is either even or odd.
+\end{pr}
+
+\begin{solution} % 2.8 solved
+  Suppose that $B$
+  is the set of all natural numbers that is neither even
+  nor odd. Suppose that $B\neq\emptyset$. Obviously,
+  $1\notin B$ since $1$ is an odd number. If $k \notin B$,
+  then $k$ is either even or odd. Then $k + 1$ is either
+  odd or even, and therefore $(k+1) \notin B$. Henceforth,
+  $B = \emptyset$, contradicting assumption.
+\end{solution}
+
+\begin{pr} % 2.9
+  Prove that if a set $A$ of natural numbers contains $n_0$
+  and contains $k+1$ whenever it contains $k$, then $A$
+  contains all natural numbers $\geq n_0$.
+\end{pr}
+
+\begin{solution} % 2.9 solved
+  Obivously, $n_0 \in A$. Suppose that $(n_0 + k - 1) \in A$.
+  By assumption, $(n_0 + k) \in A$. Hence, $A$ contains all
+  natural numbers $\geq n_0$.
+\end{solution}
+
+\begin{pr} % 2.10
+  Prove the principle of mathematical induction from the
+  well-ordering principle.
+\end{pr}
+
+\begin{solution} \label{2.10} % 2.10 solved
+  We shall prove the theorem by contradiction,
+  \begin{thm}[Principle of mathematical induction]
+    If $A$ is the set of natural numbers and
+    \begin{enumerate}[label=(\arabic*)]
+      \item \label{2.10:1}
+      $1$ is in $A$
+      \item \label{2.10:2}
+      $k+1$ is in $A$ wherever $k$ is in $A$,
+    \end{enumerate}
+    then $A$ is the set of all natural numbers.
+  \end{thm}
+  Let $B\neq\emptyset$
+  be the set of all natural numbers \note{not}
+  in $A$. By the well-ordering principle, $B$ has a least
+  member $k$. By construction, $k \notin A$. By property
+  \ref{2.10:2}, $(k - 1) \notin A$, which means that
+  $(k - 1) \in B$, but this contradicts the fact that
+  $k$ is the least member in $B$.
+\end{solution}
+
+\begin{pr} % 2.11
+  Prove the principle of complete induction from the ordinary
+  principle of induction. Hint: 
+\end{pr}
