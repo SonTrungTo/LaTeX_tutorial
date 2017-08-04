@@ -594,6 +594,32 @@
 \begin{pr} % 2.12
   \begin{enumerate}[label=(\alph*)]
     \item If $a$ is rational and $b$ is irrational, is
-    $a + b$ necessarily irrational?
+    $a + b$ necessarily irrational? What if $a$ and $b$
+    are both irrational?
+    \item If $a$ is rational and $b$ is irrational,
+    is $ab$ necessarily irrational? (Careful!)
+    \item Is there a number $a$ such that $a^2$ is irrational,
+    but $a^4$ is rational?
+    \item Are there two irrational numbers whose sum and
+    product are both rational?
   \end{enumerate}
 \end{pr}
+
+\begin{solution} % 2.12 solved
+  \begin{enumerate}[label=(\alph*)]
+    \item If $a+b$ were rational then
+    $b = (a+b) - a$ would be rational! Hence,
+    $a+b$ is necessarily irrational. However,
+    if $a$ and $b$ are irrational, then let $b = r - a$ for
+    any rational $r$, then $a+b$ is rational.
+    \item $ab$ is not necessarily irrational for the case
+    when $a = 0$ and $b = \sqrt{2}$. However, if $a \neq 0$,
+    then if $ab$ were rational, then $\dfrac{ab}{a} = b$
+    would be rational. Hence, $ab$ must be irrational.
+    \item Let $a = \sqrt{\sqrt{2}}$: $a^2 = \sqrt{2}$, but
+    $a^4 = 2$.
+    \item Let $a = -\sqrt{2}$ and $b = \sqrt{2}$. Then
+    both $a+b$ and $ab$ are rational even though $a$
+    and $b$ are irrational.
+  \end{enumerate}
+\end{solution}
