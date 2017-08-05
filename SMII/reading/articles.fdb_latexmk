@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1501873703 "articles.tex" "articles.pdf" "articles" 1501873704
+["pdflatex"] 1501940190 "articles.tex" "articles.pdf" "articles" 1501940191
   "/usr/local/texlive/2016/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -12,6 +12,7 @@
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm" 1136768653 1508 efecb4a315fe0975509670a272d75ef5 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
@@ -23,6 +24,7 @@
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb" 1248133631 35022 e40946b20bfdcd1099eafb2bcd9f25dd ""
   "/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/usr/local/texlive/2016/texmf-dist/tex/generic/babel-finnish/finnish.ldf" 1367878893 5204 81bad50c3ca6ae8cdd0066b3b5f8d100 ""
   "/usr/local/texlive/2016/texmf-dist/tex/generic/babel/babel.def" 1461448269 50112 8190990703f12b57db0dfe9b839e1e24 ""
@@ -59,13 +61,13 @@
   "/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495749261 2350277 f74d61113e7cfb2fb8a7fb038066a484 ""
   "/usr/local/texlive/2016/texmf-var/web2c/pdftex/pdflatex.fmt" 1495749298 4051024 671f7da9d458ca5202881ff482869f37 ""
   "/usr/local/texlive/2016/texmf.cnf" 1495749256 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "articles.aux" 1501873704 1128 b216cc14f26162c0779919fae7ae3a14 ""
-  "articles.out" 1501873704 353 f7c40c47fc350327d3be8b02d7f25945 ""
-  "articles.tex" 1501873702 1085 d3eba141c1792c06518b0cc2859342dd ""
-  "articles.toc" 1501873704 296 55b5115fdb2074428444a6c98d3a935c ""
+  "articles.aux" 1501940191 1368 0883caf3c7ce51e282a8049ee710870b ""
+  "articles.out" 1501940191 675 6edc1c67dfc8c91a124a5e91d2582cee ""
+  "articles.tex" 1501940190 4836 8ff53c75161a5b8de5e60e7dfa7ebab1 ""
+  "articles.toc" 1501940191 500 811755476402463ce29f476097b66e6c ""
   (generated)
-  "articles.toc"
-  "articles.pdf"
   "articles.aux"
+  "articles.toc"
   "articles.out"
   "articles.log"
+  "articles.pdf"

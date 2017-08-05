@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  4 AUG 2017 22:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  5 AUG 2017 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -528,23 +528,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (./articles.aux)
 \openout1 = `articles.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Info: Redefining \microtypecontext on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Info: Redefining \microtypecontext on input line 11.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -560,7 +560,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 \AtBeginShipoutBox=\box26
-Package hyperref Info: Link coloring OFF on input line 10.
+Package hyperref Info: Link coloring OFF on input line 11.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -570,59 +570,80 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count103
 )
-LaTeX Info: Redefining \ref on input line 10.
-LaTeX Info: Redefining \pageref on input line 10.
-LaTeX Info: Redefining \nameref on input line 10.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
 
 (./articles.out) (./articles.out)
 \@outlinefile=\write3
 \openout3 = `articles.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 20.
+(Font)              <12> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 20.
+(Font)              <8> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 20.
- (./articles.toc)
+(Font)              <6> on input line 21.
+ (./articles.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 3.
+)
 \tf@toc=\write4
 \openout4 = `articles.toc'.
 
 
-Overfull \hbox (0.1446pt too wide) in paragraph at lines 23--23
+Overfull \hbox (0.1446pt too wide) in paragraph at lines 24--24
 [][]\OT1/cmr/bx/n/14.4 Nuoret p[]a[]asev[]at Kes[]asetelin tur-vin ko-kei-le-ma
 an
  []
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 23.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 24.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
+(babel)             in language  on input line 24.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 63.
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 92.
 
-(./articles.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
+Overfull \hbox (10.40378pt too wide) in paragraph at lines 93--97
+\OT1/cmr/m/n/10.95 (-20) Kes[]aseteli[]a k[]aytett[]aess[]a ty[]onantaja te-kee
+ kes[]aty[]ontekij[]an kans-sa ty[]osopimuksen
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.28406pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 113.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 113.
+[2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+ (./articles.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
 Package rerunfilecheck Info: File `articles.out' has not changed.
-(rerunfilecheck)             Checksum: F7C40C47FC350327D3BE8B02D7F25945;353.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
+(rerunfilecheck)             Checksum: 6EDC1C67DFC8C91A124A5E91D2582CEE;675.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
  ) 
 Here is how much of TeX's memory you used:
- 9929 strings out of 493013
- 142275 string characters out of 6133328
- 247421 words of memory out of 5000000
- 13417 multiletter control sequences out of 15000+600000
- 9371 words of font info for 39 fonts, out of 8000000 for 9000
+ 9967 strings out of 493013
+ 142649 string characters out of 6133328
+ 253428 words of memory out of 5000000
+ 13423 multiletter control sequences out of 15000+600000
+ 10851 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,4n,43p,396b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,11n,43p,396b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -630,11 +651,12 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on articles.pdf (1 page, 87403 bytes).
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on articles.pdf (2 pages, 112419 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
- 9225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 78 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 11801 words of extra memory for PDF output out of 12000 (max. 10000000)
 
