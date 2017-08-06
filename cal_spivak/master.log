@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  4 AUG 2017 03:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  6 AUG 2017 21:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1221,7 +1221,7 @@ Overfull \hbox (50.76086pt too wide) in alignment at lines 1475--1483
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37]
-[38] [39]) [40]
+[38] [39] [40]) [41]
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
@@ -1235,11 +1235,11 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 35186 strings out of 493013
- 761304 string characters out of 6133328
- 981389 words of memory out of 5000000
+ 35192 strings out of 493013
+ 761349 string characters out of 6133328
+ 981390 words of memory out of 5000000
  37854 multiletter control sequences out of 15000+600000
- 16117 words of font info for 88 fonts, out of 8000000 for 9000
+ 16168 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,96p,739b,830s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{pr.1.18} has been referenced but does not exist, 
@@ -1266,10 +1266,10 @@ ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (44 pages, 313356 bytes).
+Output written on master.pdf (45 pages, 315830 bytes).
 PDF statistics:
- 739 PDF objects out of 1000 (max. 8388607)
- 665 compressed objects within 7 object streams
- 327 named destinations out of 1000 (max. 500000)
+ 747 PDF objects out of 1000 (max. 8388607)
+ 672 compressed objects within 7 object streams
+ 331 named destinations out of 1000 (max. 500000)
  15413 words of extra memory for PDF output out of 17280 (max. 10000000)
 
