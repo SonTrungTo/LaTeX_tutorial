@@ -591,7 +591,7 @@
   all natural numbers, which means $A$ is the same.
 \end{solution}
 
-\begin{pr} % 2.12
+\begin{pr} \label{2.12}% 2.12
   \begin{enumerate}[label=(\alph*)]
     \item If $a$ is rational and $b$ is irrational, is
     $a + b$ necessarily irrational? What if $a$ and $b$
@@ -676,7 +676,7 @@
     that $\sqrt{5}$ and $\sqrt{6}$ are irrational.
     \par
     Now we cannot use this method of proof for $\sqrt{4}$
-    since the statement \note{if $k^2$ is divisible by 4,
+    since the statement \note{if $k^2$ is divisible by $4$,
     then $k$ is divisible by $4$} is false by letting $k=2$.
     \item Let us first consider
     \begin{IEEEeqnarray*}{rClCl}
@@ -704,5 +704,27 @@
     Hence, for any natural $k$ if $k^3$ is divisible by $3$,
     then $k$ is divisible by $3$. The very same method as above
     is used to prove that $\sqrt[3]{3}$ is irrational.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} % 2.14
+  Prove that
+  \begin{enumerate}[label=(\alph*)]
+    \item $\sqrt{2} + \sqrt{6}$ is irrational.
+    \item $\sqrt{2} + \sqrt{3}$ is irrational.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution} % 2.14 solved
+  \begin{enumerate}[label=(\alph*)]
+    \item Suppose $\sqrt{2} + \sqrt{6}$ is rational. Then
+    $(\sqrt{2} + \sqrt{6})^2 = 8 + 4\sqrt{3}$ must be rational.
+    Hence, $4\sqrt{3}= 8 + 4\sqrt{3} - 8$ must be rational:
+    A contradiction by since $4\neq0$ and $\sqrt{3}$ is
+    irrational.
+    \item Suppose that $\sqrt{2} + \sqrt{3}$ is rational.
+    Then $5 + 2\sqrt{6}$ is rational, which implies
+    $2\sqrt{6} = 5 + 2\sqrt{6} - 5$ is rational: A contradiction
+    similar to the above.
   \end{enumerate}
 \end{solution}
