@@ -728,3 +728,35 @@
     similar to the above.
   \end{enumerate}
 \end{solution}
+
+\begin{pr} % 2.15
+  \begin{enumerate}[label=(\alph*)]
+    \item Prove that if $x = p + \sqrt{q}$ where $p$ and $q$
+    are rational, and $m$ is a natural number, then
+    $x^m = a + b\sqrt{q}$ for some rational $a$ and $b$.
+    \item Prove also that $(p - \sqrt{q})^m = a - b\sqrt{q}$.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution} % 2.15 solved
+  \begin{enumerate}[label=(\alph*)]
+    \item Proof is by induction. Let $m=1$, the statement
+    holds. Suppose the statement holds for $m$, then for
+    $m + 1$,
+    \begin{IEEEeqnarray*}{rCl}
+      x^{m+1} & = & (a + b\sqrt{q})(p + \sqrt{q}) \\
+              & = & (ap + bq) + (a + bp)\sqrt{q}
+    \end{IEEEeqnarray*}
+    The conclusion follows.
+    \item The proof is exactly the same as above except
+    now that $x = p - \sqrt{q}$. Hence, for $m + 1$,
+    \begin{IEEEeqnarray*}{rCl}
+      x^{m+1} & = & (a - b\sqrt{q})(p - \sqrt{q}) \\
+              & = & (ap + bq) - (a + bp)\sqrt{q}
+    \end{IEEEeqnarray*}
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} % 2.16
+  
+\end{pr}
