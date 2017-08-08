@@ -758,5 +758,57 @@
 \end{solution}
 
 \begin{pr} % 2.16
-  
+  \begin{enumerate}[label=(\alph*)]
+    \item Prove that if $m$ and $n$ are natural numbers
+    and $\dfrac{m^2}{n^2} < 2$, then
+    $\dfrac{(m + 2n)^2}{(m + n)^2} > 2$; show, moreover, that
+    \begin{equation*}
+      \frac{(m + 2n)^2}{(m + n)^2} - 2 < 2 - \frac{m^2}{n^2}
+    \end{equation*}
+    \item Prove the same results with all inequality signs
+    reversed.
+    \item Prove that if $\dfrac{m}{n} < \sqrt{2}$, then there
+    is another rational number $\dfrac{m'}{n'}$ with
+    $\dfrac{m}{n} < \dfrac{m'}{n'} < \sqrt{2}$.
+  \end{enumerate}
 \end{pr}
+
+\begin{solution} % 2.16 solved
+  \begin{enumerate}[label=(\alph*)]
+    \item We first observe from $m^2/n^2 < 2$,
+    \begin{equation*}
+      (m + n)^2 < 3n^2 + 2nm
+    \end{equation*}
+    And from here,
+    \begin{IEEEeqnarray*}{rCl}
+      \frac{(m+2n)^2}{(m+n)^2} & = &
+      \frac{(m+n)^2 + n^2 + 2n(m+n)}{(m+n)^2} \\
+                               & = &
+      1 + \frac{3n^2 + 2nm}{(n+m)^2}          \\
+                               & > &
+      1 + 1                                   \\
+                              & = &
+      2
+    \end{IEEEeqnarray*}
+    Furthermore,
+    \begin{IEEEeqnarray*}{rCl}
+      \frac{(m+2n)^2}{(m+n)^2} - 2 & = &
+      \frac{-(m+n)^2 + n^2 + 2n(m+n)}{(m+n)^2}  \\
+                                   & = &
+      \frac{2n^2 - m^2}{(m+n)^2}                \\
+                                   & < &
+      \frac{2n^2 - m^2}{n^2}                    \\
+                                   & = &
+      2 - \frac{m^2}{n^2}
+    \end{IEEEeqnarray*}
+    \item Applying the exact method from the above, we
+    see that if $m^2/n^2 > 2$, then
+    $\dfrac{(m+2n)^2}{(m+n)^2} < 2$. The other inequality
+    remains the same.
+    \item Let $m' = 2n^2 - m^2$ and $n' = (m+n)^2$, we obtain
+    \begin{equation*}
+      \frac{m^2}{n^2} < \frac{m'^2}{n'^2} < 2
+    \end{equation*}
+    Hence, $\dfrac{m}{n} < \dfrac{m'}{n'} < \sqrt{2}$.
+  \end{enumerate}
+\end{solution}
