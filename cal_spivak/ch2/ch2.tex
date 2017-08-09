@@ -624,7 +624,7 @@
   \end{enumerate}
 \end{solution}
 
-\begin{pr} % 2.13
+\begin{pr} \label{2.13} % 2.13
   \begin{enumerate}[label=(\alph*)]
     \item Prove that $\sqrt{3},\sqrt{5},$ and $\sqrt{6}$ are
     irrational. Hint: To treat $\sqrt{3}$, for example, use
@@ -814,3 +814,39 @@
     Hence, $\dfrac{m}{n} < \dfrac{m'}{n'} < \sqrt{2}$.
   \end{enumerate}
 \end{solution}
+
+\begin{pr}[*] % 2.17
+  It seems likely that $\sqrt{n}$ is irrational whenever
+  the natural number $n$ is not the square of another
+  natural number. Although the method of \autoref{2.13}
+  may actually be used to treat any particular case, it is
+  not clear in advance that it will always work, and a proof
+  for the general case requires some extra information.
+  A natural number $p$ is called \boldText{prime number} if
+  it is impossible to write $p = ab$ for natural numbers
+  $a$ and $b$ unless one of these is $p$, and the other $1$;
+  for convenience we also agree that $1$ is \note{not}
+  a prime number. The first few prime numbers are
+  $2,3,5,7,11,13,17,19$. If $n > 1$ is not a prime, then
+  $n = ab$, with $a$ and $b$ both $< n$; if either $a$ or
+  $b$ is not a prime it can be factored similarly; continuing
+  in this way proves that we can write $n$ as a product of
+  primes. For example, $28 = 4 \cdot 7 = 2\cdot2\cdot7$.
+  \begin{enumerate}[label=(\alph*)]
+    \item Turn this argument into a rigorous proof by
+    complete induction.
+  \end{enumerate}
+  A fundamental theorem about integers, which we will not
+  prove here, states that this factorization is unique,
+  except for the order of the factors. Thus, for example,
+  $28$ can never be written as a product of primes one of
+  which is $3$, nor can it be written in a way that involves
+  $2$ only once (now you should appreciate why $1$ is not
+  allowed as a prime).
+  \begin{enumerate}[label=(\alph*),resume]
+    \item Using this fact, prove that $\sqrt{n}$ is irrational
+    unless $n = m^2$ for some natural number $m$.
+    \item Prove more generally that $\sqrt[k]{n}$ is irrational
+    
+  \end{enumerate}
+\end{pr}
