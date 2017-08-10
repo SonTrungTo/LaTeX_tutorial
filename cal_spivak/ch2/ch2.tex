@@ -847,6 +847,22 @@
     \item Using this fact, prove that $\sqrt{n}$ is irrational
     unless $n = m^2$ for some natural number $m$.
     \item Prove more generally that $\sqrt[k]{n}$ is irrational
-    
+    unless $n = m^k$
+    \item Prove that there cannot be only finitely many
+    prime numbers $p_1, p_2, \dots , p_n$ by considering
+    $p_1\cdot p_2 \cdot \ldots \cdot p_n + 1$.
   \end{enumerate}
 \end{pr}
+
+\begin{solution} % 2.17 solved
+  \begin{enumerate}[label=(\alph*)]
+    \item Let $n = 2$, then it is a prime itself. Suppose
+    that the argument holds for $n=1,\dots,k$. Hence,
+    for $n = k + 1$, if $k + 1$ is a prime, we are done. If not,
+    then $k + 1$ can be written as a product
+    of two numbers $n_1$ and $n_2$ smaller than $k + 1$.
+    By assumption, $n_1$ and $n_2$ can be rewritten as
+    the product of primes: Hence, any number $n > 1$
+    can be written as a product of primes.
+  \end{enumerate}
+\end{solution}
