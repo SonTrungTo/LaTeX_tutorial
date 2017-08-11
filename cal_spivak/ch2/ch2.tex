@@ -833,7 +833,8 @@
   in this way proves that we can write $n$ as a product of
   primes. For example, $28 = 4 \cdot 7 = 2\cdot2\cdot7$.
   \begin{enumerate}[label=(\alph*)]
-    \item Turn this argument into a rigorous proof by
+    \item \label{2.17:a}
+    Turn this argument into a rigorous proof by
     complete induction.
   \end{enumerate}
   A fundamental theorem about integers, which we will not
@@ -864,5 +865,35 @@
     By assumption, $n_1$ and $n_2$ can be rewritten as
     the product of primes: Hence, any number $n > 1$
     can be written as a product of primes.
+    \item Suppose that $\sqrt{n} = \dfrac{p}{q}$, for
+    any integer $p,q$. Then $p^2 = nq^2$; because factorization
+    is unique and by \ref{2.17:a}, $nq^2$ can be expressed
+    as a product of primes; each of which appears
+    twice, and the same is true for $q^2$.
+    This implies that $n = m^2$, for some natural $m$.
+    \item Suppose that $\sqrt[k]{n} = \dfrac{p}{q}$, for
+    any integer $p,q$. Then $p^k = nq^k$; by the same
+    reasoning as above, $nq^k$ and $q^k$ can be expressed
+    as product of primes; each of which appears $k$ times.
+    This implies that $n = m^k$, for some natural $m$.
+    \item The proof is by contradiction. Suppose there were
+    only a finite number of primes $p_1,\dots,p_n$. Then
+    $p_1 \cdot p_2 \cdot \ldots \cdot p_n + 1$ could not
+    be a prime, but then it is not evenly divisible by
+    any of $p_1,\dots,p_n$ but $1$ and itself: This is
+    then a prime number!
+    \begin{ab}
+      BEWARE! This does not say that
+      $p_1 \cdot p_2 \cdot \ldots \cdot p_n + 1$ is
+      \note{definitely} a prime number. What if it is
+      evenly divisible for some primes in
+      $p_{n+1},p_{n+2},\dots$? For example:
+      \begin{equation*}
+        2 \cdot 3 \cdot 5 \cdot 7 \cdot 11 \cdot 13 + 1
+        = 30031 = 59 \cdot 509
+      \end{equation*}
+      Therefore, $p_{n+1} \geq
+      p_1 \cdot p_2 \cdot \ldots \cdot p_n + 1$.
+    \end{ab}
   \end{enumerate}
 \end{solution}

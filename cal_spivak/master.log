@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  11 AUG 2017 00:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  11 AUG 2017 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1222,12 +1222,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37]
 [38] [39] [40] [41] [42] [43]
-Overfull \hbox (1.14935pt too wide) in paragraph at lines 851--854
+Overfull \hbox (1.14935pt too wide) in paragraph at lines 852--855
 []\OT1/cmr/m/n/10.95 (-20) Prove that there can-not be only finitely many prime
  num-bers $\OML/cmm/m/it/10.95 p[]; p[]; [] ; p[]$
  []
 
-) [44]
+[44]) [45]
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
@@ -1241,10 +1241,10 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
  ) 
 Here is how much of TeX's memory you used:
- 35237 strings out of 493013
- 761737 string characters out of 6133328
- 981503 words of memory out of 5000000
- 37859 multiletter control sequences out of 15000+600000
+ 35242 strings out of 493013
+ 761776 string characters out of 6133328
+ 981564 words of memory out of 5000000
+ 37860 multiletter control sequences out of 15000+600000
  16582 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,96p,739b,830s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1276,10 +1276,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (48 pages, 334855 bytes).
+Output written on master.pdf (49 pages, 337371 bytes).
 PDF statistics:
- 792 PDF objects out of 1000 (max. 8388607)
- 712 compressed objects within 8 object streams
- 357 named destinations out of 1000 (max. 500000)
+ 803 PDF objects out of 1000 (max. 8388607)
+ 722 compressed objects within 8 object streams
+ 361 named destinations out of 1000 (max. 500000)
  15413 words of extra memory for PDF output out of 17280 (max. 10000000)
 
