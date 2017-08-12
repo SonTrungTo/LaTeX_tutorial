@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  5 AUG 2017 16:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  12 AUG 2017 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -600,9 +600,9 @@ an
 Package babel Info: Redefining finnish shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 54.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 54.
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -616,7 +616,6 @@ Overfull \hbox (10.40378pt too wide) in paragraph at lines 93--97
  kes[]aty[]ontekij[]an kans-sa ty[]osopimuksen
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.28406pt.
@@ -624,26 +623,53 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 113.
+(babel)             in language  on input line 112.
 Package babel Info: Redefining finnish shorthand "|
-(babel)             in language  on input line 113.
+(babel)             in language  on input line 112.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+Overfull \hbox (18.29076pt too wide) in paragraph at lines 116--116
+[]\OT1/cmr/bx/n/14.4 Donald Trump aloit-taa kes[]alomansa omal-la golfklu-
+ []
+
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 116.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 137.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 152.
+
+Package Fancyhdr Warning: \headheight is too small (27.28406pt): 
+ Make it at least 40.88406pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 163.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 163.
+[3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining finnish shorthand "|
+(babel)             in language  on input line 166.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
  (./articles.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `articles.out' has not changed.
-(rerunfilecheck)             Checksum: 6EDC1C67DFC8C91A124A5E91D2582CEE;675.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
+(rerunfilecheck)             Checksum: 091AA90564494DB814BAB0AA7B949945;1690.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 9967 strings out of 493013
- 142649 string characters out of 6133328
- 253428 words of memory out of 5000000
- 13423 multiletter control sequences out of 15000+600000
- 10851 words of font info for 55 fonts, out of 8000000 for 9000
+ 9987 strings out of 493013
+ 142831 string characters out of 6133328
+ 254428 words of memory out of 5000000
+ 13426 multiletter control sequences out of 15000+600000
+ 11157 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,43p,396b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,11n,43p,650b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
@@ -653,10 +679,10 @@ r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/loc
 al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on articles.pdf (2 pages, 112419 bytes).
+Output written on articles.pdf (4 pages, 127845 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 11801 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 102 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 11825 words of extra memory for PDF output out of 12000 (max. 10000000)
 
