@@ -1,7 +1,13 @@
 \select@language {finnish}
 \contentsline {section}{\numberline {1}\href {http://www.sodexo.fi/yritys/uutiset/2017-06-20-nuoret-paasevat-kesasetelin-turvin-kokeilemaan-tyontekoa}{Nuoret p\IeC {\"a}\IeC {\"a}sev\IeC {\"a}t Kes\IeC {\"a}setelin turvin kokeilemaan ty\IeC {\"o}ntekoa}}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}Monipuolisia ty\IeC {\"o}teht\IeC {\"a}vi\IeC {\"a}}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Hyv\IeC {\"a} tilaisuus}{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.2}Hyv\IeC {\"a} tilaisuus}{3}{subsection.1.2}
 \contentsline {section}{\numberline {2}Donald Trump aloittaa kes\IeC {\"a}lomansa omalla golfklubillaan - N\IeC {\"a}in Yhdysvaltain presidentit ovat rentoutuneet}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Obama py\IeC {\"o}r\IeC {\"a}ili ja golffasi}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}George W.Bush lomaili paljon}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}George W.Bush lomaili paljon}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Bill Clinton inhosi retkeily\IeC {\"a}}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Ronald Reagan ratsasti Kalifornian kukkuloilla}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Jimmy Carter ei juuri lomaillut}{4}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Richard Nixon erist\IeC {\"a}ytyi kartanoihinnsa}{5}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Lyndon B. Johnson viihtyi kotitilallaan}{5}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}John F. Kennedy lomaili vaimonsa kotona}{5}{subsection.2.8}
