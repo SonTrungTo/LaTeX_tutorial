@@ -898,10 +898,10 @@
   \end{enumerate}
 \end{solution}
 
-\begin{pr}[*] % 2.18
+\begin{pr}[*] \label{2.18} % 2.18
   Prove that
   \begin{enumerate}[label=(\alph*)]
-    \item If $x$ satisfies
+    \item \label{2.18:a} If $x$ satisfies
     \begin{equation*}
       x^n + a_{n-1}x^{n-1} + \dots + a_0 = 0,
     \end{equation*}
@@ -956,5 +956,27 @@
     Now let $a_{n-1},\dots,a_1$ be $0$ and $k = -a_0$,
     we see that $\sqrt[n]{k} = x$ is irrational unless
     $k = x^n$ for some integer $x$ since $k$ is an integer.
+    \item Let $x = \sqrt{6} - \sqrt{3} - \sqrt{2}$. Then
+    \begin{IEEEeqnarray*}{rCl}
+      x^2 & = & 11 + 2\sqrt{6}(1 - \sqrt{2} - \sqrt{3}) \\
+      (x^2 - 11)^2 & = & 24(1 - \sqrt{2} - \sqrt{3})^2  \\
+      x^4 - 22x^2 + 121 & = & 24(6 + 2x)                \\
+      x^4 - 22x^2 - 48x - 23 & = & 0
+    \end{IEEEeqnarray*}
+    By \ref{2.18:a}, $x$ is either an irrational or an
+    integer. We will show that the latter is impossible.
+    Note that since $\sqrt{6}$ and $\sqrt{2} + \sqrt{3}$
+    are positive and,
+    \begin{equation*}
+      (\sqrt{2} + \sqrt{3})^2 - 6 = 2\sqrt{6} - 1 > 0
+    \end{equation*}
+    Moreover,
+    \begin{equation*}
+      (\sqrt{2} + \sqrt{3})^2 = 5 + 2\sqrt{6} < 7 + 2\sqrt{6}
+      = (1 + \sqrt{6})^2
+    \end{equation*}
+    Therefore, we conclude
+    $0 < \sqrt{2} + \sqrt{3} - \sqrt{6} < 1$, which means
+    that $x$ must be irrational.
   \end{enumerate}
 \end{solution}
