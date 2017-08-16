@@ -916,7 +916,45 @@
 
 \begin{solution} % 2.18 solved
   \begin{enumerate}[label=(\alph*)]
-    \item Suppose $x$ were rational, then $x = \dfrac{p}{q}$.
-    
+    \item We need first to prove the following lemma,
+    \begin{id}
+      For any $p > 1$, if $p^n$ is divisible by a prime,
+      so is $p$.
+    \end{id}
+    \renewcommand{\qedsymbol}{$\square$}
+    \begin{proof}
+      $p^n$ can be written as a product of primes; each
+      of which appears for $n$ times. Since $p^n$
+      is divisible by a prime, this prime appears as a factor
+      of $p^n$ for $n$ times,
+      which means $p$ is divisible by the prime.
+    \end{proof}
+    Suppose $x$ were rational, then $x = \dfrac{p}{q}$
+    such that $p$ and $q$ are integers that have no common
+    factors.
+    Hence, the equation satisfying $x$
+    \begin{equation*}
+      \left(\frac{p}{q}\right)^n + a_{n-1}\left(\frac{p}{q}
+      \right)^{n-1} +
+      \dots + a_0 = 0
+    \end{equation*}
+    is equivalent to
+    \begin{equation*}
+      p^n + a_{n - 1}p^{n - 1}q + \dots + a_0q^n = 0
+    \end{equation*}
+    if and only if $q^n = 1$. Suppose $q \neq \pm1$, then
+    by \autoref{2.17}, $q$ can be factored as the product
+    of primes. Hence, $a_{n - 1}p^{n - 1}q + \dots + a_0q^n$
+    must be divisible by one of those primes. Since the
+    result is an integer, it is clear that $p^n$ must
+    be also divisible by that prime, and note that $p > 1$.
+    But this implies that $p$ must also be divisible
+    by the prime: A contradiction that $p$ and $q$ have
+    no common factors. Therefore, $q = \pm1$, and we
+    conclude that $x$ is an integer.
+    \par
+    Now let $a_{n-1},\dots,a_1$ be $0$ and $k = -a_0$,
+    we see that $\sqrt[n]{k} = x$ is irrational unless
+    $k = x^n$ for some integer $x$ since $k$ is an integer.
   \end{enumerate}
 \end{solution}
