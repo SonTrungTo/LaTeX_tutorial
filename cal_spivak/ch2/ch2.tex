@@ -987,3 +987,31 @@
     the former must be true!
   \end{enumerate}
 \end{solution}
+
+\begin{pr} % 2.19
+  Prove Bernoulli's inequality: If $h > -1$, then
+  \begin{equation*}
+    (1 + h)^n \geq 1 + nh.
+  \end{equation*}
+  Why is this trivial if $h > 0$?
+\end{pr}
+
+\begin{solution} % 2.19 solved
+  The proof is by induction. When $n = 1$, $1 + h = 1 + h$.
+  Suppose the inequality holds for $n$, then for $n+1$,
+  \begin{IEEEeqnarray*}{rCl}
+    (1+h)^{n+1} = (1+h)^n(1+h) & \geq & (1 + nh)(1 + h)     \\
+                               &  =   & 1 + h + nh + nh^2   \\
+                               & \geq & 1 + (n + 1)h
+  \end{IEEEeqnarray*}
+  Note that without the condition $h > -1$, the first inequality
+  sign will be reversed!
+  \par
+  If $h > 0$, expanding the left-hand side using the binomial
+  theorem directly yields the result since
+  $\displaystyle\sum_{k=2}^n \binom{n}{k} h^k \geq 0$.
+\end{solution}
+
+\begin{pr} % 2.20
+  
+\end{pr}

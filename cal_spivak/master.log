@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  17 AUG 2017 22:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  17 AUG 2017 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1228,7 +1228,7 @@ Overfull \hbox (1.14935pt too wide) in paragraph at lines 852--855
  num-bers $\OML/cmm/m/it/10.95 p[]; p[]; [] ; p[]$
  []
 
-[44] [45]) [46]
+[44] [45] [46]) [47]
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
@@ -1242,8 +1242,8 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
  ) 
 Here is how much of TeX's memory you used:
- 35263 strings out of 493013
- 761918 string characters out of 6133328
+ 35266 strings out of 493013
+ 761939 string characters out of 6133328
  981837 words of memory out of 5000000
  37868 multiletter control sequences out of 15000+600000
  16690 words of font info for 97 fonts, out of 8000000 for 9000
@@ -1277,10 +1277,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (50 pages, 342837 bytes).
+Output written on master.pdf (51 pages, 344715 bytes).
 PDF statistics:
- 821 PDF objects out of 1000 (max. 8388607)
- 739 compressed objects within 8 object streams
- 372 named destinations out of 1000 (max. 500000)
+ 828 PDF objects out of 1000 (max. 8388607)
+ 745 compressed objects within 8 object streams
+ 375 named destinations out of 1000 (max. 500000)
  15413 words of extra memory for PDF output out of 17280 (max. 10000000)
 
