@@ -1064,3 +1064,44 @@
     \frac{1 - \sqrt{5}}{2}
   \end{equation*}
 \end{solution}
+
+\begin{pr} % 2.21
+  The Schwarz inequality (\autoref{1.19}) actually has
+  a more general form:
+  \begin{equation*}
+    \sum_{i=1}^n x_iy_i \leq
+    \sqrt{\sum_{i=1}^n x_i^2}\sqrt{\sum_{i=1}^n y_i^2}
+  \end{equation*}
+  Give three proofs of this, analogous to the three proofs
+  presented in \autoref{1.19}.
+\end{pr}
+
+\begin{solution} % 2.21 solved
+  We will give three proofs just as in \autoref{1.19}
+  \begin{enumerate}[label=(\alph*)]
+    \item \note{The first proof}: Note that the equality
+    occurs when either $y_i = 0 \quad \forall i$ or
+    $x_i = \lambda y_i \quad \forall i$ for $\lambda \geq 0$.
+    Otherwise,
+    \begin{IEEEeqnarray*}{rCl}
+      0 & < & \sum_{i=1}^n (x_i - \lambda y_i)^2 \\
+        & = & \lambda^2(\sum_{i=1}^n y_i^2)
+        - 2 \lambda (\sum_{i=1}^n x_iy_i)
+        + (\sum_{i=1}^n x_i^2)                   \\
+        & = & \lambda^2
+        - 2 \lambda \left(\frac{\displaystyle\sum_{i=1}^n x_iy_i}%
+        {\displaystyle\sum_{i=1}^n y_i^2}\right)
+        + \left(\frac{\displaystyle\sum_{i=1}^n x_i^2}%
+        {\displaystyle\sum_{i=1}^n y_i^2}\right)
+    \end{IEEEeqnarray*}
+    This is the case only if
+    \begin{IEEEeqnarray*}{rCl}
+      \left(\sum_{i=1}^n x_iy_i\right)^2 & \leq &
+      \sum_{i=1}^n x_i^2}\sum_{i=1}^n y_i^2}      \\
+      \sum_{i=1}^n x_iy_i \leq \left|\sum_{i=1}^n x_iy_i\right|
+                                         & \leq &
+      \sqrt{\sum_{i=1}^n x_i^2}\sqrt{\sum_{i=1}^n y_i^2}
+    \end{IEEEeqnarray*}
+    This concludes our first proof.
+  \end{enumerate}
+\end{solution}
