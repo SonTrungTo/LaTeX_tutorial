@@ -1079,9 +1079,10 @@
 \begin{solution} % 2.21 solved
   We will give three proofs just as in \autoref{1.19}
   \begin{enumerate}[label=(\alph*)]
-    \item \note{The first proof}: Note that the equality
+    \item \label{2.21:a}
+    \note{The first proof}: Note that the equality
     occurs when either $y_i = 0 \quad \forall i$ or
-    $x_i = \lambda y_i \quad \forall i$ for $\lambda \geq 0$.
+    $x_i = \lambda y_i \quad \forall i$ for $\lambda > 0$.
     Otherwise,
     \begin{IEEEeqnarray*}{rCl}
       0 & < & \sum_{i=1}^n (x_i - \lambda y_i)^2 \\
@@ -1097,11 +1098,41 @@
     This is the case only if
     \begin{IEEEeqnarray*}{rCl}
       \left(\sum_{i=1}^n x_iy_i\right)^2 & \leq &
-      \sum_{i=1}^n x_i^2}\sum_{i=1}^n y_i^2}      \\
+      \sum_{i=1}^n x_i^2\sum_{i=1}^n y_i^2      \\
       \sum_{i=1}^n x_iy_i \leq \left|\sum_{i=1}^n x_iy_i\right|
                                          & \leq &
       \sqrt{\sum_{i=1}^n x_i^2}\sqrt{\sum_{i=1}^n y_i^2}
     \end{IEEEeqnarray*}
     This concludes our first proof.
+    \item \note{The second proof:} Let
+    \begin{align*}
+      x = \frac{x_i}{\sqrt{\sum_{i=1}^n x_i^2}} &&
+      y = \frac{y_i}{\sqrt{\sum_{i=1}^n y_i^2}} &&
+      \text{for all $i=1,\ldots,n$}
+    \end{align*}
+    and note that $(x - y)^2 \geq 0$. Hence,
+    \begin{align*}
+      \frac{x_i^2}{\sum_{i=1}^n x_i^2} +
+      \frac{y_i^2}{\sum_{i=1}^n y_i^2} \geq
+      2 \cdot \frac{x_i y_i}{\sqrt{\sum_{i=1}^n x_i^2}%
+      \sqrt{\sum_{i=1}^n y_i^2}} &&
+      \text{for all $i=1,\ldots,n$}
+    \end{align*}
+    Summing up all $n$ inequalities yields the result.
+    Notice also that equality occurs with the same
+    conditions as above.
+    \item \note{The third proof:} Notice that
+    \begin{equation*}
+      \left(\sum_{i=1}^n x_i^2\right)
+      \left(\sum_{i=1}^n y_i^2\right) =
+      \left(\sum_{i=1}^n x_i y_i\right)^2 +
+      \sum_{\substack{i=1 \\ i\neq j}}^n
+      \left(x_i y_j - x_j y_i\right)^2
+    \end{equation*}
+    This essentially delivers the result since
+    $\sum_{\substack{i=1 \\ i\neq j}}^n
+    \left(x_i y_j - x_j y_i\right)^2 \geq 0$
+    for all terms, with the
+    equality condition as in \ref{2.21:a}.
   \end{enumerate}
 \end{solution}
