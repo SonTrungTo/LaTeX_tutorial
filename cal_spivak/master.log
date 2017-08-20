@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  19 AUG 2017 19:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  20 AUG 2017 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1228,7 +1228,7 @@ Overfull \hbox (1.14935pt too wide) in paragraph at lines 852--855
  num-bers $\OML/cmm/m/it/10.95 p[]; p[]; [] ; p[]$
  []
 
-[44] [45] [46] [47] [48]) [49]
+[44] [45] [46] [47] [48] [49]) [50]
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
@@ -1242,11 +1242,11 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
  ) 
 Here is how much of TeX's memory you used:
- 35275 strings out of 493013
- 762010 string characters out of 6133328
- 981919 words of memory out of 5000000
- 37869 multiletter control sequences out of 15000+600000
- 16798 words of font info for 98 fonts, out of 8000000 for 9000
+ 35305 strings out of 493013
+ 762340 string characters out of 6133328
+ 982085 words of memory out of 5000000
+ 37883 multiletter control sequences out of 15000+600000
+ 18146 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,13n,96p,739b,830s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{pr.2.13} has been referenced but does not exist, 
@@ -1265,22 +1265,25 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
 ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (53 pages, 351862 bytes).
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on master.pdf (54 pages, 385685 bytes).
 PDF statistics:
- 846 PDF objects out of 1000 (max. 8388607)
- 761 compressed objects within 8 object streams
- 381 named destinations out of 1000 (max. 500000)
- 15413 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 874 PDF objects out of 1000 (max. 8388607)
+ 785 compressed objects within 8 object streams
+ 390 named destinations out of 1000 (max. 500000)
+ 17461 words of extra memory for PDF output out of 20736 (max. 10000000)
 

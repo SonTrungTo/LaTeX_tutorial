@@ -1136,3 +1136,98 @@
     equality condition as in \ref{2.21:a}.
   \end{enumerate}
 \end{solution}
+
+\begin{pr} \label{2.22} % 2.22
+  The result in \autoref{1.7} has an important generalization:
+  If $a_1,\ldots,a_n \geq 0$, then the ``arithmetic mean''
+  \begin{equation*}
+    A_n = \frac{a_1 + \dots + a_n}{n}
+  \end{equation*}
+  and ``geometric mean''
+  \begin{equation*}
+    G_n = \sqrt[n]{a_1 \cdots a_n}
+  \end{equation*}
+  satisfy
+  \begin{equation*}
+    G_n \leq A_n
+  \end{equation*}
+  \begin{enumerate}[label=(\alph*)]
+    \item Suppose that $a_1 < A_n$. Then some $a_i$ satisfies
+    $a_i > A_n$\footnote{Since
+    $A_n = \dfrac{a_1 + \dots + a_n}{n} < a_i$ where
+    $a_i = max(a_1,\dots,a_n)$.}%
+    ; for convenience, say $a_2 > A_n$. Let
+    $\bar{a}_1 = A_n$ and let $\bar{a}_2 = a_1 + a_2
+    - \bar{a}_1$. Show that
+    \begin{equation*}
+      \bar{a}_1 \bar{a}_2 \geq a_1 a_2
+    \end{equation*}
+    Why does repeating this process enough times eventually
+    prove that $G_n \leq A_n$? When does this equality
+    hold in the formula $G_n \leq A_n$?
+  \end{enumerate}
+  The reasoning in this proof is related to another
+  interesting proof.
+  \begin{enumerate}[label=(\alph*),resume]
+    \item \label{2.22:b}
+    Using the fact that $G_n \leq A_n$ when $n = 2$,
+    prove, by induction on $k$, that $G_n \leq A_n$ for
+    $n = 2^k$.
+    \item For a general $n$, let $2^m > n$. Apply part
+    \ref{2.22:b} to the $2^m$ numbers
+    \begin{equation*}
+      a_1,\dots,a_n,
+      \underbrace{A_n,\dots,A_n}_\text{$2^m - n$ times}
+    \end{equation*}
+    to prove that $G_n \leq A_n$
+  \end{enumerate}
+\end{pr}
+
+\begin{solution} % 2.22 solved
+  \begin{enumerate}[label=(\alph*)]
+    \item
+    \begin{IEEEeqnarray*}{rCl}
+      \bar{a}_1 \bar{a}_2 - a_1 a_2 & = &
+      -A_n^2 + (a_1 + a_2)A_n - a_1 a_2   \\
+                                    & = &
+      (A_n - a_1)(a_2 - A_n) > 0
+    \end{IEEEeqnarray*}
+    since $a_1 < A_n < a_2$. Therefore,
+    $\bar{a}_1 \bar{a}_2 \geq a_1 a_2$.
+    \par
+    If we let $\bar{a}_{k+1}=\sum_{i=1}^{k+1} a_i
+    - (\sum_{i=1}^k \bar{a}_i)= kA_k + a_{k+1} - kA_k$,
+    we easily prove that $G_n \leq \bar{G}_n$ by induction.
+    Notice further that $\bar{A}_n = A_n$. Hence, it is
+    sufficient to prove that $\bar{G}_n \leq \bar{A}_n = A_n$.
+    This is achieved by complete induction: Let $\bar{a}_1
+    = A_n$, then there is nothing to prove. Suppose for
+    $\bar{a}_i = A_n$ for $i=1,\ldots,k$, the inequality
+    holds, then for $\bar{a}_i = A_n$ for $i=1,\ldots,k,k+1$
+    the inequality must also hold, which is an equality.
+    The equality holds only for $\bar{a}_i = A_n$ for all $i > 2$
+    since $\bar{G}_n < G_n$ for some $a_i \neq a_1$.
+    \item If $k=1$, then $n = 2^1 = 2$ and there is nothing to prove.
+    Suppose now that the inequality holds for $n=2^k$, then
+    for $m = 2^{k+1} = 2n$,
+    \begin{IEEEeqnarray*}{rCl}
+      G_m = \sqrt[2n]{a_1 \cdots a_m} & = &
+      \sqrt[n]{\sqrt{a_1 a_2} \cdots
+      \sqrt{a_{m-1} a_{m}}}                    \\
+                                      & \leq &
+      \sqrt[n]{\frac{a_1 + a_2}{2} \cdot \dots \cdot
+      \frac{a_{m-1} + a_{m}}{2}}
+                                                \\
+                                      & \leq &
+      \frac{\dfrac{a_1 + a_2}{2} + \cdots
+      + \dfrac{a_{m-1} + a_{m}}{2}}%
+      {n}                                       \\
+                                      &  =   &
+      \frac{a_1 + \cdots + a_m}{2n} = A_m
+    \end{IEEEeqnarray*}
+    where in the first inequality, $G_n \leq A_n$ for
+    $n = 2$ is used and in the second inequality
+    the induction assumption is used for $m/2 = n$ terms.
+    \item 
+  \end{enumerate}
+\end{solution}
