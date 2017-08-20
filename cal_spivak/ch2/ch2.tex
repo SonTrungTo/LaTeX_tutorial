@@ -1293,3 +1293,63 @@
   the second follows from assumption, and the third follows
   from the first part.
 \end{solution}
+
+\begin{pr} \label{2.24} % 2.24
+  Suppose we know properties P1 and P4 for the natural
+  numbers, but that multiplication has never been mentioned.
+  Then the following can be used as a recursive definition of
+  multiplication:
+  \begin{align*}
+    1     \cdot b &= b, \\
+    (a+1) \cdot b &= a \cdot b + b.
+  \end{align*}
+  Prove the following (in the order suggested!):
+  \begin{IEEEeqnarray*}{rCl}
+    a \cdot (b + c) & = & a \cdot b + a \cdot c  \\
+    a \cdot 1       & = & a,                     \\
+    a \cdot b       & = & b \cdot a
+  \end{IEEEeqnarray*}
+\end{pr}
+
+\begin{solution} % 2.24 solved
+  We divide our proofs into three parts.
+  \begin{itemize}
+    \item $a \cdot (b + c) = a \cdot b + a \cdot c$
+    \par
+    The proof is by induction on $a$. Let $a = 1$, then
+    by definition $1 \cdot (b + c) = 1 \cdot b + 1 \cdot c$.
+    Assume $k \cdot (b + c) = k \cdot b + k \cdot c$.
+    We want to prove that
+    \begin{equation*}
+      (k+1)(b+c) = (k+1)b + (k+1)c
+    \end{equation*}
+    Then
+    \begin{IEEEeqnarray*}{+rCl+x*}
+      (k+1)(b+c) &=& k(b+c) + 1 \cdot (b+c) & \text{by definition} \\
+                 &=& (kb + b) + (kc + c)    & \text{by assumption, P1 and P4}  \\
+                 &=& (k+1)b + (k+1)c        & \text{by P1}
+    \end{IEEEeqnarray*}
+    \item $a \cdot 1 = a$
+    \par
+    The proof is by induction on $a$. Let $a = 1$, then
+    $1 \cdot 1 = 1$ by definition. Assume $k \cdot 1 = k$,
+    then
+    \begin{equation*}
+      (k+1) \cdot 1 = k \cdot 1 + 1 \cdot 1 = k + 1
+    \end{equation*}
+    where the first equality is due to definition while
+    the second one is of both assumption and definition.
+    \item $a \cdot b = b \cdot a$
+    \par
+    The proof is by induction on $b$. Let $b = 1$, then
+    $a \cdot 1 = 1 \cdot a = a$.
+    Assume $a \cdot k = k \cdot a$. Then
+    \begin{IEEEeqnarray*}{+rCl+x*}
+      a \cdot (k + 1) &=& a \cdot k + a \cdot 1
+      & \text{by the first part}                \\
+      &=& a \cdot k + a & \text{by the second part}    \\
+      &=& k \cdot a + a & \text{by assumption}         \\
+      &=& (k + 1) \cdot a & \text{by definition}
+    \end{IEEEeqnarray*}
+  \end{itemize}
+\end{solution}
