@@ -1245,3 +1245,51 @@
     \end{IEEEeqnarray*}
   \end{enumerate}
 \end{solution}
+
+\begin{pr} \label{2.23} % 2.23
+  The following is a recursive definition of $a^n$:
+  \begin{align*}
+    a^1 &= a, \\
+    a^{n+1} &= a^n \cdot a.
+  \end{align*}
+  Prove, by induction, that
+  \begin{align*}
+    a^{n+m} &= a^n \cdot a^m, \\
+    (a^n)^m &= a^{nm}.
+  \end{align*}
+\end{pr}
+
+\begin{solution} % 2.23 solved
+  The proof is by induction on $m$.
+  \par
+  For the first part, let $m = 1$, then
+  $a^{n + 1} = a^n \cdot a^1$ by definition. Suppose we have
+  $a^{n + k} = a^n \cdot a^k$, then we want to prove that
+  \begin{equation*}
+    a^{n + (k + 1)} = a^n \cdot a^{k + 1}
+  \end{equation*}
+  Hence, notice that $n + (k + 1) = (n + k) + 1$, and
+  \begin{IEEEeqnarray*}{rCl}
+    a^{(n + k) + 1} & = & a^{n + k} \cdot a \\
+                    & = & a^{n} \cdot (a^{k} \cdot a) \\
+                    & = & a^{n} \cdot a^{k + 1}
+  \end{IEEEeqnarray*}
+  where the first and third equality are by definition while
+  the second one used the assumption.
+  \par
+  For the second part, let $m = 1$, then obviously $(a^n)^1
+  = a^n$. Assume we have $(a^n)^k = a^{nk}$, then we want
+  to prove,
+  \begin{equation*}
+    (a^n)^{(k + 1)} = a^{n(k + 1)}
+  \end{equation*}
+  Then
+  \begin{IEEEeqnarray*}{rCl}
+    (a^n)^{(k + 1)} & = & (a^n)^k \cdot a^n \\
+                  & = & a^{nk}  \cdot a^n \\
+                  & = & a^{n(k + 1)}
+  \end{IEEEeqnarray*}
+  where the first equality follows from definition;
+  the second follows from assumption, and the third follows
+  from the first part.
+\end{solution}
