@@ -1228,6 +1228,20 @@
     where in the first inequality, $G_n \leq A_n$ for
     $n = 2$ is used and in the second inequality
     the induction assumption is used for $m/2 = n$ terms.
-    \item 
+    \item Let $l = 2^m - n$, then
+    \begin{IEEEeqnarray*}{rCl}
+      \sqrt[2^m]{a_1 \cdots a_n \cdot (A_n)^l} & \leq &
+      \frac{a_1 + \dots + a_n + lA_n}{n + l}          \\
+                                               &  =   &
+      \frac{nA_n + lA_n}{n + l}                       \\
+                                               &  =   &
+      A_n                                             \\
+      \Rightarrow a_1 \cdots a_n \cdot (A_n)^l & \leq &
+      (A_n)^{n+l}                                     \\
+      a_1 \cdots a_n                           & \leq &
+      (A_n)^n                                         \\
+      \Rightarrow G_n = \sqrt[n]{a_1 \cdots a_n}& \leq &
+      A_n
+    \end{IEEEeqnarray*}
   \end{enumerate}
 \end{solution}
