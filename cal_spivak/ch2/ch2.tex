@@ -1379,6 +1379,35 @@
       $\frac{1}{2}$ is inductive.
       \item The set of positive real numbers unequal to
       $5$ is not inductive.
+      \item If $A$ and $B$ are inductive, then the set $C$
+      of real numbers which are in both $A$ and $B$ is also
+      inductive.
+    \end{enumerate}
+    \item A real number $n$ will be called a
+    \boldText{natural number} if $n$ is in \note{every}
+    inductive set.
+    \begin{enumerate}[label=(\roman*)]
+      \item Prove that $1$ is a natural number.
+      \item Prove that $k + 1$ is a natural number if
+      $k$ is a natural number.
     \end{enumerate}
   \end{enumerate}
 \end{pr}
+
+\begin{solution} % 2.25 solved
+  \begin{enumerate}[label=(\alph*)]
+    \item Let $P$ be the set of positive real numbers and
+    $P_{n}$ be the set of positive real numbers
+    not equal to $n$.
+    \begin{enumerate}[label=(\roman*)]
+      \item By definition, $\mathbb{R}$ is inductive.
+      \item Suppose not. Assume $p \in P$.
+      Then $p + 1 \notin P$ whenever
+      $p \in P$. This implies $p \leq -1 < 0$: A contradiction.
+      \item Suppose not. Then there exist some number $p$
+      such that $p + 1 = \frac{1}{2}$, which implies
+      $p = - \frac{1}{2}$: This contradicts $p \in P_{1/2}$.
+      \item $4$ is in $P_5$ but $5$ is not in $P_5$.
+    \end{enumerate}
+  \end{enumerate}
+\end{solution}
