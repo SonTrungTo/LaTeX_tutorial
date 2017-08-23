@@ -1499,10 +1499,77 @@
   ``I have enjoyed my visit here very much,'' he said, ``but
   I feel that there is one thing that I have to tell you.
   At least one of you has published an incorrect result,
-  which has been discovered by others in the department''.
+  which has been discovered by others in the department.''
   What happened in the next year?
 \end{pr}
 
 \begin{solution} % 2.27 solved
-  
+  All $17$ professors would have already resigned
+  on their $17^{th}$ luncheon meeting.
+  \par
+  For simplicity, we refer
+  to the pronoun of ``professor'' as ``he''.
+  \par
+  \medskip
+  For the case when there are only $2$ professors A and B:
+  A knows B makes an error, and B knows A makes an error.
+  Therefore, each expects the other to resign at the next
+  meeting. Since no one resigns, each realizes that the
+  other has discovered his error. Therefore, both
+  resign on their $2^{nd}$ lucheon meeting.
+  \par
+  \medskip
+  For the case when there are only $3$ professors A, B and
+  C: A knows B has an error and is aware of C knows that
+  B has an error; A also knows that C has an error and
+  is aware of B knows that C has an error. Vis-\`a-vis for
+  both $B$ and $C$. Therefore, $A$ expects both $B$ and $C$
+  to resign within the next $2^{nd}$ luncheon meeting, and
+  vis-\`a-vis. Since no one resigns, each of them realizes
+  that the other two know that he has an error. We conclude
+  that all $3$ professors resign at the $3^{rd}$ luncheon
+  meeting.
+  \par
+  \medskip
+  We will prove the general case: All $n$ professors
+  would have already resigned on their $n^{th}$ luncheon
+  meeting.
+  \par
+  The proof is by induction.
+  Suppose $n=1$(Prof. A), then when
+  the announcement was made by Prof. X, A immediately
+  recognizes that he has made the error and promptly
+  resigns at the next $1^{st}$ luncheon. If each of
+  $k$ professors is aware of the error made by each $i$ of
+  $k - 1$ professors, and he knows that every other members
+  but $i$ knows this, vis-\`a-vis;
+  then each of $k + 1$ professors is
+  aware of the error made by each $i$ of $k$ professors,
+  and he knows that every other members but $i$ knows this,
+  vis-\`a-vis. Therefore, he expects that all $k$ professors
+  will resign throughout the next $k$ luncheon meetings;
+  when nobody resigns, he realizes
+  that each $i$ of $k$ professors knows that he has made
+  an error. Since the situation is symmetrical, all $k + 1$
+  professors will resign at the next $(k + 1)^{th}$ luncheon
+  meeting.
+\end{solution}
+
+\begin{pr}[**] \label{2.28} % 2.28
+  Continuing from \autoref{2.27}, consider the following:
+  Each member of the department already knew what Prof. X
+  asserted, so how could his saying it change anything?
+\end{pr}
+
+\begin{solution} % 2.28 solved
+  Without loss of generality(W.l.o.g),
+  remind from the proof \autoref{2.27} for the case of
+  $2$ professors A and B: $A$ knows that $B$ has an error,
+  and vice versa.
+  However, $A$ \note{thinks} $B$ does not know.
+  Hence, the statement changes thing by adding
+  a piece of information, i.e introducing the statement publicly,
+  by making $A$ know that $B$ knows.
+  Hence, he expects $B$ to resign at the next luncheon
+  meeting.
 \end{solution}
