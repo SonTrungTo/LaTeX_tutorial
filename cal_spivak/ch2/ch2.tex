@@ -1425,3 +1425,84 @@
     \end{enumerate}
   \end{enumerate}
 \end{solution}
+
+\begin{pr} \label{2.26} % 2.26
+  There is a puzzle consisting of three spindles, with
+  $n$ concentric rings of decreasing diameter stacked
+  on the first. A ring at the top of a stack may be moved
+  from one spindle to another spindle, provided that it is
+  not placed on top of a smaller ring. For example,
+  if the smallest ring is moved to spindle $2$ and the next-smallest
+  ring is moved to spindle $3$, then the smallest ring
+  may be moved to spindle $3$ also, on top of the next-smallest.
+  Prove that the entire stack of $n$ rings can be moved onto
+  spindle $3$ in $2^n - 1$ moves, and that this cannot be
+  done fewer than $2^n - 1$ moves.
+\end{pr}
+
+\begin{solution} % 2.26 solved
+  The proof is by induction. Let $n = 1$, then indeed it
+  takes only $2^1 - 1 = 1$ move to move the (single)
+  smallest ring to spindle $3$. Suppose the entire stack of
+  $k$ rings can be moved to spindle $2$ or $3$
+  in $2^k - 1$ moves,
+  then for the stack of $k + 1$ rings,
+  \begin{itemize}
+    \item The first $k$ rings are moved to spindle $2$
+    in $2^k - 1$ moves.
+    \item The last (biggest) ring is moved to spindle $3$
+    in 1 move.
+    \item The first $k$ rings are moved again to spindle $3$
+    in $2^k - 1$ moves.
+  \end{itemize}
+  Therefore, moving the whole stack of $k + 1$ rings to
+  spindle $3$ takes
+  $2 \cdot (2^k - 1) + 1 = 2^{k+1} - 1$ moves. To prove that
+  it is the least required number of moves, we again use
+  induction: Obviously, with just only $1$ ring, $1$
+  is the least required number of moves. If a stack $k$
+  rings requires at least $2^k - 1$ moves, then for $k + 1$
+  rings,
+  \begin{itemize}
+    \item Moving the first $k$ rings to spindle $2$ requires
+    at least $2^k - 1$ moves.
+    \item Moving the last ring to spindle $3$ requires
+    at least $1$ move.
+    \item Moving the first $k$ rings to spindle $3$ requires
+    at least $2^k - 1$ moves.
+  \end{itemize}
+\end{solution}
+
+\begin{pr}[*] \label{2.27} % 2.27
+  University B. once boasted $17$ tenured professors of
+  mathematics. Tradition prescribed that at their weekly
+  luncheon meeting, faithfully attended by all $17$, any members
+  who had discovered an error in their published work should
+  make an announcement of this fact, and promptly resign.
+  Such an announcement had never actually been made, because
+  no professor was aware of any errors in her or his work.
+  This is not to say that no errors existed, however. In fact,
+  over the years, in the work of every member of the department
+  at least one error had been found, by some other member of the
+  department. This error had been mentioned to all other members
+  of the department, but the actual author of the error
+  had been kept ignorant of the fact, to forestall any
+  resignations.
+  \par
+  One fateful year, the department was augmented by a visior
+  from another university, one Prof. X, who had come with
+  hopes of being offered a permanent position at the end of
+  the academic year. Naturally, he was apprised, by various members
+  of the department, of the published errors which had been
+  discovered. When the hope-for appointment failed to materialize,
+  Prof. X obtained his revenge at the last luncheon of the year.
+  ``I have enjoyed my visit here very much,'' he said, ``but
+  I feel that there is one thing that I have to tell you.
+  At least one of you has published an incorrect result,
+  which has been discovered by others in the department''.
+  What happened in the next year?
+\end{pr}
+
+\begin{solution} % 2.27 solved
+  
+\end{solution}

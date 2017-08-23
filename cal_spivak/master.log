@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  22 AUG 2017 22:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.26)  23 AUG 2017 07:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1228,7 +1228,7 @@ Overfull \hbox (1.14935pt too wide) in paragraph at lines 852--855
  num-bers $\OML/cmm/m/it/10.95 p[]; p[]; [] ; p[]$
  []
 
-[44] [45] [46] [47] [48] [49] [50] [51] [52]) [53]
+[44] [45] [46] [47] [48] [49] [50] [51] [52] [53]) [54]
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
@@ -1242,11 +1242,11 @@ Package rerunfilecheck Info: File `master.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
  ) 
 Here is how much of TeX's memory you used:
- 35335 strings out of 493013
- 762578 string characters out of 6133328
- 982247 words of memory out of 5000000
- 37887 multiletter control sequences out of 15000+600000
- 18146 words of font info for 105 fonts, out of 8000000 for 9000
+ 35344 strings out of 493013
+ 762641 string characters out of 6133328
+ 982355 words of memory out of 5000000
+ 37889 multiletter control sequences out of 15000+600000
+ 18248 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,13n,96p,739b,830s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{pr.2.13} has been referenced but does not exist, 
@@ -1280,10 +1280,10 @@ ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on master.pdf (57 pages, 395010 bytes).
+Output written on master.pdf (58 pages, 399281 bytes).
 PDF statistics:
- 917 PDF objects out of 1000 (max. 8388607)
- 824 compressed objects within 9 object streams
- 416 named destinations out of 1000 (max. 500000)
+ 923 PDF objects out of 1000 (max. 8388607)
+ 829 compressed objects within 9 object streams
+ 419 named destinations out of 1000 (max. 500000)
  17461 words of extra memory for PDF output out of 20736 (max. 10000000)
 
