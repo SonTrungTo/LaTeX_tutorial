@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.30)  1 OCT 2017 15:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.30)  1 OCT 2017 18:52
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -599,6 +599,11 @@ Overfull \hbox (5.53105pt too wide) in paragraph at lines 154--155
 []\OT1/cmr/m/n/10.95 (-20) inferior qua-li-ty [] 
  []
 
+
+Overfull \hbox (11.62059pt too wide) in paragraph at lines 177--186
+ [] 
+ []
+
 [2]
 This exam contains 88 questions with 0 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 0 points.
@@ -607,7 +612,7 @@ This exam has a total of 0 bonus points.
 Here is how much of TeX's memory you used:
  4264 strings out of 492990
  62621 string characters out of 6132621
- 191818 words of memory out of 5000000
+ 191816 words of memory out of 5000000
  7804 multiletter control sequences out of 15000+600000
  10036 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -623,7 +628,7 @@ cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
 
-Output written on Kappale8.pdf (3 pages, 111203 bytes).
+Output written on Kappale8.pdf (3 pages, 111390 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
