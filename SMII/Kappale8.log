@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.30)  7 OCT 2017 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.30)  8 OCT 2017 00:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -518,7 +518,26 @@ Package microtype Info: Loading configuration file microtype.cfg.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2017/07/07 v2.7 microtype main configuration file (RS)
 ))
-(./Kappale8.aux)
+(./Kappale8.aux
+
+LaTeX Warning: Label `question@1' multiply defined.
+
+
+LaTeX Warning: Label `question@2' multiply defined.
+
+
+LaTeX Warning: Label `question@3' multiply defined.
+
+
+LaTeX Warning: Label `question@4' multiply defined.
+
+
+LaTeX Warning: Label `question@5' multiply defined.
+
+
+LaTeX Warning: Label `question@6' multiply defined.
+
+)
 \openout1 = `Kappale8.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -543,8 +562,7 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
@@ -600,37 +618,40 @@ Overfull \hbox (5.53105pt too wide) in paragraph at lines 154--155
  []
 
 [2]
-Overfull \hbox (68.62157pt too wide) in paragraph at lines 178--239
+Overfull \hbox (68.62157pt too wide) in paragraph at lines 178--247
  [] 
  []
 
 [3
 
 ]
-This exam contains 88 questions with 0 parts, 0 subparts, and 0 subsubparts.
+This exam contains 94 questions with 0 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 0 points.
 This exam has a total of 0 bonus points.
-(./Kappale8.aux) ) 
+(./Kappale8.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4264 strings out of 492990
- 62621 string characters out of 6132621
- 191816 words of memory out of 5000000
- 7804 multiletter control sequences out of 15000+600000
+ 4265 strings out of 492990
+ 62629 string characters out of 6132621
+ 196855 words of memory out of 5000000
+ 7805 multiletter control sequences out of 15000+600000
  10036 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,9n,38p,204b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-
-Output written on Kappale8.pdf (4 pages, 115265 bytes).
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Kappale8.pdf (4 pages, 115984 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
