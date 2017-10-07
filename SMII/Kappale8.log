@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.30)  7 OCT 2017 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.30)  7 OCT 2017 21:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -600,7 +600,7 @@ Overfull \hbox (5.53105pt too wide) in paragraph at lines 154--155
  []
 
 [2]
-Overfull \hbox (68.62157pt too wide) in paragraph at lines 178--233
+Overfull \hbox (68.62157pt too wide) in paragraph at lines 178--239
  [] 
  []
 
@@ -630,7 +630,7 @@ cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
 
-Output written on Kappale8.pdf (4 pages, 114945 bytes).
+Output written on Kappale8.pdf (4 pages, 115265 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
