@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.30)  8 OCT 2017 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.30)  9 OCT 2017 03:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -699,6 +699,90 @@ LaTeX Warning: Label `question@59' multiply defined.
 
 LaTeX Warning: Label `question@60' multiply defined.
 
+
+LaTeX Warning: Label `question@61' multiply defined.
+
+
+LaTeX Warning: Label `question@62' multiply defined.
+
+
+LaTeX Warning: Label `question@63' multiply defined.
+
+
+LaTeX Warning: Label `question@64' multiply defined.
+
+
+LaTeX Warning: Label `question@65' multiply defined.
+
+
+LaTeX Warning: Label `question@66' multiply defined.
+
+
+LaTeX Warning: Label `question@67' multiply defined.
+
+
+LaTeX Warning: Label `question@68' multiply defined.
+
+
+LaTeX Warning: Label `question@69' multiply defined.
+
+
+LaTeX Warning: Label `question@70' multiply defined.
+
+
+LaTeX Warning: Label `question@71' multiply defined.
+
+
+LaTeX Warning: Label `question@72' multiply defined.
+
+
+LaTeX Warning: Label `question@73' multiply defined.
+
+
+LaTeX Warning: Label `question@74' multiply defined.
+
+
+LaTeX Warning: Label `question@75' multiply defined.
+
+
+LaTeX Warning: Label `question@76' multiply defined.
+
+
+LaTeX Warning: Label `question@77' multiply defined.
+
+
+LaTeX Warning: Label `question@78' multiply defined.
+
+
+LaTeX Warning: Label `question@79' multiply defined.
+
+
+LaTeX Warning: Label `question@80' multiply defined.
+
+
+LaTeX Warning: Label `question@81' multiply defined.
+
+
+LaTeX Warning: Label `question@82' multiply defined.
+
+
+LaTeX Warning: Label `question@83' multiply defined.
+
+
+LaTeX Warning: Label `question@84' multiply defined.
+
+
+LaTeX Warning: Label `question@85' multiply defined.
+
+
+LaTeX Warning: Label `question@86' multiply defined.
+
+
+LaTeX Warning: Label `question@87' multiply defined.
+
+
+LaTeX Warning: Label `question@88' multiply defined.
+
 )
 \openout1 = `Kappale8.aux'.
 
@@ -791,8 +875,8 @@ Overfull \hbox (11.50972pt too wide) in paragraph at lines 260--261
 
 [3
 
-] [4]
-This exam contains 148 questions with 0 parts, 0 subparts, and 0 subsubparts.
+] [4] [5] [6]
+This exam contains 299 questions with 0 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 0 points.
 This exam has a total of 0 bonus points.
 (./Kappale8.aux)
@@ -801,13 +885,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4268 strings out of 492990
- 62645 string characters out of 6132621
- 196879 words of memory out of 5000000
- 7806 multiletter control sequences out of 15000+600000
+ 4884 strings out of 492990
+ 73154 string characters out of 6132621
+ 199574 words of memory out of 5000000
+ 8422 multiletter control sequences out of 15000+600000
  10087 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,9n,38p,205b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,9n,38p,205b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -818,10 +902,10 @@ l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Kappale8.pdf (5 pages, 117964 bytes).
+Output written on Kappale8.pdf (7 pages, 123217 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11265 words of extra memory for PDF output out of 12000 (max. 10000000)
 
