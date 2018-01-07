@@ -1,0 +1,24 @@
+\documentclass{article}
+% \makeatletter % '@' now normal "letter"
+% \@addtoreset{equation}{section}
+% \makeatother % '@' is restored as "non-letter"
+% \renewcommand\theequation{\oldstylenums{\thesection}%
+%                           .\oldstylenums{\arabic{equation}}}
+\RequirePackage{example1}
+
+
+\begin{document}
+  \section{Equations\ldots}
+  \begin{equation}
+    (a+b)^2 = a^2 + 2ab + b^2
+  \end{equation}
+  \begin{equation}
+    (a-b)^2 = a^2 - 2ab + b^2
+  \end{equation}
+
+  \section{\ldots per section}
+  \begin{equation}
+    (a+b)(a-b) = a^2 - b^2
+  \end{equation}
+
+\end{document}
