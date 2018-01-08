@@ -1,0 +1,10 @@
+\documentclass[a4paper]{article}
+\usepackage[code]{optional}
+\begin{document}
+  \opt{doc}{Typeset this if doc was declared.}
+  \opt{code}{Typeset this if code was declared.}
+  \opt{doc,code}{Typeset this if either doc or code %
+  was declared.}
+  Typeset this always. \opt{}{and this never!}
+  \opt{doc,code}{\input{text}}
+\end{document}
