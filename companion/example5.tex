@@ -1,0 +1,12 @@
+\documentclass{article}
+
+\makeatletter
+\renewcommand\@seccntformat[1]{\fbox
+{\csname the#1\endcsname}\hspace{0.5em}}
+\makeatother
+
+\begin{document}
+  \section{This is correct}\label{sec:OK}
+  Referencing this section using this definition generates
+  the correct result for the section reference~\ref{sec:OK}.
+\end{document}

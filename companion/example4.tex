@@ -1,0 +1,12 @@
+\documentclass{article}
+\renewcommand\thesubsection
+{\fbox{\thesection.\arabic{subsection}}}
+\setcounter{section}{3}
+
+\begin{document}
+  \subsection{A mistake}\label{wrong}
+  Referencing a subsection in this format produces
+  a funny result as we can see looking at
+  subsection ~\ref{wrong}.
+  We get a boxed reference.
+\end{document}
