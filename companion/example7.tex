@@ -1,0 +1,19 @@
+\documentclass{article}
+\makeatletter
+\renewcommand\subsection{\@startsection
+{subsection}{2}{0mm}%                   %name, level, indent
+{-\baselineskip}%                       %beforeskip
+{0.5\baselineskip}%                     %afterskip
+{\normalfont\normalsize\itshape}}%      %style
+\makeatother
+\setcounter{section}{4} % simulate previous sections.
+
+\begin{document}
+  \ldots\ some text above.
+  \subsection{Example of a Section Heading}
+  The heading is set in a normal-sized italic
+  and the separation from the preceding text
+  is exactly one baseline. The separation
+  from the text following is one-half
+  baseline and this text is not indented.
+\end{document}
