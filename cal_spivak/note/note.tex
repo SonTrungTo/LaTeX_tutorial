@@ -432,8 +432,8 @@ hyperref,microtype,varwidth}
   which the function is defined!
   \begin{IEEEeqnarray}{rCl}
     f(x) &=& x^2 ~ \forall x \\
-    g(y) &=& \frac{y^3 + 3y + 5}{y^2 + 1} ~\forall{} y \\
-    h(c) &=& \frac{c^3 + 3c + 5}{c^2 - 1} ~\forall{} c\neq\pm1 \\
+    g(y) &=& \frac{y^3 + 3y + 5}{y^2 + 1} ~\forall{} y \label{rf:1} \\
+    h(c) &=& \frac{c^3 + 3c + 5}{c^2 - 1} ~\forall{} c\neq\pm1 \label{rf:2} \\
     r(x) &=& x^2 ,~\{x: -17\leq x \leq \frac{\pi}{3}\} \\
     s(x) &=& \left\{
     \begin{array}{rl}
@@ -460,6 +460,19 @@ hyperref,microtype,varwidth}
       of } x.
     \end{array}
     \right. \IEEEeqnarraynumspace
+  \end{IEEEeqnarray}
+  A function $f$ is a \textbf{polynomial function} if there are real numbers
+  $a_0,\ldots,a_n$ such that
+  \begin{equation*}
+    f(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + a_0,~\text{ for all } x
+  \end{equation*}
+  (Assume $a_n \neq 0$). The highest power of $x$ with a nonzero coefficient is called
+  the \textbf{degree} of $f$.
+
+  (\ref{rf:1}) and (\ref{rf:2}) are \textbf{rational functions}: Functions of
+  the form $p/q$ where $p$ and $q$ are polynomials with $q$ is not always $0$.
+  \begin{IEEEeqnarray}{rCl}
+    f(x) &=& \frac{x+x^2+x\sin^2 x}{x\sin x + x\sin^2 x}
   \end{IEEEeqnarray}
 
   \end{document}
