@@ -39,3 +39,34 @@
     \item From the above, when $c = 1$.
   \end{enumerate}
 \end{solution}
+
+\begin{pr} \label{pr3.2}
+  Let $g(x) = x^2$, and let
+  \begin{equation*}
+    h(x) = \left\{
+    \begin{array}{rl}
+      0, & x \text{ rational} \\
+      1, & x \text{ irrational}
+    \end{array}
+    \right.
+  \end{equation*}
+  \begin{enumerate}[label = (\roman*)]
+    \item For which $y$ is $h(y) \leq y$?
+    \item For which $y$ is $h(y) \leq g(y)$?
+    \item What is $g(h(z)) - h(z)$?
+    \item For which $w$ is $g(w) \leq w$?
+    \item For which $\epsilon$ is $g(g(\epsilon)) = g(\epsilon)$?
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\roman*)]
+    \item $\{ y: y\geq0 \text{ and } y \text{ is rational} \} \cup
+    \{ y: y > 1 \text{ and } y \text{ is irrational} \}$.
+    \item $ \{y: y \text{ is rational} \} \cup
+    \{ y: y > 1 \text{ or } y < -1 \text{ and } y \text{ is irrational} \} $.
+    \item $0$, for $z$ is not changed by the composite function.
+    \item $w^2 \leq w$ if and only if $0 \leq w \leq 1$.
+    \item $\epsilon^4 = \epsilon^2$ only when $\epsilon = 0,\pm1$.
+  \end{enumerate}
+\end{solution}
