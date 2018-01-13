@@ -4,12 +4,14 @@
 hyperref,microtype,varwidth}
 \usepackage[retainorgcmds]{IEEEtrantools}
 \newcommand{\note}[1]{\emph{#1}}
-\theoremstyle{plain} \newtheorem{id}{Lemma}
-                     \newtheorem{thm}{Theorem}[chapter]
+\theoremstyle{definition} \newtheorem{definition}{Definition}[chapter]
+\theoremstyle{plain}      \newtheorem{id}{Lemma}
+                          \newtheorem{thm}{Theorem}[chapter]
 \theoremstyle{remark} \newtheorem*{ab}{Remark}
 \newcommand{\idautorefname}{Lemma}
 \newcommand{\abautorefname}{Remark}
 \newcommand{\thmautorefname}{Theorem}
+\newcommand{\definitionautorefname}{Definition}
 \newenvironment{solution}%
 {\renewcommand{\qedsymbol}{$\blacksquare$}%
 \begin{proof}[Solution]}%
@@ -472,7 +474,32 @@ hyperref,microtype,varwidth}
   (\ref{rf:1}) and (\ref{rf:2}) are \textbf{rational functions}: Functions of
   the form $p/q$ where $p$ and $q$ are polynomials with $q$ is not always $0$.
   \begin{IEEEeqnarray}{rCl}
-    f(x) &=& \frac{x+x^2+x\sin^2 x}{x\sin x + x\sin^2 x}
+    f(x) &=& \frac{x+x^2+x\sin^2 x}{x\sin x + x\sin^2 x} \\
+    f(x) &=& \sin (x^2) \\
+    f(x) &=& \sin (\sin (x^2)) \\
+    f(x) &=& \sin^2(\sin(\sin^2(x\sin^2 x^2))) \cdot
+    \sin\left(\frac{x + \sin(x\sin x)}{x + \sin x}\right)
   \end{IEEEeqnarray}
-
+  Let $I(x) = x$, then the concepts of \textbf{sum, product%
+  , quotient, composite} of a function are necessary.
+  \begin{equation*}
+    x \to \sin (x^2)
+  \end{equation*}
+  To formalize the definition of a function, one does not ask,
+  ``What is a rule?'', ``What is an association?'', but
+  ``What does one need to know about the function in order to
+  know all about it?''
+  \begin{definition}
+    A \textbf{function} is a collection of pairs of numbers with
+    the following property: if $(a,b)$ and $(a,c)$ are both in
+    the collection, then $b=c$.
+  \end{definition}
+  \begin{definition}
+    If $f$ is a function, the \textbf{domain} of $f$ is the set
+    of all $a$ for which there is some $b$ such that $(a,b)$ is
+    in $f$. If $a$ is in the domain of $f$, it follows from
+    the definition of a function that there is, in fact, a
+    \note{unique} number $b$ such that $(a,b)$ is in $f$.
+    This unique $b$ is denoted by $\boldsymbol{f(a)}$.
+  \end{definition}
   \end{document}
