@@ -109,7 +109,9 @@ colorlinks,unicode,hidelinks]{hyperref}
 \frontmatter
   \chapter{Preface}
     This is my own solutions to Michael Spivak's Calculus
-    textbook.
+    textbook; the project is meant to be my first-handed experience on
+    \LaTeX{} and is not meant to be a true solution manual which will
+    totally replace the one written by the author himself.
     \par
     All the problems are numbered after the chapter;
     otherwise, the order of problems are the same as
@@ -128,4 +130,8 @@ colorlinks,unicode,hidelinks]{hyperref}
   \part{Prologue}
     \input{ch1/ch1}
     \input{ch2/ch2}
+  \renewcommand{\doublenote}{%
+  \note{It takes until January $13^{th}, 2018$ to reach this part.}}
+  \part{Foundations}
+    \input{ch3/ch3}
 \end{document}

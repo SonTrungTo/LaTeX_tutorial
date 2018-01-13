@@ -1,0 +1,41 @@
+\chapter{Functions}
+\begin{pr} \label{pr3.1}
+  Let $f(x) = 1/(1+x)$. What is
+  \begin{enumerate}[label = (\roman*)]
+    \item $f(f(x))$ (for which $x$ does this make sense?).
+    \item $f\left(\displaystyle\frac{1}{x}\right)$.
+    \item $f(cx)$.
+    \item $f(x + y)$.
+    \item $f(x) + f(y)$.
+    \item For which numbers $c$ is there a number $x$ such that $f(cx) = f(x)$.
+    Hint: There are a lot more than you might think at first glance.
+    \item For which numbers $c$ is it true that $f(cx) = f(x)$ for two different
+    numbers $x$
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\roman*)]
+    \item $(f \circ f)(x) = \displaystyle\frac{1}{1 + \displaystyle\frac{1}{1 + x} }%
+    = \displaystyle\frac{1 + x}{2 + x}$ for all $x \neq -1,-2$.
+    \item For $\{x: x \neq 0,-1\}$,
+    \begin{equation*}
+      f(1/x) = \frac{1}{1 + \displaystyle\frac{1}{x}} = \frac{x}{x + 1}
+    \end{equation*}
+    \item $f(cx) = \displaystyle\frac{1}{1 + cx}$. If $c = 0$, then $f(0) = 1$
+    for all $x$. If $c\neq0$, then $x = -\frac{1}{c}$.
+    \item $f(x+y) = \displaystyle\frac{1}{1 + x + y}$ for $\{x: x\neq -(y + 1)\}$
+    \item $f(x) + f(y) = \displaystyle\frac{1}{1+x} + \displaystyle\frac{1}{1+y}%
+    = \displaystyle\frac{2+x+y}{(1+x)(1+y)}$ for $\{x,y: x\neq -1 \text{ and } y\neq - 1\}$.
+    \item Observe that
+    \begin{IEEEeqnarray*}{rCl}
+      \frac{1}{1+cx} &=& \frac{1}{1+x} \\
+      1 + x          &=& 1 + cx \\
+      x(c - 1)       &=& 0
+    \end{IEEEeqnarray*}
+    If $c = 0$ then $x = 0$. If $c\neq0$, then if $c = 1$, there is infinite $x$
+    satisfying our requirement; if not, then $x = 0$. Therefore, for all $c\in \mathbb{R}$,
+    there is a number $x$ such that $f(cx) = f(x)$.
+    \item From the above, when $c = 1$.
+  \end{enumerate}
+\end{solution}
