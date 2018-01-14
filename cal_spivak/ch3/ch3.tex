@@ -93,3 +93,38 @@
     = \emptyset$
   \end{enumerate}
 \end{solution}
+
+\begin{pr} \label{3.4}
+  Let $S(x) = x^2$, let $P(x) = 2^x$, and let $s(x) = \sin x$. Find each of the
+  following. In each case your answer should be a \note{number}.
+  \begin{enumerate}[label = (\roman*)]
+    \item $(S \circ P)(y)$.
+    \item $(S \circ s)(y)$.
+    \item $(S \circ P \circ s)(t) + (s \circ P)(t)$.
+    \item $s(t^3)$.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label=(\roman*)]
+    \item $(2^y)^2 = 2^{2y}$.
+    \item $\sin^2 y$.
+    \item $2^{2\sin t} + \sin 2^t$.
+    \item $\sin t^3$.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{3.5}
+  Express each of the following functions in terms of $S, P, s$, using only
+  $+,\cdot,\circ$ (for example, the answer to \ref{3.5.i} is $P \circ s$). In each
+  case your answer should be a \note{function}.
+  \begin{enumerate}[label = (\roman*)]
+    \item \label{3.5.i} $f(x) = 2^{\sin x}$.
+    \item $f(x) = \sin 2^x$.
+    \item $f(x) = \sin x^2$.
+    \item $f(x) = \sin^2 x$.
+    \item $f(t) = 2^{2^t}$.
+    \item $f(u) = \sin (2^u + 2^{u^2})$.
+    \item 
+  \end{enumerate}
+\end{pr}
