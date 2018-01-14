@@ -125,6 +125,32 @@
     \item $f(x) = \sin^2 x$.
     \item $f(t) = 2^{2^t}$.
     \item $f(u) = \sin (2^u + 2^{u^2})$.
-    \item 
+    \item $f(y) = \sin (\sin (\sin (2^{2^{2^{\sin y}}})))$.
+    \item $f(a) = 2^{\sin^2 a} + \sin (a^2) + 2^{\sin (a^2 + \sin a)}$.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\roman*)]
+    \item $(P \circ s)(x)$.
+    \item $(s \circ P)(x)$.
+    \item $(s \circ S)(x)$.
+    \item $(S \circ s)(x)$.
+    \item $(S \circ S)(t)$.
+    \item $(s \circ (P + P \circ S))(u)$.
+    \item $(s \circ s \circ s \circ P \circ P \circ P \circ s)(y)$.
+    \item $(P \circ S \circ s + s \circ S + P \circ (s \circ (S + s)))(a)$.
+  \end{enumerate}
+\end{solution}
+
+\flushleft
+Polynomial functions, because they are simple, yet flexible, occupy a favored
+role in most investigations of functions. The following two problems illustrate
+their flexibility, and guide you through a derivation of their most important
+elementary properties.
+
+\begin{pr} \label{3.6}
+  \begin{enumerate}[label = (\alph*)]
+    \item If $x_1,\ldots,x_n$ are distinct numbers,
   \end{enumerate}
 \end{pr}
