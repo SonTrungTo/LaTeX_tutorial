@@ -160,6 +160,25 @@ elementary properties.
     \end{equation*}
     the symbol $\prod$ (capital pi) playing the same role for products that $\sum$
     plays for sums.)
-    \item Now find a polynomial function $f$
+    \item Now find a polynomial function $f$ of degree $n - 1$ such that $f(x_i) = a_i$,
+    where $a_1,\ldots,a_n$ are given numbers. The formula obtained is called
+    the ``Lagrange interpolation formula''.
   \end{enumerate}
 \end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item Let
+    \begin{equation*}
+      f_i(x) = \frac{\displaystyle\prod_{\substack{j = 1 \\ j \neq i}}^{n} (x - x_j)}%
+      {\displaystyle\prod_{\substack{j = 1 \\ j \neq i}}^{n} (x_i - x_j)}
+    \end{equation*}
+    Observe that $f_i$ is a polynomial of degree $n - 1$, equal to $1$ if $x = x_i$
+    and to $0$ if $x = x_j$ for $j \neq i$.
+    \item Let
+    \begin{equation*}
+      f(x) = \sum_{i = 1}^{n} (f_i(x) \cdot a_i)
+    \end{equation*}
+    where $f_i(x)$ is the above-constructed function.
+  \end{enumerate}
+\end{solution}
