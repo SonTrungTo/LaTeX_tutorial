@@ -182,3 +182,44 @@ elementary properties.
     where $f_i(x)$ is the above-constructed function.
   \end{enumerate}
 \end{solution}
+
+\begin{pr} \label{3.7}
+  \begin{enumerate}[label = (\alph*)]
+    \item \label{3.7.a} Prove that for any polynomial function $f$, and any number $a$, there is a
+    polynomial function $g$, and a number $b$, such that $f(x) = (x - a)g(x) + b$
+    for all $x$.
+    \item \label{3.7.b} Prove that if $f(a) = 0$, then $f(x) = (x - a)g(x)$ for some polynomial
+    function $g$. (The converse is obvious.)
+    \item Prove that if $f$ is a polynomial function of degree $n$, then $f$ has
+    at most $n$ roots, i.e., there are at most $n$ numbers $a$ with $f(a) = 0$.
+    \item Show that for each $n$ there is a polynomial function of degree $n$ with
+    $n$ roots. If $n$ is even find a polynomial function of degree $n$ with no roots,
+    and if $n$ is odd find one with only one root.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item The proof is by induction on the degree of $f$. Let $n = 1$,
+    then $f(x) = a_1x + a_0 = (x - a)a_1 + (a_0 + aa_1)$. Suppose the claim holds
+    for $n$, then
+    \begin{IEEEeqnarray*}{rCl}
+      f(x) &=& a_{n+1}x^{n+1} + (x - a)m(x) + d \\
+           &=& (x - a + a)a_{n+1}x^n + (x - a)m(x) + d \\
+           &=& (x - a)a_{n+1}x^n + (x - a)m(x) + d + a[(x - a)n(x) + c] \\
+           &=& (x - a)g(x) + b
+    \end{IEEEeqnarray*}
+    where $g(x) = a_{n+1}x^n + m(x) + an(x)$ and $b = d + ac$.
+    \item From \ref{3.7.a}, $b = 0$; therefore $f(x) = (x - a)g(x)$.
+    \item If $f$ had $n+1$ roots, then from \ref{3.7.b},
+    $f(x) = \prod_{i = 1}^{n+1} (x - a_i) \cdot g(x)$, but this contradicts
+    $f$ has a degree of $n$.
+    \item As before, the polynomial function
+    \begin{equation*}
+      f(x) = \prod_{i = 1}^n (x - a_i)
+    \end{equation*}
+    ,where $a_1,\ldots,a_n$ are $n$ roots, is such function. Consider $f(x) = x^n + 1$;
+    if $n$ is even,
+    it has no roots; if $n$ is odd, it has only one root: $x = -1$.
+  \end{enumerate}
+\end{solution}
