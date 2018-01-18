@@ -247,6 +247,46 @@ elementary properties.
       \end{array}
       \right.
     \end{equation*}
-    Find expressions for $C_{A \cap B}$ and 
+    Find expressions for $C_{A \cap B}$ and $C_{A \cup B}$ and $C_{\mathbb{R} - A}$,
+    in terms of $C_A$ and $C_B$.
+  \item \label{3.9:b} Suppose $f$ is a function such that $f(x) = 0$ or $1$ for each $x$. Prove that
+  there is a set $A$ such that $f = C_A$.
+  \item \label{3.9:c} Show that $f = f^2$ if and only if $f = C_A$ for some set $A$.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item The expressions are
+    \begin{IEEEeqnarray*}{rCl}
+      C_{A \cap B} &=& \left\{
+      \begin{array}{rl}
+        1, & \text{if } C_A = C_B \\
+        0, & \text{if } C_A \neq C_B
+      \end{array}
+      \right. \\
+      C_{A \cup B} &=& \left\{
+      \begin{array}{rl}
+        0, & \text{if } C_A = C_B = 0 \\
+        1, & \text{if otherwise}
+      \end{array}
+      \right. \\
+      C_{\mathbb{R} - A} &=& \left\{
+      \begin{array}{rl}
+        1, & \text{if } C_A = 0 \\
+        0, & \text{if } C_A = 1
+      \end{array}
+      \right.
+    \end{IEEEeqnarray*}
+    \item Let $A = \{ x: f(x) = 1 \}$, then $f = C_A$.
+    \item Suppose $f = f^2$, then $f(1 - f) = 0$. Hence,from \ref{3.9:b}, $f = C_A$.
+    Conversely, if $f = C_A$ for some set $A$, then $f = f^2$ since $0 = 0^2$ and
+    $1 = 1^2$.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{3.10}
+  \begin{enumerate}[label = (\alph*)]
+    \item 
   \end{enumerate}
 \end{pr}
