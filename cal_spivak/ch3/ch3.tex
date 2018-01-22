@@ -320,6 +320,29 @@ elementary properties.
 
 \begin{pr} \label{3.11}
   \begin{enumerate}[label = (\alph*)]
-    \item 
+    \item Suppose that $H$ is a function and $y$ is a number such that $H(H(y)) = y$.
+    What is
+    \begin{equation*}
+      \underbrace{H(H(H(\cdots(H(y)\cdots)}_\text{$80$ times} ?
+    \end{equation*}
+    \item Same question if $80$ is replaced by $81$.
+    \item Same question if $H(H(y)) = H(y)$.
+    \item Find a function $H$ such that $H(H(x)) = H(x)$ for all numbers $x$, and
+    such that $H(1) = 36, H(2) = \pi/3, H(13) = 47, H(36) = 36, H(\pi/3) = \pi/3,
+    H(47) = 47$.
+    \item Find a function $H$ such that $H(H(x)) = H(x)$ for all $x$, and such that
+    $H(1) = 7, H(17) = 18$.
   \end{enumerate}
 \end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item $y$
+    \item $H(y)$
+    \item $H(y)$
+    \item Let $H(x)$ has the value given before when $x = 1,2,13,36,\pi/3,47$.
+    When $x$ is not equal to those values, let $H(x) = 0$.
+    \item Let $H(1) = H(7) = 7$ and $H(17) = H(18) = 18$. When $x \neq 1,7,17,18$;
+    let $H(x) = 0$.
+  \end{enumerate}
+\end{solution}
