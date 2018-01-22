@@ -346,3 +346,22 @@ elementary properties.
     let $H(x) = 0$.
   \end{enumerate}
 \end{solution}
+
+\begin{pr} \label{3.12}
+  A function $f$ is \textbf{even} if $f(x) = f(-x)$ and \textbf{odd} if $f(x) = -f(-x)$.
+  \begin{enumerate}[label = (\alph*)]
+    \item Determine whether $f + g$ is even, odd, or not necessarily either.
+    \item Do the same for $f \cdot g$.
+    \item Do the same for $f \circ g$.
+    \item Prove that for every even function $f$ can be written $f(x) = g(|x|)$,
+    for infinitely many functions $g$.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item If $f$ and $g$ are both even, $(f + g)(-x) = (f + g)(x)$: $f + g$ is even.
+    If $f$ and $g$ are both odd, $(f + g)(-x) = -(f + g)(x)$: $f + g$ is odd.
+    Suppose $f(x) = x^2$ and $g(x) = \sin (x)$, then $f + g$ is neither odd nor even.
+  \end{enumerate}
+\end{solution}
