@@ -200,9 +200,9 @@ elementary properties.
 
 \begin{solution}
   \begin{enumerate}[label = (\alph*)]
-    \item The proof is by induction on the degree of $f$. Let $n = 1$,
+    \item The proof is by complete induction on the degree of $f$. Let $n = 1$,
     then $f(x) = a_1x + a_0 = (x - a)a_1 + (a_0 + aa_1)$. Suppose the claim holds
-    for $n$, then
+    for all $n$ and below, then
     \begin{IEEEeqnarray*}{rCl}
       f(x) &=& a_{n+1}x^{n+1} + (x - a)m(x) + d \\
            &=& (x - a + a)a_{n+1}x^n + (x - a)m(x) + d \\
@@ -233,7 +233,25 @@ elementary properties.
 \end{pr}
 
 \begin{solution}
-  Let $a = d = 1, b = c = 0$.
+  By simple algebra, we turn the equation
+  \begin{equation*}
+    f(f(x)) = x
+  \end{equation*}
+  into the following equation,
+  \begin{equation*}
+    (ac + cd)x^2 + (d^2 - a^2)x - ab - bd = 0
+  \end{equation*}
+  which means that, for all $x$ in $f$'s domain,
+  \begin{IEEEeqnarray*}{rCl}
+    ac + cd &=& 0 \\
+    d^2 - a^2 &=& 0 \\
+    ab + bd &=& 0
+  \end{IEEEeqnarray*}
+  Then either $a = d$ or $a = -d$ . If $a = d = 0$, then $f(x) = b/(cx)$,
+  then $f(f(x)) = x$ for all $x \neq 0$. If $a = d \neq 0$, then $b = c = 0$, then
+  $f(f(x)) = x$ for all $x$.
+  If $a = -d$, then for $x \neq \frac{a}{c}$ and $f(x) \neq \frac{a}{c}$, which satisfy
+  $a^2 + bc \neq 0$, $f(f(x)) = x$.
 \end{solution}
 
 \begin{pr} \label{3.9}
@@ -259,24 +277,9 @@ elementary properties.
   \begin{enumerate}[label = (\alph*)]
     \item The expressions are
     \begin{IEEEeqnarray*}{rCl}
-      C_{A \cap B} &=& \left\{
-      \begin{array}{rl}
-        1, & \text{if } C_A = C_B \\
-        0, & \text{if } C_A \neq C_B
-      \end{array}
-      \right. \\
-      C_{A \cup B} &=& \left\{
-      \begin{array}{rl}
-        0, & \text{if } C_A = C_B = 0 \\
-        1, & \text{if otherwise}
-      \end{array}
-      \right. \\
-      C_{\mathbb{R} - A} &=& \left\{
-      \begin{array}{rl}
-        1, & \text{if } C_A = 0 \\
-        0, & \text{if } C_A = 1
-      \end{array}
-      \right.
+      C_{A \cap B} & = & C_A \cdot C_B \\
+      C_{A \cup B} & = & C_A + C_B - C_A \cdot C_B \\
+      C_{\mathbb{R} - A} & = & 1 - C_A
     \end{IEEEeqnarray*}
     \item Let $A = \{ x: f(x) = 1 \}$, then $f = C_A$.
     \item Suppose $f = f^2$, then $f(1 - f) = 0$. Hence,from \ref{3.9:b}, $f = C_A$.
@@ -306,7 +309,17 @@ elementary properties.
 \begin{solution}
   \begin{enumerate}[label = (\alph*)]
     \item For all $f$ such that $f(x) \geq 0$ for all $x$.
-    \item For all $f$ such that $f(x) \cdot g(x) = 1$ for all $x$.
-    \item \note{Case 1:} If $b(t) = -2 \cdot x(t)$ and $c(t) = (x(t))^2$.
+    \item For all $f$ such that $f(x) \neq 0$ for all $x$.
+    \item The condition $(b(t))^2 - 4c(t) \geq 0$ for all $t$ is satisfied.
+    \item For all numbers $t$, $b(t) = 0$ whenever $a(t) = 0$. If $a(t) \neq 0$,
+    then $x(t) = \displaystyle-\frac{b(t)}{a(t)}$ is unique. If $a(t) = 0$ for
+    some $t$, choose $x(t)$ arbitrarily. Therefore, if $a(t) \neq 0$ for all $t$,
+    there is a unique function $x$; otherwise, there are infinitely many function $x$.
   \end{enumerate}
 \end{solution}
+
+\begin{pr} \label{3.11}
+  \begin{enumerate}[label = (\alph*)]
+    \item 
+  \end{enumerate}
+\end{pr}
