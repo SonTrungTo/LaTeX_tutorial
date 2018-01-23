@@ -363,5 +363,61 @@ elementary properties.
     \item If $f$ and $g$ are both even, $(f + g)(-x) = (f + g)(x)$: $f + g$ is even.
     If $f$ and $g$ are both odd, $(f + g)(-x) = -(f + g)(x)$: $f + g$ is odd.
     Suppose $f(x) = x^2$ and $g(x) = \sin (x)$, then $f + g$ is neither odd nor even.
+    \item If $f$ and $g$ are both even, $(f \cdot g)$ is even; if one of the two
+    is odd, $(f \cdot g)$ is odd; if both are odd, $(f \cdot g)$ is even.
+    \item If $f$ and $g$ are both even, $(f \circ g)$ is even; if $f$ is even
+    and $g$ is odd, $(f \circ g)$ is even; if $f$ is odd and $g$ is even,
+    $(f \circ g)$ is even; if both are odd, $(f \circ g)$ is odd.
+    \item Define $g$ such that
+    \begin{equation*}
+      g(|x|) = \left\{
+      \begin{array}{rl}
+        f(x), & \text{ if } x \geq 0 \\
+        \text{arbitrary}, & \text{ if } x < 0
+      \end{array}
+      \right.
+    \end{equation*}
   \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{3.13}
+  \begin{enumerate}[label = (\alph*)]
+    \item Prove that any function $f$ with domain $\mathbb{R}$ can be written
+    $f = E + O$, where $E$ is even and $O$ is odd.
+    \item Prove that this way of writing $f$ is unique.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item Let
+    \begin{align*}
+      E(x) &= \frac{f(x) + f(-x)}{2} &
+      O(x) &= \frac{f(x) - f(-x)}{2}
+    \end{align*}
+    \item Suppose that $f = E + O$, then observe that,
+    \begin{IEEEeqnarray*}{rCl}
+      f(x)  & = & E(x) + O(x) \\
+      f(-x) & = & E(x) - O(x)
+    \end{IEEEeqnarray*}
+    We therefore solve the system of equations for the unique $E$ and $O$ with
+    their value at $x$ as above.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{3.14}
+  If $f$ is any function, define a new function $|f|$ by $|f|(x) = |f(x)|$. If $f$
+  and $g$ are functions, define two new functions, $max(f,g)$ and $min(f,g)$, by
+  \begin{IEEEeqnarray*}{rCl}
+    max(f,g)(x) & = & max(f(x),g(x)), \\
+    min(f,g)(x) & = & min(f(x),g(x)).
+  \end{IEEEeqnarray*}
+  Find an expression for $max(f,g)$ and $min(f,g)$ in terms of $||$.
+\end{pr}
+
+\begin{solution}
+  \begin{align*}
+    max(f,g) &= \frac{f + g + |f - g|}{2} \\
+    min(f,g) &= \frac{f + g - |f - g|}{2}
+  \end{align*}
 \end{solution}
