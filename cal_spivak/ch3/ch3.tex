@@ -421,3 +421,95 @@ elementary properties.
     min(f,g) &= \frac{f + g - |f - g|}{2}
   \end{align*}
 \end{solution}
+
+\begin{pr} \label{3.15}
+  \begin{enumerate}[label = (\alph*)]
+    \item Show that $f = max(f,0) + min(f,0)$. This particular way of writing $f$
+    is fairly useful; the functions $max(f,0)$ and $min(f,0)$ are called the
+    \textbf{positive} and \textbf{negative parts} of $f$.
+    \item A function $f$ is called \textbf{nonnegative} if $f(x) \geq 0$ for all $x$.
+    Prove that any function $f$ can be written $f = g - h$, where $g$ and $h$
+    are nonnegative, in infinitely many ways.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item Using the formulae from the previous problem,
+    \begin{equation*}
+      f = max(f,0) + min(f,0) = \frac{f + |f|}{2} + \frac{f - |f|}{2}
+    \end{equation*}
+    Note that $max(f,0) \geq 0$ and $min(f,0) \leq 0$ for all $x$.
+    \item Define $g$ and $h$ such that,
+    \begin{align*}
+      g(x) &= max(f,0)(x) + a & h(x) &= -min(f,0)(x) + a
+    \end{align*}
+    where $a \geq 0$ is a constant and can be defined arbitrarily. Observe
+    that $g$ and $h$ are nonnegative for all $x$.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{3.16}
+  Suppose $f$ satisfies $f(x + y) = f(x) + f(y)$ for all $x$ and $y$.
+  \begin{enumerate}[label = (\alph*)]
+    \item Prove that $f(x_1 + \cdots + x_n) = f(x_1) + \cdots + f(x_n)$.
+    \item Prove that there is some number $c$ such that $f(x) = cx$ for all
+    \note{rational} numbers $x$. Hint: Figure out what $c$ must be.
+    Now prove $f(x) = cx$, first when $x$ is a natural
+    number, then when $x$ is an integer, then when $x$ is the reciprocal of an integer
+    and, finally, for all rational $x$.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item The proof is by induction on $n$. For $n = 1$, it is trivial; suppose
+    the equality holds for $n$, then for $n + 1$,
+    \begin{IEEEeqnarray*}{rCl}
+      f(x_1 + \cdots + x_{n + 1}) &=& f(x_{n + 1}) + f(x_1 + \cdots + x_n) \\
+      &=& f(x_1) + \cdots + f(x_n) + f(x_{n + 1})
+    \end{IEEEeqnarray*}
+    \item It is implied that $f(0) = 0$. Let $c = f(1)$. When $x$ is a natural
+    number,
+    \begin{equation*}
+      f(x) = f(\underbrace{1 + \cdots + 1}_\text{$x$ times}) = xf(1) = cx
+    \end{equation*}
+    Next, when $x$ is an integer, know that $f(x) + f(-x) = f(0) = 0$. Therefore,
+    $f(x) = -f(-x)$: The necessary condition for the assumption made at the beginning
+    of the problem is $f$ is an odd function. Without loss of generality, assume $x \geq 0$.
+    Then $f(x) = cx$, and hence
+    \begin{equation*}
+      f(-x) = -f(x) = c \cdot -x
+    \end{equation*}
+    Now, if $x$ is the reciprocal of an integer, then
+    \begin{IEEEeqnarray*}{rCl}
+      c = f(1) & = & f(x \cdot \frac{1}{x}) \\
+               & = & f(\underbrace{\frac{1}{x} + \cdots + \frac{1}{x}}_\text{$x$ times}) \\
+               & = & xf(\frac{1}{x})
+    \end{IEEEeqnarray*}
+    Therefore, $f(\dfrac{1}{x}) = c \cdot \dfrac{1}{x}$.
+    \\
+    Finally, when $x = p/q$ where $p,q$ are integers,
+    \begin{equation*}
+      f\left(\frac{p}{q}\right) = f\left(\underbrace{\frac{1}{q} + \cdots + \frac{1}{q}}_\text{$p$ times}\right)
+      = p \cdot f\left(\frac{1}{q}\right) = c \cdot \frac{p}{q}
+    \end{equation*}
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{3.17}
+  If $f(x) = 0$ for all $x$, then $f$ satisfies $f(x + y) = f(x) + f(y)$ for all
+  $x$ and $y$, and also $f(x \cdot y) = f(x) \cdot f(y)$ for all $x$ and $y$. Now suppose
+  that $f$ satisfies these two properties, but that $f(x)$ is not always $0$. Prove
+  that $f(x) = x$ for all $x$, as follows:
+  \begin{enumerate}[label = (\alph*)]
+    \item Prove that $f(1) = 1$.
+    \item Prove that $f(x) = x$ if $x$ is rational.
+    \item Prove that $f(x) > 0$ if $x > 0$. (This part is tricky, but if you have
+    been paying attention to the philosophical remarks accompanying the problems
+    in the last two chapters, you will know what to do.)
+    \item Prove that $f(x) > f(y)$ if $x > y$.
+    \item Prove that $f(x) = x$ for all $x$. Hint: Use the fact that between
+    any two numbers there is a rational number.
+  \end{enumerate}
+\end{pr}
