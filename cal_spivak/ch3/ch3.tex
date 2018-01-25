@@ -513,3 +513,20 @@ elementary properties.
     any two numbers there is a rational number.
   \end{enumerate}
 \end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item Since $f(1) = (f(1))^2$, either $f(1) = 1$ or $f(1) = 0$. Suppose $f(1) = 0$,
+    then $f(2) = f(1) + f(1) = 0$, and hence $f(x) = 0$ for all $x$: A contradiction
+    that $f(x) \neq 0$ for some $x$. Therefore, $f(1) = 1$.
+    \item Referring to \ref{3.16}, we know that $f(x) = cx$ for all rational $x$
+    and $c = f(1) = 1$. Therefore, $f(x) = x$ for all rational $x$.
+    \item Let $x > 0$. If $x$ is rational, $f(x) > 0$ for all $x$. Suppose $x$ is
+    irrational, then there exist some number $k$ such that $x^k = r > 0$, where $r$
+    is some rational number; hence,
+    \begin{equation*}
+      (f(x))^k = f(r) = r
+    \end{equation*}
+    Therefore, $f(x) = \sqrt[k]{r} > 0$.
+  \end{enumerate}
+\end{solution}
