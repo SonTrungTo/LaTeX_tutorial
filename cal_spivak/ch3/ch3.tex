@@ -521,12 +521,45 @@ elementary properties.
     that $f(x) \neq 0$ for some $x$. Therefore, $f(1) = 1$.
     \item Referring to \ref{3.16}, we know that $f(x) = cx$ for all rational $x$
     and $c = f(1) = 1$. Therefore, $f(x) = x$ for all rational $x$.
-    \item Let $x > 0$. If $x$ is rational, $f(x) > 0$ for all $x$. Suppose $x$ is
-    irrational, then there exist some number $k$ such that $x^k = r > 0$, where $r$
-    is some rational number; hence,
+    \item Let $x > 0$. If $x$ is rational, $f(x) > 0$ for all $x$. If $x$ is
+    irrational, from \ref{2.17}, it is implied that there exist a number $y > 0$
+    such that $x = y^2$. Hence, $f(x) = f(y^2) = (f(y))^2 \geq 0$. Suppose $f(x) = 0$,
     \begin{equation*}
-      (f(x))^k = f(r) = r
+      f(z) = f(x \cdot z/x) = f(x) \cdot f(z/x) = 0 \text{ for all } z
     \end{equation*}
-    Therefore, $f(x) = \sqrt[k]{r} > 0$.
+    contradicts $f(1) = 1$! Therefore, $f(x) > 0$.
+    \item If $x - y > 0$, then $f(x - y) = f(x) + f(-y) = f(x) - f(y) > 0$. Hence,
+    $f(x) > f(y)$.
+    \item Suppose that $f(x) > x$. Then there exists a rational $r$ such that
+    \begin{equation*}
+      x < r = f(r) < f(x)
+    \end{equation*}
+    But since $r > x$, $f(r) > f(x)$: A contradiction. Similar reasoning is applied
+    to $f(x) < x$. Therefore, $f(x) = x$ for all $x$.
   \end{enumerate}
 \end{solution}
+
+\begin{pr} \label{3.18}
+  Precisely what conditions must $f,g,h,$ and $k$ satisfy in order that
+  $f(x)g(y) = h(x)k(y)$ for all $x$ and $y$?
+\end{pr}
+
+\begin{solution}
+  If either $f$ or $g$ is $0$, and either $h$ or $k$ is $0$;
+  the equation holds. Otherwise, $f$ and $g$ are not $0$ for  some $x_0$ and $y_0$;
+  since $h(x)k(y) = f(x)g(y) \neq 0$, $h$ and $k$ are not $0$ for some $x_0$ and $y_0$.
+  Let $\alpha = \dfrac{f(x_0)}{h(x_0)} = \dfrac{k(y_0)}{g(y_0)}$. Therefore, for such $\alpha$,
+  $f(x) = \alpha h(x)$ for all $x$ and $k(y) = \alpha g(y)$ for all $y$.
+\end{solution}
+
+\begin{pr} \label{3.19}
+  \begin{enumerate}[label = (\alph*)]
+    \item Prove that there do \note{not} exist functions $f$ and $g$ with either
+    of the following properties:
+    \begin{enumerate}[label = (\roman*)]
+      \item $f(x) + g(y) = xy$ for all $x$ and $y$.
+      \item $f(x) \cdot g(y) = x + y$ for all $x$ and $y$.
+    \end{enumerate}
+   \item Find functions $f$ and $g$ such that $f(x + y) = g(xy)$ for all $x$ and $y$.
+  \end{enumerate}
+\end{pr}
