@@ -557,9 +557,29 @@ elementary properties.
     \item Prove that there do \note{not} exist functions $f$ and $g$ with either
     of the following properties:
     \begin{enumerate}[label = (\roman*)]
-      \item $f(x) + g(y) = xy$ for all $x$ and $y$.
-      \item $f(x) \cdot g(y) = x + y$ for all $x$ and $y$.
+      \item \label{3.19:a.i}  $f(x) + g(y) = xy$ for all $x$ and $y$.
+      \item \label{3.19:a.ii} $f(x) \cdot g(y) = x + y$ for all $x$ and $y$.
     \end{enumerate}
    \item Find functions $f$ and $g$ such that $f(x + y) = g(xy)$ for all $x$ and $y$.
   \end{enumerate}
 \end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item Suppose \ref{3.19:a.i} is satisfied, observe that
+    \begin{IEEEeqnarray*}{rCl}
+      g(y) & = & -f(0) \quad \forall y \\
+      f(x) & = & -g(0) \quad \forall x
+    \end{IEEEeqnarray*}
+    Then $f(1) + g(1) = 0 = 1 \cdot 1$: A contradiction.\\
+    On the other hand, suppose \ref{3.19:a.ii} is satisfied, observe that
+    \begin{IEEEeqnarray*}{rCl}
+      f(0) \cdot g(y) & = & y \quad \forall y \\
+      f(x) \cdot g(0) & = & x \quad \forall x
+    \end{IEEEeqnarray*}
+    If $f(0) = 0$, obviously $f(0) \cdot g(0) = f(0) \cdot g(1)$; however,
+    $f(0) \cdot g(0) = 0 + 0 = 0$ and $f(0) \cdot g(1) = 0 + 1 = 1$, implying $1 = 0$.
+    Hence, $f(0) \neq 0$ and, similarly, $g(0) \neq 0$. But this implies
+    $f(0)g(0) \neq 0$, which contradicts \ref{3.19:a.ii}.
+  \end{enumerate}
+\end{solution}
