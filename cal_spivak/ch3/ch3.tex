@@ -581,5 +581,34 @@ elementary properties.
     $f(0) \cdot g(0) = 0 + 0 = 0$ and $f(0) \cdot g(1) = 0 + 1 = 1$, implying $1 = 0$.
     Hence, $f(0) \neq 0$ and, similarly, $g(0) \neq 0$. But this implies
     $f(0)g(0) \neq 0$, which contradicts \ref{3.19:a.ii}.
+    \item Observe that $f(x) = g(0) = f(y)$ for all $x$ and $y$. Furthermore,
+    this leads to $g(m) = g(n) = g(0)$ for all $m$ and $n$. Hence, $f(x) = g(x) = c$,
+    where $c$ is a constant.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{3.20}
+  \begin{enumerate}[label = (\alph*)]
+    \item Find a function $f$, other than a constant function, such that
+    $|f(y) - f(x)| \leq |y - x|$.
+    \item Suppose that $f(y) - f(x) \leq (y - x)^2$ for all $x$ and $y$. (Why does
+    this imply that $|f(y) - f(x)| \leq (y - x)^2$?) Prove that $f$ is a constant
+    function. Hint: Divide the interval from $x$ to $y$ into $n$ equal pieces.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item Let $f(x) = x$. Another example is $f(x) = |x|$ by noting from \ref{1.12}\ref{1.12:v}.
+    \item To explain why $|f(y) - f(x)| \leq (y - x)^2$, note that $f(x) - f(y) \leq (y - x)^2$.
+    The interpretation here is that: If both negative and positive of a number
+    is smaller thant its square, certainly we can pick the number's positive alone.
+
+    To prove that $f$ is a constant function, note that $|f(y) - f(x)| \geq 0$ for
+    all $x$ and $y$, and
+    \begin{IEEEeqnarray*}{rCl}
+      |f(y) - f(x)| & = & \left| f(x + \sum_{k = 1}^n \frac{y - x}{n})
+      + f(y + \sum_{k = 1}^n \frac{x - y}{n}) \right|
+    \end{IEEEeqnarray*}
   \end{enumerate}
 \end{solution}
