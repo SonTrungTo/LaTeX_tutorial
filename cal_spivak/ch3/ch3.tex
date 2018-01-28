@@ -604,11 +604,113 @@ elementary properties.
     The interpretation here is that: If both negative and positive of a number
     is smaller thant its square, certainly we can pick the number's positive alone.
 
-    To prove that $f$ is a constant function, note that $|f(y) - f(x)| \geq 0$ for
-    all $x$ and $y$, and
+    To prove that $f$ is a constant function, note that if $x = y$, $f(x) = f(y)$ and
+    we are done. Suppose $x \neq y$, then
     \begin{IEEEeqnarray*}{rCl}
-      |f(y) - f(x)| & = & \left| f(x + \sum_{k = 1}^n \frac{y - x}{n})
-      + f(y + \sum_{k = 1}^n \frac{x - y}{n}) \right|
+      |f(y) - f(x)| & = & \left| \sum_{k = 1}^n f\left(x + \frac{k(y - x)}{n}\right)
+      - f\left(x + \frac{(k - 1)(y - x)}{n}\right) \right| \\
+                    & \leq & \sum_{k = 1}^n \left| f\left( x + \frac{k(y - x)}{n} \right)
+      - f\left( x + \frac{(k - 1)(y - x)}{n} \right) \right| \\
+                    & \leq & \sum_{k = 1}^n \frac{1}{n^2} \cdot (y - x)^2 \\
+                    & = & \frac{(y - x)^2}{n}
+    \end{IEEEeqnarray*}
+    for all natural numbers $n$. Therefore, this implies that $f(x) = f(y)$ for all
+    $x$ and $y$ and $x \neq y$. Hence, $f$ is a constant function.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{3.21}
+  Prove or give a counterexample for each of the following assertions:
+  \begin{enumerate}[label = (\alph*)]
+    \item $f \circ (g + h) = f \circ g + f \circ h$.
+    \item $(g + h) \circ f = g \circ f + h \circ f$.
+    \item $\dfrac{1}{f \circ g} = \dfrac{1}{f} \circ g$.
+    \item $\dfrac{1}{f \circ g} = f \circ \dfrac{1}{g}$.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item Let $f(x) = x^2$ and $g(x) = h(x) = x$, then
+    \begin{equation*}
+      (2x)^2 \neq x^2 + x^2
+    \end{equation*}
+    \item $[(g + h) \circ f](x) = (g + h)(f(x)) = g(f(x)) + h(f(x))
+    = (g \circ f)(x) + (h \circ f)(x) = (g \circ f + h \circ f)(x)$
+    \item $\left[\dfrac{1}{f} \circ g\right](x)
+    = \dfrac{1}{f}(g(x)) = \dfrac{1}{f(g(x))} = \dfrac{1}{f \circ g}(x)$
+    \item Let $f(x) = x + 1$ and $g(x) = x^2$, then
+    \begin{equation*}
+      \frac{1}{x^2 + 1} \neq \frac{1}{x^2} + 1
+    \end{equation*}
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{3.22}
+  \begin{enumerate}[label = (\alph*)]
+    \item Suppose $g = h \circ f$. Prove that if $f(x) = f(y)$, then $g(x) = g(y)$.
+    \item \label{3.22:b} Conversely, suppose that $f$ and $g$ are two functions such that $g(x) = g(y)$
+    whenever $f(x) = f(y)$. Prove that $g = h \circ f$ for some function $h$. Hint:
+    Just try to define $h(z)$ when $z$ is of the form $z = f(x)$ (these are the only
+    $z$ that matter) and use the hypotheses to show that your definition will not run
+    into trouble.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item Let $A = \{x: x \text{ is in the domain of } f \cap f(x) \text{ is in the
+    domain of } h\}$, then for all $x,y \in A$,
+    \begin{equation*}
+      g(x) = h(f(x)) = h(f(y)) = g(y)
+    \end{equation*}
+    \item Let
+    \begin{IEEEeqnarray*}{rCl}
+      h(z) & = & \left\{
+      \begin{array}{rl}
+        g(x), & \text{when } z = f(x) \\
+        0   , & \text{otherwise}
+      \end{array}
+      \right.
     \end{IEEEeqnarray*}
   \end{enumerate}
 \end{solution}
+
+\begin{pr} \label{3.23}
+  Suppose that $f \circ g = I$, where $I(x) = x$. Prove that
+  \begin{enumerate}[label = (\alph*)]
+    \item If $x \neq y$, then $g(x) \neq g(y)$.
+    \item Every number $b$ can be written $b = f(a)$ for some number $a$.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item If $x \neq y$, then $f(g(x)) \neq f(g(y))$. By the contrapositive of
+    the definition of a function, $g(x) \neq g(y)$.
+    \item Let $a = g(b)$.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{3.24}
+  \begin{enumerate}[label = (\alph*)]
+    \item Suppose $g$ is a function with property that $g(x) \neq g(y)$ if $x \neq y$.
+    Prove that there is a function $f$ such that $f \circ g = I$.
+    \item Suppose $f$ is a function such that every number $b$ can be written
+    $b = f(a)$ for some number $a$. Prove that there is a function $g$ such that
+    $f \circ g = I$.
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item By the contrapositive statement: if $g(x) = g(y)$, then $x = y$.
+    Hence apply \ref{3.22}\ref{3.22:b} for $h = f, f = g, g = I$ we obtain the result.
+    \item For each $x$, choose number $a$ such that $f(a) = x$. Let $g(x) = a$,
+    then $f \circ g = I$ for all $x$.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{3.25}
+  Find 
+\end{pr}
