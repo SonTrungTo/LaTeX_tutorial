@@ -680,7 +680,7 @@ elementary properties.
   Suppose that $f \circ g = I$, where $I(x) = x$. Prove that
   \begin{enumerate}[label = (\alph*)]
     \item If $x \neq y$, then $g(x) \neq g(y)$.
-    \item Every number $b$ can be written $b = f(a)$ for some number $a$.
+    \item \label{3.23:b} Every number $b$ can be written $b = f(a)$ for some number $a$.
   \end{enumerate}
 \end{pr}
 
@@ -694,7 +694,7 @@ elementary properties.
 
 \begin{pr} \label{3.24}
   \begin{enumerate}[label = (\alph*)]
-    \item Suppose $g$ is a function with property that $g(x) \neq g(y)$ if $x \neq y$.
+    \item \label{3.24:a} Suppose $g$ is a function with property that $g(x) \neq g(y)$ if $x \neq y$.
     Prove that there is a function $f$ such that $f \circ g = I$.
     \item Suppose $f$ is a function such that every number $b$ can be written
     $b = f(a)$ for some number $a$. Prove that there is a function $g$ such that
@@ -712,5 +712,44 @@ elementary properties.
 \end{solution}
 
 \begin{pr} \label{3.25}
-  Find 
+  Find a function $f$ such that $g \circ f = I$ for some $g$, but such that there is
+  no function $h$ with $f \circ h = I$.
+\end{pr}
+
+\begin{solution}
+  Define $f$ as following,
+  \begin{IEEEeqnarray*}{rCl}
+    f(x) & = & \left\{
+    \begin{array}{rl}
+      x,      & \text{if } x \leq 0, \\
+      x + 1,  & \text{if } x >    0
+    \end{array}
+    \right.
+  \end{IEEEeqnarray*}
+  By \ref{3.24}\ref{3.24:a}, there exist some $g$ such that $g \circ f = I$.
+  However, since there is no $x$ such that $f(x) = b$, where $0 < b \leq 1$, by
+  \ref{3.23}\ref{3.23:b} there is no $h$ such that $f \circ h = I$.
+\end{solution}
+
+\begin{pr} \label{3.26}
+  Suppose $f \circ g = I$ and $h \circ f = I$. Prove that $g = h$. Hint: Composition is associative.
+\end{pr}
+
+\begin{solution}
+  \begin{equation*}
+    g = (((f \circ g) \circ h) \circ f) \circ g = f \circ (g \circ (h \circ (f \circ g)))
+    = f \circ (g \circ h) = (f \circ g) \circ h = h
+  \end{equation*}
+  A faster way would be to note that $h \circ f \circ g = (h \circ f) \circ g = I \circ g = g$
+  and $h \circ f \circ g = h \circ (f \circ g) = h \circ I = h$. Hence $g = h$.
+\end{solution}
+
+\begin{pr} \label{3.27}
+  \begin{enumerate}[label = (\alph*)]
+    \item Suppose $f(x) = x + 1$. Are there any functions $g$ such that $f \circ g = g \circ f$?
+    \item Suppose $f$ is a constant function. For which functions $g$ does
+    $f \circ g = g \circ f$?
+    \item Suppose $f \circ g = g \circ f$ for \note{all} functions $g$. Show that $f$
+    is the identity function, $f(x) = x$.
+  \end{enumerate}
 \end{pr}
