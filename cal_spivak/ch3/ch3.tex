@@ -753,3 +753,38 @@ elementary properties.
     is the identity function, $f(x) = x$.
   \end{enumerate}
 \end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item Let $g(x) = x$.
+    \item Suppose $f(x) = c$, where $c$ is a contant. Then for all $g$ such that
+    $g(c) = c$, $f \circ g = g \circ f$.
+    \item If $f(x) \neq x$, let $g(x) = c$ be a constant function. Then
+    $f(c) = c$: A contradiction. Therefore, $f(x) = x$.
+  \end{enumerate}
+\end{solution}
+
+\begin{pr} \label{3.28}
+  \begin{enumerate}[label = (\alph*)]
+    \item Let $F$ be the set of all functions whose domain is $\mathbb{R}$. Prove
+    that, using $+$ and $\cdot$ as defined in this chapter, all of properties
+    $P1$--$P9$ except $P7$ hold for $F$, provided that $0$ and $1$ are interpreted
+    as constant functions.
+    \item Show that $P7$ does not hold.
+    \item Show that $P10$--$P12$ cannot hold. In other words, show that there is no
+    collection $P$ of functions in $F$ such that $P10$--$P12$ hold for $P$.
+    \item Suppose we define $f < g$ to mean that $f(x) < g(x)$ for all $x$. Which of
+    $P'10$--$P'13$ (in \ref{1.8}) now hold?
+    \item If $f < g$, is $h \circ f < h \circ g$? Is $f \circ h < g \circ h$?
+  \end{enumerate}
+\end{pr}
+
+\begin{solution}
+  \begin{enumerate}[label = (\alph*)]
+    \item For all $f, g, h \in F$; $f(x),g(x)$ and $h(x)$ are all three arbitrary
+    numbers for all $x$ and, therefore, satisfy $P1$--$P9$, except $P7$.
+    \item Let $f(x) = x$, then $f \in F$. However, there does not exist
+    $f^{-1}(0)$ such that $(f \cdot f^{-1})(0) = 1$.
+    \item
+  \end{enumerate}
+\end{solution}
