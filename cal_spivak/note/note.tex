@@ -1,7 +1,7 @@
 \documentclass[a4paper,11pt,twoside]{book}
 \usepackage[affil-it]{authblk}
 \usepackage{amsmath,amssymb,amsthm,fancyhdr,enumitem,%
-hyperref,microtype,varwidth}
+hyperref,microtype,varwidth,tikz}
 \usepackage[retainorgcmds]{IEEEtrantools}
 \newcommand{\note}[1]{\emph{#1}}
 \theoremstyle{definition} \newtheorem{definition}{Definition}[chapter]
@@ -502,4 +502,45 @@ hyperref,microtype,varwidth}
     \note{unique} number $b$ such that $(a,b)$ is in $f$.
     This unique $b$ is denoted by $\boldsymbol{f(a)}$.
   \end{definition}
+
+  % Appendix, ch3
+  \section*{Appendix: Ordered Pairs}
+  \begin{definition}
+    \begin{equation*}
+      (a,b) = \{\{a\}, \{a,b\} \}
+    \end{equation*}
+  \end{definition}
+
+  \begin{thm}
+    If $(a,b) = (c,d)$, then $a = c$ and $b = d$.
+  \end{thm}
+  \begin{proof}
+    The hypothesis means that
+    \begin{equation*}
+      \{\{a\}, \{a,b\} \} = \{\{c\}, \{c,d\} \}
+    \end{equation*}
+    $a$ is the common member of both members of \{\{a\}, \{a,b\} \}. Similarly,
+    $c$ is the common member of both members of \{\{c\}, \{c,d\} \}. Hence $a = c$.
+    To prove $b = d$, we divide the proof into two cases:
+
+    Case 1: $b = a$ \\
+    Then \{\{a\}, \{a,d\} \} contains a unique member $a$. This implies that $d = a = b$.
+
+    Case 2: $b \neq a$ \\
+    This implies that $\{ a,b \} = \{ a,d \}$, which means $d \neq a$. This implies
+    that $b = d$.
+  \end{proof}
+
+  % chapter 4
+  \chapter{Graphs}
+  \textbf{Open interval} from $a$ to $b$ := $\{x: a < x < b\}$.
+
+  \begin{center}
+    \begin{tikzpicture}[xscale = 8]
+      \draw[ultra thick,fill = gray] (-1/2,0) node[below]{$a - \epsilon$} -- (0,0)
+      node[below]{$a$} -- (1/2,0) node[below]{$a + \epsilon$};
+      \draw[<->] (-1,0) -- (0,0) -- (1,0);
+    \end{tikzpicture}
+  \end{center}
+
   \end{document}
