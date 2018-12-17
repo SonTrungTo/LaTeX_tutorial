@@ -1,4 +1,4 @@
-# Projects in LaTeX
+# Academic projects
 
 1. The not-so-short introduction to LaTeX 2e, practice codes(label: nbr1)
 2. LaTeX and the Gnuplot Plotting Program, David Kotz(label: gnuplot_manual)
@@ -10,3 +10,6 @@
 (label: companion)
   * Practice of more than 1000 examples in the book
   to sharpen my LaTeX skills.
+
+## Statistics + Econometrics
+7. [Applied Econometrics in R](https://www.amazon.com/Applied-Econometrics-R-Use/dp/0387773169/ref=sr_1_3?ie=UTF8&qid=1545083163&sr=8-3&keywords=applied+econometrics) (label: AER)
