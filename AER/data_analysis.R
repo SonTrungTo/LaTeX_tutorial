@@ -7,3 +7,15 @@ tab <- table(occupation)
 prop.table(tab)
 barplot(tab) # == plot(occupation)
 pie(tab)
+table(gender, occupation)
+plot(gender ~ occupation)
+cor(log(wage), education)
+cor(log(wage), education, method = "spearman")
+plot(log(wage) ~ education)
+tapply(log(wage), gender, mean)
+plot(log(wage) ~ gender)
+?qqplot
+mwage <- subset(CPS1985, gender == "male")$wage
+fwage <- subset(CPS1985, gender == "female")$wage
+qqplot(mwage, fwage, xlim = range(wage), ylim = range(wage), xlab ="male", ylab = "female", xaxs = "i", yaxs = "i")
+abline(0,1)
