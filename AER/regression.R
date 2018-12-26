@@ -35,3 +35,14 @@ par(mfrow = c(1, 1))
 
 #testing linear models
 linearHypothesis(jour_lm, "log(citeprice) = -0.5")
+
+#multiple regressors
+library("AER")
+data("CPS1988")
+summary(CPS1988)
+cps_lm <- lm(log(wage) ~ experience + I(experience^2) + education + ethnicity, data = CPS1988)
+summary(cps_lm)
+cps_noeth <- update(cps_lm, formula. =  .~. - ethnicity)
+anova(cps_lm,cps_noeth)
+anova(cps_lm)
+waldtest(cps_lm, .~.-ethnicity)
