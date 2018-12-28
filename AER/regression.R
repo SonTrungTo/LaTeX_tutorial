@@ -58,3 +58,7 @@ cps_plm <- lm(log(wage) ~ bs(experience, df = 5) + education + ethnicity, data =
 cps <- data.frame(experience = -2:60, education = with(CPS1988, mean(education[ethnicity == "cauc"])), ethnicity = "cauc")
 cps$yhat1 <- predict(cps_lm, newdata = cps)
 cps$yhat2 <- predict(cps_plm, newdata = cps)
+plot(log(wage) ~ jitter(experience, factor = 3), pch = 19, col = rgb(0.5, 0.5, 0.5, 0.02), data = CPS1988)
+lines(cps$yhat1 ~ experience, data = cps, lty = 2)
+lines(cps$yhat2 ~ experience, data = cps)
+legend("topleft", c("quadratic", "splines"), lty = c(2, 1), bty = "n")
