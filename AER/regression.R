@@ -62,3 +62,15 @@ plot(log(wage) ~ jitter(experience, factor = 3), pch = 19, col = rgb(0.5, 0.5, 0
 lines(cps$yhat1 ~ experience, data = cps, lty = 2)
 lines(cps$yhat2 ~ experience, data = cps)
 legend("topleft", c("quadratic", "splines"), lty = c(2, 1), bty = "n")
+
+#factors, interactions and weights
+summary(cps_lm)
+summary(cps_noeth)
+cps_int <- lm(log(wage) ~ experience + I(experience^2) + education*ethnicity, data = CPS1988)
+coeftest(cps_int)
+cps_sep <- lm(log(wage) ~ ethnicity / (experience + I(experience^2) + education) - 1 , data = CPS1988)
+cps_sep_cf <- matrix(coef(cps_sep), nrow = 2)
+rownames(cps_sep_cf) <- levels(CPS1988$ethnicity)
+colnames(cps_sep_cf) <- names(coef(cps_lm))[1:4]
+cps_sep_cf
+anova(cps_sep, cps_lm)
