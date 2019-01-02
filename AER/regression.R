@@ -74,3 +74,13 @@ rownames(cps_sep_cf) <- levels(CPS1988$ethnicity)
 colnames(cps_sep_cf) <- names(coef(cps_lm))[1:4]
 cps_sep_cf
 anova(cps_sep, cps_lm)
+CPS1988$region <- relevel(CPS1988$region, ref = "south")
+cps_region <- lm(log(wage) ~ ethnicity + education + experience + I(experience^2) + region, data = CPS1988)
+coef(cps_region)
+# WLS to alleviate the problem of heteroskedasticity
+jour_wls1 <- lm(log(subs) ~ log(citeprice), data = journals, weights = 1 / citeprice^2)
+jour_wls2 <- lm(log(subs) ~ log(citeprice), data = journals, weights = 1 / citeprice)
+abline(jour_wls1, lwd = 2, lty = 2)
+abline(jour_wls2, lwd = 2, lty = 3)
+legend("bottomleft", c("OLS", "WLS1", "WLS2"), lty = 1:3, lwd = 2, bty = "n")
+# FGLS to use appropriate WLS from the data
