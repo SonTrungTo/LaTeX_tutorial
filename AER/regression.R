@@ -109,3 +109,12 @@ summary(cons_lm1)
 summary(cons_lm2)
 deviance(cons_lm1)  # Obtain RSS
 deviance(cons_lm2)
+plot(merge(as.zoo(USMacroG[,"consumption"]), fitted(cons_lm1), fitted(cons_lm2), 0, residuals(cons_lm1), residuals(cons_lm2)),
+     screens = rep(1:2, c(3,3)), lty = rep(1:3, 2), ylab = c("Fitted values", "Residuals"), xlab = "Time", main = "")
+legend(0.05, 0.95, c("observed", "cons_lm1", "cons_lm2"), lty = 1:3, bty = "n")
+# Encompassing model
+cons_lmE <- dynlm(consumption ~ dpi + L(dpi) + L(consumption), data = USMacroG)
+anova(cons_lm1, cons_lmE, cons_lm2)
+encomptest(cons_lm1, cons_lm2)
+library("zoo")
+library("lmtest")
