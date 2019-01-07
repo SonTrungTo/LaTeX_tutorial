@@ -84,3 +84,8 @@ abline(jour_wls1, lwd = 2, lty = 2)
 abline(jour_wls2, lwd = 2, lty = 3)
 legend("bottomleft", c("OLS", "WLS1", "WLS2"), lty = 1:3, lwd = 2, bty = "n")
 # FGLS to use appropriate WLS from the data
+auxreg <- lm(log(residuals(jour_lm)^2) ~ log(citeprice), data = journals)
+jour_fgls1 <- lm(log(subs) ~ log(citeprice), weights = 1 / exp(fitted(auxreg)), data = journals)
+abline(jour_fgls1, lwd = 2, lty = 4)
+coef(auxreg)[2]
+coef(jour_fgls1)
