@@ -87,5 +87,25 @@ legend("bottomleft", c("OLS", "WLS1", "WLS2"), lty = 1:3, lwd = 2, bty = "n")
 auxreg <- lm(log(residuals(jour_lm)^2) ~ log(citeprice), data = journals)
 jour_fgls1 <- lm(log(subs) ~ log(citeprice), weights = 1 / exp(fitted(auxreg)), data = journals)
 abline(jour_fgls1, lwd = 2, lty = 4)
-coef(auxreg)[2]
-coef(jour_fgls1)
+# Iterated FGLS
+gamma2i <- coef(auxreg)[2]
+gamma2  <- 0
+while(abs((gamma2i - gamma2)/gamma2) > 1e-7) {
+  gamma2  <- gamma2i
+  fglsi   <- lm(log(subs) ~ log(citeprice), data = journals, weights = 1 / citeprice^gamma2)
+  gamma2i <- coef(lm(log(residuals(fglsi)^2) ~ log(citeprice), data = journals))[2]
+}
+jour_fgls2 <- lm(log(subs) ~ log(citeprice), data = journals, weights = 1 / citeprice^gamma2)
+coef(jour_fgls2)
+abline(jour_fgls2, lwd = 3, lty = 5)
+# Time Series Analysis
+data("USMacroG")
+plot(USMacroG[,c("dpi", "consumption")], lty = c(3, 1), plot.type = "single", ylab = "")
+legend("topleft", legend = c("income", "consumption"), lty = c(3, 1), bty = "n")
+library("dynlm")
+cons_lm1 <- dynlm(consumption ~ dpi + L(dpi), data = USMacroG)
+cons_lm2 <- dynlm(consumption ~ dpi + L(consumption), data = USMacroG)
+summary(cons_lm1)
+summary(cons_lm2)
+deviance(cons_lm1)  # Obtain RSS
+deviance(cons_lm2)
