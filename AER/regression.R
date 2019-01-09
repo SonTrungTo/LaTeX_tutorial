@@ -135,3 +135,16 @@ summary(gr_re)
 plmtest(gr_pool)
 phtest(gr_fe, gr_re)
 # Dynamic linear models
+data("EmplUK", package = "plm")
+form    <- log(emp) ~ log(wage) + log(capital) + log(output)
+empl_ab <- pgmm(log(emp) ~ lag(log(emp), 0:2) + lag(log(wage), 0:1) + lag(log(capital), 0) 
+                + lag(log(output), 0:1)|lag(log(emp), 2:99),
+                data = EmplUK, index = c("firm","year"),
+                effect = "twoways", model = "twosteps")  #not fully understood due to dynformula being depricated!
+summary(empl_ab)
+# SUR
+library("systemfit")
+gr2 <- subset(Grunfeld, firm %in% c("Chrysler", "IBM"))
+pgr2 <- pdata.frame(gr2, index = c("firm", "year"))
+gr_sur <- systemfit(invest ~ value + capital, method = "SUR", data = pgr2)
+summary(gr_sur, residCov = FALSE, equations = FALSE)
