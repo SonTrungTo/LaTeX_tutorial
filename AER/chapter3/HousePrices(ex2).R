@@ -1,6 +1,9 @@
 library("AER")
 data("HousePrices")
 head(HousePrices)
-reg_lm <- lm(log(price) ~ lotsize + bedrooms + bathrooms + stories + driveway + recreation + fullbase + gasheat
-             + aircon + garage + prefer, data = HousePrices)
-summary(reg_lm)
+# a)
+reg_lm_level <- lm(log(price) ~ lotsize + bedrooms + bathrooms + stories , data = HousePrices)
+reg_lm_log   <- lm(log(price) ~ log(lotsize) + log(bedrooms) + log(bathrooms) + log(stories), data = HousePrices)
+summary(reg_lm_level)
+summary(reg_lm_log)
+# COMMENT: Logarithm is preferred because the coefficients of independent vars have a bigger impact on the dependent var (price)
