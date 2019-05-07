@@ -8,9 +8,10 @@
   * Practice of more than 1000 examples in the book
   to sharpen my LaTeX skills.
 
-## Calculus  
+## Math  
 1. [Calculus-Michael Spivak](https://www.amazon.com/Calculus-4th-Michael-Spivak/dp/0914098918/ref=sr_1_1?s=books&ie=UTF8&qid=1500735354&sr=1-1&keywords=calculus+spivak)(label:cal_spivak)
 (<strong> status: stalled </strong>)
+2. [How to prove it](https://www.amazon.com/How-Prove-Structured-Approach-2nd/dp/0521675995/ref=sr_1_1?crid=32YJL3ADENAG5&keywords=how+to+prove+it+a+structured+approach&qid=1557265946&s=gateway&sprefix=how+to+prove+it%2Caps%2C228&sr=8-1) (label: how_to_prove_it)
 
 ## Finnish
 1. Suomen Mestari II(label: SMII)
