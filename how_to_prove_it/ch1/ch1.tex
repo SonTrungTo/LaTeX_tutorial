@@ -72,3 +72,36 @@
     the conclusion is invalid.
   \end{enumerate}
 \end{exx}
+
+\subsection{Sentential Logic}
+\begin{exx} \label{2.2.1}
+  \begin{tabular}{c c c}
+    $\lnot P$ & $Q$ & $\lnot P \lor Q$ \\
+    \hline
+    TF & T & T \\
+    FT & F & F\\
+    TF & F & T\\
+    FT & T & T
+  \end{tabular}
+  \begin{tabular}{c c c c c}
+    $\lnot S$ & $\lnot G$ & $S\lor G$ & $\lnot S\lor \lnot G$ & $(S\lor G)\land(\lnot S\lor \lnot G)$ \\
+    \hline
+    TF & FT & T & T & T \\
+    FT & TF & T & T & T \\
+    TF & TF & F & T & F \\
+    FT & FT & T & F & F
+  \end{tabular}
+\end{exx}
+
+\begin{exx}
+  First part is equivalent to $\lnot P\lor \lnot Q$. The truth table is easy to make.
+\end{exx}
+
+\begin{exx}
+    $P+Q = (P\lor Q)\land\lnot(P\land Q) = (P\lor Q)\land(\lnot P\lor \lnot Q)$.
+    Look at \autoref{2.2.1}.
+\end{exx}
+
+\begin{exx}
+  $P\lor Q=\lnot(\lnot P\land \lnot Q)$.
+\end{exx}
