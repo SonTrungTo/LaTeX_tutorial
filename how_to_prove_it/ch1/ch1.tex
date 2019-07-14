@@ -73,7 +73,7 @@
   \end{enumerate}
 \end{exx}
 
-\subsection{Sentential Logic}
+\subsection{Truth Tables}
 \begin{exx} \label{2.2.1}
   \begin{tabular}{c c c}
     $\lnot P$ & $Q$ & $\lnot P \lor Q$ \\
@@ -117,6 +117,70 @@
       FT & FT & F
     \end{tabular}
     \item $P\downarrow Q = \lnot P \land \lnot Q$.
-    \item 
+    \item It is easy to see that
+    \newline $\lnot P=P\downarrow P$.
+    \newline $P\lor Q=\lnot(\lnot P\land \lnot Q)=\lnot(P\downarrow Q)=(P\downarrow Q)\downarrow(P\downarrow Q)$.\\
+    where the second equality is by De Morgan's law; the fourth is by the previous part.
+    \newline $P\land Q=\lnot(\lnot P \lor \lnot Q)=\lnot\lnot(\lnot P \downarrow \lnot Q)=(P\downarrow P)\downarrow(Q\downarrow Q)$.
+  \end{enumerate}
+\end{exx}
+
+\begin{exx}
+  \begin{enumerate}[label=(\alph*)]
+    \item \begin{tabular}{c c c}
+      $\lnot P$ & $\lnot Q$ & $P\vert Q$ \\
+      \hline
+      FT & TF & T \\
+      TF & FT & T \\
+      TF & TF & T \\
+      FT & FT & F
+    \end{tabular}
+    \item $P\vert Q=\lnot(P\land Q)=\lnot P \lor \lnot Q$.
+    \item $\lnot P = P|P$.
+    \newline $P\lor Q=\lnot(\lnot P)\lor \lnot(\lnot Q)=\lnot P|\lnot Q=(P|P)|(Q|Q)$.
+    \newline $P\land Q=\lnot(\lnot P \lor \lnot Q)=\lnot(P|Q)=(P|Q)|(P|Q)$.
+  \end{enumerate}
+\end{exx}
+
+\begin{exx}
+  This exercise is trivial and easily done. Note that if both premises and conclusions
+  are not simultaneously true FOR ALL CASES, then the statement is invalid.
+\end{exx}
+
+\begin{exx}
+  $a)==c)$ and $b)==e)$. $d)$ is not equivalent to any other part.
+\end{exx}
+
+\begin{exx}
+  It's so easy to see that there is no need for truth tables.
+  \begin{enumerate}[label=(\alph*)]
+    \item Neither.
+    \item Contradiction.
+    \item Tautology.
+    \item A simple derivation yields:\\
+    $((P\lor \lnot P)\land(Q\lor \lnot R\lor \lnot P))\lor R=Q\lor (\lnot R\lor R)\lor \lnot P$,\\
+    which equals a tautology.
+  \end{enumerate}
+\end{exx}
+
+\begin{exx}
+  So obvious.
+\end{exx}
+
+\begin{exx}
+  \begin{enumerate}[label=(\alph*)]
+    \item $P\lor Q$
+    \item \begin{IEEEeqnarray*}{lC}
+      & (P\land(P\lor Q))\land((P\land Q)\lor \lnot Q)\\
+      =&P\land((P\lor\lnot Q)\land(Q\lor \lnot Q)) \\
+      =&P\land(P\lor\lnot Q)\\
+      =&P
+  \end{IEEEeqnarray*}
+    \item \begin{IEEEeqnarray*}{lC}
+      & (\lnot P \lor Q)\lor(\lnot P \land Q)\\
+      =&Q\lor((\lnot P \lor \lnot P)\land(\lnot P \lor Q)) \\
+      =&Q\lor(\lnot P\land(\lnot P\lor Q)) \\
+      =&\lnot P \lor Q
+  \end{IEEEeqnarray*}
   \end{enumerate}
 \end{exx}
