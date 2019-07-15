@@ -7,6 +7,7 @@
 (label: companion)
   * Practice of more than 1000 examples in the book
   to sharpen my LaTeX skills.
+4. TikZ-Pgf documentation, Till Tantau, page 25-70. (only tutorial, label:TikZ).
 
 ## Math  
 1. [Calculus-Michael Spivak](https://www.amazon.com/Calculus-4th-Michael-Spivak/dp/0914098918/ref=sr_1_1?s=books&ie=UTF8&qid=1500735354&sr=1-1&keywords=calculus+spivak)(label:cal_spivak)
