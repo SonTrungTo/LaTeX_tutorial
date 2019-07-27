@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage{tikz}
+\usetikzlibrary{intersections}
+\usetikzlibrary{arrows, arrows.meta}
 \tikzset{help lines/.style=very thin}
 \tikzset{Karl's grid/.style={help lines, color=#1!50},
          Karl's grid/.default=blue}
@@ -7,15 +9,22 @@
 We are working on
   \begin{tikzpicture}[scale=3]
     %\draw[Karl's grid=red] (0,0) grid (5,5);
-    \clip (-0.1,-0.2) rectangle (1.1, 0.75);
+    \clip (-0.1,-0.2) rectangle (1.1, 1.51);
     \draw[step=0.5cm, gray, very thin] (-1.4,-1.4) grid (1.4,1.4);
-    \draw (-1.5,0)--(1.5,0);
-    \draw (0,-1.5)--(0,1.5); %Now add the half circle
+    \draw[->] (-1.5,0)--(1.5,0);
+    \draw[->] (0,-1.5)--(0,1.5); %Now add the half circle
     \draw (0,0) circle [radius=1cm];
     \shadedraw[left color=gray,right color=green,draw=green!50!black] (0,0)--(3mm,0mm)
       arc [start angle=0, end angle=30, radius=3mm]--cycle;
     % \filldraw[fill=green!20!white, draw=green!50!black] (0,0)--(3mm,0mm)
     %   arc [start angle=0, end angle=30, radius=3mm]--cycle;
+    \draw[red, very thick] (30:1cm) -- +(0,-0.5);
+    \draw[blue, very thick] (30:1cm) ++(0,-0.5) -- (0,0);
+    \path [name path=upward line] (1,0) -- (1,1);
+    \path [name path=sloped line] (0,0) -- (30:1.5cm);
+    \draw [name intersections={of=upward line and sloped line, by=x}]
+      [very thick, orange] (1,0) -- (x);
+    %\draw[red, very thick] (30:1cm)--(30:1cm |- 0,0)--(0,0);
   \end{tikzpicture}
 
 Curved Path Construction.
@@ -41,5 +50,22 @@ Curved Path Construction.
     \shade[left color=yellow, right color=black] (3,0) rectangle +(2,1);
     \shadedraw[inner color=yellow, outer color=black, draw=yellow] (6,0) rectangle +(2,1);
     \shade [ball color=green] (9,0.5) circle (.5cm);
+  \end{tikzpicture}
+  % difference between + and ++
+  \begin{tikzpicture}
+    \def \rectanglepath{-- ++(1cm,0cm)-- ++(0cm,1cm)-- ++(-1cm,0cm)-- cycle}
+    \draw (0,0) \rectanglepath;
+    \draw (1.5,0) \rectanglepath;
+  \end{tikzpicture}
+  \begin{tikzpicture}
+    \def \rectanglepath{-- +(1cm,0cm) -- +(1cm,1cm) -- +(0cm,1cm) -- cycle}
+    \draw (0,0) \rectanglepath;
+    \draw (1.5,0) \rectanglepath;
+  \end{tikzpicture}
+  \tikz \draw (0,0) rectangle +(1,1) (1.5,0) rectangle +(1,1);
+  % arrow
+  \begin{tikzpicture}[>=Stealth]
+    \draw[->] (0,0) arc [start angle=180, end angle=30, radius=10pt];
+    \draw[<<-,very thick] (1,0) -- (1.5cm,10pt) -- (2cm,0pt) -- (2.5cm,10pt);
   \end{tikzpicture}
 \end{document}
