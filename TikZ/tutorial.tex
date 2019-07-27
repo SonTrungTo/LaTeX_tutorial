@@ -12,8 +12,10 @@ We are working on
     \draw (-1.5,0)--(1.5,0);
     \draw (0,-1.5)--(0,1.5); %Now add the half circle
     \draw (0,0) circle [radius=1cm];
-    \fill[green!20!white] (0,0)--(3mm,0mm)
+    \shadedraw[left color=gray,right color=green,draw=green!50!black] (0,0)--(3mm,0mm)
       arc [start angle=0, end angle=30, radius=3mm]--cycle;
+    % \filldraw[fill=green!20!white, draw=green!50!black] (0,0)--(3mm,0mm)
+    %   arc [start angle=0, end angle=30, radius=3mm]--cycle;
   \end{tikzpicture}
 
 Curved Path Construction.
@@ -28,4 +30,16 @@ Curved Path Construction.
   \tikz \draw[rotate=30] (0,0) ellipse [x radius=20pt,y radius=10pt];
   \tikz \draw[x=1.57ex,y=1ex] (0,0) sin (1,1) cos (2,0) sin (3,-1) cos (4,0)
                               (0,1) cos (1,0) sin (2,-1) cos (3,0) sin (4,1);
+  \begin{tikzpicture}[line width=5pt]
+    \draw (0,0) -- (1,0) -- (1,1) -- (0,0);
+    \draw (2,0) -- (3,0) -- (3,1) -- cycle;
+    \useasboundingbox (0,1.5); %make bounding box higher.
+  \end{tikzpicture}
+  \tikz \shade (0,0) rectangle (2,1) (3,0.5) circle (.5cm);
+  \begin{tikzpicture}[rounded corners, ultra thick]
+    \shade[top color=yellow, bottom color=black] (0,0) rectangle +(2,1);
+    \shade[left color=yellow, right color=black] (3,0) rectangle +(2,1);
+    \shadedraw[inner color=yellow, outer color=black, draw=yellow] (6,0) rectangle +(2,1);
+    \shade [ball color=green] (9,0.5) circle (.5cm);
+  \end{tikzpicture}
 \end{document}
