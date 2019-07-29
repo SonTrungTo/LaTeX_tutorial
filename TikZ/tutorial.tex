@@ -28,6 +28,10 @@ We are working on
 
     \foreach \x in {-1cm, -0.5cm, 1cm}
       \draw[very thick] (\x,-1pt)--(\x,1pt);
+    \foreach \y in {-1cm, -0.5cm, 0.5cm, 1cm}
+      \draw[very thick] (-1pt,\y)--(1pt,\y);
+    % \foreach \x in {-1, -0.5, 1}
+    %   \draw[xshift=\x cm] (0pt,-1pt)--(0pt,1pt);
   \end{tikzpicture}
 
 Curved Path Construction.
@@ -90,11 +94,14 @@ Curved Path Construction.
 \begin{tikzpicture}
 
     \begin{scope}[even odd rule]
-      \clip \secondcircle (-3,-3) rectangle (3,3);
-      \fill[yellow] \firstcircle;
+      \clip \secondcircle;
+      \clip \firstcircle;
+      \clip \thirdcircle (-3,-3) rectangle (3,3);
+      \fill[red] \secondcircle;
     \end{scope}
     \draw \firstcircle node[below] {$A$};
     \draw \secondcircle node [above] {$B$};
+    \draw \thirdcircle node[below] {$C$};
 \end{tikzpicture}
 %End of the Venn diagram.
 \end{document}
