@@ -33,7 +33,7 @@ We are working on
     % \foreach \x in {-1, -0.5, 1}
     %   \draw[xshift=\x cm] (0pt,-1pt)--(0pt,1pt);
   \end{tikzpicture}
-
+% scrap drawing
 Curved Path Construction.
   \begin{tikzpicture}
     \filldraw[gray] (0,0) circle [radius=2pt]
@@ -104,4 +104,8 @@ Curved Path Construction.
     \draw \thirdcircle node[below] {$C$};
 \end{tikzpicture}
 %End of the Venn diagram.
+% Drawing a series of circles using TikZ
+\tikz \foreach \x in {1,...,10}
+        \draw (\x,0) circle [radius=0.4cm];
+We can also nest loops to create interesting effects.
 \end{document}
