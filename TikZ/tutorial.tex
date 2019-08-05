@@ -11,25 +11,28 @@ We are working on
     %\draw[Karl's grid=red] (0,0) grid (5,5);
     \clip (-2,-0.2) rectangle (2, 0.8);
     \draw[step=0.5cm, gray, very thin] (-1.4,-1.4) grid (1.4,1.4);
-    \draw[->] (-1.5,0)--(1.5,0);
-    \draw[->] (0,-1.5)--(0,1.5); %Now add the half circle
+    \draw[->] (-1.5,0)--(1.5,0) coordinate (x axis);
+    \draw[->] (0,-1.5)--(0,1.5) coordinate (y axis); %Now add the half circle
     \draw (0,0) circle [radius=1cm];
     \shadedraw[left color=gray,right color=green,draw=green!50!black] (0,0)--(3mm,0mm)
       arc [start angle=0, end angle=30, radius=3mm]--cycle;
     % \filldraw[fill=green!20!white, draw=green!50!black] (0,0)--(3mm,0mm)
     %   arc [start angle=0, end angle=30, radius=3mm]--cycle;
-    \draw[red, very thick] (30:1cm) -- +(0,-0.5);
-    \draw[blue, very thick] (30:1cm) ++(0,-0.5) -- (0,0);
+    \draw[red, very thick] (30:1cm) -- node[left=1pt,fill=white]{$\sin \alpha$}  (30:1cm |- x axis); %+(0,-0.5);
+    \draw[blue, very thick] (30:1cm |- 0,0) -- node[below=2pt,fill=white]{$\cos \alpha$} (0,0); %(30:1cm) ++(0,-0.5) -- (0,0);
     \path [name path=upward line] (1,0) -- (1,1);
     \path [name path=sloped line] (0,0) -- (30:1.5cm);
     \draw [name intersections={of=upward line and sloped line, by=x}]
-      [very thick, orange] (1,0) -- (x);
+      [very thick, orange] (1,0) -- node[right=1pt,fill=white]
+      {$\displaystyle \tan \alpha \color{black}=
+        \frac{\color{red}\sin \alpha}{\color{blue}\cos \alpha}$} (x);
     %\draw[red, very thick] (30:1cm)--(30:1cm |- 0,0)--(0,0);
+    \draw (0,0) -- (x);
 
     \foreach \x/\xtext in {-1, -0.5/-\frac{1}{2}, 1}
-      \draw[very thick] (\x cm,-1pt)--(\x cm,1pt) node[anchor=north]{$\xtext$};
+      \draw[very thick] (\x cm,-1pt)--(\x cm,1pt) node[below=3pt,fill=white]{$\xtext$};
     \foreach \y/\ytext in {-1, -0.5/-\frac{1}{2}, 0.5/\frac{1}{2}, 1}
-      \draw[very thick] (-1pt,\y cm)--(1pt,\y cm) node[anchor=east]{$\ytext$};
+      \draw[very thick] (-1pt,\y cm)--(1pt,\y cm) node[left=3pt,fill=white]{$\ytext$};
     % \foreach \x in {-1, -0.5, 1}
     %   \draw[xshift=\x cm] (0pt,-1pt)--(0pt,1pt);
   \end{tikzpicture}
@@ -125,5 +128,14 @@ Labeling examples using TikZ.
   \draw (.5,.5) node [fill=yellow!80!black]
                      {Text at \verb!node 1!}
    -- (1.5,1.5) node {Text at \verb!node 2!};
+\end{tikzpicture}
+You can also position labels on curves and, by adding the \verb!sloped! option,
+have them rotated such that they match the line's slope.
+
+\begin{tikzpicture}
+  \draw (0,0) ..controls (6,1) and (9,1)..
+       node[near start,sloped,above]{near start}
+       node{middle}
+       node[very near end,sloped,below]{very near end} (12,0);
 \end{tikzpicture}
 \end{document}
