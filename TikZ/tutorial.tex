@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage{tikz}
 \usetikzlibrary{intersections}
-\usetikzlibrary{arrows, arrows.meta, angles, quotes}
+\usetikzlibrary{arrows, decorations.pathmorphing, backgrounds, fit, positioning, arrows.meta, angles, quotes}
 \tikzset{help lines/.style=very thin}
 \tikzset{Karl's grid/.style={help lines, color=#1!50},
          Karl's grid/.default=blue}
@@ -65,6 +65,20 @@
     % \foreach \x in {-1, -0.5, 1}
     %   \draw[xshift=\x cm] (0pt,-1pt)--(0pt,1pt);
   \end{tikzpicture}
+\textbf{Tutorial \#2: Petri nets}
+
+\begin{tikzpicture}
+  [
+  place/.style={circle,draw=blue!50,fill=blue!20,thick},
+  transition/.style={rectangle,draw=black!50,fill=black!20,thick}
+  ]
+  \node at (0,2) [place] {};
+  \node at (0,1) [place] {};
+  \node at (0,0) [place] {};
+  \node at (1,1) [transition] {};
+  \node at (-1,1)[transition] {};
+\end{tikzpicture}
+
 % scrap drawing
 Curved Path Construction. \\
   \begin{tikzpicture}
