@@ -1,11 +1,12 @@
 \documentclass[a4paper,11pt]{article}
 %\usepackage{syntonly}
+\usepackage{natbib}
 \usepackage[affil-it]{authblk}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{microtype,amsmath,amsthm,amssymb,fancyhdr,enumitem,%
 pgfplots,tikz}
-\usepackage[pdftex, colorlinks, urlcolor = {red}, unicode]{hyperref}
+\usepackage[pdftex, colorlinks, urlcolor = {red}, citecolor = {blue}, unicode]{hyperref}
 \usepackage[retainorgcmds]{IEEEtrantools}
 \pgfplotsset{width=7cm,compat=1.9}
 
@@ -21,7 +22,7 @@ pgfplots,tikz}
 \newcommand{\abautorefname}{Conjecture}
 \newcommand{\cdautorefname}{Remark}
 
-\renewcommand{\familydefault}{cmtt}
+%\renewcommand{\familydefault}{cmtt}
 \newenvironment{exx}[1][]{\begin{ex}[#1]$ $ \newline\nobreak\ignorespaces}%
 {\end{ex}}
 
@@ -33,7 +34,7 @@ $<$\href{mailto:son.trung.to@gmail.com}{son.trung.to@gmail.com}$>$}
 \begin{document}
   \maketitle
   This is to answer all the questions in the books ``How to prove it'' by Velleman.
-  Comments are appreciated!
+  Comments are appreciated! I benefit greatly from \cite{inchmeal} for its solutions.
 
   \clearpage
   \tableofcontents
@@ -41,5 +42,8 @@ $<$\href{mailto:son.trung.to@gmail.com}{son.trung.to@gmail.com}$>$}
 
   \include{intro/intro}
   \include{ch1/ch1}
+
+  \bibliographystyle{plainnat}
+  \bibliography{reference}
 
 \end{document}

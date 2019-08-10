@@ -97,7 +97,7 @@
   First part is equivalent to $\lnot P\lor \lnot Q$. The truth table is easy to make.
 \end{exx}
 
-\begin{exx}
+\begin{exx} \label{exclusive or}
     $P+Q = (P\lor Q)\land\lnot(P\land Q) = (P\lor Q)\land(\lnot P\lor \lnot Q)$.
     Look at \autoref{2.2.1}.
 \end{exx}
@@ -183,4 +183,72 @@
       =&\lnot P \lor Q
   \end{IEEEeqnarray*}
   \end{enumerate}
+\end{exx}
+
+\begin{exx}
+  \begin{enumerate}[label=(\alph*)]
+    \item \begin{IEEEeqnarray*}{lC}
+      & (P\land\lnot Q)\lor (P \land \lnot R)\\
+      =&P\land(\lnot Q \lor \lnot R)
+  \end{IEEEeqnarray*}
+    \item \begin{IEEEeqnarray*}{lC}
+      =&\lnot Q \lor [P \lor (P \land \lnot R)]\\
+      =&\lnot Q \lor P
+  \end{IEEEeqnarray*}
+  The first is by De Morgan's law and the associativity. The second is by absorption law.
+    \item \begin{IEEEeqnarray*}{lC}
+      =&[(P \land R)\lor(P\land \lnot R)]\lor(Q\land \lnot R) \\
+      =&[P\land(R\lor \lnot R)]\lor(Q\land \lnot R) \\
+      =&P \lor (Q\land \lnot R)
+  \end{IEEEeqnarray*}
+  The first is by distributive and associative law, respectively. The second is by distributive,
+  and the last is by tautology law.
+  \end{enumerate}
+\end{exx}
+
+\begin{exx}
+  \begin{equation*}
+    \lnot(P\lor Q)=\lnot(\lnot\lnot P \lor \lnot\lnot Q)=\lnot[\lnot(\lnot P \land \lnot Q)]=(\lnot P \land \lnot Q)
+  \end{equation*}
+  The first and the third equality are by double negation law. The second is by De Morgan's first law.
+\end{exx}
+
+\begin{exx}
+  \begin{equation*}
+    [P\land(Q\land R)]\land S=[(P\land Q)\land R]\land S=(P\land Q)\land(R \land S).
+  \end{equation*}
+  A general proof can be found in \cite[p.~19, problem 24]{spivak08}.
+\end{exx}
+
+\begin{exx}
+  $2^n$. Using counting techinque.
+\end{exx}
+
+\begin{exx}
+  $P\lor \lnot Q$
+\end{exx}
+
+\begin{exx}
+  $P+Q=(P\lor Q)\land(\lnot P \lor \lnot Q)$. Exclusive \textit{or}. See \autoref{exclusive or}.
+\end{exx}
+
+\begin{exx}
+  Remember a conclusion is valid when if all the premises are true, then the conclusion is true.
+  So if the conclusion is a tautology. Then there are two cases.
+  \begin{itemize}
+    \item If the premises are all true. Obviously the argument is valid.
+    \item If at least one of the premises is not true, then the argument is also valid, since
+    the validity check only applies if all the premises are true.
+  \end{itemize}
+  If the conclusion is a contradiction,
+  \begin{itemize}
+    \item if all the premises are true, then the argument is invalid.
+    \item if at least one of the premises is false, then the argument is valid.
+  \end{itemize}
+  If at least one of the premises is a tautology, it depends on the rest of the premises and the conclusion.
+  If at least one of the premises is a contradiction, the argument is always valid because
+  \begin{itemize}
+    \item if the conclusion is false, then the argument is valid.
+    \item if the conclusion is true, the validity check does not apply, and hence the argument is valid.
+  \end{itemize}
 \end{exx}
