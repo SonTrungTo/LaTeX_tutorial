@@ -69,14 +69,17 @@
 
 \begin{tikzpicture}
   [
-  place/.style={circle,draw=blue!50,fill=blue!20,thick},
-  transition/.style={rectangle,draw=black!50,fill=black!20,thick}
+  inner sep = 0pt,
+  place/.style={circle,draw=blue!50,fill=blue!20,thick, minimum size = 6mm},
+  transition/.style={rectangle,draw=black!50,fill=black!20,thick, minimum size = 4mm}
   ]
-  \node at (0,2) [place] {};
-  \node at (0,1) [place] {};
-  \node at (0,0) [place] {};
-  \node at (1,1) [transition] {};
-  \node at (-1,1)[transition] {};
+  \node[place]      (waiting)                            {};
+  \node[place]      (critical)       [below=of waiting]  {};
+  \node[place]      (semaphore)      [below=of critical] {};
+  \node[transition] (leave critical) [right=of critical] {};
+  \node[transition] (enter critical) [left=of critical]  {};
+
+  \node[red,above] at (semaphore.north) {$s\le 3$};
 \end{tikzpicture}
 
 % scrap drawing
