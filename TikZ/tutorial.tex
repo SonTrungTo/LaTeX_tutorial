@@ -69,17 +69,28 @@
 
 \begin{tikzpicture}
   [
+  bend angle = 45,
+  pre/.style={<-,shorten <=1pt,>=stealth',semithick},
+  post/.style={->,shorten >=1pt,>=stealth',semithick},
   inner sep = 0pt,
+  every label/.style={red},
   place/.style={circle,draw=blue!50,fill=blue!20,thick, minimum size = 6mm},
   transition/.style={rectangle,draw=black!50,fill=black!20,thick, minimum size = 4mm}
   ]
   \node[place]      (waiting)                            {};
   \node[place]      (critical)       [below=of waiting]  {};
-  \node[place]      (semaphore)      [below=of critical] {};
-  \node[transition] (leave critical) [right=of critical] {};
-  \node[transition] (enter critical) [left=of critical]  {};
+  \node[place]      (semaphore)      [below=of critical,
+                                      label=above:$s\le 3$] {};
+  \node[transition] (leave critical) [right=of critical] {}
+    edge [pre]                                  (critical)
+    edge [pre,bend left]                        (semaphore)
+    edge [post,bend right] node[auto,swap] {2}  (waiting);
+  \node[transition] (enter critical) [left=of critical]  {}
+    edge [post]             (critical)
+    edge [pre,bend left]    (waiting)
+    edge [post,bend right]  (semaphore);
 
-  \node[red,above] at (semaphore.north) {$s\le 3$};
+  %\node[red,above] at (semaphore.north) {$s\le 3$};
 \end{tikzpicture}
 
 % scrap drawing
