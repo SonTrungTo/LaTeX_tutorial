@@ -76,7 +76,8 @@
   % post/.style={->,shorten >=1pt,>=stealth',semithick},
   every label/.style={red},
   every place/.style={draw=blue!75,fill=blue!20,thick, minimum size = 6mm},
-  every transition/.style={draw=black!75,fill=black!20,thick, minimum size = 4mm}
+  every transition/.style={draw=black!75,fill=black!20,thick, minimum size = 4mm},
+  red place/.style={place,draw=red!75,fill=red!20}
   ]
   \node[place,tokens=1]               (w1)                                          {};
   \node[place]                        (c1)     [below=of w1]                        {};
@@ -92,7 +93,15 @@
     edge [post]             (c1)
     edge [pre,bend left]    (w1)
     edge [post,bend right]  (s);
-  
+  \node[transition] (t3) [right=of c2] {}
+    edge [pre, bend right]          (s)
+    edge [pre]                      (c2)
+    edge [post, bend left] node {2} (w2);
+  \node[transition] (t4) [left=of c2]  {}
+    edge [post,bend left]            (s)
+    edge [post]                      (c2)
+    edge [pre, bend right]           (w2);
+
 
   %\node[red,above] at (semaphore.north) {$s\le 3$};
 \end{tikzpicture}
