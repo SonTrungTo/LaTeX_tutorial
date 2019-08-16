@@ -102,6 +102,17 @@
     edge [post]                      (c2)
     edge [pre, bend right]           (w2);
 
+\begin{scope}[xshift=6cm]
+  \node[place,tokens=1]              (w1')                                         {};
+  \node[place]                       (c1')    [below=of w1']                       {};
+  \node[red place]                   (s1')    [below=of c1',xshift=-5mm]
+                                              [label=left:$s$]                     {};
+  \node[red place,tokens=3]          (s2')    [below=of c1',xshift=5mm]
+                                              [label=right:$\bar{s}$]              {};
+  \node[place]                       (c2')    [below=of s2',xshift=-5mm]           {};
+  \node[place,tokens=1]              (w2')    [below=of c2']                       {};
+\end{scope}
+
 
   %\node[red,above] at (semaphore.north) {$s\le 3$};
 \end{tikzpicture}
