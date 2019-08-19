@@ -2,6 +2,7 @@
 \usepackage{tikz}
 \usetikzlibrary{intersections}
 \usetikzlibrary{arrows, decorations.pathmorphing, backgrounds, fit, positioning, arrows.meta, angles, quotes, petri}
+\usetikzlibrary{calc, intersections, through, backgrounds}
 \tikzset{help lines/.style=very thin}
 \tikzset{Karl's grid/.style={help lines, color=#1!50},
          Karl's grid/.default=blue}
@@ -145,6 +146,23 @@
 
 
   %\node[red,above] at (semaphore.north) {$s\le 3$};
+\end{tikzpicture}
+
+\section{Book I, Proposition I}
+
+\begin{tikzpicture}
+  \coordinate[label=left:\textcolor{blue}{$A$}] (A) at (0,0);
+  \coordinate[label=right:\textcolor{blue}{$B$}] (B) at (1.25,0.25);
+  \draw[blue] (A)--(B);
+
+  % \draw         let
+  %             \p1 = ($(B)-(A)$),
+  %             \n2 = {veclen(\x1,\y1)}
+  %               in
+  %             (A) circle(\n2)
+  %             (B) circle(\n2); %This is what through package code computes.
+
+  \node[draw, circle through=(B), label=left:$D$] at (A) {};
 \end{tikzpicture}
 
 % scrap drawing
