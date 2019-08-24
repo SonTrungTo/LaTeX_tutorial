@@ -150,10 +150,16 @@
 
 \section{Book I, Proposition I}
 
-\begin{tikzpicture}
-  \coordinate[label=left:\textcolor{blue}{$A$}] (A) at (0,0);
-  \coordinate[label=right:\textcolor{blue}{$B$}] (B) at (1.25,0.25);
-  \draw[blue] (A)--(B);
+\begin{tikzpicture}[thick, help lines/.style={thin,draw=black!50}]
+  \def\A{\textcolor{input}{$A$}}      \def\B{\textcolor{input}{$B$}}
+  \def\C{\textcolor{output}{$C$}}     \def\D{$D$}   \def\E{$E$}
+
+  \colorlet{input}{blue!80!black}     \colorlet{output}{red!70!black}
+  \colorlet{triangle}{orange}
+
+  \coordinate[label=left:\A] (A) at ($(0,0) + .1*(rand,rand)$);
+  \coordinate[label=right:\B] (B) at ($(1.25,0.25) + .1*(rand,rand)$);
+  \draw[input] (A)--(B);
 
   % \draw         let
   %             \p1 = ($(B)-(A)$),
@@ -162,9 +168,29 @@
   %             (A) circle(\n2)
   %             (B) circle(\n2); %This is what through package code computes.
 
-  \node[draw, circle through=(B), label=left:$D$] at (A) {};
-\end{tikzpicture}
+  \node[name path = D, draw, circle through=(B), label=left:\D, help lines] at (A) {};
+  \node[name path = E, draw, circle through=(A), label=right:\E, help lines] at (B) {};
 
+  % Name the coordinates, but do not draw anything.
+  \path[name intersections={of= D and E, by={[label=above:\C]C}}];
+
+  \draw[output] (A) -- (C) -- (B);
+
+  \foreach \point in {A,B,C}
+    \fill[black, opacity=.5] (\point) circle (2pt);
+
+  \begin{pgfonlayer}{background}
+    \fill[triangle!80]  (A) -- (C) -- (B) -- cycle;
+  \end{pgfonlayer}
+
+  \node[below right, text width=10cm, align=justify] at (4,3) {
+  \small\textbf{Proposition I}\par
+  \emph{To construct an \textcolor{triangle}{equilateral triangle}
+  on a given \textcolor{input}{finite straight line}.}
+  \par\vskip1em
+  Let \A\B\ be the given \textcolor{input}{finite straight line}. \ldots
+  };
+\end{tikzpicture}
 % scrap drawing
 Curved Path Construction. \\
   \begin{tikzpicture}
