@@ -191,6 +191,47 @@
   Let \A\B\ be the given \textcolor{input}{finite straight line}. \ldots
   };
 \end{tikzpicture}
+\section{Book I, Proposition II}
+
+\begin{tikzpicture}[thick, help lines/.style={thin,draw=black!50}]
+  \def\A{\textcolor{orange}{$A$}}   \def\B{\textcolor{input}{$B$}}
+  \def\C{\textcolor{input}{$C$}}    \def\D{$D$}
+  \def\E{$E$}                       \def\F{$F$}
+  \def\G{$G$}                       \def\H{$H$}
+  \def\K{$K$}                       \def\L{\textcolor{output}{$L$}}
+
+  \colorlet{input}{blue!80!black}     \colorlet{output}{blue!70!black}
+
+  \coordinate[label=left:$A$] (A) at (0,0);
+  \coordinate[label=right:$B$] (B) at (1.25,.25);
+  \coordinate[label=above:$C$] (C) at (1.25,2.25);
+
+  \draw[input]        (B) -- (C);
+  \draw[help lines]   (A) -- (B);
+
+  %\node[fill=red,inner sep = 1pt, label=below:$X$] (X) at ($(A)!.5!(B)$) {};
+  \node[name path=H,help lines, label=above left:\H] (H) at (B) [circle through=(C)] {};
+  \coordinate[label=above:$D$] (D) at ($ (A) ! .5 !(B) ! {sin(60)*2} ! 90:(B)$) {};
+  \draw[name path=D--E, help lines] (D) -- ($(D) ! 3.5 ! (A)$) coordinate [label=below:$E$] (E);
+  \draw[name path=D--F, help lines] (D) -- ($(D) ! 3.5 ! (B)$) coordinate [label=below:$F$] (F);
+  % \path let \p1=($ (B) - (C) $) in
+  %       coordinate[label=below:$G$] (G) at ($ (B) ! veclen(\x1,\y1) ! (F) $);
+  % \fill[opacity=.5,red] (G) circle (2pt);
+  \path[name intersections={of=H and D--F, by={[label=below:$G$]G}}];
+  \node[name path=K,help lines, label=135:$K$]       (K) at (D) [circle through=(G)] {};
+  \path[name intersections={of=K and D--E,by={[label=below:$L$]L}}];
+
+  \draw[output] (A) -- (L);
+
+  \foreach \point in {A,B,C,D,G,L}
+    \fill[opacity=.5,red] (\point) circle (2pt);
+
+  \node[below right,text width=10cm, align=justify] at (4,3) {
+  \small\textbf{Proposition II}\par
+  \emph{To place a \textcolor{input}{a straight line} equal to a given straight line}
+  \ldots
+  };
+\end{tikzpicture}
 % scrap drawing
 Curved Path Construction. \\
   \begin{tikzpicture}
