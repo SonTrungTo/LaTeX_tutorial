@@ -3,6 +3,22 @@
 \usetikzlibrary{intersections}
 \usetikzlibrary{arrows, decorations.pathmorphing, backgrounds, fit, positioning, arrows.meta, angles, quotes, petri}
 \usetikzlibrary{calc, intersections, through, backgrounds}
+\tikzset{
+  nonterminal/.style={
+    % The shape:
+    rectangle,
+    % The size:
+    minimum size = 6mm,
+    % The border:
+    very thick,
+    draw=red!50!black!50,
+    % The filing
+    top color=white,
+    bottom color=red!50!black!20,
+    % Font
+    font=\itshape
+  }
+}
 \tikzset{help lines/.style=very thin}
 \tikzset{Karl's grid/.style={help lines, color=#1!50},
          Karl's grid/.default=blue}
@@ -232,6 +248,12 @@
   \ldots
   };
 \end{tikzpicture}
+\section{Diagrams as Simple Graphs}
+
+\begin{tikzpicture}
+  \node[nonterminal] {unsigned integer};
+\end{tikzpicture}
+
 % scrap drawing
 Curved Path Construction. \\
   \begin{tikzpicture}
