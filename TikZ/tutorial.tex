@@ -3,6 +3,7 @@
 \usetikzlibrary{intersections}
 \usetikzlibrary{arrows, decorations.pathmorphing, backgrounds, fit, positioning, arrows.meta, angles, quotes, petri}
 \usetikzlibrary{calc, intersections, through, backgrounds}
+\usetikzlibrary{shapes.misc}
 \tikzset{
   nonterminal/.style={
     % The shape:
@@ -17,7 +18,13 @@
     bottom color=red!50!black!20,
     % Font
     font=\itshape
-  }
+  },
+  terminal/.style={
+    rounded rectangle, minimum size=6mm, very thick, draw=black!50,
+    top color=white, bottom color=black!20,
+    font=\ttfamily
+    },
+  node distance=5mm, text height=1.25ex, text depth=.25ex
 }
 \tikzset{help lines/.style=very thin}
 \tikzset{Karl's grid/.style={help lines, color=#1!50},
@@ -248,10 +255,14 @@
   \ldots
   };
 \end{tikzpicture}
+% BEGIN SECTION 5
 \section{Diagrams as Simple Graphs}
 
 \begin{tikzpicture}
-  \node[nonterminal] {unsigned integer};
+  \node (ui1)   [nonterminal] {unsigned integer};
+  \node (dot)   [terminal, right=of ui1]                    {.};
+  \node (digit) [terminal, right=of dot]                    {digit};
+  \node (E)     [terminal, right=of digit]                  {E};
 \end{tikzpicture}
 
 % scrap drawing
