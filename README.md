@@ -9,10 +9,14 @@
   to sharpen my LaTeX skills.
 4. TikZ-Pgf documentation, Till Tantau, page 25-70. (only tutorial, label:TikZ).
 
-## Math  
+## Math
+### Calculus  
 1. [Calculus-Michael Spivak](https://www.amazon.com/Calculus-4th-Michael-Spivak/dp/0914098918/ref=sr_1_1?s=books&ie=UTF8&qid=1500735354&sr=1-1&keywords=calculus+spivak)(label:cal_spivak)
 (<strong> status: stalled </strong>)
-2. [How to prove it](https://www.amazon.com/How-Prove-Structured-Approach-2nd/dp/0521675995/ref=sr_1_1?crid=32YJL3ADENAG5&keywords=how+to+prove+it+a+structured+approach&qid=1557265946&s=gateway&sprefix=how+to+prove+it%2Caps%2C228&sr=8-1) (label: how_to_prove_it)
+
+### Proof
+2. [How to prove it-Daniel Velleman](https://www.amazon.com/How-Prove-Structured-Approach-2nd/dp/0521675995/ref=sr_1_1?crid=32YJL3ADENAG5&keywords=how+to+prove+it+a+structured+approach&qid=1557265946&s=gateway&sprefix=how+to+prove+it%2Caps%2C228&sr=8-1) (label: how_to_prove_it)
+3. [Book of Proof-Richard Hammack](https://www.amazon.com/Book-Proof-Richard-H-Hammack/dp/0989472132/ref=sr_1_1?keywords=book+of+proof&qid=1578702675&sr=8-1)(label: bop)
 
 ## Finnish
 1. Suomen Mestari II(label: SMII)
