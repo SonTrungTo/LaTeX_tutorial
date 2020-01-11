@@ -1,13 +1,53 @@
 \documentclass[a4paper,11pt]{memoir}
+\usepackage{natbib}
 \usepackage[affil-it]{authblk}
 \usepackage{amsmath,amssymb,amsthm,fancyhdr,enumitem,%
 microtype,pgfplots,tikz,enumerate}
+\usepackage[hyperindex=true,%
+unicode]{hyperref}
 \pgfplotsset{compat=1.15}
+\usepackage[retainorgcmds]{IEEEtrantools}
+\newcommand{\note}[1]{\emph{#1}}
+\newcommand{\boldText}[1]{\textbf{#1}}
+
+\theoremstyle{plain}        \newtheorem{id}{Lemma}[chapter]
+                            \newtheorem{thm}{Theorem}[chapter]
+\theoremstyle{definition}   \newtheorem{ex}{Exercise}[section]
+\theoremstyle{remark}       \newtheorem{ab}{Conjecture}[section]
+                            \newtheorem{cd}{Remark}[section]
+
+\newenvironment{exx}[1]{\begin{ex}[#1]$ $ \newline\nobreak\ignorespaces}%
+{\end{ex}}
+\setsecnumdepth{subsection}
+\setcounter{tocdepth}{2}
+
+\title{Solutions to Book Of Proof}
+\author{Son To\\
+$<$\href{mailto:son.trung.to@gmail.com}{son.trung.to@gmail.com}$>$}
+\affil{Fazer Oy, Arcada Ammattikorkeakoulu}
 
 \begin{document}
-  \title{Solutions to Book Of Proof}
-  \author{Son To}
-
   \maketitle
-  Helsinki, 2020.
+  \thispagestyle{empty}
+
+  \frontmatter
+   \chapter{Preface}
+     An attempt at solving all exercises by Richard Hammack.
+     \begin{flushright}
+       Helsinki, Finland \\$11^{\text{th}}$ January, $2020$
+     \end{flushright}
+   \clearpage
+   \tableofcontents
+
+   \mainmatter
+   \part{Fundamentals}
+   \chapter{Sets}
+   \section{Introduction to sets}
+      \subsection{} \{\ldots $-16,-11,-6,-1,4,9,14,$\ldots \}.
+      \subsection{} \{\ldots $-7,-4,-1,2,5,8,11,$\ldots \}.
+
+
+
+
+
 \end{document}
