@@ -37,3 +37,89 @@
    \subsection{} \set{3^n: n \in \integerset}.
    \subsection{} \set{\dfrac{n\pi}{2}: n \in \integerset}.
    \subsection{} \set{\dfrac{3}{4}n: n \in \integerset}.
+   \subsection{} $3$. Namely, \set{1}, \set{2,\set{3,4}}, $\emptyset$.
+   \subsection{} $5$. Namely, \set{1,4}, $a$, $b$, \set{\set{3,4}}, \set{\emptyset}.
+   \subsection{} $1$. Namely, the biggest set that includes all the others.
+   \subsection{} $1$. Same as above.
+   \subsection{} $19$. Namely, $-9,-8,\ldots,8,9$.
+   \subsection{} $9$. Namely, $1,\ldots,9$.
+   \subsection{} $7$. Namely, $-3,\ldots,3$.
+   \subsection{} $3$. Namely, $1,2,3$.
+   \subsection{} $0$. Namely, $\emptyset$.
+   \subsection{} $4$. Namely, $1,2,3,4$.
+
+   \subsection{}
+   \begin{tikzpicture}
+     \draw[<->] (0,3) node[left]{$y$} -- (0,0) -- (3,0) node[below]{$x$};
+     \foreach \x in {1,2}
+       \draw (\x,1pt) -- (\x,-1pt) node[below]{$\x$};
+     \foreach \y in {1,2}
+       \draw (-1pt,\y) -- (1pt,\y) node[left]{$\y$};
+     \fill[fill=gray] (1,1) -- +(0,1) -- +(1,1) -- +(1,0) -- cycle;
+   \end{tikzpicture}
+
+   \subsection{}
+   \begin{tikzpicture}
+     \draw[<->] (0,3) node[left]{$y$} -- (0,0) -- (3,0) node[below]{$x$};
+     \foreach \x in {0,1}
+       \draw (\x,1pt) -- (\x,-1pt) node[below]{$\x$};
+     \foreach \y in {1,2}
+       \draw (-1pt,\y) -- (1pt,\y) node[left]{$\y$};
+     \fill[fill=gray] (0,1) -- +(0,1) -- +(1,1) -- +(1,0) -- cycle;
+   \end{tikzpicture}
+
+   \subsection{}
+   \begin{tikzpicture}
+     \draw[->] (-2,0) -- (2,0) node[below]{$x$};
+     \draw[->] (0,0) -- (0,2) node[left]{$y$};
+     \foreach \x in {-1,0,1}
+       \draw (\x,-1pt) -- (\x,1pt) node[below]{$\x$};
+     \draw (-1pt,1) -- (1pt,1) node[above left]{$1$};
+     \draw[gray] (-1,1) -- ++(2,0);
+   \end{tikzpicture}
+
+   \subsection{}
+   \begin{tikzpicture}
+     \draw[->] (-3,0) -- (3,0) node[below]{$x$};
+     \draw[->] (0,0) -- (0,2) node[left]{$y$};
+     \foreach \y in {0,1}
+       \draw (-1pt,\y) -- (1pt,\y) node[above left]{$\y$};
+     \draw (2,-1pt) -- (2,1pt) node[below]{$2$};
+     \draw[thick,gray] (2,0) -- ++(0,1);
+   \end{tikzpicture}
+
+   \subsection{}
+   \begin{tikzpicture}
+     \draw[->] (-3,0) -- (3,0) node[below]{$x$};
+     \draw[->] (0,0) -- (0,2) node[left]{$y$};
+     \foreach \y in {0,1}
+       \draw (-1pt,\y) -- (1pt,\y) node[above left]{$\y$};
+     \foreach \x in {-2,2}
+       \draw (\x,-1pt) -- (\x,1pt) node[below]{$\x$};
+     \draw[thick,gray] (2,0) -- ++(0,1);
+     \draw[thick,gray] (-2,0) -- ++(0,1);
+   \end{tikzpicture}
+
+   \subsection{}
+   \begin{tikzpicture}[domain=-2:2,label/.style={postaction={decorate,%
+     decoration={%
+     markings,%
+     mark = at position .75 with \node #1; }}}%
+     ]
+     \draw[->] (-3,0) -- (3,0) node[below]{$x$};
+     \draw[->] (0,0) -- (0,5) node[left]{$y$};
+
+     \draw[thick,gray,label={[above left]{$y=x^2$}}] plot(\x,\x*\x);
+   \end{tikzpicture}
+
+   \subsection{}
+   \begin{tikzpicture}[domain=-1:1,label/.style={postaction={decorate,%
+     decoration={%
+     markings,
+     mark = at position .95 with \node #1;}}}]
+     \draw[->] (-3,0) -- (3,0) node[below]{$x$};
+     \draw[->] (0,-3) -- (0,3) node[left]{$y$};
+
+     \draw[thick,gray,label={[above right]{$x^2+y^2=1$}}] plot(\x,{sqrt(1-((\x)*(\x)))});
+     \draw[thick,gray] plot(\x,{-sqrt(1-((\x)*(\x)))});
+   \end{tikzpicture}
