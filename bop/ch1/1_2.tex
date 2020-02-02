@@ -39,4 +39,41 @@
 \set{(\emptyset,0,0),(\emptyset,0,1),(\emptyset,\emptyset,0),(\emptyset,\emptyset,1)}.
 
 \subsection{}
-\set{(0,0,0,0),(0,0,0,1),(0,0,1,0),(0,1,0,0),(1,0,0,0),()}.
+\set{(0,0,0,0),(0,0,0,1),(0,0,1,0),(0,1,0,0),\\(1,0,0,0),(1,0,0,1),(1,1,0,0),(1,0,1,0)%
+,\\(1,1,0,1),(1,0,1,1),(1,1,1,0),(0,1,1,1),\\(0,1,1,0),(0,0,1,1),(0,1,0,1),(1,1,1,1)}.
+
+\subsection{}
+\begin{tikzpicture}
+  \draw[->] (0,-2)--(0,2) node[left]{$y$};
+  \draw[->] (-4,0)--(4,0) node[below]{$x$};
+  \foreach \x in {1,2,3}
+    \draw (\x,-1pt) -- (\x,1pt) node[below left]{$\x$};
+  \foreach \y in {-1,0,1}
+    \draw (-1pt,\y) -- (1pt,\y) node[above left]{$\y$};
+  \foreach \x in {1,2,3}
+    \foreach \y in {-1,0,1}
+      \draw[fill=black] (\x,\y) circle[radius=1pt];
+\end{tikzpicture}
+
+\subsection{}
+\begin{tikzpicture}
+  \draw[->] (-2,0)--(2,0) node[below]{$x$};
+  \draw[->] (0,-1)--(0,4) node[left]{$y$};
+  \foreach \y in {1,2,3}
+    \draw (-1pt,\y) -- (1pt,\y) node[above left]{$\y$};
+  \foreach \x in {-1,0,1}
+    \draw (\x,-1pt) -- (\x,1pt) node[below left]{$\x$};
+  \foreach \y in {1,2,3}
+    \foreach \x in {-1,0,1}
+      \draw[fill=black] (\x,\y) circle[radius=1pt];
+\end{tikzpicture}
+
+\subsection{}
+\begin{tikzpicture}
+  \draw[->] (-1,0)--(2,0) node[below]{$x$};
+  \draw[->] (0,-1)--(0,2) node[left]{$y$};
+  \draw (-1pt,1)--(1pt,1) node[above left]{$1$};
+  \draw (1,-1pt)--(1,1pt) node[below right]{$1$};
+  \path (0,0) node[below left]{$0$};
+  \fill[gray] (0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle;
+\end{tikzpicture}
