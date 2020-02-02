@@ -1,40 +1,29 @@
-\documentclass[letterpaper]{article}
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{red}
 
-\usepackage{hyperref}
-\usepackage{geometry}
-\usepackage{url}
-\usepackage{hanging}
-\usepackage{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry}
 
-\usepackage[T1]{fontenc}
-\usepackage[sc,osf]{mathpazo}
+\name{Son}{To}
+\title{Resumé}
+\address{Kitarakuja 1}{Helsinki}{Finland}
+\phone[mobile]{+358}
+\phone[fixed]{}
+\email{son.trung.to@gmail.com}
+\homepage{www.sonto.com}
 
-\def\name{Son To}
-\def\footerlink{}
+\begin{document}
+  \makecvtitle
 
-\hypersetup{
-colorlinks = true,
-urlcolor = black,
-pdfkeywords = {economics, computer science, mathematics},
-pdftitle = {\name: Curriculum Vitae},
-pdfsubject = {Curriculum Vitae},
-pdfpagemode = UseNone
-}
+  \section{Education}
+  \cventry{2012--2016}{B.Sc in Economics}{Aalto University}{Helsinki}{\textit{3.5/5}}%
+  {Not interested in the program.}
 
-\geometry{
-body = {6.5in, 8.5in},
-left = 1.0in,
-top  = 1.25in
-}
+  \section{Experience}
+  \subsection{Vocational}
+  \cventry{2015--present}{Dishwasher}{Fazer Sodexo StaffPoint}{Helsinki}{}%
+  {It sucks.}
 
-% Customize page headers
-\pagestyle{myheadings}
-\markright{\name}
-\thispagestyle{empty}
 
-% Custom section fonts
-\usepackage{sectsty}
-\sectionfont{\rmfamily\mdseries\Large}
-\subsection{\rmfamily\mdseries\itshape\large}
-
-\setlength\parindent{0em}
+\end{document}
