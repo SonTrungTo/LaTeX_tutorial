@@ -2,6 +2,7 @@
 \usepackage{tikz}
 \usetikzlibrary{intersections}
 \usetikzlibrary{arrows, decorations.pathmorphing, backgrounds, fit, positioning, arrows.meta, angles, quotes, petri}
+\usetikzlibrary{graphs}
 \usetikzlibrary{calc, intersections, through, backgrounds}
 \usetikzlibrary{shapes.misc}
 \tikzset{
@@ -258,11 +259,13 @@
 % BEGIN SECTION 5
 \section{Diagrams as Simple Graphs}
 
-\begin{tikzpicture}
-  \node (ui1)   [nonterminal] {unsigned integer};
-  \node (dot)   [terminal, right=of ui1]                    {.};
-  \node (digit) [terminal, right=of dot]                    {digit};
-  \node (E)     [terminal, right=of digit]                  {E};
+\begin{tikzpicture}[shape=coordinate,
+  nonterminal/.style={rectangle, minimum size = 6mm, very thick, draw=red!50!black!50,
+  top color=white, bottom color=red!50!black!20, font=\itshape, text height=1.5ex,
+  text depth=.25ex}]
+  \graph[grow right sep] {
+    / -> unsigned integer[nonterminal]
+  };
 \end{tikzpicture}
 
 % scrap drawing
