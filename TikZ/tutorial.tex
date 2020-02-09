@@ -4,6 +4,7 @@
 \usetikzlibrary{arrows, decorations.pathmorphing, backgrounds, fit, positioning, arrows.meta, angles, quotes, petri}
 \usetikzlibrary{graphs}
 \usetikzlibrary{calc, intersections, through, backgrounds}
+\usetikzlibrary{mindmap, calendar, backgrounds, trees} %SECTION 6
 \usetikzlibrary{shapes.misc}
 \tikzset{
   nonterminal/.style={
@@ -262,10 +263,48 @@
 \begin{tikzpicture}[shape=coordinate,
   nonterminal/.style={rectangle, minimum size = 6mm, very thick, draw=red!50!black!50,
   top color=white, bottom color=red!50!black!20, font=\itshape, text height=1.5ex,
-  text depth=.25ex}]
-  \graph[grow right sep] {
-    / -> unsigned integer[nonterminal]
+  text depth=.25ex},
+  terminal/.style={rounded rectangle, minimum size = 6mm, very thick, draw=black!50,
+  top color=white, bottom color=black!20, font=\ttfamily, text height=1.5ex,
+  text depth=.25ex},
+  >=stealth', black!50, text=black, thick,
+  every new ->/.style         = {shorten >=1pt},
+  graphs/every graph/.style   = {edges=rounded corners},
+  skip loop/.style            = {to path={-- ++(0,#1) -| (\tikztotarget)}},
+  hv path/.style                   = {to path={-| (\tikztotarget)}},
+  vh path/.style                   = {to path={|- (\tikztotarget)}}]
+  \graph[grow right sep, branch down=7mm, simple] {
+    / -> unsigned integer[nonterminal] -- p1 -> "."[terminal] -- p2 -> digit[terminal] --
+    p3 -- p4 -- p5 -> E[terminal] -- q1 -> [vh path]
+    {[nodes={yshift=7mm}]"+"[terminal], q2, "-"[terminal]}
+    -> [hv path]
+    q3 -- /unsigned integer[nonterminal] -- p6 -> /;
+
+    p1 -> [skip loop=5mm]  p4;
+    p3 -> [skip loop=-5mm] p2;
+    p5 -> [skip loop=-11mm] p6;
+
+    q1 -- q2 -- q3;
   };
+\end{tikzpicture}
+
+% SECTION 6 BEGINS HERE
+\section{Johannes Lecture Map}
+
+\begin{tikzpicture}[text width=2.7cm, align=flush center, grow cyclic,
+  level 1/.style={level distance=2.5cm, sibling angle=90},
+  level 2/.style={level distance=3cm, text width=2cm, font=\footnotesize, sibling angle=30}]
+  \node[font=\bfseries] {Computational Complexity}
+    child{node{Computational Problems}
+      child{node{Key Problems}}
+      child{node{Problem Domains}}
+      child{node{Problem Aspects}}
+      child{node{Problem Measures}}
+    }
+    child{node{Computational Models}}
+    child{node{Measuring Complexity}}
+    child{node{Solving Problems}}
+    ;
 \end{tikzpicture}
 
 % scrap drawing
