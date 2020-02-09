@@ -4,7 +4,7 @@
 \usetikzlibrary{arrows, decorations.pathmorphing, backgrounds, fit, positioning, arrows.meta, angles, quotes, petri}
 \usetikzlibrary{graphs}
 \usetikzlibrary{calc, intersections, through, backgrounds}
-\usetikzlibrary{mindmap, calendar, backgrounds, trees} %SECTION 6
+\usetikzlibrary{mindmap, calendar, backgrounds, trees, shadows} %SECTION 6
 \usetikzlibrary{shapes.misc}
 \tikzset{
   nonterminal/.style={
@@ -291,19 +291,43 @@
 % SECTION 6 BEGINS HERE
 \section{Johannes Lecture Map}
 
-\begin{tikzpicture}[text width=2.7cm, align=flush center, grow cyclic,
-  level 1/.style={level distance=2.5cm, sibling angle=90},
-  level 2/.style={level distance=3cm, text width=2cm, font=\footnotesize, sibling angle=30}]
-  \node[font=\bfseries] {Computational Complexity}
-    child{node{Computational Problems}
+\begin{tikzpicture}[mindmap, every node/.style={concept,circular drop shadow,execute at begin node=\hskip0pt},
+  concept color=black!20,
+  root concept/.append style={fill=white, concept color=black, line width=1ex, text=black},
+  text=white,
+  %text width=2.7cm, align=flush center,
+  grow cyclic,
+  level 1/.append style={level distance=4.5cm, sibling angle=90},
+  level 2/.append style={level distance=3cm, sibling angle=45}]
+  \node[root concept] {Computational Complexity}
+    child[concept color=red]{node{Computational Problems}
       child{node{Key Problems}}
       child{node{Problem Domains}}
       child{node{Problem Aspects}}
       child{node{Problem Measures}}
     }
-    child{node{Computational Models}}
-    child{node{Measuring Complexity}}
-    child{node{Solving Problems}}
+    child[concept color=blue]{node{Computational Models}
+      child{node{Turing Machines}}
+      child{node{Random-Access Machines}}
+      child{node{Circuits}}
+      child{node{Binary Decision Diagrams}}
+      child{node{Oracle Machines}}
+      child{node{Programming in Logic}}
+    }
+    child[concept color=orange]{node{Measuring Complexity}
+      child{node{Describing Complexity}}
+      child{node{Comparing Complexity}}
+      child{node{Classifying Complexity}}
+      child{node{Complexity Measures}}
+    }
+    child[concept color=green!50!black]{node{Solving Problems}
+      child{node{Exact Algorithms}}
+      child{node{Randomization}}
+      child{node{Fixed-Parameter Algorithms}}
+      child{node{Parallel Computation}}
+      child{node{Partial solutions}}
+      child{node{Approximation}}
+    }
     ;
 \end{tikzpicture}
 
