@@ -31,6 +31,17 @@
 \tikzset{help lines/.style=very thin}
 \tikzset{Karl's grid/.style={help lines, color=#1!50},
          Karl's grid/.default=blue}
+%SECTION 6
+\def\lecture#1#2#3#4#5#6{
+  \node[annotation, #3, scale=0.65, text width=4cm, inner sep=2mm] at (#4) {
+    Lecture #1: \textcolor{orange}{\textbf{#2}}
+    \list{--}{\topsep=2pt\itemsep=0pt\parsep=0pt
+              \parskip=0pt\labelwidth=8pt\leftmargin=8pt
+              \itemindent=0pt\labelsep=2pt}
+    #5
+    \endlist
+  };
+}
 \begin{document}
 \section{Karl's graph}
 
@@ -293,42 +304,53 @@
 
 \begin{tikzpicture}[mindmap, every node/.style={concept,circular drop shadow,execute at begin node=\hskip0pt},
   concept color=black!20,
-  root concept/.append style={fill=white, concept color=black, line width=1ex, text=black},
+  root concept/.append style={fill=white, concept color=black, line width=1ex, text=black,%
+  font=\large\scshape},
   text=white,
   %text width=2.7cm, align=flush center,
+  computational problems/.style={concept color=red,faded/.style={concept color=red!50}},
+  computational models/.style={concept color=blue,faded/.style={concept color=blue!50}},
+  measuring complexity/.style={concept color=orange,faded/.style={concept color=orange!50}},
+  solving problems/.style={concept color=green!50!black,faded/.style={concept color=green!50!black}},
   grow cyclic,
-  level 1/.append style={level distance=4.5cm, sibling angle=90},
-  level 2/.append style={level distance=3cm, sibling angle=45}]
+  level 1/.append style={level distance=4.5cm, sibling angle=90, font=\scshape},
+  level 2/.append style={level distance=3cm, sibling angle=45, font=\scriptsize}]
   \node[root concept] {Computational Complexity}
-    child[concept color=red]{node{Computational Problems}
-      child{node{Key Problems}}
-      child{node{Problem Domains}}
-      child{node{Problem Aspects}}
-      child{node{Problem Measures}}
+    child[computational problems]{node(Computational Problems){Computational Problems}
+      child       {node(Key Problems)     {Key Problems}}
+      child[faded]{node(Problem Domains)  {Problem Domains}}
+      child       {node(Problem Aspects)  {Problem Aspects}}
+      child       {node(Problem Measures) {Problem Measures}}
     }
-    child[concept color=blue]{node{Computational Models}
-      child{node{Turing Machines}}
-      child{node{Random-Access Machines}}
-      child{node{Circuits}}
-      child{node{Binary Decision Diagrams}}
-      child{node{Oracle Machines}}
-      child{node{Programming in Logic}}
+    child[computational models]{node{Computational Models}
+      child       {node{Turing Machines}}
+      child[faded]{node{Random-Access Machines}}
+      child       {node{Circuits}}
+      child[faded]{node{Binary Decision Diagrams}}
+      child       {node{Oracle Machines}}
+      child       {node{Programming in Logic}}
     }
-    child[concept color=orange]{node{Measuring Complexity}
-      child{node{Describing Complexity}}
-      child{node{Comparing Complexity}}
-      child{node{Classifying Complexity}}
-      child{node{Complexity Measures}}
+    child[measuring complexity]{node{Measuring Complexity}
+      child[faded]{node{Describing Complexity}}
+      child       {node{Comparing Complexity}}
+      child       {node{Classifying Complexity}}
+      child       {node{Complexity Measures}}
     }
-    child[concept color=green!50!black]{node{Solving Problems}
+    child[solving problems]{node{Solving Problems}
       child{node{Exact Algorithms}}
       child{node{Randomization}}
       child{node{Fixed-Parameter Algorithms}}
       child{node{Parallel Computation}}
       child{node{Partial solutions}}
       child{node{Approximation}}
-    }
-    ;
+    };
+
+    \lecture{1}{Computational Problems}{above,xshift=-3mm}
+    {Computational Problems.north}{
+      \item Knowledge of several key problems
+      \item Knowledge of problem encodings
+      \item Being able to formalize problems
+    }{2009-04-08}
 \end{tikzpicture}
 
 % scrap drawing
