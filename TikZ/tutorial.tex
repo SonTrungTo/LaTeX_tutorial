@@ -315,7 +315,9 @@
   grow cyclic,
   level 1/.append style={level distance=4.5cm, sibling angle=90, font=\scshape},
   level 2/.append style={level distance=3cm, sibling angle=45, font=\scriptsize}]
-  \node[root concept] {Computational Complexity}
+
+  \clip (-1.5,-5) rectangle ++(4,10);
+  \node[root concept] (Computational Complexity) {Computational Complexity}
     child[computational problems]{node(Computational Problems){Computational Problems}
       child       {node(Key Problems)     {Key Problems}}
       child[faded]{node(Problem Domains)  {Problem Domains}}
@@ -351,6 +353,26 @@
       \item Knowledge of problem encodings
       \item Being able to formalize problems
     }{2009-04-08}
+
+
+    \begin{pgfonlayer}{background}
+      \clip (-1.5,-5) rectangle ++(4,10);
+
+      \colorlet{upperleft}{green!50!black!25}
+      \colorlet{upperright}{orange!25}
+      \colorlet{lowerleft}{red!25}
+      \colorlet{lowerright}{blue!25}
+
+      %The large rectangle:
+      \fill [upperleft] (Computational Complexity) rectangle ++(-20,20);
+      \fill [upperright](Computational Complexity) rectangle ++(20,20);
+      \fill [lowerleft] (Computational Complexity) rectangle ++(-20,-20);
+      \fill [lowerright](Computational Complexity) rectangle ++(20,-20);
+
+      %The shadings:
+      \shade [left color=upperleft, right color=upperright]
+      ([xshift=-1cm]Computational Complexity) rectangle ++(2,20);
+    \end{pgfonlayer}
 \end{tikzpicture}
 
 % scrap drawing
