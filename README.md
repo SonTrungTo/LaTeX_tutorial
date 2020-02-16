@@ -1,13 +1,13 @@
 # Academic projects
 
 ## LaTeX
-1. The not-so-short introduction to LaTeX 2e, practice codes(label: nbr1)
-2. LaTeX and the Gnuplot Plotting Program, David Kotz(label: gnuplot_manual)
+1. The not-so-short introduction to LaTeX 2e, practice codes(label: nbr1)(**status: finished**).
+2. LaTeX and the Gnuplot Plotting Program, David Kotz(label: gnuplot_manual)(**status: finished**).
 3. [The LaTeX companion](https://www.amazon.com/LaTeX-Companion-Techniques-Computer-Typesetting/dp/0201362996/ref=sr_1_1?ie=UTF8&qid=1515335638&sr=8-1&keywords=The+LaTeX+companion)
 (label: companion)
   * Practice of more than 1000 examples in the book
   to sharpen my LaTeX skills.
-4. TikZ-Pgf documentation, Till Tantau, page 25-70. (only tutorial, label:TikZ).
+4. TikZ-Pgf documentation, Till Tantau, page 25-70. (only tutorial, label:TikZ)(**status: finished**).
 
 ## Math
 ### Calculus  

@@ -33,7 +33,7 @@
          Karl's grid/.default=blue}
 %SECTION 6
 \def\lecture#1#2#3#4#5#6{
-  \node[annotation, #3, scale=0.65, text width=4cm, inner sep=2mm] at (#4) {
+  \node[annotation, #3, scale=0.65, text width=4cm, inner sep=2mm, fill=white] at (#4) {
     Lecture #1: \textcolor{orange}{\textbf{#2}}
     \list{--}{\topsep=2pt\itemsep=0pt\parsep=0pt
               \parskip=0pt\labelwidth=8pt\leftmargin=8pt
@@ -371,7 +371,7 @@
       \item Being able to formalize problems
     }{2020-02-14}
 
-    \lecture{2}{Computational Models}{above left}
+    \lecture{2}{Computational Models}{above left,yshift=5mm}
     {Computational Models.west}{
       \item Knowledge of Turing machines
       \item Being able to compare the computational power of different models.
@@ -403,6 +403,7 @@
       ([yshift=-1cm]Computational Complexity) rectangle ++(-20,2);
     \end{pgfonlayer}
 \end{tikzpicture}
+%LECTURE 6 FINISHED!
 
 % scrap drawing
 Curved Path Construction. \\
