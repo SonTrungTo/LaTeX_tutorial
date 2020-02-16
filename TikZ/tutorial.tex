@@ -304,61 +304,82 @@
 % SECTION 6 BEGINS HERE
 \section{Johannes Lecture Map}
 
-\begin{tikzpicture}[mindmap, every node/.style={concept,circular drop shadow,execute at begin node=\hskip0pt},
-  concept color=black!20,
-  root concept/.append style={fill=white, concept color=black, line width=1ex, text=black,%
-  font=\large\scshape},
-  text=white,
-  %text width=2.7cm, align=flush center,
-  computational problems/.style={concept color=red,faded/.style={concept color=red!50}},
-  computational models/.style={concept color=blue,faded/.style={concept color=blue!50}},
-  measuring complexity/.style={concept color=orange,faded/.style={concept color=orange!50}},
-  solving problems/.style={concept color=green!50!black,faded/.style={concept color=green!50!black}},
-  grow cyclic,
-  level 1/.append style={level distance=4.5cm, sibling angle=90, font=\scshape},
-  level 2/.append style={level distance=3cm, sibling angle=45, font=\scriptsize}]
+\begin{tikzpicture}
+  \begin{scope} % If not encircle in scope, the effects will be on calendar macro as well.
+    [mindmap, every node/.style={concept,circular drop shadow,execute at begin node=\hskip0pt},
+    concept color=black!20,
+    root concept/.append style={fill=white, concept color=black, line width=1ex, text=black,%
+    font=\large\scshape},
+    text=white,
+    %text width=2.7cm, align=flush center,
+    computational problems/.style={concept color=red,faded/.style={concept color=red!50}},
+    computational models/.style={concept color=blue,faded/.style={concept color=blue!50}},
+    measuring complexity/.style={concept color=orange,faded/.style={concept color=orange!50}},
+    solving problems/.style={concept color=green!50!black,faded/.style={concept color=green!50!black}},
+    grow cyclic,
+    level 1/.append style={level distance=4.5cm, sibling angle=90, font=\scshape},
+    level 2/.append style={level distance=3cm, sibling angle=45, font=\scriptsize}]
 
-  \clip (-1.5,-5) rectangle ++(4,10);
-  \node[root concept] (Computational Complexity) {Computational Complexity}
-    child[computational problems]{node(Computational Problems){Computational Problems}
-      child       {node(Key Problems)     {Key Problems}}
-      child[faded]{node(Problem Domains)  {Problem Domains}}
-      child       {node(Problem Aspects)  {Problem Aspects}}
-      child       {node(Problem Measures) {Problem Measures}}
-    }
-    child[computational models]{node{Computational Models}
-      child       {node{Turing Machines}}
-      child[faded]{node{Random-Access Machines}}
-      child       {node{Circuits}}
-      child[faded]{node{Binary Decision Diagrams}}
-      child       {node{Oracle Machines}}
-      child       {node{Programming in Logic}}
-    }
-    child[measuring complexity]{node{Measuring Complexity}
-      child[faded]{node{Describing Complexity}}
-      child       {node{Comparing Complexity}}
-      child       {node{Classifying Complexity}}
-      child       {node{Complexity Measures}}
-    }
-    child[solving problems]{node{Solving Problems}
-      child{node{Exact Algorithms}}
-      child{node{Randomization}}
-      child{node{Fixed-Parameter Algorithms}}
-      child{node{Parallel Computation}}
-      child{node{Partial solutions}}
-      child{node{Approximation}}
-    };
+    \node[root concept,xshift=5mm] (Computational Complexity) {Computational Complexity}
+      child[computational problems]{node[yshift=-1cm](Computational Problems){Computational Problems}
+        child       {node(Key Problems)     {Key Problems}}
+        child[faded]{node(Problem Domains)  {Problem Domains}}
+        child       {node(Problem Aspects)  {Problem Aspects}}
+        child       {node(Problem Measures) {Problem Measures}}
+      }
+      child[computational models]{node[yshift=-1cm](Computational Models){Computational Models}
+        child       {node{Turing Machines}}
+        child[faded]{node{Random-Access Machines}}
+        child       {node{Circuits}}
+        child[faded]{node{Binary Decision Diagrams}}
+        child       {node{Oracle Machines}}
+        child       {node{Programming in Logic}}
+      }
+      child[measuring complexity]{node[yshift=1cm](Measuring Complexity){Measuring Complexity}
+        child[faded]{node{Describing Complexity}}
+        child       {node{Comparing Complexity}}
+        child       {node{Classifying Complexity}}
+        child       {node{Complexity Measures}}
+      }
+      child[solving problems]{node[yshift=1cm](Solving Problems){Solving Problems}
+        child{node{Exact Algorithms}}
+        child{node{Randomization}}
+        child{node{Fixed-Parameter Algorithms}}
+        child{node{Parallel Computation}}
+        child{node{Partial solutions}}
+        child{node{Approximation}}
+      };
+  \end{scope}
 
-    % \lecture{1}{Computational Problems}{above,xshift=-3mm}
-    % {Computational Problems.north}{
-    %   \item Knowledge of several key problems
-    %   \item Knowledge of problem encodings
-    %   \item Being able to formalize problems
-    % }{2009-04-08}
+    \tiny
+    \calendar[day list downward,
+              month text= \%mt\ \%y0,
+              month yshift=7.5em,
+              name=cal,
+              at={(-.5\textwidth-.5cm,.5\textheight-1cm)},
+              dates=2020-02-01 to 2020-03-last]
+      if (weekend)
+        [black!25]
+      if (day of month=1){
+        \node [anchor=base west] at (0pt,1.5em) {\small\tikzmonthtext};
+      };
+
+    \lecture{1}{Computational Problems}{above,xshift=-3mm}
+    {Computational Problems.north}{
+      \item Knowledge of several key problems
+      \item Knowledge of problem encodings
+      \item Being able to formalize problems
+    }{2020-02-14}
+
+    \lecture{2}{Computational Models}{above left}
+    {Computational Models.west}{
+      \item Knowledge of Turing machines
+      \item Being able to compare the computational power of different models.
+    }{2020-02-21}
 
 
     \begin{pgfonlayer}{background}
-      \clip (-1.5,-5) rectangle ++(4,10);
+      \clip[xshift=-1cm] (-.5\textwidth,-.5\textheight) rectangle ++(1.2\textwidth,\textheight);
 
       \colorlet{upperleft}{green!50!black!25}
       \colorlet{upperright}{orange!25}
@@ -381,27 +402,6 @@
       \shade [top color=upperleft, bottom color=lowerleft]
       ([yshift=-1cm]Computational Complexity) rectangle ++(-20,2);
     \end{pgfonlayer}
-\end{tikzpicture}
-
-\begin{tikzpicture}
-  \tiny
-  \calendar[day list downward,
-            month text= \%mt\ \%y0,
-            month yshift=3.5em,
-            name=cal,
-            dates=2020-02-01 to 2020-03-01]
-    if (weekend)
-      [black!25]
-    if (day of month=1){
-      \node [anchor=base west] at (0pt,1.5em) {\small\tikzmonthtext};
-    };
-
-  \lecture{1}{Computational Problems}{above,xshift=-3mm}
-  {Computational Problems.north}{
-    \item Knowledge of several key problems
-    \item Knowledge of problem encodings
-    \item Being able to formalize problems
-  }{2020-02-14}
 \end{tikzpicture}
 
 % scrap drawing
