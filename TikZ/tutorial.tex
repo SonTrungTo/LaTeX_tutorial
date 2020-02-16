@@ -41,6 +41,8 @@
     #5
     \endlist
   };
+  % New:
+  \node [anchor=base west] at (cal-#6.base east) {\textcolor{orange}{\textbf{#2}}};
 }
 \begin{document}
 \section{Karl's graph}
@@ -347,12 +349,12 @@
       child{node{Approximation}}
     };
 
-    \lecture{1}{Computational Problems}{above,xshift=-3mm}
-    {Computational Problems.north}{
-      \item Knowledge of several key problems
-      \item Knowledge of problem encodings
-      \item Being able to formalize problems
-    }{2009-04-08}
+    % \lecture{1}{Computational Problems}{above,xshift=-3mm}
+    % {Computational Problems.north}{
+    %   \item Knowledge of several key problems
+    %   \item Knowledge of problem encodings
+    %   \item Being able to formalize problems
+    % }{2009-04-08}
 
 
     \begin{pgfonlayer}{background}
@@ -372,7 +374,34 @@
       %The shadings:
       \shade [left color=upperleft, right color=upperright]
       ([xshift=-1cm]Computational Complexity) rectangle ++(2,20);
+      \shade [left color=lowerleft, right color=lowerright]
+      ([xshift=-1cm]Computational Complexity) rectangle ++(2,-20);
+      \shade [top color=upperright, bottom color=lowerright]
+      ([yshift=-1cm]Computational Complexity) rectangle ++(20,2);
+      \shade [top color=upperleft, bottom color=lowerleft]
+      ([yshift=-1cm]Computational Complexity) rectangle ++(-20,2);
     \end{pgfonlayer}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \tiny
+  \calendar[day list downward,
+            month text= \%mt\ \%y0,
+            month yshift=3.5em,
+            name=cal,
+            dates=2020-02-01 to 2020-03-01]
+    if (weekend)
+      [black!25]
+    if (day of month=1){
+      \node [anchor=base west] at (0pt,1.5em) {\small\tikzmonthtext};
+    };
+
+  \lecture{1}{Computational Problems}{above,xshift=-3mm}
+  {Computational Problems.north}{
+    \item Knowledge of several key problems
+    \item Knowledge of problem encodings
+    \item Being able to formalize problems
+  }{2020-02-14}
 \end{tikzpicture}
 
 % scrap drawing
