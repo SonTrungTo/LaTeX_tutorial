@@ -1,0 +1,211 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{FGR}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=cabc6f9b3294038605c747b551eec55a}{%
+           family={Bell},
+           familyi={B\bibinitperiod},
+           given={Aili\bibnamedelima Rytkönen},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=67341a5c8d6b880dc1c2d779c483694d}{%
+           family={Koski},
+           familyi={K\bibinitperiod},
+           given={Augustus\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {U.S Foreign Service Institute Washington D.C}%
+      }
+      \strng{namehash}{8557e94958fa14c87f17ad3dd7ce2cd7}
+      \strng{fullhash}{8557e94958fa14c87f17ad3dd7ce2cd7}
+      \strng{bibnamehash}{8557e94958fa14c87f17ad3dd7ce2cd7}
+      \strng{authorbibnamehash}{8557e94958fa14c87f17ad3dd7ce2cd7}
+      \strng{authornamehash}{8557e94958fa14c87f17ad3dd7ce2cd7}
+      \strng{authorfullhash}{8557e94958fa14c87f17ad3dd7ce2cd7}
+      \field{labelalpha}{BK68}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Finnish Graded Reader}
+      \field{year}{1968}
+    \endentry
+    \entry{SMIII}{book}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=6864f2d82c09c7736d956c61baa01238}{%
+           family={Gehring},
+           familyi={G\bibinitperiod},
+           given={Sonja},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5687c3f05dadaa1e322f2e5b54aabec5}{%
+           family={Heinzmann},
+           familyi={H\bibinitperiod},
+           given={Sanni},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=87b7958c58c29a9828d5a7300c8553ac}{%
+           family={Päivärinne},
+           familyi={P\bibinitperiod},
+           given={Sari},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6087db8deb209daab1ca7348d75e970e}{%
+           family={Udd},
+           familyi={U\bibinitperiod},
+           given={Taija},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Finn Lectura}%
+      }
+      \strng{namehash}{636f87afea80e92ec79479fa81d1b4da}
+      \strng{fullhash}{cd853a5ccbd31a6d0c8e45cf215e3cef}
+      \strng{bibnamehash}{636f87afea80e92ec79479fa81d1b4da}
+      \strng{authorbibnamehash}{636f87afea80e92ec79479fa81d1b4da}
+      \strng{authornamehash}{636f87afea80e92ec79479fa81d1b4da}
+      \strng{authorfullhash}{cd853a5ccbd31a6d0c8e45cf215e3cef}
+      \field{labelalpha}{Geh+09}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Suomen Mestari III}
+      \field{year}{2009}
+    \endentry
+    \entry{SMIV}{book}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=6864f2d82c09c7736d956c61baa01238}{%
+           family={Gehring},
+           familyi={G\bibinitperiod},
+           given={Sonja},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5687c3f05dadaa1e322f2e5b54aabec5}{%
+           family={Heinzmann},
+           familyi={H\bibinitperiod},
+           given={Sanni},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=87b7958c58c29a9828d5a7300c8553ac}{%
+           family={Päivärinne},
+           familyi={P\bibinitperiod},
+           given={Sari},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6087db8deb209daab1ca7348d75e970e}{%
+           family={Udd},
+           familyi={U\bibinitperiod},
+           given={Taija},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Finn Lectura}%
+      }
+      \strng{namehash}{636f87afea80e92ec79479fa81d1b4da}
+      \strng{fullhash}{cd853a5ccbd31a6d0c8e45cf215e3cef}
+      \strng{bibnamehash}{636f87afea80e92ec79479fa81d1b4da}
+      \strng{authorbibnamehash}{636f87afea80e92ec79479fa81d1b4da}
+      \strng{authornamehash}{636f87afea80e92ec79479fa81d1b4da}
+      \strng{authorfullhash}{cd853a5ccbd31a6d0c8e45cf215e3cef}
+      \field{labelalpha}{Geh+09}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Suomen Mestari IV}
+      \field{year}{2009}
+    \endentry
+    \entry{SMII}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=9f8de11df67bcbfd23b22ad0a2c2af31}{%
+           family={Heinzmann},
+           familyi={H\bibinitperiod},
+           given={Sonja\bibnamedelimb Gehring\bibnamedelimb \&\bibnamedelima Sanni},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim \~S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Finn Lectura}%
+      }
+      \strng{namehash}{9f8de11df67bcbfd23b22ad0a2c2af31}
+      \strng{fullhash}{9f8de11df67bcbfd23b22ad0a2c2af31}
+      \strng{bibnamehash}{9f8de11df67bcbfd23b22ad0a2c2af31}
+      \strng{authorbibnamehash}{9f8de11df67bcbfd23b22ad0a2c2af31}
+      \strng{authornamehash}{9f8de11df67bcbfd23b22ad0a2c2af31}
+      \strng{authorfullhash}{9f8de11df67bcbfd23b22ad0a2c2af31}
+      \field{labelalpha}{Hei09}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Suomen Mestari II}
+      \field{year}{2009}
+    \endentry
+    \entry{FT}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=e3278708c25a13aa7af557c1858bd435}{%
+           family={Valijärvi},
+           familyi={V\bibinitperiod},
+           given={Riitta-Liisa},
+           giveni={R\bibinithyphendelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The Teach Yourself}%
+      }
+      \strng{namehash}{e3278708c25a13aa7af557c1858bd435}
+      \strng{fullhash}{e3278708c25a13aa7af557c1858bd435}
+      \strng{bibnamehash}{e3278708c25a13aa7af557c1858bd435}
+      \strng{authorbibnamehash}{e3278708c25a13aa7af557c1858bd435}
+      \strng{authornamehash}{e3278708c25a13aa7af557c1858bd435}
+      \strng{authorfullhash}{e3278708c25a13aa7af557c1858bd435}
+      \field{labelalpha}{Val17}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Finnish Tutor Grammar and Vocabulary Workbook}
+      \field{year}{2017}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
