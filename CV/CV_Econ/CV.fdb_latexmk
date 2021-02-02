@@ -1,12 +1,12 @@
 # Fdb version 3
-["dvipdf"] 1612262826 "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.dvi" "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.pdf" "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV" 1612262826
-  "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.dvi" 1612262826 17296 8663f899971158363720610b230adfaf "pdflatex"
+["dvipdf"] 1612263213 "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.dvi" "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.pdf" "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV" 1612263214
+  "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.dvi" 1612263213 17312 51d76448f679c0caf3af4992715c9d24 "pdflatex"
   (generated)
   "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.pdf"
-["pdflatex"] 1612262826 "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.tex" "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.dvi" "CV" 1612262826
+["pdflatex"] 1612263213 "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.tex" "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.dvi" "CV" 1612263214
   "/etc/texmf/web2c/texmf.cnf" 1601754203 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.aux" 1612262826 1102 b5a78b804d5808670a554f0da14993a5 ""
-  "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.tex" 1612262825 3791 fa246ee6a980f3e027b684861b527a2e ""
+  "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.aux" 1612263213 1102 b5a78b804d5808670a554f0da14993a5 ""
+  "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.tex" 1612263213 3800 fd7f775897c265c5a60935cb4ca7bdff ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm" 1136768653 3584 291a5713401683441e0a8c8f4417b17b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1136768653 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
@@ -116,13 +116,13 @@
   "/usr/share/texmf/tex/latex/lm/ts1lmr.fd" 1256929440 1912 6435298ac30b512714b02d4c8c9e923c ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1601754337 8256686 70754f1403c7f737b4f6b033154d9f03 ""
-  "CV.aux" 1612262826 1102 b5a78b804d5808670a554f0da14993a5 "pdflatex"
-  "CV.out" 1612262826 493 3a7c139994ae7aa7f34fb30494e730c1 "pdflatex"
-  "CV.tex" 1612262825 3791 fa246ee6a980f3e027b684861b527a2e ""
+  "CV.aux" 1612263213 1102 b5a78b804d5808670a554f0da14993a5 "pdflatex"
+  "CV.out" 1612263213 493 3a7c139994ae7aa7f34fb30494e730c1 "pdflatex"
+  "CV.tex" 1612263213 3800 fd7f775897c265c5a60935cb4ca7bdff ""
   (generated)
-  "CV.out"
-  "CV.dvi"
+  "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.log"
   "CV.aux"
   "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.dvi"
-  "/home/stt92/Documents/LaTeX_documents/CV/CV_Econ/CV.log"
   "CV.log"
+  "CV.dvi"
+  "CV.out"
